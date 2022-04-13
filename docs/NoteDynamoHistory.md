@@ -6,7 +6,7 @@ A note from Dynamo DB including n amount of version history of that note
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Uuid** | **string** |  | 
-**Content** | [**AnyOffilestring**](AnyOffilestring.md) |  | [optional] 
+**Content** | **System.IO.Stream** |  | [optional] 
 **Time** | **string** |  | 
 **Meta** | [**NoteMeta**](NoteMeta.md) |  | 
 **History** | [**List&lt;NoteDynamo&gt;**](NoteDynamo.md) |  | [optional] 
