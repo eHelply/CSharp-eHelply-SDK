@@ -3,7 +3,7 @@ concurrency: sdk_publish
 on:
   push:
     branches:
-      - bobmagob
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,10 +15,10 @@ jobs:
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: Ehelply./Core.csproj
+          PROJECT_FILE_PATH: Ehelply.Sdk/Ehelply.Sdk.csproj
           
           # NuGet package id, used for version detection & defaults to project name
-          # PACKAGE_NAME: Core
+          # PACKAGE_NAME: Ehelply.Sdk
           
           # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
           # VERSION_FILE_PATH: Directory.Build.props
