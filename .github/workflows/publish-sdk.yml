@@ -14,6 +14,8 @@ jobs:
         run: dotnet build -c Release src/Ehelply.Sdk/Ehelply.Sdk.csproj
       - name: Pack
         run: dotnet pack --no-build -c Release src/Ehelply.Sdk/Ehelply.Sdk.csproj -o .
+      - name: Sleep for 5 seconds
+        run: sleep 5s
       - name: Push
         run: dotnet nuget push *.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}} --skip-duplicate -n 1
       # - name: publish on version change
