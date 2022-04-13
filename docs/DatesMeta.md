@@ -5,8 +5,8 @@ Date based meta
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | **string** |  | [optional] [default to "2022-01-23T16:09:38.663096"]
-**UpdatedAt** | **string** |  | [optional] [default to "2022-01-23T16:09:38.663096"]
+**CreatedAt** | **string** |  | [optional] [default to "2022-04-13T20:59:36.529142"]
+**UpdatedAt** | **string** |  | [optional] [default to "2022-04-13T20:59:36.529142"]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
