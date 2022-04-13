@@ -4,11 +4,11 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateCategoryCategoriesPost**](CategoryApi.md#createcategorycategoriespost) | **POST** /places/categories | Create Category
-[**DeleteCategoryCategoriesCategoryUuidDelete**](CategoryApi.md#deletecategorycategoriescategoryuuiddelete) | **DELETE** /places/categories/{category_uuid} | Delete Category
-[**GetCategoryCategoriesCategoryUuidGet**](CategoryApi.md#getcategorycategoriescategoryuuidget) | **GET** /places/categories/{category_uuid} | Get Category
-[**SearchCategoriesCategoriesGet**](CategoryApi.md#searchcategoriescategoriesget) | **GET** /places/categories | Search Categories
-[**UpdateCategoryCategoriesCategoryUuidPut**](CategoryApi.md#updatecategorycategoriescategoryuuidput) | **PUT** /places/categories/{category_uuid} | Update Category
+[**CreateCategoryCategoriesPost**](CategoryApi.md#createcategorycategoriespost) | **POST** /categories | Create Category
+[**DeleteCategoryCategoriesCategoryUuidDelete**](CategoryApi.md#deletecategorycategoriescategoryuuiddelete) | **DELETE** /categories/{category_uuid} | Delete Category
+[**GetCategoryCategoriesCategoryUuidGet**](CategoryApi.md#getcategorycategoriescategoryuuidget) | **GET** /categories/{category_uuid} | Get Category
+[**SearchCategoriesCategoriesGet**](CategoryApi.md#searchcategoriescategoriesget) | **GET** /categories | Search Categories
+[**UpdateCategoryCategoriesCategoryUuidPut**](CategoryApi.md#updatecategorycategoriescategoryuuidput) | **PUT** /categories/{category_uuid} | Update Category
 
 
 <a name="createcategorycategoriespost"></a>

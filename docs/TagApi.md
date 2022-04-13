@@ -4,11 +4,11 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateTagTagsPost**](TagApi.md#createtagtagspost) | **POST** /places/tags | Create Tag
-[**DeleteTagTagsTagUuidDelete**](TagApi.md#deletetagtagstaguuiddelete) | **DELETE** /places/tags/{tag_uuid} | Delete Tag
-[**GetTagTagsTagUuidGet**](TagApi.md#gettagtagstaguuidget) | **GET** /places/tags/{tag_uuid} | Get Tag
-[**SearchTagsTagsGet**](TagApi.md#searchtagstagsget) | **GET** /places/tags | Search Tags
-[**UpdateTagTagsTagUuidPut**](TagApi.md#updatetagtagstaguuidput) | **PUT** /places/tags/{tag_uuid} | Update Tag
+[**CreateTagTagsPost**](TagApi.md#createtagtagspost) | **POST** /tags | Create Tag
+[**DeleteTagTagsTagUuidDelete**](TagApi.md#deletetagtagstaguuiddelete) | **DELETE** /tags/{tag_uuid} | Delete Tag
+[**GetTagTagsTagUuidGet**](TagApi.md#gettagtagstaguuidget) | **GET** /tags/{tag_uuid} | Get Tag
+[**SearchTagsTagsGet**](TagApi.md#searchtagstagsget) | **GET** /tags | Search Tags
+[**UpdateTagTagsTagUuidPut**](TagApi.md#updatetagtagstaguuidput) | **PUT** /tags/{tag_uuid} | Update Tag
 
 
 <a name="createtagtagspost"></a>

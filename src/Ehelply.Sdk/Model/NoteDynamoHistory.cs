@@ -45,7 +45,7 @@ namespace Ehelply.Sdk.Model
         /// <param name="time">time (required).</param>
         /// <param name="meta">meta (required).</param>
         /// <param name="history">history.</param>
-        public NoteDynamoHistory(string uuid = default(string), AnyOffilestring content = default(AnyOffilestring), string time = default(string), NoteMeta meta = default(NoteMeta), List<NoteDynamo> history = default(List<NoteDynamo>))
+        public NoteDynamoHistory(string uuid = default(string), System.IO.Stream content = default(System.IO.Stream), string time = default(string), NoteMeta meta = default(NoteMeta), List<NoteDynamo> history = default(List<NoteDynamo>))
         {
             // to ensure "uuid" is required (not null)
             if (uuid == null) {
@@ -75,8 +75,8 @@ namespace Ehelply.Sdk.Model
         /// <summary>
         /// Gets or Sets Content
         /// </summary>
-        [DataMember(Name = "content", EmitDefaultValue = true)]
-        public AnyOffilestring Content { get; set; }
+        [DataMember(Name = "content", EmitDefaultValue = false)]
+        public System.IO.Stream Content { get; set; }
 
         /// <summary>
         /// Gets or Sets Time

@@ -976,7 +976,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<PlaceResponse>("/places/places", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<PlaceResponse>("/places", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1073,7 +1073,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<PlaceResponse>("/places/places", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<PlaceResponse>("/places", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1170,7 +1170,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/places/places/{place_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<Object>("/places/{place_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1272,7 +1272,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/places/places/{place_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/places/{place_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1363,7 +1363,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/places/places/forward_geocoding", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/places/forward_geocoding", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1459,7 +1459,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/places/places/forward_geocoding", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/places/forward_geocoding", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1604,7 +1604,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<PlaceResponse>("/places/places/{place_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<PlaceResponse>("/places/{place_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1754,7 +1754,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<PlaceResponse>("/places/places/{place_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<PlaceResponse>("/places/{place_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1844,7 +1844,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/places/places/reverse_geocoding", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/places/reverse_geocoding", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1939,7 +1939,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/places/places/reverse_geocoding", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/places/reverse_geocoding", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1987,7 +1987,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Page>("/places/places/search/location", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/places/search/location", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2040,7 +2040,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/places/search/location", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/search/location", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -2154,7 +2154,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Page>("/places/places/search", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/places/search", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2273,7 +2273,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/places/search", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/search", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -2513,7 +2513,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Page>("/places/places", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/places", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2758,7 +2758,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/places", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -2857,7 +2857,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<PlaceResponse>("/places/places/{place_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<PlaceResponse>("/places/{place_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2961,7 +2961,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PutAsync<PlaceResponse>("/places/places/{place_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<PlaceResponse>("/places/{place_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {

@@ -120,28 +120,28 @@ Class | Method | HTTP request | Description
 *BillingApi* | [**RemovePaymentMethodBillingRemovePaymentMethodDelete_0**](docs/BillingApi.md#removepaymentmethodbillingremovepaymentmethoddelete_0) | **DELETE** /sam/billing/remove_payment_method | Remove Payment Method
 *BillingApi* | [**ViewPaymentMethodBillingViewPaymentMethodGet**](docs/BillingApi.md#viewpaymentmethodbillingviewpaymentmethodget) | **GET** /sam/billing/view_payment_method | View Payment Method
 *BillingApi* | [**ViewPaymentMethodBillingViewPaymentMethodGet_0**](docs/BillingApi.md#viewpaymentmethodbillingviewpaymentmethodget_0) | **GET** /sam/billing/view_payment_method | View Payment Method
-*CategoryApi* | [**CreateCategoryCategoriesPost**](docs/CategoryApi.md#createcategorycategoriespost) | **POST** /places/categories | Create Category
-*CategoryApi* | [**DeleteCategoryCategoriesCategoryUuidDelete**](docs/CategoryApi.md#deletecategorycategoriescategoryuuiddelete) | **DELETE** /places/categories/{category_uuid} | Delete Category
-*CategoryApi* | [**GetCategoryCategoriesCategoryUuidGet**](docs/CategoryApi.md#getcategorycategoriescategoryuuidget) | **GET** /places/categories/{category_uuid} | Get Category
-*CategoryApi* | [**SearchCategoriesCategoriesGet**](docs/CategoryApi.md#searchcategoriescategoriesget) | **GET** /places/categories | Search Categories
-*CategoryApi* | [**UpdateCategoryCategoriesCategoryUuidPut**](docs/CategoryApi.md#updatecategorycategoriescategoryuuidput) | **PUT** /places/categories/{category_uuid} | Update Category
-*CompaniesApi* | [**CreateCompanyCompaniesPost**](docs/CompaniesApi.md#createcompanycompaniespost) | **POST** /places/companies | Create Company
-*CompaniesApi* | [**DeletePlaceCompaniesCompanyUuidDelete**](docs/CompaniesApi.md#deleteplacecompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Place
-*CompaniesApi* | [**GetCompanyCompaniesCompanyUuidGet**](docs/CompaniesApi.md#getcompanycompaniescompanyuuidget) | **GET** /places/companies/{company_uuid} | Get Company
-*CompaniesApi* | [**SearchCompaniesCompaniesGet**](docs/CompaniesApi.md#searchcompaniescompaniesget) | **GET** /places/companies | Search Companies
-*CompaniesApi* | [**UpdateCompanyCompaniesCompanyUuidPut**](docs/CompaniesApi.md#updatecompanycompaniescompanyuuidput) | **PUT** /places/companies/{company_uuid} | Update Company
+*CategoryApi* | [**CreateCategoryCategoriesPost**](docs/CategoryApi.md#createcategorycategoriespost) | **POST** /categories | Create Category
+*CategoryApi* | [**DeleteCategoryCategoriesCategoryUuidDelete**](docs/CategoryApi.md#deletecategorycategoriescategoryuuiddelete) | **DELETE** /categories/{category_uuid} | Delete Category
+*CategoryApi* | [**GetCategoryCategoriesCategoryUuidGet**](docs/CategoryApi.md#getcategorycategoriescategoryuuidget) | **GET** /categories/{category_uuid} | Get Category
+*CategoryApi* | [**SearchCategoriesCategoriesGet**](docs/CategoryApi.md#searchcategoriescategoriesget) | **GET** /categories | Search Categories
+*CategoryApi* | [**UpdateCategoryCategoriesCategoryUuidPut**](docs/CategoryApi.md#updatecategorycategoriescategoryuuidput) | **PUT** /categories/{category_uuid} | Update Category
+*CompaniesApi* | [**CreateCompanyCompaniesPost**](docs/CompaniesApi.md#createcompanycompaniespost) | **POST** /companies | Create Company
+*CompaniesApi* | [**DeletePlaceCompaniesCompanyUuidDelete**](docs/CompaniesApi.md#deleteplacecompaniescompanyuuiddelete) | **DELETE** /companies/{company_uuid} | Delete Place
+*CompaniesApi* | [**GetCompanyCompaniesCompanyUuidGet**](docs/CompaniesApi.md#getcompanycompaniescompanyuuidget) | **GET** /companies/{company_uuid} | Get Company
+*CompaniesApi* | [**SearchCompaniesCompaniesGet**](docs/CompaniesApi.md#searchcompaniescompaniesget) | **GET** /companies | Search Companies
+*CompaniesApi* | [**UpdateCompanyCompaniesCompanyUuidPut**](docs/CompaniesApi.md#updatecompanycompaniescompanyuuidput) | **PUT** /companies/{company_uuid} | Update Company
 *LoggingApi* | [**GetLogsLoggingLogsGet**](docs/LoggingApi.md#getlogslogginglogsget) | **GET** /sam/logging/logs | Get Logs
 *LoggingApi* | [**GetServiceLogsLoggingLogsServicesServiceGet**](docs/LoggingApi.md#getservicelogslogginglogsservicesserviceget) | **GET** /sam/logging/logs/services/{service} | Get Service Logs
 *LoggingApi* | [**GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGet**](docs/LoggingApi.md#getsubjectlogslogginglogsservicesservicesubjectssubjectget) | **GET** /sam/logging/logs/services/{service}/subjects/{subject} | Get Subject Logs
-*MetaApi* | [**DeleteMetaFromUuidMetaMetaMetaUuidDelete**](docs/MetaApi.md#deletemetafromuuidmetametametauuiddelete) | **DELETE** /meta/meta/meta/{meta_uuid} | Delete Meta From Uuid
-*MetaApi* | [**DeleteMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidDelete**](docs/MetaApi.md#deletemetametametaserviceservicetypetypeentityentityuuiddelete) | **DELETE** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Delete Meta
-*MetaApi* | [**GetMetaFromUuidMetaMetaMetaUuidGet**](docs/MetaApi.md#getmetafromuuidmetametametauuidget) | **GET** /meta/meta/meta/{meta_uuid} | Get Meta From Uuid
-*MetaApi* | [**GetMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidGet**](docs/MetaApi.md#getmetametametaserviceservicetypetypeentityentityuuidget) | **GET** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Get Meta
-*MetaApi* | [**MakeSlugMetaMetaSlugPost**](docs/MetaApi.md#makeslugmetametaslugpost) | **POST** /meta/meta/meta/slug | Make Slug
-*MetaApi* | [**PostMetaMetaMetaServiceServiceTypeTypeStrEntityEntityUuidPost**](docs/MetaApi.md#postmetametametaserviceservicetypetypestrentityentityuuidpost) | **POST** /meta/meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Post Meta
-*MetaApi* | [**TouchMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidTouchPost**](docs/MetaApi.md#touchmetametametaserviceservicetypetypeentityentityuuidtouchpost) | **POST** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch | Touch Meta
-*MetaApi* | [**UpdateMetaFromUuidMetaMetaMetaUuidPut**](docs/MetaApi.md#updatemetafromuuidmetametametauuidput) | **PUT** /meta/meta/meta/{meta_uuid} | Update Meta From Uuid
-*MetaApi* | [**UpdateMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidPut**](docs/MetaApi.md#updatemetametametaserviceservicetypetypeentityentityuuidput) | **PUT** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Update Meta
+*MetaApi* | [**DeleteMetaFromUuidMetaMetaMetaUuidDelete**](docs/MetaApi.md#deletemetafromuuidmetametametauuiddelete) | **DELETE** /meta/meta/{meta_uuid} | Delete Meta From Uuid
+*MetaApi* | [**DeleteMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidDelete**](docs/MetaApi.md#deletemetametametaserviceservicetypetypeentityentityuuiddelete) | **DELETE** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Delete Meta
+*MetaApi* | [**GetMetaFromUuidMetaMetaMetaUuidGet**](docs/MetaApi.md#getmetafromuuidmetametametauuidget) | **GET** /meta/meta/{meta_uuid} | Get Meta From Uuid
+*MetaApi* | [**GetMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidGet**](docs/MetaApi.md#getmetametametaserviceservicetypetypeentityentityuuidget) | **GET** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Get Meta
+*MetaApi* | [**MakeSlugMetaMetaSlugPost**](docs/MetaApi.md#makeslugmetametaslugpost) | **POST** /meta/meta/slug | Make Slug
+*MetaApi* | [**PostMetaMetaMetaServiceServiceTypeTypeStrEntityEntityUuidPost**](docs/MetaApi.md#postmetametametaserviceservicetypetypestrentityentityuuidpost) | **POST** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Post Meta
+*MetaApi* | [**TouchMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidTouchPost**](docs/MetaApi.md#touchmetametametaserviceservicetypetypeentityentityuuidtouchpost) | **POST** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch | Touch Meta
+*MetaApi* | [**UpdateMetaFromUuidMetaMetaMetaUuidPut**](docs/MetaApi.md#updatemetafromuuidmetametametauuidput) | **PUT** /meta/meta/{meta_uuid} | Update Meta From Uuid
+*MetaApi* | [**UpdateMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidPut**](docs/MetaApi.md#updatemetametametaserviceservicetypetypeentityentityuuidput) | **PUT** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Update Meta
 *MonitorApi* | [**AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost**](docs/MonitorApi.md#ackalarmmonitorservicesservicestagesstagealarmsalarmuuidacknowledgepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/acknowledge | Ack Alarm
 *MonitorApi* | [**AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost**](docs/MonitorApi.md#assignalarmmonitorservicesservicestagesstagealarmsalarmuuidassignpost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/assign | Assign Alarm
 *MonitorApi* | [**AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost**](docs/MonitorApi.md#attachalarmnotemonitorservicesservicestagesstagealarmsalarmuuidnotepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/note | Attach Alarm Note
@@ -164,19 +164,19 @@ Class | Method | HTTP request | Description
 *MonitorApi* | [**ShowServiceMonitorServicesServiceStagesStageShowPost**](docs/MonitorApi.md#showservicemonitorservicesservicestagesstageshowpost) | **POST** /sam/monitor/services/{service}/stages/{stage}/show | Show Service
 *MonitorApi* | [**TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost**](docs/MonitorApi.md#terminatealarmmonitorservicesservicestagesstagealarmsalarmuuidterminatepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/terminate | Terminate Alarm
 *MonitorApi* | [**TriggerAlarmMonitorServicesServiceStagesStageAlarmsPost**](docs/MonitorApi.md#triggeralarmmonitorservicesservicestagesstagealarmspost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms | Trigger Alarm
-*NotesApi* | [**CreateNote**](docs/NotesApi.md#createnote) | **POST** /notes/notes/notes | Create Note
-*NotesApi* | [**DeleteNote**](docs/NotesApi.md#deletenote) | **DELETE** /notes/notes/notes/{note_id} | Delete Note
-*NotesApi* | [**GetNote**](docs/NotesApi.md#getnote) | **GET** /notes/notes/notes/{note_id} | Get Note
-*NotesApi* | [**UpdateNote**](docs/NotesApi.md#updatenote) | **PUT** /notes/notes/notes/{note_id} | Update Note
-*PlacesApi* | [**CreatePlacePlacesPost**](docs/PlacesApi.md#createplaceplacespost) | **POST** /places/places | Create Place
-*PlacesApi* | [**DeletePlacePlacesPlaceUuidDelete**](docs/PlacesApi.md#deleteplaceplacesplaceuuiddelete) | **DELETE** /places/places/{place_uuid} | Delete Place
-*PlacesApi* | [**ForwardGeocodingPlacesForwardGeocodingGet**](docs/PlacesApi.md#forwardgeocodingplacesforwardgeocodingget) | **GET** /places/places/forward_geocoding | Forward Geocoding
-*PlacesApi* | [**GetPlacePlacesPlaceUuidGet**](docs/PlacesApi.md#getplaceplacesplaceuuidget) | **GET** /places/places/{place_uuid} | Get Place
-*PlacesApi* | [**ReverseGeocodingPlacesReverseGeocodingGet**](docs/PlacesApi.md#reversegeocodingplacesreversegeocodingget) | **GET** /places/places/reverse_geocoding | Reverse Geocoding
-*PlacesApi* | [**SearchPlacesByAreaPlacesSearchLocationGet**](docs/PlacesApi.md#searchplacesbyareaplacessearchlocationget) | **GET** /places/places/search/location | Search Places By Area
-*PlacesApi* | [**SearchPlacesBySearchStringPlacesSearchGet**](docs/PlacesApi.md#searchplacesbysearchstringplacessearchget) | **GET** /places/places/search | Search Places By Search String
-*PlacesApi* | [**SearchPlacesPlacesGet**](docs/PlacesApi.md#searchplacesplacesget) | **GET** /places/places | Search Places
-*PlacesApi* | [**UpdatePlacePlacesPlaceUuidPut**](docs/PlacesApi.md#updateplaceplacesplaceuuidput) | **PUT** /places/places/{place_uuid} | Update Place
+*NotesApi* | [**CreateNote**](docs/NotesApi.md#createnote) | **POST** /notes/notes | Create Note
+*NotesApi* | [**DeleteNote**](docs/NotesApi.md#deletenote) | **DELETE** /notes/notes/{note_id} | Delete Note
+*NotesApi* | [**GetNote**](docs/NotesApi.md#getnote) | **GET** /notes/notes/{note_id} | Get Note
+*NotesApi* | [**UpdateNote**](docs/NotesApi.md#updatenote) | **PUT** /notes/notes/{note_id} | Update Note
+*PlacesApi* | [**CreatePlacePlacesPost**](docs/PlacesApi.md#createplaceplacespost) | **POST** /places | Create Place
+*PlacesApi* | [**DeletePlacePlacesPlaceUuidDelete**](docs/PlacesApi.md#deleteplaceplacesplaceuuiddelete) | **DELETE** /places/{place_uuid} | Delete Place
+*PlacesApi* | [**ForwardGeocodingPlacesForwardGeocodingGet**](docs/PlacesApi.md#forwardgeocodingplacesforwardgeocodingget) | **GET** /places/forward_geocoding | Forward Geocoding
+*PlacesApi* | [**GetPlacePlacesPlaceUuidGet**](docs/PlacesApi.md#getplaceplacesplaceuuidget) | **GET** /places/{place_uuid} | Get Place
+*PlacesApi* | [**ReverseGeocodingPlacesReverseGeocodingGet**](docs/PlacesApi.md#reversegeocodingplacesreversegeocodingget) | **GET** /places/reverse_geocoding | Reverse Geocoding
+*PlacesApi* | [**SearchPlacesByAreaPlacesSearchLocationGet**](docs/PlacesApi.md#searchplacesbyareaplacessearchlocationget) | **GET** /places/search/location | Search Places By Area
+*PlacesApi* | [**SearchPlacesBySearchStringPlacesSearchGet**](docs/PlacesApi.md#searchplacesbysearchstringplacessearchget) | **GET** /places/search | Search Places By Search String
+*PlacesApi* | [**SearchPlacesPlacesGet**](docs/PlacesApi.md#searchplacesplacesget) | **GET** /places | Search Places
+*PlacesApi* | [**UpdatePlacePlacesPlaceUuidPut**](docs/PlacesApi.md#updateplaceplacesplaceuuidput) | **PUT** /places/{place_uuid} | Update Place
 *ProjectsApi* | [**AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost**](docs/ProjectsApi.md#addmembertoprojectprojectsprojectsprojectuuidmembersentityuuidpost) | **POST** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Add Member To Project
 *ProjectsApi* | [**ArchiveProjectProjectsProjectsProjectUuidDelete**](docs/ProjectsApi.md#archiveprojectprojectsprojectsprojectuuiddelete) | **DELETE** /sam/projects/projects/{project_uuid} | Archive Project
 *ProjectsApi* | [**CreateProjectKeyProjectsProjectsProjectUuidKeysPost**](docs/ProjectsApi.md#createprojectkeyprojectsprojectsprojectuuidkeyspost) | **POST** /sam/projects/projects/{project_uuid}/keys | Create Project Key
@@ -205,22 +205,22 @@ Class | Method | HTTP request | Description
 *SecurityApi* | [**GetKeySecurityKeysKeyUuidGet**](docs/SecurityApi.md#getkeysecuritykeyskeyuuidget) | **GET** /sam/security/keys/{key_uuid} | Get Key
 *SecurityApi* | [**SearchKeysSecurityKeysGet**](docs/SecurityApi.md#searchkeyssecuritykeysget) | **GET** /sam/security/keys | Search Keys
 *SecurityApi* | [**VerifyKeySecurityKeysVerifyPost**](docs/SecurityApi.md#verifykeysecuritykeysverifypost) | **POST** /sam/security/keys/verify | Verify Key
-*StaffApi* | [**CreateStaffStaffPost**](docs/StaffApi.md#createstaffstaffpost) | **POST** /places/staff | Create Staff
-*StaffApi* | [**DeleteStaffStaffStaffUuidDelete**](docs/StaffApi.md#deletestaffstaffstaffuuiddelete) | **DELETE** /places/staff/{staff_uuid} | Delete Staff
-*StaffApi* | [**GetStaffStaffStaffUuidGet**](docs/StaffApi.md#getstaffstaffstaffuuidget) | **GET** /places/staff/{staff_uuid} | Get Staff
-*StaffApi* | [**SearchStaffStaffGet**](docs/StaffApi.md#searchstaffstaffget) | **GET** /places/staff | Search Staff
-*StaffApi* | [**UpdateStaffStaffStaffUuidPut**](docs/StaffApi.md#updatestaffstaffstaffuuidput) | **PUT** /places/staff/{staff_uuid} | Update Staff
+*StaffApi* | [**CreateStaffStaffPost**](docs/StaffApi.md#createstaffstaffpost) | **POST** /staff | Create Staff
+*StaffApi* | [**DeleteStaffStaffStaffUuidDelete**](docs/StaffApi.md#deletestaffstaffstaffuuiddelete) | **DELETE** /staff/{staff_uuid} | Delete Staff
+*StaffApi* | [**GetStaffStaffStaffUuidGet**](docs/StaffApi.md#getstaffstaffstaffuuidget) | **GET** /staff/{staff_uuid} | Get Staff
+*StaffApi* | [**SearchStaffStaffGet**](docs/StaffApi.md#searchstaffstaffget) | **GET** /staff | Search Staff
+*StaffApi* | [**UpdateStaffStaffStaffUuidPut**](docs/StaffApi.md#updatestaffstaffstaffuuidput) | **PUT** /staff/{staff_uuid} | Update Staff
 *SupportApi* | [**CreateContactSupportContactPost**](docs/SupportApi.md#createcontactsupportcontactpost) | **POST** /sam/support/contact | Create Contact
 *SupportApi* | [**CreateTicketSupportProjectsProjectUuidMembersMemberUuidTicketsPost**](docs/SupportApi.md#createticketsupportprojectsprojectuuidmembersmemberuuidticketspost) | **POST** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets | Create Ticket
 *SupportApi* | [**DeleteContactSupportContactDelete**](docs/SupportApi.md#deletecontactsupportcontactdelete) | **DELETE** /sam/support/contact | Delete Contact
 *SupportApi* | [**ListTicketsSupportProjectsProjectUuidMembersMemberUuidTicketsGet**](docs/SupportApi.md#listticketssupportprojectsprojectuuidmembersmemberuuidticketsget) | **GET** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets | List Tickets
 *SupportApi* | [**UpdateTicketSupportProjectsProjectUuidMembersMemberUuidTicketsTicketIdPut**](docs/SupportApi.md#updateticketsupportprojectsprojectuuidmembersmemberuuidticketsticketidput) | **PUT** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets/{ticket_id} | Update Ticket
 *SupportApi* | [**ViewTicketSupportProjectsProjectUuidMembersMemberUuidTicketsTicketIdGet**](docs/SupportApi.md#viewticketsupportprojectsprojectuuidmembersmemberuuidticketsticketidget) | **GET** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets/{ticket_id} | View Ticket
-*TagApi* | [**CreateTagTagsPost**](docs/TagApi.md#createtagtagspost) | **POST** /places/tags | Create Tag
-*TagApi* | [**DeleteTagTagsTagUuidDelete**](docs/TagApi.md#deletetagtagstaguuiddelete) | **DELETE** /places/tags/{tag_uuid} | Delete Tag
-*TagApi* | [**GetTagTagsTagUuidGet**](docs/TagApi.md#gettagtagstaguuidget) | **GET** /places/tags/{tag_uuid} | Get Tag
-*TagApi* | [**SearchTagsTagsGet**](docs/TagApi.md#searchtagstagsget) | **GET** /places/tags | Search Tags
-*TagApi* | [**UpdateTagTagsTagUuidPut**](docs/TagApi.md#updatetagtagstaguuidput) | **PUT** /places/tags/{tag_uuid} | Update Tag
+*TagApi* | [**CreateTagTagsPost**](docs/TagApi.md#createtagtagspost) | **POST** /tags | Create Tag
+*TagApi* | [**DeleteTagTagsTagUuidDelete**](docs/TagApi.md#deletetagtagstaguuiddelete) | **DELETE** /tags/{tag_uuid} | Delete Tag
+*TagApi* | [**GetTagTagsTagUuidGet**](docs/TagApi.md#gettagtagstaguuidget) | **GET** /tags/{tag_uuid} | Get Tag
+*TagApi* | [**SearchTagsTagsGet**](docs/TagApi.md#searchtagstagsget) | **GET** /tags | Search Tags
+*TagApi* | [**UpdateTagTagsTagUuidPut**](docs/TagApi.md#updatetagtagstaguuidput) | **PUT** /tags/{tag_uuid} | Update Tag
 *UsersApi* | [**ConfirmSignup**](docs/UsersApi.md#confirmsignup) | **POST** /sam/users/auth/signup/confirm | Confirmsignup
 *UsersApi* | [**CreateParticipant**](docs/UsersApi.md#createparticipant) | **POST** /sam/users/participants | Createparticipant
 *UsersApi* | [**CreateUser**](docs/UsersApi.md#createuser) | **POST** /sam/users | Createuser

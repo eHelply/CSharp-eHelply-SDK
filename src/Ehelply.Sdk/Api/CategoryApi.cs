@@ -609,7 +609,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<CategoryDb>("/places/categories", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<CategoryDb>("/categories", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -706,7 +706,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<CategoryDb>("/places/categories", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<CategoryDb>("/categories", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -797,7 +797,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/places/categories/{category_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<Object>("/categories/{category_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -893,7 +893,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/places/categories/{category_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/categories/{category_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -990,7 +990,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<CategoryBase>("/places/categories/{category_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<CategoryBase>("/categories/{category_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1092,7 +1092,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<CategoryBase>("/places/categories/{category_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<CategoryBase>("/categories/{category_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1218,7 +1218,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Page>("/places/categories", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/categories", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1349,7 +1349,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/categories", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/categories", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1448,7 +1448,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<CategoryBase>("/places/categories/{category_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<CategoryBase>("/categories/{category_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1552,7 +1552,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PutAsync<CategoryBase>("/places/categories/{category_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<CategoryBase>("/categories/{category_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {

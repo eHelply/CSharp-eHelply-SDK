@@ -881,7 +881,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/meta/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<Object>("/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -977,7 +977,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/meta/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1082,7 +1082,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<Object>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1192,7 +1192,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1307,7 +1307,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/meta/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1427,7 +1427,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/meta/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1556,7 +1556,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1690,7 +1690,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1746,7 +1746,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<Object>("/meta/meta/meta/slug", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<Object>("/meta/meta/slug", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1807,7 +1807,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/meta/meta/meta/slug", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/meta/meta/slug", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1920,7 +1920,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<MetaDynamo>("/meta/meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<MetaDynamo>("/meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2038,7 +2038,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<MetaDynamo>("/meta/meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<MetaDynamo>("/meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -2143,7 +2143,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<MetaDynamo>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<MetaDynamo>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2253,7 +2253,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<MetaDynamo>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<MetaDynamo>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -2352,7 +2352,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<MetaDynamo>("/meta/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<MetaDynamo>("/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2456,7 +2456,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PutAsync<MetaDynamo>("/meta/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<MetaDynamo>("/meta/meta/{meta_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -2569,7 +2569,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<MetaDynamo>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<MetaDynamo>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -2687,7 +2687,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PutAsync<MetaDynamo>("/meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<MetaDynamo>("/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {

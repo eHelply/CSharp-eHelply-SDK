@@ -657,7 +657,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<StaffDb>("/places/staff", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<StaffDb>("/staff", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -754,7 +754,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<StaffDb>("/places/staff", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<StaffDb>("/staff", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -851,7 +851,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/places/staff/{staff_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<Object>("/staff/{staff_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -953,7 +953,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/places/staff/{staff_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/staff/{staff_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1074,7 +1074,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<StaffResponse>("/places/staff/{staff_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<StaffResponse>("/staff/{staff_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1200,7 +1200,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<StaffResponse>("/places/staff/{staff_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<StaffResponse>("/staff/{staff_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1368,7 +1368,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Page>("/places/staff", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/staff", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1541,7 +1541,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/staff", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/staff", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1640,7 +1640,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<StaffResponse>("/places/staff/{staff_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<StaffResponse>("/staff/{staff_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1744,7 +1744,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PutAsync<StaffResponse>("/places/staff/{staff_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<StaffResponse>("/staff/{staff_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {

@@ -4,11 +4,11 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateStaffStaffPost**](StaffApi.md#createstaffstaffpost) | **POST** /places/staff | Create Staff
-[**DeleteStaffStaffStaffUuidDelete**](StaffApi.md#deletestaffstaffstaffuuiddelete) | **DELETE** /places/staff/{staff_uuid} | Delete Staff
-[**GetStaffStaffStaffUuidGet**](StaffApi.md#getstaffstaffstaffuuidget) | **GET** /places/staff/{staff_uuid} | Get Staff
-[**SearchStaffStaffGet**](StaffApi.md#searchstaffstaffget) | **GET** /places/staff | Search Staff
-[**UpdateStaffStaffStaffUuidPut**](StaffApi.md#updatestaffstaffstaffuuidput) | **PUT** /places/staff/{staff_uuid} | Update Staff
+[**CreateStaffStaffPost**](StaffApi.md#createstaffstaffpost) | **POST** /staff | Create Staff
+[**DeleteStaffStaffStaffUuidDelete**](StaffApi.md#deletestaffstaffstaffuuiddelete) | **DELETE** /staff/{staff_uuid} | Delete Staff
+[**GetStaffStaffStaffUuidGet**](StaffApi.md#getstaffstaffstaffuuidget) | **GET** /staff/{staff_uuid} | Get Staff
+[**SearchStaffStaffGet**](StaffApi.md#searchstaffstaffget) | **GET** /staff | Search Staff
+[**UpdateStaffStaffStaffUuidPut**](StaffApi.md#updatestaffstaffstaffuuidput) | **PUT** /staff/{staff_uuid} | Update Staff
 
 
 <a name="createstaffstaffpost"></a>

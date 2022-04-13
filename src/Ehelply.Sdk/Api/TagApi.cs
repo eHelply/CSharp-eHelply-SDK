@@ -601,7 +601,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<TagDb>("/places/tags", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<TagDb>("/tags", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -698,7 +698,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<TagDb>("/places/tags", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<TagDb>("/tags", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -789,7 +789,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Delete<Object>("/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -885,7 +885,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -976,7 +976,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<TagBase>("/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1072,7 +1072,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<TagBase>("/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1192,7 +1192,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Page>("/places/tags", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/tags", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1317,7 +1317,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/tags", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/tags", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
@@ -1416,7 +1416,7 @@ namespace Ehelply.Sdk.Api
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<TagBase>("/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1520,7 +1520,7 @@ namespace Ehelply.Sdk.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PutAsync<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<TagBase>("/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {

@@ -6,7 +6,7 @@ A note from DynamoDB
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Uuid** | **string** |  | 
-**Content** | [**AnyOffilestring**](AnyOffilestring.md) |  | [optional] 
+**Content** | **System.IO.Stream** |  | [optional] 
 **Time** | **string** |  | 
 **Meta** | [**NoteMeta**](NoteMeta.md) |  | 
 

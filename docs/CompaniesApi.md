@@ -4,11 +4,11 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateCompanyCompaniesPost**](CompaniesApi.md#createcompanycompaniespost) | **POST** /places/companies | Create Company
-[**DeletePlaceCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplacecompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Place
-[**GetCompanyCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanycompaniescompanyuuidget) | **GET** /places/companies/{company_uuid} | Get Company
-[**SearchCompaniesCompaniesGet**](CompaniesApi.md#searchcompaniescompaniesget) | **GET** /places/companies | Search Companies
-[**UpdateCompanyCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanycompaniescompanyuuidput) | **PUT** /places/companies/{company_uuid} | Update Company
+[**CreateCompanyCompaniesPost**](CompaniesApi.md#createcompanycompaniespost) | **POST** /companies | Create Company
+[**DeletePlaceCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplacecompaniescompanyuuiddelete) | **DELETE** /companies/{company_uuid} | Delete Place
+[**GetCompanyCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanycompaniescompanyuuidget) | **GET** /companies/{company_uuid} | Get Company
+[**SearchCompaniesCompaniesGet**](CompaniesApi.md#searchcompaniescompaniesget) | **GET** /companies | Search Companies
+[**UpdateCompanyCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanycompaniescompanyuuidput) | **PUT** /companies/{company_uuid} | Update Company
 
 
 <a name="createcompanycompaniespost"></a>
