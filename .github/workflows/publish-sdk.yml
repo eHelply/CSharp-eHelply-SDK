@@ -58,8 +58,8 @@ jobs:
           SLACK_USERNAME: 'GitHub SDK Bot'
           SLACK_ICON: "https://assets.ehelply.com/logo/ehelply/base/symbol_green_white.png"
           SLACK_FOOTER: ""
-          SLACK_TITLE: 'JS/TS SDK Publish FAILED'
-          SLACK_MESSAGE: 'Failed to publish the JS/TS SDK to NPM'
+          SLACK_TITLE: 'CSharp SDK Publish FAILED'
+          SLACK_MESSAGE: 'Failed to publish the CSharp SDK to Nuget'
       - name: Slack Success Notification
         if: always() && needs.build.result == 'success'
         uses: rtCamp/action-slack-notify@v2
@@ -69,5 +69,5 @@ jobs:
           SLACK_USERNAME: 'GitHub SDK Bot'
           SLACK_ICON: "https://assets.ehelply.com/logo/ehelply/base/symbol_green_white.png"
           SLACK_FOOTER: ""
-          SLACK_TITLE: 'JS/TS SDK Publish SUCCESS'
-          SLACK_MESSAGE: 'JS/TS SDK pushed to NPM successfully'
+          SLACK_TITLE: 'CSharp SDK Publish SUCCESS'
+          SLACK_MESSAGE: 'CSharp SDK pushed to Nuget successfully'
