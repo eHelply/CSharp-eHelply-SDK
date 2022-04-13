@@ -15,7 +15,7 @@ jobs:
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: Ehelply.Sdk/Ehelply.Sdk.csproj
+          PROJECT_FILE_PATH: src/Ehelply.Sdk/Ehelply.Sdk.csproj
           
           # NuGet package id, used for version detection & defaults to project name
           # PACKAGE_NAME: Ehelply.Sdk
