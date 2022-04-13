@@ -4,15 +4,15 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteMetaFromUuidMetaMetaMetaUuidDelete**](MetaApi.md#deletemetafromuuidmetametametauuiddelete) | **DELETE** /meta/meta/meta/{meta_uuid} | Delete Meta From Uuid
-[**DeleteMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidDelete**](MetaApi.md#deletemetametametaserviceservicetypetypeentityentityuuiddelete) | **DELETE** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Delete Meta
-[**GetMetaFromUuidMetaMetaMetaUuidGet**](MetaApi.md#getmetafromuuidmetametametauuidget) | **GET** /meta/meta/meta/{meta_uuid} | Get Meta From Uuid
-[**GetMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidGet**](MetaApi.md#getmetametametaserviceservicetypetypeentityentityuuidget) | **GET** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Get Meta
-[**MakeSlugMetaMetaSlugPost**](MetaApi.md#makeslugmetametaslugpost) | **POST** /meta/meta/meta/slug | Make Slug
-[**PostMetaMetaMetaServiceServiceTypeTypeStrEntityEntityUuidPost**](MetaApi.md#postmetametametaserviceservicetypetypestrentityentityuuidpost) | **POST** /meta/meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Post Meta
-[**TouchMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidTouchPost**](MetaApi.md#touchmetametametaserviceservicetypetypeentityentityuuidtouchpost) | **POST** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch | Touch Meta
-[**UpdateMetaFromUuidMetaMetaMetaUuidPut**](MetaApi.md#updatemetafromuuidmetametametauuidput) | **PUT** /meta/meta/meta/{meta_uuid} | Update Meta From Uuid
-[**UpdateMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidPut**](MetaApi.md#updatemetametametaserviceservicetypetypeentityentityuuidput) | **PUT** /meta/meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Update Meta
+[**DeleteMetaFromUuidMetaMetaMetaUuidDelete**](MetaApi.md#deletemetafromuuidmetametametauuiddelete) | **DELETE** /meta/meta/{meta_uuid} | Delete Meta From Uuid
+[**DeleteMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidDelete**](MetaApi.md#deletemetametametaserviceservicetypetypeentityentityuuiddelete) | **DELETE** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Delete Meta
+[**GetMetaFromUuidMetaMetaMetaUuidGet**](MetaApi.md#getmetafromuuidmetametametauuidget) | **GET** /meta/meta/{meta_uuid} | Get Meta From Uuid
+[**GetMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidGet**](MetaApi.md#getmetametametaserviceservicetypetypeentityentityuuidget) | **GET** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Get Meta
+[**MakeSlugMetaMetaSlugPost**](MetaApi.md#makeslugmetametaslugpost) | **POST** /meta/meta/slug | Make Slug
+[**PostMetaMetaMetaServiceServiceTypeTypeStrEntityEntityUuidPost**](MetaApi.md#postmetametametaserviceservicetypetypestrentityentityuuidpost) | **POST** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Post Meta
+[**TouchMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidTouchPost**](MetaApi.md#touchmetametametaserviceservicetypetypeentityentityuuidtouchpost) | **POST** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch | Touch Meta
+[**UpdateMetaFromUuidMetaMetaMetaUuidPut**](MetaApi.md#updatemetafromuuidmetametametauuidput) | **PUT** /meta/meta/{meta_uuid} | Update Meta From Uuid
+[**UpdateMetaMetaMetaServiceServiceTypeTypeEntityEntityUuidPut**](MetaApi.md#updatemetametametaserviceservicetypetypeentityentityuuidput) | **PUT** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Update Meta
 
 
 <a name="deletemetafromuuidmetametametauuiddelete"></a>
