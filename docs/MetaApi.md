@@ -7,15 +7,15 @@ Method | HTTP request | Description
 [**CreateField**](MetaApi.md#createfield) | **POST** /meta/field | Create Field
 [**CreateMeta**](MetaApi.md#createmeta) | **POST** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Create Meta
 [**DeleteField**](MetaApi.md#deletefield) | **DELETE** /meta/field/{field_uuid} | Delete Field
-[**DeleteMeta**](MetaApi.md#deletemeta) | **DELETE** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Delete Meta
+[**DeleteMeta**](MetaApi.md#deletemeta) | **DELETE** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Delete Meta
 [**DeleteMetaFromUuid**](MetaApi.md#deletemetafromuuid) | **DELETE** /meta/meta/{meta_uuid} | Delete Meta From Uuid
 [**GetField**](MetaApi.md#getfield) | **GET** /meta/field/{field_uuid} | Get Field
-[**GetMeta**](MetaApi.md#getmeta) | **GET** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Get Meta
+[**GetMeta**](MetaApi.md#getmeta) | **GET** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Get Meta
 [**GetMetaFromUuid**](MetaApi.md#getmetafromuuid) | **GET** /meta/meta/{meta_uuid} | Get Meta From Uuid
 [**MakeSlug**](MetaApi.md#makeslug) | **POST** /meta/meta/slug | Make Slug
-[**TouchMeta**](MetaApi.md#touchmeta) | **POST** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid}/touch | Touch Meta
+[**TouchMeta**](MetaApi.md#touchmeta) | **POST** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid}/touch | Touch Meta
 [**UpdateField**](MetaApi.md#updatefield) | **PUT** /meta/field/{field_uuid} | Update Field
-[**UpdateMeta**](MetaApi.md#updatemeta) | **PUT** /meta/meta/service/{service}/type/{type}/entity/{entity_uuid} | Update Meta
+[**UpdateMeta**](MetaApi.md#updatemeta) | **PUT** /meta/meta/service/{service}/type/{type_str}/entity/{entity_uuid} | Update Meta
 [**UpdateMetaFromUuid**](MetaApi.md#updatemetafromuuid) | **PUT** /meta/meta/{meta_uuid} | Update Meta From Uuid
 
 
@@ -278,7 +278,7 @@ No authorization required
 
 <a name="deletemeta"></a>
 # **DeleteMeta**
-> Object DeleteMeta (string service, string type, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> Object DeleteMeta (string service, string typeStr, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Meta
 
@@ -300,7 +300,7 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MetaApi(config);
             var service = service_example;  // string | 
-            var type = type_example;  // string | 
+            var typeStr = typeStr_example;  // string | 
             var entityUuid = entityUuid_example;  // string | 
             var xAccessToken = xAccessToken_example;  // string |  (optional) 
             var xSecretToken = xSecretToken_example;  // string |  (optional) 
@@ -312,7 +312,7 @@ namespace Example
             try
             {
                 // Delete Meta
-                Object result = apiInstance.DeleteMeta(service, type, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.DeleteMeta(service, typeStr, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -331,7 +331,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service** | **string**|  | 
- **type** | **string**|  | 
+ **typeStr** | **string**|  | 
  **entityUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
@@ -531,7 +531,7 @@ No authorization required
 
 <a name="getmeta"></a>
 # **GetMeta**
-> MetaDynamo GetMeta (string service, string type, string entityUuid, bool? detailed = null, bool? custom = null, bool? dates = null, int? history = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> MetaDynamo GetMeta (string service, string typeStr, string entityUuid, bool? detailed = null, bool? custom = null, bool? dates = null, int? history = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Meta
 
@@ -553,7 +553,7 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MetaApi(config);
             var service = service_example;  // string | 
-            var type = type_example;  // string | 
+            var typeStr = typeStr_example;  // string | 
             var entityUuid = entityUuid_example;  // string | 
             var detailed = true;  // bool? |  (optional)  (default to false)
             var custom = true;  // bool? |  (optional)  (default to false)
@@ -569,7 +569,7 @@ namespace Example
             try
             {
                 // Get Meta
-                MetaDynamo result = apiInstance.GetMeta(service, type, entityUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                MetaDynamo result = apiInstance.GetMeta(service, typeStr, entityUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -588,7 +588,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service** | **string**|  | 
- **type** | **string**|  | 
+ **typeStr** | **string**|  | 
  **entityUuid** | **string**|  | 
  **detailed** | **bool?**|  | [optional] [default to false]
  **custom** | **bool?**|  | [optional] [default to false]
@@ -788,7 +788,7 @@ No authorization required
 
 <a name="touchmeta"></a>
 # **TouchMeta**
-> MetaDynamo TouchMeta (string service, string type, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> MetaDynamo TouchMeta (string service, string typeStr, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Touch Meta
 
@@ -810,7 +810,7 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MetaApi(config);
             var service = service_example;  // string | 
-            var type = type_example;  // string | 
+            var typeStr = typeStr_example;  // string | 
             var entityUuid = entityUuid_example;  // string | 
             var xAccessToken = xAccessToken_example;  // string |  (optional) 
             var xSecretToken = xSecretToken_example;  // string |  (optional) 
@@ -822,7 +822,7 @@ namespace Example
             try
             {
                 // Touch Meta
-                MetaDynamo result = apiInstance.TouchMeta(service, type, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                MetaDynamo result = apiInstance.TouchMeta(service, typeStr, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -841,7 +841,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service** | **string**|  | 
- **type** | **string**|  | 
+ **typeStr** | **string**|  | 
  **entityUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
@@ -960,7 +960,7 @@ No authorization required
 
 <a name="updatemeta"></a>
 # **UpdateMeta**
-> MetaDynamo UpdateMeta (string service, string type, string entityUuid, MetaCreate metaCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> MetaDynamo UpdateMeta (string service, string typeStr, string entityUuid, MetaCreate metaCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Meta
 
@@ -982,7 +982,7 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MetaApi(config);
             var service = service_example;  // string | 
-            var type = type_example;  // string | 
+            var typeStr = typeStr_example;  // string | 
             var entityUuid = entityUuid_example;  // string | 
             var metaCreate = new MetaCreate(); // MetaCreate | 
             var xAccessToken = xAccessToken_example;  // string |  (optional) 
@@ -995,7 +995,7 @@ namespace Example
             try
             {
                 // Update Meta
-                MetaDynamo result = apiInstance.UpdateMeta(service, type, entityUuid, metaCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                MetaDynamo result = apiInstance.UpdateMeta(service, typeStr, entityUuid, metaCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -1014,7 +1014,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service** | **string**|  | 
- **type** | **string**|  | 
+ **typeStr** | **string**|  | 
  **entityUuid** | **string**|  | 
  **metaCreate** | [**MetaCreate**](MetaCreate.md)|  | 
  **xAccessToken** | **string**|  | [optional] 
