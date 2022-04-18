@@ -9,6 +9,9 @@ Name | Type | Description | Notes
 **Detailed** | [**DetailedMeta**](DetailedMeta.md) |  | [optional] 
 **Custom** | **Object** |  | [optional] 
 **Dates** | [**DatesMeta**](DatesMeta.md) |  | [optional] 
+**Fields** | [**List&lt;Field&gt;**](Field.md) |  | [optional] 
+**Children** | **List&lt;Object&gt;** |  | [optional] 
+**ParentUuid** | **string** |  | [optional] 
 **Uuid** | **string** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
