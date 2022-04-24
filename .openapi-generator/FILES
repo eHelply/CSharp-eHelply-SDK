@@ -31,6 +31,8 @@ docs/BodyRegisterServiceMonitorServicesPost.md
 docs/BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost.md
 docs/BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost.md
 docs/BodyVerifyKeySecurityKeysVerifyPost.md
+docs/CatalogBase.md
+docs/CatalogReturn.md
 docs/CategoryApi.md
 docs/CategoryBase.md
 docs/CategoryDb.md
@@ -41,6 +43,7 @@ docs/Contact.md
 docs/ContactBase.md
 docs/ContactResponse.md
 docs/CreateKeyResponse.md
+docs/CreateReview.md
 docs/CreateTicket.md
 docs/DatesMeta.md
 docs/DefaultApi.md
@@ -70,6 +73,10 @@ docs/PaymentMethodResponse.md
 docs/PlaceBase.md
 docs/PlaceResponse.md
 docs/PlacesApi.md
+docs/ProductBase.md
+docs/ProductReturn.md
+docs/ProductsHTTPValidationError.md
+docs/ProductsValidationError.md
 docs/ProjectsApi.md
 docs/ProjectsProjectCreate.md
 docs/ProjectsProjectGet.md
@@ -99,6 +106,7 @@ docs/TagBase.md
 docs/TagDb.md
 docs/TicketResponse.md
 docs/TicketsResponse.md
+docs/UpdateReview.md
 docs/User.md
 docs/UserConfirmation.md
 docs/UserEmail.md
@@ -158,6 +166,8 @@ src/Ehelply.Sdk.Test/Model/BodyRegisterServiceMonitorServicesPostTests.cs
 src/Ehelply.Sdk.Test/Model/BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePostTests.cs
 src/Ehelply.Sdk.Test/Model/BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPostTests.cs
 src/Ehelply.Sdk.Test/Model/BodyVerifyKeySecurityKeysVerifyPostTests.cs
+src/Ehelply.Sdk.Test/Model/CatalogBaseTests.cs
+src/Ehelply.Sdk.Test/Model/CatalogReturnTests.cs
 src/Ehelply.Sdk.Test/Model/CategoryBaseTests.cs
 src/Ehelply.Sdk.Test/Model/CategoryDbTests.cs
 src/Ehelply.Sdk.Test/Model/CompanyBaseTests.cs
@@ -166,6 +176,7 @@ src/Ehelply.Sdk.Test/Model/ContactBaseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
+src/Ehelply.Sdk.Test/Model/CreateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
 src/Ehelply.Sdk.Test/Model/DatesMetaTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaCreateTests.cs
@@ -189,6 +200,10 @@ src/Ehelply.Sdk.Test/Model/PaymentMethodResponseTests.cs
 src/Ehelply.Sdk.Test/Model/PaymentTests.cs
 src/Ehelply.Sdk.Test/Model/PlaceBaseTests.cs
 src/Ehelply.Sdk.Test/Model/PlaceResponseTests.cs
+src/Ehelply.Sdk.Test/Model/ProductBaseTests.cs
+src/Ehelply.Sdk.Test/Model/ProductReturnTests.cs
+src/Ehelply.Sdk.Test/Model/ProductsHTTPValidationErrorTests.cs
+src/Ehelply.Sdk.Test/Model/ProductsValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectsProjectCreateTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectsProjectGetTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectsProjectMemberDBTests.cs
@@ -213,6 +228,7 @@ src/Ehelply.Sdk.Test/Model/TagBaseTests.cs
 src/Ehelply.Sdk.Test/Model/TagDbTests.cs
 src/Ehelply.Sdk.Test/Model/TicketResponseTests.cs
 src/Ehelply.Sdk.Test/Model/TicketsResponseTests.cs
+src/Ehelply.Sdk.Test/Model/UpdateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/UserConfirmationTests.cs
 src/Ehelply.Sdk.Test/Model/UserEmailTests.cs
 src/Ehelply.Sdk.Test/Model/UserFlagsTests.cs
@@ -287,6 +303,8 @@ src/Ehelply.Sdk/Model/BodyRegisterServiceMonitorServicesPost.cs
 src/Ehelply.Sdk/Model/BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost.cs
 src/Ehelply.Sdk/Model/BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost.cs
 src/Ehelply.Sdk/Model/BodyVerifyKeySecurityKeysVerifyPost.cs
+src/Ehelply.Sdk/Model/CatalogBase.cs
+src/Ehelply.Sdk/Model/CatalogReturn.cs
 src/Ehelply.Sdk/Model/CategoryBase.cs
 src/Ehelply.Sdk/Model/CategoryDb.cs
 src/Ehelply.Sdk/Model/CompanyBase.cs
@@ -295,6 +313,7 @@ src/Ehelply.Sdk/Model/Contact.cs
 src/Ehelply.Sdk/Model/ContactBase.cs
 src/Ehelply.Sdk/Model/ContactResponse.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
+src/Ehelply.Sdk/Model/CreateReview.cs
 src/Ehelply.Sdk/Model/CreateTicket.cs
 src/Ehelply.Sdk/Model/DatesMeta.cs
 src/Ehelply.Sdk/Model/DetailedMeta.cs
@@ -318,6 +337,10 @@ src/Ehelply.Sdk/Model/Payment.cs
 src/Ehelply.Sdk/Model/PaymentMethodResponse.cs
 src/Ehelply.Sdk/Model/PlaceBase.cs
 src/Ehelply.Sdk/Model/PlaceResponse.cs
+src/Ehelply.Sdk/Model/ProductBase.cs
+src/Ehelply.Sdk/Model/ProductReturn.cs
+src/Ehelply.Sdk/Model/ProductsHTTPValidationError.cs
+src/Ehelply.Sdk/Model/ProductsValidationError.cs
 src/Ehelply.Sdk/Model/ProjectsProjectCreate.cs
 src/Ehelply.Sdk/Model/ProjectsProjectGet.cs
 src/Ehelply.Sdk/Model/ProjectsProjectMemberDB.cs
@@ -342,6 +365,7 @@ src/Ehelply.Sdk/Model/TagBase.cs
 src/Ehelply.Sdk/Model/TagDb.cs
 src/Ehelply.Sdk/Model/TicketResponse.cs
 src/Ehelply.Sdk/Model/TicketsResponse.cs
+src/Ehelply.Sdk/Model/UpdateReview.cs
 src/Ehelply.Sdk/Model/User.cs
 src/Ehelply.Sdk/Model/UserConfirmation.cs
 src/Ehelply.Sdk/Model/UserEmail.cs
