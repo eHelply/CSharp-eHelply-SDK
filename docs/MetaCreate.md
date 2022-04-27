@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Basic** | [**BasicMetaCreate**](BasicMetaCreate.md) |  | [optional] 
 **Detailed** | [**DetailedMetaCreate**](DetailedMetaCreate.md) |  | [optional] 
-**Custom** | **Object** |  | [optional] 
+**Custom** | **Dictionary&lt;string, string&gt;** |  | [optional] 
 **Fields** | [**List&lt;Field&gt;**](Field.md) |  | [optional] 
 **Children** | **List&lt;Dictionary&lt;string, string&gt;&gt;** |  | [optional] 
 **ParentUuid** | **string** |  | [optional] 

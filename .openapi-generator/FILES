@@ -57,6 +57,8 @@ docs/NoteDynamo.md
 docs/NoteDynamoHistory.md
 docs/NoteMeta.md
 docs/NotesApi.md
+docs/OptionGroup.md
+docs/Options.md
 docs/Page.md
 docs/Pagination.md
 docs/ParticipantCreate.md
@@ -85,6 +87,7 @@ docs/SecurityEncryptionKeyGet.md
 docs/SecurityKeyCreate.md
 docs/SecurityKeyGet.md
 docs/SecurityKeyVerify.md
+docs/Selection.md
 docs/ServiceCreate.md
 docs/StripeAccountResponse.md
 docs/SupportApi.md
@@ -166,6 +169,8 @@ src/Ehelply.Sdk.Test/Model/NoteBaseTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoHistoryTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/NoteMetaTests.cs
+src/Ehelply.Sdk.Test/Model/OptionGroupTests.cs
+src/Ehelply.Sdk.Test/Model/OptionsTests.cs
 src/Ehelply.Sdk.Test/Model/PageTests.cs
 src/Ehelply.Sdk.Test/Model/PaginationTests.cs
 src/Ehelply.Sdk.Test/Model/ParticipantCreateTests.cs
@@ -192,6 +197,7 @@ src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyGetTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityKeyCreateTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityKeyGetTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityKeyVerifyTests.cs
+src/Ehelply.Sdk.Test/Model/SelectionTests.cs
 src/Ehelply.Sdk.Test/Model/ServiceCreateTests.cs
 src/Ehelply.Sdk.Test/Model/StripeAccountResponseTests.cs
 src/Ehelply.Sdk.Test/Model/TicketResponseTests.cs
@@ -287,6 +293,8 @@ src/Ehelply.Sdk/Model/NoteBase.cs
 src/Ehelply.Sdk/Model/NoteDynamo.cs
 src/Ehelply.Sdk/Model/NoteDynamoHistory.cs
 src/Ehelply.Sdk/Model/NoteMeta.cs
+src/Ehelply.Sdk/Model/OptionGroup.cs
+src/Ehelply.Sdk/Model/Options.cs
 src/Ehelply.Sdk/Model/Page.cs
 src/Ehelply.Sdk/Model/Pagination.cs
 src/Ehelply.Sdk/Model/ParticipantCreate.cs
@@ -313,6 +321,7 @@ src/Ehelply.Sdk/Model/SecurityEncryptionKeyGet.cs
 src/Ehelply.Sdk/Model/SecurityKeyCreate.cs
 src/Ehelply.Sdk/Model/SecurityKeyGet.cs
 src/Ehelply.Sdk/Model/SecurityKeyVerify.cs
+src/Ehelply.Sdk/Model/Selection.cs
 src/Ehelply.Sdk/Model/ServiceCreate.cs
 src/Ehelply.Sdk/Model/StripeAccountResponse.cs
 src/Ehelply.Sdk/Model/TicketResponse.cs
