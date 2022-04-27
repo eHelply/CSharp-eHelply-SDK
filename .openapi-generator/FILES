@@ -48,7 +48,9 @@ docs/LoggingApi.md
 docs/MetaApi.md
 docs/MetaCreate.md
 docs/MetaDynamo.md
+docs/MetaHTTPValidationError.md
 docs/MetaSlugger.md
+docs/MetaValidationError.md
 docs/MonitorApi.md
 docs/NoteBase.md
 docs/NoteDynamo.md
@@ -157,7 +159,9 @@ src/Ehelply.Sdk.Test/Model/FieldTests.cs
 src/Ehelply.Sdk.Test/Model/HTTPValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/MetaCreateTests.cs
 src/Ehelply.Sdk.Test/Model/MetaDynamoTests.cs
+src/Ehelply.Sdk.Test/Model/MetaHTTPValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/MetaSluggerTests.cs
+src/Ehelply.Sdk.Test/Model/MetaValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/NoteBaseTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoHistoryTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoTests.cs
@@ -276,7 +280,9 @@ src/Ehelply.Sdk/Model/FieldDynamo.cs
 src/Ehelply.Sdk/Model/HTTPValidationError.cs
 src/Ehelply.Sdk/Model/MetaCreate.cs
 src/Ehelply.Sdk/Model/MetaDynamo.cs
+src/Ehelply.Sdk/Model/MetaHTTPValidationError.cs
 src/Ehelply.Sdk/Model/MetaSlugger.cs
+src/Ehelply.Sdk/Model/MetaValidationError.cs
 src/Ehelply.Sdk/Model/NoteBase.cs
 src/Ehelply.Sdk/Model/NoteDynamo.cs
 src/Ehelply.Sdk/Model/NoteDynamoHistory.cs
