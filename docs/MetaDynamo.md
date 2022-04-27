@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **Custom** | **Object** |  | [optional] 
 **Dates** | [**DatesMeta**](DatesMeta.md) |  | [optional] 
 **Fields** | [**List&lt;Field&gt;**](Field.md) |  | [optional] 
-**Children** | **List&lt;Object&gt;** |  | [optional] 
+**Children** | **List&lt;Dictionary&lt;string, string&gt;&gt;** |  | [optional] 
 **ParentUuid** | **string** |  | [optional] 
 **Uuid** | **string** |  | 
 
