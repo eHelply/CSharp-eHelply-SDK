@@ -5,14 +5,14 @@ Field Dynamo
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Type** | **Object** |  | [optional] 
+**Uuid** | **string** |  | 
+**Type** | **int** |  | [optional] 
 **Placeholder** | **string** |  | [optional] 
-**Validations** | **Object** |  | [optional] 
+**Validations** | [**Validations**](Validations.md) |  | [optional] 
 **Hint** | **string** |  | [optional] 
 **Icon** | **string** |  | [optional] 
 **Label** | **string** |  | [optional] 
-**Options** | **Object** |  | [optional] 
-**Uuid** | **string** |  | 
+**Options** | [**Options**](Options.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

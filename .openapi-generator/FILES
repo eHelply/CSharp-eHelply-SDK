@@ -45,6 +45,7 @@ docs/ContactResponse.md
 docs/CreateKeyResponse.md
 docs/CreateReview.md
 docs/CreateTicket.md
+docs/CustomList.md
 docs/DatesMeta.md
 docs/DefaultApi.md
 docs/DetailedMeta.md
@@ -54,7 +55,9 @@ docs/FieldDynamo.md
 docs/HTTPValidationError.md
 docs/LoggingApi.md
 docs/MetaApi.md
+docs/MetaChildren.md
 docs/MetaCreate.md
+docs/MetaCustom.md
 docs/MetaDynamo.md
 docs/MetaHTTPValidationError.md
 docs/MetaSlugger.md
@@ -65,6 +68,8 @@ docs/NoteDynamo.md
 docs/NoteDynamoHistory.md
 docs/NoteMeta.md
 docs/NotesApi.md
+docs/OptionGroup.md
+docs/Options.md
 docs/Page.md
 docs/Pagination.md
 docs/ParticipantCreate.md
@@ -96,6 +101,7 @@ docs/SecurityEncryptionKeyGet.md
 docs/SecurityKeyCreate.md
 docs/SecurityKeyGet.md
 docs/SecurityKeyVerify.md
+docs/Selection.md
 docs/ServiceCreate.md
 docs/StaffApi.md
 docs/StaffCreate.md
@@ -124,6 +130,7 @@ docs/UserTokenReturn.md
 docs/UserValidations.md
 docs/UsersApi.md
 docs/ValidationError.md
+docs/Validations.md
 git_push.sh
 src/Ehelply.Sdk.Test/Api/AuthApiTests.cs
 src/Ehelply.Sdk.Test/Api/BillingApiTests.cs
@@ -180,13 +187,16 @@ src/Ehelply.Sdk.Test/Model/ContactTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
+src/Ehelply.Sdk.Test/Model/CustomListTests.cs
 src/Ehelply.Sdk.Test/Model/DatesMetaTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaCreateTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaTests.cs
 src/Ehelply.Sdk.Test/Model/FieldDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/FieldTests.cs
 src/Ehelply.Sdk.Test/Model/HTTPValidationErrorTests.cs
+src/Ehelply.Sdk.Test/Model/MetaChildrenTests.cs
 src/Ehelply.Sdk.Test/Model/MetaCreateTests.cs
+src/Ehelply.Sdk.Test/Model/MetaCustomTests.cs
 src/Ehelply.Sdk.Test/Model/MetaDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/MetaHTTPValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/MetaSluggerTests.cs
@@ -195,6 +205,8 @@ src/Ehelply.Sdk.Test/Model/NoteBaseTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoHistoryTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/NoteMetaTests.cs
+src/Ehelply.Sdk.Test/Model/OptionGroupTests.cs
+src/Ehelply.Sdk.Test/Model/OptionsTests.cs
 src/Ehelply.Sdk.Test/Model/PageTests.cs
 src/Ehelply.Sdk.Test/Model/PaginationTests.cs
 src/Ehelply.Sdk.Test/Model/ParticipantCreateTests.cs
@@ -223,6 +235,7 @@ src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyGetTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityKeyCreateTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityKeyGetTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityKeyVerifyTests.cs
+src/Ehelply.Sdk.Test/Model/SelectionTests.cs
 src/Ehelply.Sdk.Test/Model/ServiceCreateTests.cs
 src/Ehelply.Sdk.Test/Model/StaffCreateTests.cs
 src/Ehelply.Sdk.Test/Model/StaffDbTests.cs
@@ -247,6 +260,7 @@ src/Ehelply.Sdk.Test/Model/UserTests.cs
 src/Ehelply.Sdk.Test/Model/UserTokenReturnTests.cs
 src/Ehelply.Sdk.Test/Model/UserValidationsTests.cs
 src/Ehelply.Sdk.Test/Model/ValidationErrorTests.cs
+src/Ehelply.Sdk.Test/Model/ValidationsTests.cs
 src/Ehelply.Sdk/Api/AuthApi.cs
 src/Ehelply.Sdk/Api/BillingApi.cs
 src/Ehelply.Sdk/Api/CategoryApi.cs
@@ -319,13 +333,16 @@ src/Ehelply.Sdk/Model/ContactResponse.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
 src/Ehelply.Sdk/Model/CreateReview.cs
 src/Ehelply.Sdk/Model/CreateTicket.cs
+src/Ehelply.Sdk/Model/CustomList.cs
 src/Ehelply.Sdk/Model/DatesMeta.cs
 src/Ehelply.Sdk/Model/DetailedMeta.cs
 src/Ehelply.Sdk/Model/DetailedMetaCreate.cs
 src/Ehelply.Sdk/Model/Field.cs
 src/Ehelply.Sdk/Model/FieldDynamo.cs
 src/Ehelply.Sdk/Model/HTTPValidationError.cs
+src/Ehelply.Sdk/Model/MetaChildren.cs
 src/Ehelply.Sdk/Model/MetaCreate.cs
+src/Ehelply.Sdk/Model/MetaCustom.cs
 src/Ehelply.Sdk/Model/MetaDynamo.cs
 src/Ehelply.Sdk/Model/MetaHTTPValidationError.cs
 src/Ehelply.Sdk/Model/MetaSlugger.cs
@@ -334,6 +351,8 @@ src/Ehelply.Sdk/Model/NoteBase.cs
 src/Ehelply.Sdk/Model/NoteDynamo.cs
 src/Ehelply.Sdk/Model/NoteDynamoHistory.cs
 src/Ehelply.Sdk/Model/NoteMeta.cs
+src/Ehelply.Sdk/Model/OptionGroup.cs
+src/Ehelply.Sdk/Model/Options.cs
 src/Ehelply.Sdk/Model/Page.cs
 src/Ehelply.Sdk/Model/Pagination.cs
 src/Ehelply.Sdk/Model/ParticipantCreate.cs
@@ -362,6 +381,7 @@ src/Ehelply.Sdk/Model/SecurityEncryptionKeyGet.cs
 src/Ehelply.Sdk/Model/SecurityKeyCreate.cs
 src/Ehelply.Sdk/Model/SecurityKeyGet.cs
 src/Ehelply.Sdk/Model/SecurityKeyVerify.cs
+src/Ehelply.Sdk/Model/Selection.cs
 src/Ehelply.Sdk/Model/ServiceCreate.cs
 src/Ehelply.Sdk/Model/StaffCreate.cs
 src/Ehelply.Sdk/Model/StaffDb.cs
@@ -386,3 +406,4 @@ src/Ehelply.Sdk/Model/UserSignupReturn.cs
 src/Ehelply.Sdk/Model/UserTokenReturn.cs
 src/Ehelply.Sdk/Model/UserValidations.cs
 src/Ehelply.Sdk/Model/ValidationError.cs
+src/Ehelply.Sdk/Model/Validations.cs
