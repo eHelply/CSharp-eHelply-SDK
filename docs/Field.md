@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Uuid** | **string** |  | [optional] 
 **Type** | **int** |  | [optional] 
 **Placeholder** | **string** |  | [optional] 
-**Validations** | **Object** |  | [optional] 
+**Validations** | [**Validations**](Validations.md) |  | [optional] 
 **Hint** | **string** |  | [optional] 
 **Icon** | **string** |  | [optional] 
 **Label** | **string** |  | [optional] 

@@ -27,41 +27,25 @@ using OpenAPIDateConverter = Ehelply.Sdk.Client.OpenAPIDateConverter;
 namespace Ehelply.Sdk.Model
 {
     /// <summary>
-    /// UpdateReview
+    /// Validations
     /// </summary>
-    [DataContract(Name = "UpdateReview")]
-    public partial class UpdateReview : IEquatable<UpdateReview>, IValidatableObject
+    [DataContract(Name = "Validations")]
+    public partial class Validations : IEquatable<Validations>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateReview" /> class.
+        /// Initializes a new instance of the <see cref="Validations" /> class.
         /// </summary>
-        /// <param name="rating">rating.</param>
-        /// <param name="maxRating">maxRating.</param>
-        /// <param name="reviewText">reviewText.</param>
-        public UpdateReview(int rating = default(int), int maxRating = default(int), string reviewText = default(string))
+        /// <param name="value">value.</param>
+        public Validations(List<string> value = default(List<string>))
         {
-            this.Rating = rating;
-            this.MaxRating = maxRating;
-            this.ReviewText = reviewText;
+            this.Value = value;
         }
 
         /// <summary>
-        /// Gets or Sets Rating
+        /// Gets or Sets Value
         /// </summary>
-        [DataMember(Name = "rating", EmitDefaultValue = false)]
-        public int Rating { get; set; }
-
-        /// <summary>
-        /// Gets or Sets MaxRating
-        /// </summary>
-        [DataMember(Name = "max_rating", EmitDefaultValue = false)]
-        public int MaxRating { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ReviewText
-        /// </summary>
-        [DataMember(Name = "review_text", EmitDefaultValue = false)]
-        public string ReviewText { get; set; }
+        [DataMember(Name = "value", EmitDefaultValue = false)]
+        public List<string> Value { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -70,10 +54,8 @@ namespace Ehelply.Sdk.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class UpdateReview {\n");
-            sb.Append("  Rating: ").Append(Rating).Append("\n");
-            sb.Append("  MaxRating: ").Append(MaxRating).Append("\n");
-            sb.Append("  ReviewText: ").Append(ReviewText).Append("\n");
+            sb.Append("class Validations {\n");
+            sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -94,32 +76,25 @@ namespace Ehelply.Sdk.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as UpdateReview);
+            return this.Equals(input as Validations);
         }
 
         /// <summary>
-        /// Returns true if UpdateReview instances are equal
+        /// Returns true if Validations instances are equal
         /// </summary>
-        /// <param name="input">Instance of UpdateReview to be compared</param>
+        /// <param name="input">Instance of Validations to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(UpdateReview input)
+        public bool Equals(Validations input)
         {
             if (input == null)
                 return false;
 
             return 
                 (
-                    this.Rating == input.Rating ||
-                    this.Rating.Equals(input.Rating)
-                ) && 
-                (
-                    this.MaxRating == input.MaxRating ||
-                    this.MaxRating.Equals(input.MaxRating)
-                ) && 
-                (
-                    this.ReviewText == input.ReviewText ||
-                    (this.ReviewText != null &&
-                    this.ReviewText.Equals(input.ReviewText))
+                    this.Value == input.Value ||
+                    this.Value != null &&
+                    input.Value != null &&
+                    this.Value.SequenceEqual(input.Value)
                 );
         }
 
@@ -132,10 +107,8 @@ namespace Ehelply.Sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                hashCode = hashCode * 59 + this.Rating.GetHashCode();
-                hashCode = hashCode * 59 + this.MaxRating.GetHashCode();
-                if (this.ReviewText != null)
-                    hashCode = hashCode * 59 + this.ReviewText.GetHashCode();
+                if (this.Value != null)
+                    hashCode = hashCode * 59 + this.Value.GetHashCode();
                 return hashCode;
             }
         }
