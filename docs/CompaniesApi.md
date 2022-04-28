@@ -4,16 +4,16 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateCompanyCompaniesPost**](CompaniesApi.md#createcompanycompaniespost) | **POST** /companies | Create Company
-[**DeletePlaceCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplacecompaniescompanyuuiddelete) | **DELETE** /companies/{company_uuid} | Delete Place
-[**GetCompanyCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanycompaniescompanyuuidget) | **GET** /companies/{company_uuid} | Get Company
-[**SearchCompaniesCompaniesGet**](CompaniesApi.md#searchcompaniescompaniesget) | **GET** /companies | Search Companies
-[**UpdateCompanyCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanycompaniescompanyuuidput) | **PUT** /companies/{company_uuid} | Update Company
+[**CreateCompanyPlacesCompaniesPost**](CompaniesApi.md#createcompanyplacescompaniespost) | **POST** /places/companies | Create Company
+[**DeletePlacePlacesCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplaceplacescompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Place
+[**GetCompanyPlacesCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanyplacescompaniescompanyuuidget) | **GET** /places/companies/{company_uuid} | Get Company
+[**SearchCompaniesPlacesCompaniesGet**](CompaniesApi.md#searchcompaniesplacescompaniesget) | **GET** /places/companies | Search Companies
+[**UpdateCompanyPlacesCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanyplacescompaniescompanyuuidput) | **PUT** /places/companies/{company_uuid} | Update Company
 
 
-<a name="createcompanycompaniespost"></a>
-# **CreateCompanyCompaniesPost**
-> CompanyResponse CreateCompanyCompaniesPost (CompanyBase companyBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createcompanyplacescompaniespost"></a>
+# **CreateCompanyPlacesCompaniesPost**
+> CompanyResponse CreateCompanyPlacesCompaniesPost (CompanyBase companyBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Company
 
@@ -29,7 +29,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateCompanyCompaniesPostExample
+    public class CreateCompanyPlacesCompaniesPostExample
     {
         public static void Main()
         {
@@ -47,12 +47,12 @@ namespace Example
             try
             {
                 // Create Company
-                CompanyResponse result = apiInstance.CreateCompanyCompaniesPost(companyBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CompanyResponse result = apiInstance.CreateCompanyPlacesCompaniesPost(companyBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.CreateCompanyCompaniesPost: " + e.Message );
+                Debug.Print("Exception when calling CompaniesApi.CreateCompanyPlacesCompaniesPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -96,9 +96,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteplacecompaniescompanyuuiddelete"></a>
-# **DeletePlaceCompaniesCompanyUuidDelete**
-> Object DeletePlaceCompaniesCompanyUuidDelete (string companyUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deleteplaceplacescompaniescompanyuuiddelete"></a>
+# **DeletePlacePlacesCompaniesCompanyUuidDelete**
+> Object DeletePlacePlacesCompaniesCompanyUuidDelete (string companyUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Place
 
@@ -114,7 +114,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeletePlaceCompaniesCompanyUuidDeleteExample
+    public class DeletePlacePlacesCompaniesCompanyUuidDeleteExample
     {
         public static void Main()
         {
@@ -133,12 +133,12 @@ namespace Example
             try
             {
                 // Delete Place
-                Object result = apiInstance.DeletePlaceCompaniesCompanyUuidDelete(companyUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.DeletePlacePlacesCompaniesCompanyUuidDelete(companyUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.DeletePlaceCompaniesCompanyUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling CompaniesApi.DeletePlacePlacesCompaniesCompanyUuidDelete: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -183,9 +183,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getcompanycompaniescompanyuuidget"></a>
-# **GetCompanyCompaniesCompanyUuidGet**
-> CompanyResponse GetCompanyCompaniesCompanyUuidGet (string companyUuid, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, bool? withPlaces = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getcompanyplacescompaniescompanyuuidget"></a>
+# **GetCompanyPlacesCompaniesCompanyUuidGet**
+> CompanyResponse GetCompanyPlacesCompaniesCompanyUuidGet (string companyUuid, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, bool? withPlaces = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Company
 
@@ -201,7 +201,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetCompanyCompaniesCompanyUuidGetExample
+    public class GetCompanyPlacesCompaniesCompanyUuidGetExample
     {
         public static void Main()
         {
@@ -227,12 +227,12 @@ namespace Example
             try
             {
                 // Get Company
-                CompanyResponse result = apiInstance.GetCompanyCompaniesCompanyUuidGet(companyUuid, withMeta, withCatalog, withReviews, withSchedule, withBlog, withTags, withCategories, withPlaces, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CompanyResponse result = apiInstance.GetCompanyPlacesCompaniesCompanyUuidGet(companyUuid, withMeta, withCatalog, withReviews, withSchedule, withBlog, withTags, withCategories, withPlaces, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.GetCompanyCompaniesCompanyUuidGet: " + e.Message );
+                Debug.Print("Exception when calling CompaniesApi.GetCompanyPlacesCompaniesCompanyUuidGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -284,9 +284,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchcompaniescompaniesget"></a>
-# **SearchCompaniesCompaniesGet**
-> Page SearchCompaniesCompaniesGet (string projectUuid = null, string name = null, string email = null, bool? isPublic = null, bool? isDeleted = null, bool? withPlaces = null, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchcompaniesplacescompaniesget"></a>
+# **SearchCompaniesPlacesCompaniesGet**
+> Page SearchCompaniesPlacesCompaniesGet (string projectUuid = null, string name = null, string email = null, bool? isPublic = null, bool? isDeleted = null, bool? withPlaces = null, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Companies
 
@@ -302,7 +302,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchCompaniesCompaniesGetExample
+    public class SearchCompaniesPlacesCompaniesGetExample
     {
         public static void Main()
         {
@@ -336,12 +336,12 @@ namespace Example
             try
             {
                 // Search Companies
-                Page result = apiInstance.SearchCompaniesCompaniesGet(projectUuid, name, email, isPublic, isDeleted, withPlaces, withMeta, withCatalog, withReviews, withSchedule, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchCompaniesPlacesCompaniesGet(projectUuid, name, email, isPublic, isDeleted, withPlaces, withMeta, withCatalog, withReviews, withSchedule, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.SearchCompaniesCompaniesGet: " + e.Message );
+                Debug.Print("Exception when calling CompaniesApi.SearchCompaniesPlacesCompaniesGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -401,9 +401,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updatecompanycompaniescompanyuuidput"></a>
-# **UpdateCompanyCompaniesCompanyUuidPut**
-> CompanyResponse UpdateCompanyCompaniesCompanyUuidPut (string companyUuid, CompanyBase companyBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updatecompanyplacescompaniescompanyuuidput"></a>
+# **UpdateCompanyPlacesCompaniesCompanyUuidPut**
+> CompanyResponse UpdateCompanyPlacesCompaniesCompanyUuidPut (string companyUuid, CompanyBase companyBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Company
 
@@ -419,7 +419,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdateCompanyCompaniesCompanyUuidPutExample
+    public class UpdateCompanyPlacesCompaniesCompanyUuidPutExample
     {
         public static void Main()
         {
@@ -438,12 +438,12 @@ namespace Example
             try
             {
                 // Update Company
-                CompanyResponse result = apiInstance.UpdateCompanyCompaniesCompanyUuidPut(companyUuid, companyBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CompanyResponse result = apiInstance.UpdateCompanyPlacesCompaniesCompanyUuidPut(companyUuid, companyBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.UpdateCompanyCompaniesCompanyUuidPut: " + e.Message );
+                Debug.Print("Exception when calling CompaniesApi.UpdateCompanyPlacesCompaniesCompanyUuidPut: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

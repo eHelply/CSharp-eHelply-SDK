@@ -4,16 +4,16 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateCategoryCategoriesPost**](CategoryApi.md#createcategorycategoriespost) | **POST** /categories | Create Category
-[**DeleteCategoryCategoriesCategoryUuidDelete**](CategoryApi.md#deletecategorycategoriescategoryuuiddelete) | **DELETE** /categories/{category_uuid} | Delete Category
-[**GetCategoryCategoriesCategoryUuidGet**](CategoryApi.md#getcategorycategoriescategoryuuidget) | **GET** /categories/{category_uuid} | Get Category
-[**SearchCategoriesCategoriesGet**](CategoryApi.md#searchcategoriescategoriesget) | **GET** /categories | Search Categories
-[**UpdateCategoryCategoriesCategoryUuidPut**](CategoryApi.md#updatecategorycategoriescategoryuuidput) | **PUT** /categories/{category_uuid} | Update Category
+[**CreateCategoryPlacesCategoriesPost**](CategoryApi.md#createcategoryplacescategoriespost) | **POST** /places/categories | Create Category
+[**DeleteCategoryPlacesCategoriesCategoryUuidDelete**](CategoryApi.md#deletecategoryplacescategoriescategoryuuiddelete) | **DELETE** /places/categories/{category_uuid} | Delete Category
+[**GetCategoryPlacesCategoriesCategoryUuidGet**](CategoryApi.md#getcategoryplacescategoriescategoryuuidget) | **GET** /places/categories/{category_uuid} | Get Category
+[**SearchCategoriesPlacesCategoriesGet**](CategoryApi.md#searchcategoriesplacescategoriesget) | **GET** /places/categories | Search Categories
+[**UpdateCategoryPlacesCategoriesCategoryUuidPut**](CategoryApi.md#updatecategoryplacescategoriescategoryuuidput) | **PUT** /places/categories/{category_uuid} | Update Category
 
 
-<a name="createcategorycategoriespost"></a>
-# **CreateCategoryCategoriesPost**
-> CategoryDb CreateCategoryCategoriesPost (CategoryBase categoryBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createcategoryplacescategoriespost"></a>
+# **CreateCategoryPlacesCategoriesPost**
+> CategoryDb CreateCategoryPlacesCategoriesPost (CategoryBase categoryBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Category
 
@@ -29,7 +29,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateCategoryCategoriesPostExample
+    public class CreateCategoryPlacesCategoriesPostExample
     {
         public static void Main()
         {
@@ -47,12 +47,12 @@ namespace Example
             try
             {
                 // Create Category
-                CategoryDb result = apiInstance.CreateCategoryCategoriesPost(categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CategoryDb result = apiInstance.CreateCategoryPlacesCategoriesPost(categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.CreateCategoryCategoriesPost: " + e.Message );
+                Debug.Print("Exception when calling CategoryApi.CreateCategoryPlacesCategoriesPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -96,9 +96,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deletecategorycategoriescategoryuuiddelete"></a>
-# **DeleteCategoryCategoriesCategoryUuidDelete**
-> Object DeleteCategoryCategoriesCategoryUuidDelete (string categoryUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deletecategoryplacescategoriescategoryuuiddelete"></a>
+# **DeleteCategoryPlacesCategoriesCategoryUuidDelete**
+> Object DeleteCategoryPlacesCategoriesCategoryUuidDelete (string categoryUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Category
 
@@ -114,7 +114,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeleteCategoryCategoriesCategoryUuidDeleteExample
+    public class DeleteCategoryPlacesCategoriesCategoryUuidDeleteExample
     {
         public static void Main()
         {
@@ -132,12 +132,12 @@ namespace Example
             try
             {
                 // Delete Category
-                Object result = apiInstance.DeleteCategoryCategoriesCategoryUuidDelete(categoryUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.DeleteCategoryPlacesCategoriesCategoryUuidDelete(categoryUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.DeleteCategoryCategoriesCategoryUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling CategoryApi.DeleteCategoryPlacesCategoriesCategoryUuidDelete: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -181,9 +181,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getcategorycategoriescategoryuuidget"></a>
-# **GetCategoryCategoriesCategoryUuidGet**
-> CategoryBase GetCategoryCategoriesCategoryUuidGet (string categoryUuid, bool? withMeta = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getcategoryplacescategoriescategoryuuidget"></a>
+# **GetCategoryPlacesCategoriesCategoryUuidGet**
+> CategoryBase GetCategoryPlacesCategoriesCategoryUuidGet (string categoryUuid, bool? withMeta = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Category
 
@@ -199,7 +199,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetCategoryCategoriesCategoryUuidGetExample
+    public class GetCategoryPlacesCategoriesCategoryUuidGetExample
     {
         public static void Main()
         {
@@ -218,12 +218,12 @@ namespace Example
             try
             {
                 // Get Category
-                CategoryBase result = apiInstance.GetCategoryCategoriesCategoryUuidGet(categoryUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CategoryBase result = apiInstance.GetCategoryPlacesCategoriesCategoryUuidGet(categoryUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.GetCategoryCategoriesCategoryUuidGet: " + e.Message );
+                Debug.Print("Exception when calling CategoryApi.GetCategoryPlacesCategoriesCategoryUuidGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -268,9 +268,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchcategoriescategoriesget"></a>
-# **SearchCategoriesCategoriesGet**
-> Page SearchCategoriesCategoriesGet (string projectUuid = null, string name = null, bool? withMeta = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchcategoriesplacescategoriesget"></a>
+# **SearchCategoriesPlacesCategoriesGet**
+> Page SearchCategoriesPlacesCategoriesGet (string projectUuid = null, string name = null, bool? withMeta = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Categories
 
@@ -286,7 +286,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchCategoriesCategoriesGetExample
+    public class SearchCategoriesPlacesCategoriesGetExample
     {
         public static void Main()
         {
@@ -310,12 +310,12 @@ namespace Example
             try
             {
                 // Search Categories
-                Page result = apiInstance.SearchCategoriesCategoriesGet(projectUuid, name, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchCategoriesPlacesCategoriesGet(projectUuid, name, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.SearchCategoriesCategoriesGet: " + e.Message );
+                Debug.Print("Exception when calling CategoryApi.SearchCategoriesPlacesCategoriesGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -365,9 +365,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updatecategorycategoriescategoryuuidput"></a>
-# **UpdateCategoryCategoriesCategoryUuidPut**
-> CategoryBase UpdateCategoryCategoriesCategoryUuidPut (string categoryUuid, CategoryBase categoryBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updatecategoryplacescategoriescategoryuuidput"></a>
+# **UpdateCategoryPlacesCategoriesCategoryUuidPut**
+> CategoryBase UpdateCategoryPlacesCategoriesCategoryUuidPut (string categoryUuid, CategoryBase categoryBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Category
 
@@ -383,7 +383,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdateCategoryCategoriesCategoryUuidPutExample
+    public class UpdateCategoryPlacesCategoriesCategoryUuidPutExample
     {
         public static void Main()
         {
@@ -402,12 +402,12 @@ namespace Example
             try
             {
                 // Update Category
-                CategoryBase result = apiInstance.UpdateCategoryCategoriesCategoryUuidPut(categoryUuid, categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CategoryBase result = apiInstance.UpdateCategoryPlacesCategoriesCategoryUuidPut(categoryUuid, categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.UpdateCategoryCategoriesCategoryUuidPut: " + e.Message );
+                Debug.Print("Exception when calling CategoryApi.UpdateCategoryPlacesCategoriesCategoryUuidPut: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

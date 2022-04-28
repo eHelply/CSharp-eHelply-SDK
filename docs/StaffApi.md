@@ -4,16 +4,16 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateStaffStaffPost**](StaffApi.md#createstaffstaffpost) | **POST** /staff | Create Staff
-[**DeleteStaffStaffStaffUuidDelete**](StaffApi.md#deletestaffstaffstaffuuiddelete) | **DELETE** /staff/{staff_uuid} | Delete Staff
-[**GetStaffStaffStaffUuidGet**](StaffApi.md#getstaffstaffstaffuuidget) | **GET** /staff/{staff_uuid} | Get Staff
-[**SearchStaffStaffGet**](StaffApi.md#searchstaffstaffget) | **GET** /staff | Search Staff
-[**UpdateStaffStaffStaffUuidPut**](StaffApi.md#updatestaffstaffstaffuuidput) | **PUT** /staff/{staff_uuid} | Update Staff
+[**CreateStaffPlacesStaffPost**](StaffApi.md#createstaffplacesstaffpost) | **POST** /places/staff | Create Staff
+[**DeleteStaffPlacesStaffStaffUuidDelete**](StaffApi.md#deletestaffplacesstaffstaffuuiddelete) | **DELETE** /places/staff/{staff_uuid} | Delete Staff
+[**GetStaffPlacesStaffStaffUuidGet**](StaffApi.md#getstaffplacesstaffstaffuuidget) | **GET** /places/staff/{staff_uuid} | Get Staff
+[**SearchStaffPlacesStaffGet**](StaffApi.md#searchstaffplacesstaffget) | **GET** /places/staff | Search Staff
+[**UpdateStaffPlacesStaffStaffUuidPut**](StaffApi.md#updatestaffplacesstaffstaffuuidput) | **PUT** /places/staff/{staff_uuid} | Update Staff
 
 
-<a name="createstaffstaffpost"></a>
-# **CreateStaffStaffPost**
-> StaffDb CreateStaffStaffPost (StaffCreate staffCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createstaffplacesstaffpost"></a>
+# **CreateStaffPlacesStaffPost**
+> StaffDb CreateStaffPlacesStaffPost (StaffCreate staffCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Staff
 
@@ -29,7 +29,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateStaffStaffPostExample
+    public class CreateStaffPlacesStaffPostExample
     {
         public static void Main()
         {
@@ -47,12 +47,12 @@ namespace Example
             try
             {
                 // Create Staff
-                StaffDb result = apiInstance.CreateStaffStaffPost(staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StaffDb result = apiInstance.CreateStaffPlacesStaffPost(staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.CreateStaffStaffPost: " + e.Message );
+                Debug.Print("Exception when calling StaffApi.CreateStaffPlacesStaffPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -96,9 +96,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deletestaffstaffstaffuuiddelete"></a>
-# **DeleteStaffStaffStaffUuidDelete**
-> Object DeleteStaffStaffStaffUuidDelete (string staffUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deletestaffplacesstaffstaffuuiddelete"></a>
+# **DeleteStaffPlacesStaffStaffUuidDelete**
+> Object DeleteStaffPlacesStaffStaffUuidDelete (string staffUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Staff
 
@@ -114,7 +114,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeleteStaffStaffStaffUuidDeleteExample
+    public class DeleteStaffPlacesStaffStaffUuidDeleteExample
     {
         public static void Main()
         {
@@ -133,12 +133,12 @@ namespace Example
             try
             {
                 // Delete Staff
-                Object result = apiInstance.DeleteStaffStaffStaffUuidDelete(staffUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.DeleteStaffPlacesStaffStaffUuidDelete(staffUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.DeleteStaffStaffStaffUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling StaffApi.DeleteStaffPlacesStaffStaffUuidDelete: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -183,9 +183,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getstaffstaffstaffuuidget"></a>
-# **GetStaffStaffStaffUuidGet**
-> StaffResponse GetStaffStaffStaffUuidGet (string staffUuid, bool? withPlaces = null, bool? withCompanies = null, bool? withCatalog = null, bool? withSchedule = null, bool? withRoles = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getstaffplacesstaffstaffuuidget"></a>
+# **GetStaffPlacesStaffStaffUuidGet**
+> StaffResponse GetStaffPlacesStaffStaffUuidGet (string staffUuid, bool? withPlaces = null, bool? withCompanies = null, bool? withCatalog = null, bool? withSchedule = null, bool? withRoles = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Staff
 
@@ -201,7 +201,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetStaffStaffStaffUuidGetExample
+    public class GetStaffPlacesStaffStaffUuidGetExample
     {
         public static void Main()
         {
@@ -224,12 +224,12 @@ namespace Example
             try
             {
                 // Get Staff
-                StaffResponse result = apiInstance.GetStaffStaffStaffUuidGet(staffUuid, withPlaces, withCompanies, withCatalog, withSchedule, withRoles, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StaffResponse result = apiInstance.GetStaffPlacesStaffStaffUuidGet(staffUuid, withPlaces, withCompanies, withCatalog, withSchedule, withRoles, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.GetStaffStaffStaffUuidGet: " + e.Message );
+                Debug.Print("Exception when calling StaffApi.GetStaffPlacesStaffStaffUuidGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -278,9 +278,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchstaffstaffget"></a>
-# **SearchStaffStaffGet**
-> Page SearchStaffStaffGet (string projectUuid = null, string firstName = null, string lastName = null, bool? isDeleted = null, bool? withCompanies = null, bool? withPlaces = null, bool? withSchedule = null, bool? withCatalog = null, bool? withReviews = null, bool? withRoles = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchstaffplacesstaffget"></a>
+# **SearchStaffPlacesStaffGet**
+> Page SearchStaffPlacesStaffGet (string projectUuid = null, string firstName = null, string lastName = null, bool? isDeleted = null, bool? withCompanies = null, bool? withPlaces = null, bool? withSchedule = null, bool? withCatalog = null, bool? withReviews = null, bool? withRoles = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Staff
 
@@ -296,7 +296,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchStaffStaffGetExample
+    public class SearchStaffPlacesStaffGetExample
     {
         public static void Main()
         {
@@ -327,12 +327,12 @@ namespace Example
             try
             {
                 // Search Staff
-                Page result = apiInstance.SearchStaffStaffGet(projectUuid, firstName, lastName, isDeleted, withCompanies, withPlaces, withSchedule, withCatalog, withReviews, withRoles, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchStaffPlacesStaffGet(projectUuid, firstName, lastName, isDeleted, withCompanies, withPlaces, withSchedule, withCatalog, withReviews, withRoles, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.SearchStaffStaffGet: " + e.Message );
+                Debug.Print("Exception when calling StaffApi.SearchStaffPlacesStaffGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -389,9 +389,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updatestaffstaffstaffuuidput"></a>
-# **UpdateStaffStaffStaffUuidPut**
-> StaffResponse UpdateStaffStaffStaffUuidPut (string staffUuid, StaffCreate staffCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updatestaffplacesstaffstaffuuidput"></a>
+# **UpdateStaffPlacesStaffStaffUuidPut**
+> StaffResponse UpdateStaffPlacesStaffStaffUuidPut (string staffUuid, StaffCreate staffCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Staff
 
@@ -407,7 +407,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdateStaffStaffStaffUuidPutExample
+    public class UpdateStaffPlacesStaffStaffUuidPutExample
     {
         public static void Main()
         {
@@ -426,12 +426,12 @@ namespace Example
             try
             {
                 // Update Staff
-                StaffResponse result = apiInstance.UpdateStaffStaffStaffUuidPut(staffUuid, staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StaffResponse result = apiInstance.UpdateStaffPlacesStaffStaffUuidPut(staffUuid, staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.UpdateStaffStaffStaffUuidPut: " + e.Message );
+                Debug.Print("Exception when calling StaffApi.UpdateStaffPlacesStaffStaffUuidPut: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

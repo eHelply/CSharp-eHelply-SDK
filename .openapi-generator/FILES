@@ -80,8 +80,6 @@ docs/PaymentMethodResponse.md
 docs/PlaceBase.md
 docs/PlaceResponse.md
 docs/PlacesApi.md
-docs/PlacesHTTPValidationError.md
-docs/PlacesValidationError.md
 docs/ProductBase.md
 docs/ProductReturn.md
 docs/ProjectsApi.md
@@ -218,8 +216,6 @@ src/Ehelply.Sdk.Test/Model/PaymentMethodResponseTests.cs
 src/Ehelply.Sdk.Test/Model/PaymentTests.cs
 src/Ehelply.Sdk.Test/Model/PlaceBaseTests.cs
 src/Ehelply.Sdk.Test/Model/PlaceResponseTests.cs
-src/Ehelply.Sdk.Test/Model/PlacesHTTPValidationErrorTests.cs
-src/Ehelply.Sdk.Test/Model/PlacesValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/ProductBaseTests.cs
 src/Ehelply.Sdk.Test/Model/ProductReturnTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectsProjectCreateTests.cs
@@ -366,8 +362,6 @@ src/Ehelply.Sdk/Model/Payment.cs
 src/Ehelply.Sdk/Model/PaymentMethodResponse.cs
 src/Ehelply.Sdk/Model/PlaceBase.cs
 src/Ehelply.Sdk/Model/PlaceResponse.cs
-src/Ehelply.Sdk/Model/PlacesHTTPValidationError.cs
-src/Ehelply.Sdk/Model/PlacesValidationError.cs
 src/Ehelply.Sdk/Model/ProductBase.cs
 src/Ehelply.Sdk/Model/ProductReturn.cs
 src/Ehelply.Sdk/Model/ProjectsProjectCreate.cs
