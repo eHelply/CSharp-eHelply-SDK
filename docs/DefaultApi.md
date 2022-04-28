@@ -4,6 +4,7 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AppointmentssearchAppointmentEntities**](DefaultApi.md#appointmentssearchappointmententities) | **GET** /appointments/entities/{entity_uuid}/appointments | Get Entities Appointments
 [**AttachEntityToAppointment**](DefaultApi.md#attachentitytoappointment) | **POST** /appointments/{appointment_uuid}/entities/{entity_uuid} | Attach Entity To Appointment
 [**AttachProductToCatalog**](DefaultApi.md#attachproducttocatalog) | **POST** /catalogs/{catalog_uuid}/products/{product_uuid} | Attach Product To Catalog
 [**CreateAppointment**](DefaultApi.md#createappointment) | **POST** /appointments | Create Appointment
@@ -32,6 +33,95 @@ Method | HTTP request | Description
 [**UpdateProduct**](DefaultApi.md#updateproduct) | **PUT** /products/{product_uuid} | Update Product
 [**UpdateReview**](DefaultApi.md#updatereview) | **PUT** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Update Review
 
+
+<a name="appointmentssearchappointmententities"></a>
+# **AppointmentssearchAppointmentEntities**
+> Object AppointmentssearchAppointmentEntities (string entityUuid, string startDate = null, string endDate = null, bool? includeCancelled = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Get Entities Appointments
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class AppointmentssearchAppointmentEntitiesExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new DefaultApi(config);
+            var entityUuid = entityUuid_example;  // string | 
+            var startDate = startDate_example;  // string |  (optional) 
+            var endDate = endDate_example;  // string |  (optional) 
+            var includeCancelled = true;  // bool? |  (optional)  (default to false)
+            var xAccessToken = xAccessToken_example;  // string |  (optional) 
+            var xSecretToken = xSecretToken_example;  // string |  (optional) 
+            var authorization = authorization_example;  // string |  (optional) 
+            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
+            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
+            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+
+            try
+            {
+                // Get Entities Appointments
+                Object result = apiInstance.AppointmentssearchAppointmentEntities(entityUuid, startDate, endDate, includeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling DefaultApi.AppointmentssearchAppointmentEntities: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **entityUuid** | **string**|  | 
+ **startDate** | **string**|  | [optional] 
+ **endDate** | **string**|  | [optional] 
+ **includeCancelled** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="attachentitytoappointment"></a>
 # **AttachEntityToAppointment**

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Loc** | **List&lt;string&gt;** |  | 
+**Loc** | [**List&lt;AnyOfstringinteger&gt;**](AnyOfstringinteger.md) |  | 
 **Msg** | **string** |  | 
 **Type** | **string** |  | 
 

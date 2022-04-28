@@ -1,12 +1,10 @@
-# Ehelply.Sdk.Model.MetaValidationError
+# Ehelply.Sdk.Model.SamHTTPValidationError
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Loc** | [**List&lt;AnyOfstringinteger&gt;**](AnyOfstringinteger.md) |  | 
-**Msg** | **string** |  | 
-**Type** | **string** |  | 
+**Detail** | [**List&lt;SamValidationError&gt;**](SamValidationError.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
