@@ -4,20 +4,20 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreatePlacePlacesPost**](PlacesApi.md#createplaceplacespost) | **POST** /places | Create Place
-[**DeletePlacePlacesPlaceUuidDelete**](PlacesApi.md#deleteplaceplacesplaceuuiddelete) | **DELETE** /places/{place_uuid} | Delete Place
-[**ForwardGeocodingPlacesForwardGeocodingGet**](PlacesApi.md#forwardgeocodingplacesforwardgeocodingget) | **GET** /places/forward_geocoding | Forward Geocoding
-[**GetPlacePlacesPlaceUuidGet**](PlacesApi.md#getplaceplacesplaceuuidget) | **GET** /places/{place_uuid} | Get Place
-[**ReverseGeocodingPlacesReverseGeocodingGet**](PlacesApi.md#reversegeocodingplacesreversegeocodingget) | **GET** /places/reverse_geocoding | Reverse Geocoding
-[**SearchPlacesByAreaPlacesSearchLocationGet**](PlacesApi.md#searchplacesbyareaplacessearchlocationget) | **GET** /places/search/location | Search Places By Area
-[**SearchPlacesBySearchStringPlacesSearchGet**](PlacesApi.md#searchplacesbysearchstringplacessearchget) | **GET** /places/search | Search Places By Search String
-[**SearchPlacesPlacesGet**](PlacesApi.md#searchplacesplacesget) | **GET** /places | Search Places
-[**UpdatePlacePlacesPlaceUuidPut**](PlacesApi.md#updateplaceplacesplaceuuidput) | **PUT** /places/{place_uuid} | Update Place
+[**CreatePlacePlacesPlacesPost**](PlacesApi.md#createplaceplacesplacespost) | **POST** /places/places | Create Place
+[**DeletePlacePlacesPlacesPlaceUuidDelete**](PlacesApi.md#deleteplaceplacesplacesplaceuuiddelete) | **DELETE** /places/places/{place_uuid} | Delete Place
+[**ForwardGeocodingPlacesPlacesForwardGeocodingGet**](PlacesApi.md#forwardgeocodingplacesplacesforwardgeocodingget) | **GET** /places/places/forward_geocoding | Forward Geocoding
+[**GetPlacePlacesPlacesPlaceUuidGet**](PlacesApi.md#getplaceplacesplacesplaceuuidget) | **GET** /places/places/{place_uuid} | Get Place
+[**ReverseGeocodingPlacesPlacesReverseGeocodingGet**](PlacesApi.md#reversegeocodingplacesplacesreversegeocodingget) | **GET** /places/places/reverse_geocoding | Reverse Geocoding
+[**SearchPlacesByAreaPlacesPlacesSearchLocationGet**](PlacesApi.md#searchplacesbyareaplacesplacessearchlocationget) | **GET** /places/places/search/location | Search Places By Area
+[**SearchPlacesBySearchStringPlacesPlacesSearchGet**](PlacesApi.md#searchplacesbysearchstringplacesplacessearchget) | **GET** /places/places/search | Search Places By Search String
+[**SearchPlacesPlacesPlacesGet**](PlacesApi.md#searchplacesplacesplacesget) | **GET** /places/places | Search Places
+[**UpdatePlacePlacesPlacesPlaceUuidPut**](PlacesApi.md#updateplaceplacesplacesplaceuuidput) | **PUT** /places/places/{place_uuid} | Update Place
 
 
-<a name="createplaceplacespost"></a>
-# **CreatePlacePlacesPost**
-> PlaceResponse CreatePlacePlacesPost (PlaceBase placeBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createplaceplacesplacespost"></a>
+# **CreatePlacePlacesPlacesPost**
+> PlaceResponse CreatePlacePlacesPlacesPost (PlaceBase placeBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Place
 
@@ -33,7 +33,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreatePlacePlacesPostExample
+    public class CreatePlacePlacesPlacesPostExample
     {
         public static void Main()
         {
@@ -51,12 +51,12 @@ namespace Example
             try
             {
                 // Create Place
-                PlaceResponse result = apiInstance.CreatePlacePlacesPost(placeBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                PlaceResponse result = apiInstance.CreatePlacePlacesPlacesPost(placeBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.CreatePlacePlacesPost: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.CreatePlacePlacesPlacesPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -100,9 +100,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteplaceplacesplaceuuiddelete"></a>
-# **DeletePlacePlacesPlaceUuidDelete**
-> Object DeletePlacePlacesPlaceUuidDelete (string placeUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deleteplaceplacesplacesplaceuuiddelete"></a>
+# **DeletePlacePlacesPlacesPlaceUuidDelete**
+> Object DeletePlacePlacesPlacesPlaceUuidDelete (string placeUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Place
 
@@ -118,7 +118,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeletePlacePlacesPlaceUuidDeleteExample
+    public class DeletePlacePlacesPlacesPlaceUuidDeleteExample
     {
         public static void Main()
         {
@@ -137,12 +137,12 @@ namespace Example
             try
             {
                 // Delete Place
-                Object result = apiInstance.DeletePlacePlacesPlaceUuidDelete(placeUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.DeletePlacePlacesPlacesPlaceUuidDelete(placeUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.DeletePlacePlacesPlaceUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.DeletePlacePlacesPlacesPlaceUuidDelete: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -187,9 +187,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="forwardgeocodingplacesforwardgeocodingget"></a>
-# **ForwardGeocodingPlacesForwardGeocodingGet**
-> Object ForwardGeocodingPlacesForwardGeocodingGet (string searchingPlace, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="forwardgeocodingplacesplacesforwardgeocodingget"></a>
+# **ForwardGeocodingPlacesPlacesForwardGeocodingGet**
+> Object ForwardGeocodingPlacesPlacesForwardGeocodingGet (string searchingPlace, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Forward Geocoding
 
@@ -203,7 +203,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ForwardGeocodingPlacesForwardGeocodingGetExample
+    public class ForwardGeocodingPlacesPlacesForwardGeocodingGetExample
     {
         public static void Main()
         {
@@ -221,12 +221,12 @@ namespace Example
             try
             {
                 // Forward Geocoding
-                Object result = apiInstance.ForwardGeocodingPlacesForwardGeocodingGet(searchingPlace, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.ForwardGeocodingPlacesPlacesForwardGeocodingGet(searchingPlace, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesForwardGeocodingGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesPlacesForwardGeocodingGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -270,9 +270,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getplaceplacesplaceuuidget"></a>
-# **GetPlacePlacesPlaceUuidGet**
-> PlaceResponse GetPlacePlacesPlaceUuidGet (string placeUuid, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withCollection = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, bool? withCompany = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getplaceplacesplacesplaceuuidget"></a>
+# **GetPlacePlacesPlacesPlaceUuidGet**
+> PlaceResponse GetPlacePlacesPlacesPlaceUuidGet (string placeUuid, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withCollection = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, bool? withCompany = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Place
 
@@ -288,7 +288,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetPlacePlacesPlaceUuidGetExample
+    public class GetPlacePlacesPlacesPlaceUuidGetExample
     {
         public static void Main()
         {
@@ -315,12 +315,12 @@ namespace Example
             try
             {
                 // Get Place
-                PlaceResponse result = apiInstance.GetPlacePlacesPlaceUuidGet(placeUuid, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, withCompany, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                PlaceResponse result = apiInstance.GetPlacePlacesPlacesPlaceUuidGet(placeUuid, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, withCompany, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.GetPlacePlacesPlaceUuidGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.GetPlacePlacesPlacesPlaceUuidGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -373,9 +373,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="reversegeocodingplacesreversegeocodingget"></a>
-# **ReverseGeocodingPlacesReverseGeocodingGet**
-> Object ReverseGeocodingPlacesReverseGeocodingGet (decimal _long, decimal lat, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="reversegeocodingplacesplacesreversegeocodingget"></a>
+# **ReverseGeocodingPlacesPlacesReverseGeocodingGet**
+> Object ReverseGeocodingPlacesPlacesReverseGeocodingGet (decimal _long, decimal lat, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Reverse Geocoding
 
@@ -389,7 +389,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ReverseGeocodingPlacesReverseGeocodingGetExample
+    public class ReverseGeocodingPlacesPlacesReverseGeocodingGetExample
     {
         public static void Main()
         {
@@ -408,12 +408,12 @@ namespace Example
             try
             {
                 // Reverse Geocoding
-                Object result = apiInstance.ReverseGeocodingPlacesReverseGeocodingGet(_long, lat, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.ReverseGeocodingPlacesPlacesReverseGeocodingGet(_long, lat, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesReverseGeocodingGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesPlacesReverseGeocodingGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -458,9 +458,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchplacesbyareaplacessearchlocationget"></a>
-# **SearchPlacesByAreaPlacesSearchLocationGet**
-> Page SearchPlacesByAreaPlacesSearchLocationGet ()
+<a name="searchplacesbyareaplacesplacessearchlocationget"></a>
+# **SearchPlacesByAreaPlacesPlacesSearchLocationGet**
+> Page SearchPlacesByAreaPlacesPlacesSearchLocationGet ()
 
 Search Places By Area
 
@@ -474,7 +474,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchPlacesByAreaPlacesSearchLocationGetExample
+    public class SearchPlacesByAreaPlacesPlacesSearchLocationGetExample
     {
         public static void Main()
         {
@@ -485,12 +485,12 @@ namespace Example
             try
             {
                 // Search Places By Area
-                Page result = apiInstance.SearchPlacesByAreaPlacesSearchLocationGet();
+                Page result = apiInstance.SearchPlacesByAreaPlacesPlacesSearchLocationGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.SearchPlacesByAreaPlacesSearchLocationGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.SearchPlacesByAreaPlacesPlacesSearchLocationGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -524,9 +524,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchplacesbysearchstringplacessearchget"></a>
-# **SearchPlacesBySearchStringPlacesSearchGet**
-> Page SearchPlacesBySearchStringPlacesSearchGet (string searchString = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchplacesbysearchstringplacesplacessearchget"></a>
+# **SearchPlacesBySearchStringPlacesPlacesSearchGet**
+> Page SearchPlacesBySearchStringPlacesPlacesSearchGet (string searchString = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Places By Search String
 
@@ -542,7 +542,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchPlacesBySearchStringPlacesSearchGetExample
+    public class SearchPlacesBySearchStringPlacesPlacesSearchGetExample
     {
         public static void Main()
         {
@@ -564,12 +564,12 @@ namespace Example
             try
             {
                 // Search Places By Search String
-                Page result = apiInstance.SearchPlacesBySearchStringPlacesSearchGet(searchString, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchPlacesBySearchStringPlacesPlacesSearchGet(searchString, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.SearchPlacesBySearchStringPlacesSearchGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.SearchPlacesBySearchStringPlacesPlacesSearchGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -617,9 +617,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchplacesplacesget"></a>
-# **SearchPlacesPlacesGet**
-> Page SearchPlacesPlacesGet (string projectUuid = null, string name = null, string addressLine1 = null, string addressLine2 = null, string city = null, string provinceState = null, string country = null, string postalZipCode = null, string lat = null, string lng = null, string email = null, bool? isPublic = null, bool? isDeleted = null, bool? withCompany = null, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withCollection = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchplacesplacesplacesget"></a>
+# **SearchPlacesPlacesPlacesGet**
+> Page SearchPlacesPlacesPlacesGet (string projectUuid = null, string name = null, string addressLine1 = null, string addressLine2 = null, string city = null, string provinceState = null, string country = null, string postalZipCode = null, string lat = null, string lng = null, string email = null, bool? isPublic = null, bool? isDeleted = null, bool? withCompany = null, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withCollection = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Places
 
@@ -635,7 +635,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchPlacesPlacesGetExample
+    public class SearchPlacesPlacesPlacesGetExample
     {
         public static void Main()
         {
@@ -678,12 +678,12 @@ namespace Example
             try
             {
                 // Search Places
-                Page result = apiInstance.SearchPlacesPlacesGet(projectUuid, name, addressLine1, addressLine2, city, provinceState, country, postalZipCode, lat, lng, email, isPublic, isDeleted, withCompany, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchPlacesPlacesPlacesGet(projectUuid, name, addressLine1, addressLine2, city, provinceState, country, postalZipCode, lat, lng, email, isPublic, isDeleted, withCompany, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.SearchPlacesPlacesGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.SearchPlacesPlacesPlacesGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -752,9 +752,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updateplaceplacesplaceuuidput"></a>
-# **UpdatePlacePlacesPlaceUuidPut**
-> PlaceResponse UpdatePlacePlacesPlaceUuidPut (string placeUuid, PlaceBase placeBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updateplaceplacesplacesplaceuuidput"></a>
+# **UpdatePlacePlacesPlacesPlaceUuidPut**
+> PlaceResponse UpdatePlacePlacesPlacesPlaceUuidPut (string placeUuid, PlaceBase placeBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Place
 
@@ -770,7 +770,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdatePlacePlacesPlaceUuidPutExample
+    public class UpdatePlacePlacesPlacesPlaceUuidPutExample
     {
         public static void Main()
         {
@@ -789,12 +789,12 @@ namespace Example
             try
             {
                 // Update Place
-                PlaceResponse result = apiInstance.UpdatePlacePlacesPlaceUuidPut(placeUuid, placeBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                PlaceResponse result = apiInstance.UpdatePlacePlacesPlacesPlaceUuidPut(placeUuid, placeBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.UpdatePlacePlacesPlaceUuidPut: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.UpdatePlacePlacesPlacesPlaceUuidPut: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

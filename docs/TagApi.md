@@ -4,16 +4,16 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateTagTagsPost**](TagApi.md#createtagtagspost) | **POST** /tags | Create Tag
-[**DeleteTagTagsTagUuidDelete**](TagApi.md#deletetagtagstaguuiddelete) | **DELETE** /tags/{tag_uuid} | Delete Tag
-[**GetTagTagsTagUuidGet**](TagApi.md#gettagtagstaguuidget) | **GET** /tags/{tag_uuid} | Get Tag
-[**SearchTagsTagsGet**](TagApi.md#searchtagstagsget) | **GET** /tags | Search Tags
-[**UpdateTagTagsTagUuidPut**](TagApi.md#updatetagtagstaguuidput) | **PUT** /tags/{tag_uuid} | Update Tag
+[**CreateTagPlacesTagsPost**](TagApi.md#createtagplacestagspost) | **POST** /places/tags | Create Tag
+[**DeleteTagPlacesTagsTagUuidDelete**](TagApi.md#deletetagplacestagstaguuiddelete) | **DELETE** /places/tags/{tag_uuid} | Delete Tag
+[**GetTagPlacesTagsTagUuidGet**](TagApi.md#gettagplacestagstaguuidget) | **GET** /places/tags/{tag_uuid} | Get Tag
+[**SearchTagsPlacesTagsGet**](TagApi.md#searchtagsplacestagsget) | **GET** /places/tags | Search Tags
+[**UpdateTagPlacesTagsTagUuidPut**](TagApi.md#updatetagplacestagstaguuidput) | **PUT** /places/tags/{tag_uuid} | Update Tag
 
 
-<a name="createtagtagspost"></a>
-# **CreateTagTagsPost**
-> TagDb CreateTagTagsPost (TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createtagplacestagspost"></a>
+# **CreateTagPlacesTagsPost**
+> TagDb CreateTagPlacesTagsPost (TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Tag
 
@@ -29,7 +29,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateTagTagsPostExample
+    public class CreateTagPlacesTagsPostExample
     {
         public static void Main()
         {
@@ -47,12 +47,12 @@ namespace Example
             try
             {
                 // Create Tag
-                TagDb result = apiInstance.CreateTagTagsPost(tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                TagDb result = apiInstance.CreateTagPlacesTagsPost(tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling TagApi.CreateTagTagsPost: " + e.Message );
+                Debug.Print("Exception when calling TagApi.CreateTagPlacesTagsPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -96,9 +96,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deletetagtagstaguuiddelete"></a>
-# **DeleteTagTagsTagUuidDelete**
-> Object DeleteTagTagsTagUuidDelete (string tagUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deletetagplacestagstaguuiddelete"></a>
+# **DeleteTagPlacesTagsTagUuidDelete**
+> Object DeleteTagPlacesTagsTagUuidDelete (string tagUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Tag
 
@@ -114,7 +114,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeleteTagTagsTagUuidDeleteExample
+    public class DeleteTagPlacesTagsTagUuidDeleteExample
     {
         public static void Main()
         {
@@ -132,12 +132,12 @@ namespace Example
             try
             {
                 // Delete Tag
-                Object result = apiInstance.DeleteTagTagsTagUuidDelete(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.DeleteTagPlacesTagsTagUuidDelete(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling TagApi.DeleteTagTagsTagUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling TagApi.DeleteTagPlacesTagsTagUuidDelete: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -181,9 +181,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="gettagtagstaguuidget"></a>
-# **GetTagTagsTagUuidGet**
-> TagBase GetTagTagsTagUuidGet (string tagUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="gettagplacestagstaguuidget"></a>
+# **GetTagPlacesTagsTagUuidGet**
+> TagBase GetTagPlacesTagsTagUuidGet (string tagUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Tag
 
@@ -199,7 +199,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetTagTagsTagUuidGetExample
+    public class GetTagPlacesTagsTagUuidGetExample
     {
         public static void Main()
         {
@@ -217,12 +217,12 @@ namespace Example
             try
             {
                 // Get Tag
-                TagBase result = apiInstance.GetTagTagsTagUuidGet(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                TagBase result = apiInstance.GetTagPlacesTagsTagUuidGet(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling TagApi.GetTagTagsTagUuidGet: " + e.Message );
+                Debug.Print("Exception when calling TagApi.GetTagPlacesTagsTagUuidGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -266,9 +266,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchtagstagsget"></a>
-# **SearchTagsTagsGet**
-> Page SearchTagsTagsGet (string projectUuid = null, string name = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchtagsplacestagsget"></a>
+# **SearchTagsPlacesTagsGet**
+> Page SearchTagsPlacesTagsGet (string projectUuid = null, string name = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Tags
 
@@ -284,7 +284,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchTagsTagsGetExample
+    public class SearchTagsPlacesTagsGetExample
     {
         public static void Main()
         {
@@ -307,12 +307,12 @@ namespace Example
             try
             {
                 // Search Tags
-                Page result = apiInstance.SearchTagsTagsGet(projectUuid, name, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchTagsPlacesTagsGet(projectUuid, name, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling TagApi.SearchTagsTagsGet: " + e.Message );
+                Debug.Print("Exception when calling TagApi.SearchTagsPlacesTagsGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -361,9 +361,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updatetagtagstaguuidput"></a>
-# **UpdateTagTagsTagUuidPut**
-> TagBase UpdateTagTagsTagUuidPut (string tagUuid, TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updatetagplacestagstaguuidput"></a>
+# **UpdateTagPlacesTagsTagUuidPut**
+> TagBase UpdateTagPlacesTagsTagUuidPut (string tagUuid, TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Tag
 
@@ -379,7 +379,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdateTagTagsTagUuidPutExample
+    public class UpdateTagPlacesTagsTagUuidPutExample
     {
         public static void Main()
         {
@@ -398,12 +398,12 @@ namespace Example
             try
             {
                 // Update Tag
-                TagBase result = apiInstance.UpdateTagTagsTagUuidPut(tagUuid, tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                TagBase result = apiInstance.UpdateTagPlacesTagsTagUuidPut(tagUuid, tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling TagApi.UpdateTagTagsTagUuidPut: " + e.Message );
+                Debug.Print("Exception when calling TagApi.UpdateTagPlacesTagsTagUuidPut: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
