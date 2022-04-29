@@ -6,11 +6,10 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**CreatePlacePlacesPlacesPost**](PlacesApi.md#createplaceplacesplacespost) | **POST** /places/places | Create Place
 [**DeletePlacePlacesPlacesPlaceUuidDelete**](PlacesApi.md#deleteplaceplacesplacesplaceuuiddelete) | **DELETE** /places/places/{place_uuid} | Delete Place
-[**ForwardGeocodingPlacesPlacesForwardGeocodingGet**](PlacesApi.md#forwardgeocodingplacesplacesforwardgeocodingget) | **GET** /places/places/forward_geocoding | Forward Geocoding
+[**ForwardGeocodingPlacesPlacesGeocodingForwardGet**](PlacesApi.md#forwardgeocodingplacesplacesgeocodingforwardget) | **GET** /places/places/geocoding/forward | Forward Geocoding
 [**GetPlacePlacesPlacesPlaceUuidGet**](PlacesApi.md#getplaceplacesplacesplaceuuidget) | **GET** /places/places/{place_uuid} | Get Place
-[**ReverseGeocodingPlacesPlacesReverseGeocodingGet**](PlacesApi.md#reversegeocodingplacesplacesreversegeocodingget) | **GET** /places/places/reverse_geocoding | Reverse Geocoding
-[**SearchPlacesByAreaPlacesPlacesSearchLocationGet**](PlacesApi.md#searchplacesbyareaplacesplacessearchlocationget) | **GET** /places/places/search/location | Search Places By Area
-[**SearchPlacesBySearchStringPlacesPlacesSearchGet**](PlacesApi.md#searchplacesbysearchstringplacesplacessearchget) | **GET** /places/places/search | Search Places By Search String
+[**ReverseGeocodingPlacesPlacesGeocodingReverseGet**](PlacesApi.md#reversegeocodingplacesplacesgeocodingreverseget) | **GET** /places/places/geocoding/reverse | Reverse Geocoding
+[**SearchPlacesBySearchStringPlacesPlacesSearchStringGet**](PlacesApi.md#searchplacesbysearchstringplacesplacessearchstringget) | **GET** /places/places/search/string | Search Places By Search String
 [**SearchPlacesPlacesPlacesGet**](PlacesApi.md#searchplacesplacesplacesget) | **GET** /places/places | Search Places
 [**UpdatePlacePlacesPlacesPlaceUuidPut**](PlacesApi.md#updateplaceplacesplacesplaceuuidput) | **PUT** /places/places/{place_uuid} | Update Place
 
@@ -187,9 +186,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="forwardgeocodingplacesplacesforwardgeocodingget"></a>
-# **ForwardGeocodingPlacesPlacesForwardGeocodingGet**
-> Object ForwardGeocodingPlacesPlacesForwardGeocodingGet (string searchingPlace, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="forwardgeocodingplacesplacesgeocodingforwardget"></a>
+# **ForwardGeocodingPlacesPlacesGeocodingForwardGet**
+> Object ForwardGeocodingPlacesPlacesGeocodingForwardGet (string searchingPlace, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Forward Geocoding
 
@@ -203,7 +202,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ForwardGeocodingPlacesPlacesForwardGeocodingGetExample
+    public class ForwardGeocodingPlacesPlacesGeocodingForwardGetExample
     {
         public static void Main()
         {
@@ -221,12 +220,12 @@ namespace Example
             try
             {
                 // Forward Geocoding
-                Object result = apiInstance.ForwardGeocodingPlacesPlacesForwardGeocodingGet(searchingPlace, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.ForwardGeocodingPlacesPlacesGeocodingForwardGet(searchingPlace, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesPlacesForwardGeocodingGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesPlacesGeocodingForwardGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -373,9 +372,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="reversegeocodingplacesplacesreversegeocodingget"></a>
-# **ReverseGeocodingPlacesPlacesReverseGeocodingGet**
-> Object ReverseGeocodingPlacesPlacesReverseGeocodingGet (decimal _long, decimal lat, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="reversegeocodingplacesplacesgeocodingreverseget"></a>
+# **ReverseGeocodingPlacesPlacesGeocodingReverseGet**
+> Object ReverseGeocodingPlacesPlacesGeocodingReverseGet (decimal _long, decimal lat, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Reverse Geocoding
 
@@ -389,7 +388,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ReverseGeocodingPlacesPlacesReverseGeocodingGetExample
+    public class ReverseGeocodingPlacesPlacesGeocodingReverseGetExample
     {
         public static void Main()
         {
@@ -408,12 +407,12 @@ namespace Example
             try
             {
                 // Reverse Geocoding
-                Object result = apiInstance.ReverseGeocodingPlacesPlacesReverseGeocodingGet(_long, lat, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.ReverseGeocodingPlacesPlacesGeocodingReverseGet(_long, lat, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesPlacesReverseGeocodingGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesPlacesGeocodingReverseGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -458,75 +457,9 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchplacesbyareaplacesplacessearchlocationget"></a>
-# **SearchPlacesByAreaPlacesPlacesSearchLocationGet**
-> Page SearchPlacesByAreaPlacesPlacesSearchLocationGet ()
-
-Search Places By Area
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class SearchPlacesByAreaPlacesPlacesSearchLocationGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new PlacesApi(config);
-
-            try
-            {
-                // Search Places By Area
-                Page result = apiInstance.SearchPlacesByAreaPlacesPlacesSearchLocationGet();
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling PlacesApi.SearchPlacesByAreaPlacesPlacesSearchLocationGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-[**Page**](Page.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **404** | Route not found - Denied by eHelply |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="searchplacesbysearchstringplacesplacessearchget"></a>
-# **SearchPlacesBySearchStringPlacesPlacesSearchGet**
-> Page SearchPlacesBySearchStringPlacesPlacesSearchGet (string searchString = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchplacesbysearchstringplacesplacessearchstringget"></a>
+# **SearchPlacesBySearchStringPlacesPlacesSearchStringGet**
+> Page SearchPlacesBySearchStringPlacesPlacesSearchStringGet (string searchString = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Places By Search String
 
@@ -542,7 +475,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchPlacesBySearchStringPlacesPlacesSearchGetExample
+    public class SearchPlacesBySearchStringPlacesPlacesSearchStringGetExample
     {
         public static void Main()
         {
@@ -564,12 +497,12 @@ namespace Example
             try
             {
                 // Search Places By Search String
-                Page result = apiInstance.SearchPlacesBySearchStringPlacesPlacesSearchGet(searchString, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchPlacesBySearchStringPlacesPlacesSearchStringGet(searchString, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.SearchPlacesBySearchStringPlacesPlacesSearchGet: " + e.Message );
+                Debug.Print("Exception when calling PlacesApi.SearchPlacesBySearchStringPlacesPlacesSearchStringGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
