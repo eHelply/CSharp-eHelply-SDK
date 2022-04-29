@@ -4,31 +4,31 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AppointmentssearchAppointmentEntities**](DefaultApi.md#appointmentssearchappointmententities) | **GET** /appointments/entities/{entity_uuid}/appointments | Get Entities Appointments
-[**AttachEntityToAppointment**](DefaultApi.md#attachentitytoappointment) | **POST** /appointments/{appointment_uuid}/entities/{entity_uuid} | Attach Entity To Appointment
+[**AppointmentssearchAppointmentEntities**](DefaultApi.md#appointmentssearchappointmententities) | **GET** /appointments/appointments/entities/{entity_uuid}/appointments | Get Entities Appointments
+[**AttachEntityToAppointment**](DefaultApi.md#attachentitytoappointment) | **POST** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Attach Entity To Appointment
 [**AttachProductToCatalog**](DefaultApi.md#attachproducttocatalog) | **POST** /catalogs/{catalog_uuid}/products/{product_uuid} | Attach Product To Catalog
-[**CreateAppointment**](DefaultApi.md#createappointment) | **POST** /appointments | Create Appointment
+[**CreateAppointment**](DefaultApi.md#createappointment) | **POST** /appointments/appointments | Create Appointment
 [**CreateCatalog**](DefaultApi.md#createcatalog) | **POST** /catalogs | Create Catalog
 [**CreateProduct**](DefaultApi.md#createproduct) | **POST** /products | Create Product
 [**CreateReview**](DefaultApi.md#createreview) | **POST** /reviews/types/{entity_type}/entities/{entity_uuid} | Create Review
-[**DeleteAppointment**](DefaultApi.md#deleteappointment) | **DELETE** /appointments/{appointment_uuid} | Delete Appointment
+[**DeleteAppointment**](DefaultApi.md#deleteappointment) | **DELETE** /appointments/appointments/{appointment_uuid} | Delete Appointment
 [**DeleteCatalog**](DefaultApi.md#deletecatalog) | **DELETE** /catalogs/{catalog_uuid} | Delete Catalog
 [**DeleteProduct**](DefaultApi.md#deleteproduct) | **DELETE** /products/{product_uuid} | Delete Product
 [**DeleteReview**](DefaultApi.md#deletereview) | **DELETE** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Delete Review
-[**DetachEntityFromAppointment**](DefaultApi.md#detachentityfromappointment) | **DELETE** /appointments/{appointment_uuid}/entities/{entity_uuid} | Detach Entity From Appointment
+[**DetachEntityFromAppointment**](DefaultApi.md#detachentityfromappointment) | **DELETE** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Detach Entity From Appointment
 [**DetachProductFromCatalog**](DefaultApi.md#detachproductfromcatalog) | **DELETE** /catalogs/{catalog_uuid}/products/{product_uuid} | Detach Product From Catalog
-[**GetAppointment**](DefaultApi.md#getappointment) | **GET** /appointments/{appointment_uuid} | Get Appointment
+[**GetAppointment**](DefaultApi.md#getappointment) | **GET** /appointments/appointments/{appointment_uuid} | Get Appointment
 [**GetCatalog**](DefaultApi.md#getcatalog) | **GET** /catalogs/{catalog_uuid} | Get Catalog
 [**GetProduct**](DefaultApi.md#getproduct) | **GET** /products/{product_uuid} | Get Product
 [**GetReview**](DefaultApi.md#getreview) | **GET** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Get Review
-[**SearchAppointment**](DefaultApi.md#searchappointment) | **GET** /appointments | Search Appointment
-[**SearchAppointmentEntities**](DefaultApi.md#searchappointmententities) | **GET** /appointments/{appointment_uuid}/entities | Search Appointment Entities
+[**SearchAppointment**](DefaultApi.md#searchappointment) | **GET** /appointments/appointments | Search Appointment
+[**SearchAppointmentEntities**](DefaultApi.md#searchappointmententities) | **GET** /appointments/appointments/{appointment_uuid}/entities | Search Appointment Entities
 [**SearchCatalogProducts**](DefaultApi.md#searchcatalogproducts) | **GET** /catalogs/{catalog_uuid}/products | Search Catalog Products
 [**SearchCatalogs**](DefaultApi.md#searchcatalogs) | **GET** /catalogs | Search Catalogs
 [**SearchProduct**](DefaultApi.md#searchproduct) | **GET** /products | Search Products
 [**SearchProductCatalog**](DefaultApi.md#searchproductcatalog) | **GET** /products/{product_uuid}/catalogs | Search Product Catalogs
 [**SearchReviews**](DefaultApi.md#searchreviews) | **GET** /reviews/types/{entity_type}/entities/{entity_uuid} | Search Review
-[**UpdateAppointment**](DefaultApi.md#updateappointment) | **PUT** /appointments/{appointment_uuid} | Update Appointment
+[**UpdateAppointment**](DefaultApi.md#updateappointment) | **PUT** /appointments/appointments/{appointment_uuid} | Update Appointment
 [**UpdateCatalog**](DefaultApi.md#updatecatalog) | **PUT** /catalogs/{catalog_uuid} | Update Catalog
 [**UpdateProduct**](DefaultApi.md#updateproduct) | **PUT** /products/{product_uuid} | Update Product
 [**UpdateReview**](DefaultApi.md#updatereview) | **PUT** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Update Review
@@ -125,7 +125,7 @@ No authorization required
 
 <a name="attachentitytoappointment"></a>
 # **AttachEntityToAppointment**
-> Object AttachEntityToAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool AttachEntityToAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Attach Entity To Appointment
 
@@ -158,7 +158,7 @@ namespace Example
             try
             {
                 // Attach Entity To Appointment
-                Object result = apiInstance.AttachEntityToAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.AttachEntityToAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**bool**
 
 ### Authorization
 
@@ -631,7 +631,7 @@ No authorization required
 
 <a name="deleteappointment"></a>
 # **DeleteAppointment**
-> Object DeleteAppointment (string appointmentUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool DeleteAppointment (string appointmentUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Appointment
 
@@ -663,7 +663,7 @@ namespace Example
             try
             {
                 // Delete Appointment
-                Object result = apiInstance.DeleteAppointment(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.DeleteAppointment(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -691,7 +691,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**bool**
 
 ### Authorization
 
@@ -967,7 +967,7 @@ No authorization required
 
 <a name="detachentityfromappointment"></a>
 # **DetachEntityFromAppointment**
-> Object DetachEntityFromAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool DetachEntityFromAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Detach Entity From Appointment
 
@@ -1000,7 +1000,7 @@ namespace Example
             try
             {
                 // Detach Entity From Appointment
-                Object result = apiInstance.DetachEntityFromAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.DetachEntityFromAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -1029,7 +1029,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**bool**
 
 ### Authorization
 
