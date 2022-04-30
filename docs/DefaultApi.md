@@ -4,30 +4,30 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AttachProductToCatalog**](DefaultApi.md#attachproducttocatalog) | **POST** /catalogs/{catalog_uuid}/products/{product_uuid} | Attach Product To Catalog
-[**CreateCatalog**](DefaultApi.md#createcatalog) | **POST** /catalogs | Create Catalog
-[**CreateProduct**](DefaultApi.md#createproduct) | **POST** /products | Create Product
-[**CreateReview**](DefaultApi.md#createreview) | **POST** /reviews/types/{entity_type}/entities/{entity_uuid} | Create Review
-[**DeleteCatalog**](DefaultApi.md#deletecatalog) | **DELETE** /catalogs/{catalog_uuid} | Delete Catalog
-[**DeleteProduct**](DefaultApi.md#deleteproduct) | **DELETE** /products/{product_uuid} | Delete Product
-[**DeleteReview**](DefaultApi.md#deletereview) | **DELETE** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Delete Review
-[**DetachProductFromCatalog**](DefaultApi.md#detachproductfromcatalog) | **DELETE** /catalogs/{catalog_uuid}/products/{product_uuid} | Detach Product From Catalog
-[**GetCatalog**](DefaultApi.md#getcatalog) | **GET** /catalogs/{catalog_uuid} | Get Catalog
-[**GetProduct**](DefaultApi.md#getproduct) | **GET** /products/{product_uuid} | Get Product
-[**GetReview**](DefaultApi.md#getreview) | **GET** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Get Review
-[**SearchCatalogProducts**](DefaultApi.md#searchcatalogproducts) | **GET** /catalogs/{catalog_uuid}/products | Search Catalog Products
-[**SearchCatalogs**](DefaultApi.md#searchcatalogs) | **GET** /catalogs | Search Catalogs
-[**SearchProduct**](DefaultApi.md#searchproduct) | **GET** /products | Search Products
-[**SearchProductCatalog**](DefaultApi.md#searchproductcatalog) | **GET** /products/{product_uuid}/catalogs | Search Product Catalogs
-[**SearchReviews**](DefaultApi.md#searchreviews) | **GET** /reviews/types/{entity_type}/entities/{entity_uuid} | Search Review
-[**UpdateCatalog**](DefaultApi.md#updatecatalog) | **PUT** /catalogs/{catalog_uuid} | Update Catalog
-[**UpdateProduct**](DefaultApi.md#updateproduct) | **PUT** /products/{product_uuid} | Update Product
-[**UpdateReview**](DefaultApi.md#updatereview) | **PUT** /reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Update Review
+[**AttachProductToCatalog**](DefaultApi.md#attachproducttocatalog) | **POST** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Attach Product To Catalog
+[**CreateCatalog**](DefaultApi.md#createcatalog) | **POST** /products/catalogs | Create Catalog
+[**CreateProduct**](DefaultApi.md#createproduct) | **POST** /products/products | Create Product
+[**CreateReview**](DefaultApi.md#createreview) | **POST** /products/reviews/types/{entity_type}/entities/{entity_uuid} | Create Review
+[**DeleteCatalog**](DefaultApi.md#deletecatalog) | **DELETE** /products/catalogs/{catalog_uuid} | Delete Catalog
+[**DeleteProduct**](DefaultApi.md#deleteproduct) | **DELETE** /products/products/{product_uuid} | Delete Product
+[**DeleteReview**](DefaultApi.md#deletereview) | **DELETE** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Delete Review
+[**DetachProductFromCatalog**](DefaultApi.md#detachproductfromcatalog) | **DELETE** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Detach Product From Catalog
+[**GetCatalog**](DefaultApi.md#getcatalog) | **GET** /products/catalogs/{catalog_uuid} | Get Catalog
+[**GetProduct**](DefaultApi.md#getproduct) | **GET** /products/products/{product_uuid} | Get Product
+[**GetReview**](DefaultApi.md#getreview) | **GET** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Get Review
+[**SearchCatalogProducts**](DefaultApi.md#searchcatalogproducts) | **GET** /products/catalogs/{catalog_uuid}/products | Search Catalog Products
+[**SearchCatalogs**](DefaultApi.md#searchcatalogs) | **GET** /products/catalogs | Search Catalogs
+[**SearchProduct**](DefaultApi.md#searchproduct) | **GET** /products/products | Search Products
+[**SearchProductCatalog**](DefaultApi.md#searchproductcatalog) | **GET** /products/products/{product_uuid}/catalogs | Search Product Catalogs
+[**SearchReviews**](DefaultApi.md#searchreviews) | **GET** /products/reviews/types/{entity_type}/entities/{entity_uuid} | Search Review
+[**UpdateCatalog**](DefaultApi.md#updatecatalog) | **PUT** /products/catalogs/{catalog_uuid} | Update Catalog
+[**UpdateProduct**](DefaultApi.md#updateproduct) | **PUT** /products/products/{product_uuid} | Update Product
+[**UpdateReview**](DefaultApi.md#updatereview) | **PUT** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Update Review
 
 
 <a name="attachproducttocatalog"></a>
 # **AttachProductToCatalog**
-> Object AttachProductToCatalog (string catalogUuid, string productUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool AttachProductToCatalog (string catalogUuid, string productUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Attach Product To Catalog
 
@@ -60,7 +60,7 @@ namespace Example
             try
             {
                 // Attach Product To Catalog
-                Object result = apiInstance.AttachProductToCatalog(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.AttachProductToCatalog(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**bool**
 
 ### Authorization
 
@@ -618,7 +618,7 @@ No authorization required
 
 <a name="detachproductfromcatalog"></a>
 # **DetachProductFromCatalog**
-> Object DetachProductFromCatalog (string catalogUuid, string productUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool DetachProductFromCatalog (string catalogUuid, string productUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Detach Product From Catalog
 
@@ -651,7 +651,7 @@ namespace Example
             try
             {
                 // Detach Product From Catalog
-                Object result = apiInstance.DetachProductFromCatalog(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.DetachProductFromCatalog(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -680,7 +680,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+**bool**
 
 ### Authorization
 
