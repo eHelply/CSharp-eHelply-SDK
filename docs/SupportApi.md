@@ -36,12 +36,12 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SupportApi(config);
             var contact = new Contact(); // Contact | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -119,15 +119,15 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SupportApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var memberUuid = memberUuid_example;  // string | 
+            var projectUuid = "projectUuid_example";  // string | 
+            var memberUuid = "memberUuid_example";  // string | 
             var createTicket = new CreateTicket(); // CreateTicket | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -207,12 +207,12 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SupportApi(config);
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -288,14 +288,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SupportApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var memberUuid = memberUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var memberUuid = "memberUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -374,16 +374,16 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SupportApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var memberUuid = memberUuid_example;  // string | 
-            var ticketId = ticketId_example;  // string | 
+            var projectUuid = "projectUuid_example";  // string | 
+            var memberUuid = "memberUuid_example";  // string | 
+            var ticketId = "ticketId_example";  // string | 
             var createTicket = new CreateTicket(); // CreateTicket | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -464,15 +464,15 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SupportApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var memberUuid = memberUuid_example;  // string | 
-            var ticketId = ticketId_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var memberUuid = "memberUuid_example";  // string | 
+            var ticketId = "ticketId_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
