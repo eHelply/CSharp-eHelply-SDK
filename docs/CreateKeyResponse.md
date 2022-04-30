@@ -4,7 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**StatusCode** | **int** |  | [optional] [default to 200]
 **Uuid** | **string** |  | 
 **Access** | **string** |  | 
 **Secret** | **string** |  | 

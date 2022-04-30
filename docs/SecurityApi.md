@@ -37,8 +37,8 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var category = category_example;  // string | 
-            var ehelplySecuritySecretKey = ehelplySecuritySecretKey_example;  // string |  (optional) 
+            var category = "category_example";  // string | 
+            var ehelplySecuritySecretKey = "ehelplySecuritySecretKey_example";  // string |  (optional) 
 
             try
             {
@@ -89,7 +89,7 @@ No authorization required
 
 <a name="createkeysecuritykeyspost"></a>
 # **CreateKeySecurityKeysPost**
-> Object CreateKeySecurityKeysPost (BodyCreateKeySecurityKeysPost bodyCreateKeySecurityKeysPost, int? accessLength = null, int? secretLength = null)
+> InlineResponse2007 CreateKeySecurityKeysPost (BodyCreateKeySecurityKeysPost bodyCreateKeySecurityKeysPost, int? accessLength = null, int? secretLength = null)
 
 Create Key
 
@@ -111,13 +111,13 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
             var bodyCreateKeySecurityKeysPost = new BodyCreateKeySecurityKeysPost(); // BodyCreateKeySecurityKeysPost | 
-            var accessLength = 56;  // int? |  (optional)  (default to 64)
-            var secretLength = 56;  // int? |  (optional)  (default to 64)
+            var accessLength = 64;  // int? |  (optional)  (default to 64)
+            var secretLength = 64;  // int? |  (optional)  (default to 64)
 
             try
             {
                 // Create Key
-                Object result = apiInstance.CreateKeySecurityKeysPost(bodyCreateKeySecurityKeysPost, accessLength, secretLength);
+                InlineResponse2007 result = apiInstance.CreateKeySecurityKeysPost(bodyCreateKeySecurityKeysPost, accessLength, secretLength);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2007**](InlineResponse2007.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 
 <a name="deletekeysecuritykeyskeyuuiddelete"></a>
 # **DeleteKeySecurityKeysKeyUuidDelete**
-> Object DeleteKeySecurityKeysKeyUuidDelete (string keyUuid)
+> InlineResponse2008 DeleteKeySecurityKeysKeyUuidDelete (string keyUuid)
 
 Delete Key
 
@@ -187,12 +187,12 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var keyUuid = keyUuid_example;  // string | 
+            var keyUuid = "keyUuid_example";  // string | 
 
             try
             {
                 // Delete Key
-                Object result = apiInstance.DeleteKeySecurityKeysKeyUuidDelete(keyUuid);
+                InlineResponse2008 result = apiInstance.DeleteKeySecurityKeysKeyUuidDelete(keyUuid);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2008**](InlineResponse2008.md)
 
 ### Authorization
 
@@ -238,7 +238,7 @@ No authorization required
 
 <a name="generatetokensecuritytokenspost"></a>
 # **GenerateTokenSecurityTokensPost**
-> Object GenerateTokenSecurityTokensPost (BodyGenerateTokenSecurityTokensPost bodyGenerateTokenSecurityTokensPost)
+> InlineResponse2006 GenerateTokenSecurityTokensPost (BodyGenerateTokenSecurityTokensPost bodyGenerateTokenSecurityTokensPost)
 
 Generate Token
 
@@ -264,7 +264,7 @@ namespace Example
             try
             {
                 // Generate Token
-                Object result = apiInstance.GenerateTokenSecurityTokensPost(bodyGenerateTokenSecurityTokensPost);
+                InlineResponse2006 result = apiInstance.GenerateTokenSecurityTokensPost(bodyGenerateTokenSecurityTokensPost);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -286,7 +286,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2006**](InlineResponse2006.md)
 
 ### Authorization
 
@@ -331,8 +331,8 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var category = category_example;  // string | 
-            var ehelplySecuritySecretKey = ehelplySecuritySecretKey_example;  // string |  (optional) 
+            var category = "category_example";  // string | 
+            var ehelplySecuritySecretKey = "ehelplySecuritySecretKey_example";  // string |  (optional) 
 
             try
             {
@@ -404,7 +404,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var keyUuid = keyUuid_example;  // string | 
+            var keyUuid = "keyUuid_example";  // string | 
 
             try
             {

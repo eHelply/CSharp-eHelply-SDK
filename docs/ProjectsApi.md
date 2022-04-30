@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 <a name="addmembertoprojectprojectsprojectsprojectuuidmembersentityuuidpost"></a>
 # **AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost**
-> Object AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> InlineResponse2005 AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Add Member To Project
 
@@ -49,19 +49,19 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var entityUuid = entityUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var entityUuid = "entityUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
                 // Add Member To Project
-                Object result = apiInstance.AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                InlineResponse2005 result = apiInstance.AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -114,7 +114,7 @@ No authorization required
 
 <a name="archiveprojectprojectsprojectsprojectuuiddelete"></a>
 # **ArchiveProjectProjectsProjectsProjectUuidDelete**
-> Object ArchiveProjectProjectsProjectsProjectUuidDelete (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> InlineResponse2003 ArchiveProjectProjectsProjectsProjectUuidDelete (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Archive Project
 
@@ -135,18 +135,18 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
                 // Archive Project
-                Object result = apiInstance.ArchiveProjectProjectsProjectsProjectUuidDelete(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                InlineResponse2003 result = apiInstance.ArchiveProjectProjectsProjectsProjectUuidDelete(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2003**](InlineResponse2003.md)
 
 ### Authorization
 
@@ -219,14 +219,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
+            var projectUuid = "projectUuid_example";  // string | 
             var securityKeyCreate = new SecurityKeyCreate(); // SecurityKeyCreate | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -308,12 +308,12 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
             var projectsProjectCreate = new ProjectsProjectCreate(); // ProjectsProjectCreate | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -392,12 +392,12 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
             var projectsUsageTypeCreate = new ProjectsUsageTypeCreate(); // ProjectsUsageTypeCreate | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -454,7 +454,7 @@ No authorization required
 
 <a name="deleteusagetypeprojectsusagetypesusagetypekeydelete"></a>
 # **DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete**
-> Object DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete (string usageTypeKey, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> InlineResponse2004 DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete (string usageTypeKey, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Delete Usage Type
 
@@ -475,18 +475,18 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var usageTypeKey = usageTypeKey_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var usageTypeKey = "usageTypeKey_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
                 // Delete Usage Type
-                Object result = apiInstance.DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete(usageTypeKey, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                InlineResponse2004 result = apiInstance.DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete(usageTypeKey, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -514,7 +514,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2004**](InlineResponse2004.md)
 
 ### Authorization
 
@@ -559,15 +559,15 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
+            var projectUuid = "projectUuid_example";  // string | 
             var year = 56;  // int? |  (optional) 
             var month = 56;  // int? |  (optional) 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -647,14 +647,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var entityUuid = entityUuid_example;  // string | 
-            var role = role_example;  // string |  (optional) 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var entityUuid = "entityUuid_example";  // string | 
+            var role = "role_example";  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -733,13 +733,13 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -817,14 +817,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var role = role_example;  // string |  (optional) 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var role = "role_example";  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -905,13 +905,13 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -989,14 +989,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var usageTypeKey = usageTypeKey_example;  // string | 
-            var projectUuid = projectUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var usageTypeKey = "usageTypeKey_example";  // string | 
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -1077,7 +1077,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var usageTypeKey = usageTypeKey_example;  // string | 
+            var usageTypeKey = "usageTypeKey_example";  // string | 
 
             try
             {
@@ -1128,7 +1128,7 @@ No authorization required
 
 <a name="removememberfromprojectprojectsprojectsprojectuuidmembersentityuuiddelete"></a>
 # **RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete**
-> Object RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> InlineResponse2005 RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Remove Member From Project
 
@@ -1149,19 +1149,19 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var entityUuid = entityUuid_example;  // string | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var entityUuid = "entityUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
                 // Remove Member From Project
-                Object result = apiInstance.RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                InlineResponse2005 result = apiInstance.RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -1190,7 +1190,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2005**](InlineResponse2005.md)
 
 ### Authorization
 
@@ -1235,14 +1235,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
-            var accessToken = accessToken_example;  // string |  (optional) 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
+            var accessToken = "accessToken_example";  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -1321,12 +1321,12 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -1404,18 +1404,18 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var page = 56;  // int? |  (optional)  (default to 1)
-            var pageSize = 56;  // int? |  (optional)  (default to 25)
-            var search = search_example;  // string |  (optional) 
-            var searchOn = searchOn_example;  // string |  (optional) 
-            var sortOn = sortOn_example;  // string |  (optional) 
-            var sortDesc = true;  // bool? |  (optional)  (default to false)
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var page = 1;  // int? |  (optional)  (default to 1)
+            var pageSize = 25;  // int? |  (optional)  (default to 25)
+            var search = "search_example";  // string |  (optional) 
+            var searchOn = "searchOn_example";  // string |  (optional) 
+            var sortOn = "sortOn_example";  // string |  (optional) 
+            var sortDesc = false;  // bool? |  (optional)  (default to false)
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -1500,12 +1500,12 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var page = 56;  // int? |  (optional)  (default to 1)
-            var pageSize = 56;  // int? |  (optional)  (default to 25)
-            var search = search_example;  // string |  (optional) 
-            var searchOn = searchOn_example;  // string |  (optional) 
-            var sortOn = sortOn_example;  // string |  (optional) 
-            var sortDesc = true;  // bool? |  (optional)  (default to false)
+            var page = 1;  // int? |  (optional)  (default to 1)
+            var pageSize = 25;  // int? |  (optional)  (default to 25)
+            var search = "search_example";  // string |  (optional) 
+            var searchOn = "searchOn_example";  // string |  (optional) 
+            var sortOn = "sortOn_example";  // string |  (optional) 
+            var sortDesc = false;  // bool? |  (optional)  (default to false)
 
             try
             {
@@ -1582,14 +1582,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var projectUuid = projectUuid_example;  // string | 
+            var projectUuid = "projectUuid_example";  // string | 
             var projectsProjectUpdate = new ProjectsProjectUpdate(); // ProjectsProjectUpdate | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -1668,14 +1668,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
-            var usageTypeKey = usageTypeKey_example;  // string | 
+            var usageTypeKey = "usageTypeKey_example";  // string | 
             var projectsUsageTypeUpdate = new ProjectsUsageTypeUpdate(); // ProjectsUsageTypeUpdate | 
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {

@@ -1,10 +1,10 @@
-# Ehelply.Sdk.Model.SamHTTPValidationError
+# Ehelply.Sdk.Model.InlineResponse2002
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Detail** | [**List&lt;SamValidationError&gt;**](SamValidationError.md) |  | [optional] 
+**Message** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

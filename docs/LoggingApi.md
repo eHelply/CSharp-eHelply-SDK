@@ -32,16 +32,16 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new LoggingApi(config);
-            var service = service_example;  // string |  (optional) 
-            var dateStart = dateStart_example;  // string |  (optional) 
-            var dateEnd = dateEnd_example;  // string |  (optional) 
+            var service = "service_example";  // string |  (optional) 
+            var dateStart = "dateStart_example";  // string |  (optional) 
+            var dateEnd = "dateEnd_example";  // string |  (optional) 
             var desc = true;  // bool? |  (optional)  (default to true)
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -121,17 +121,17 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new LoggingApi(config);
-            var service = service_example;  // string | 
-            var dateStart = dateStart_example;  // string |  (optional) 
-            var dateEnd = dateEnd_example;  // string |  (optional) 
+            var service = "service_example";  // string | 
+            var dateStart = "dateStart_example";  // string |  (optional) 
+            var dateEnd = "dateEnd_example";  // string |  (optional) 
             var desc = true;  // bool? |  (optional)  (default to true)
-            var limit = 56;  // int? |  (optional)  (default to 50)
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var limit = 50;  // int? |  (optional)  (default to 50)
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {
@@ -212,18 +212,18 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new LoggingApi(config);
-            var service = service_example;  // string | 
-            var subject = subject_example;  // string | 
-            var dateStart = dateStart_example;  // string |  (optional) 
-            var dateEnd = dateEnd_example;  // string |  (optional) 
+            var service = "service_example";  // string | 
+            var subject = "subject_example";  // string | 
+            var dateStart = "dateStart_example";  // string |  (optional) 
+            var dateEnd = "dateEnd_example";  // string |  (optional) 
             var desc = true;  // bool? |  (optional)  (default to true)
-            var limit = 56;  // int? |  (optional)  (default to 50)
-            var xAccessToken = xAccessToken_example;  // string |  (optional) 
-            var xSecretToken = xSecretToken_example;  // string |  (optional) 
-            var authorization = authorization_example;  // string |  (optional) 
-            var ehelplyActiveParticipant = ehelplyActiveParticipant_example;  // string |  (optional) 
-            var ehelplyProject = ehelplyProject_example;  // string |  (optional) 
-            var ehelplyData = ehelplyData_example;  // string |  (optional) 
+            var limit = 50;  // int? |  (optional)  (default to 50)
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
 
             try
             {

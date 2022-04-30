@@ -51,9 +51,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
             var bodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost = new BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost(); // BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost | 
 
             try
@@ -128,9 +128,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
             var bodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost = new BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost(); // BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost | 
 
             try
@@ -205,9 +205,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
             var bodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost = new BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost(); // BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost | 
 
             try
@@ -282,9 +282,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
             var bodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost = new BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost(); // BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost | 
 
             try
@@ -359,9 +359,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
 
             try
             {
@@ -434,9 +434,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
 
             try
             {
@@ -509,11 +509,11 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var history = 56;  // int? |  (optional)  (default to 5)
-            var includeTerminated = true;  // bool? |  (optional)  (default to false)
-            var includeCleared = true;  // bool? |  (optional)  (default to false)
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
+            var includeTerminated = false;  // bool? |  (optional)  (default to false)
+            var includeCleared = false;  // bool? |  (optional)  (default to false)
 
             try
             {
@@ -588,9 +588,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var history = 56;  // int? |  (optional)  (default to 5)
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
 
             try
             {
@@ -663,8 +663,8 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var history = 56;  // int? |  (optional)  (default to 5)
+            var service = "service_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
 
             try
             {
@@ -736,12 +736,12 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var heartbeats = true;  // bool? |  (optional)  (default to false)
-            var heartbeatLimit = 56;  // int? |  (optional)  (default to 5)
-            var alarms = true;  // bool? |  (optional)  (default to false)
-            var alarmLimit = 56;  // int? |  (optional)  (default to 5)
-            var stage = stage_example;  // string |  (optional) 
+            var service = "service_example";  // string | 
+            var heartbeats = false;  // bool? |  (optional)  (default to false)
+            var heartbeatLimit = 5;  // int? |  (optional)  (default to 5)
+            var alarms = false;  // bool? |  (optional)  (default to false)
+            var alarmLimit = 5;  // int? |  (optional)  (default to 5)
+            var stage = "stage_example";  // string |  (optional) 
 
             try
             {
@@ -796,7 +796,7 @@ No authorization required
 
 <a name="getservicespec"></a>
 # **GetServiceSpec**
-> Object GetServiceSpec (string service, string spec, bool? asJson = null)
+> InlineResponse2002 GetServiceSpec (string service, string spec, bool? asJson = null)
 
 Getservicespec
 
@@ -817,14 +817,14 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var spec = spec_example;  // string | 
-            var asJson = true;  // bool? |  (optional)  (default to false)
+            var service = "service_example";  // string | 
+            var spec = "spec_example";  // string | 
+            var asJson = false;  // bool? |  (optional)  (default to false)
 
             try
             {
                 // Getservicespec
-                Object result = apiInstance.GetServiceSpec(service, spec, asJson);
+                InlineResponse2002 result = apiInstance.GetServiceSpec(service, spec, asJson);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -848,7 +848,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2002**](InlineResponse2002.md)
 
 ### Authorization
 
@@ -872,7 +872,7 @@ No authorization required
 
 <a name="getservicespecs"></a>
 # **GetServiceSpecs**
-> Object GetServiceSpecs (string service)
+> InlineResponse2001 GetServiceSpecs (string service)
 
 Getservicespecs
 
@@ -893,12 +893,12 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
+            var service = "service_example";  // string | 
 
             try
             {
                 // Getservicespecs
-                Object result = apiInstance.GetServiceSpecs(service);
+                InlineResponse2001 result = apiInstance.GetServiceSpecs(service);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -920,7 +920,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**InlineResponse2001**](InlineResponse2001.md)
 
 ### Authorization
 
@@ -965,9 +965,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var history = 56;  // int? |  (optional)  (default to 5)
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
 
             try
             {
@@ -1040,13 +1040,13 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var heartbeats = true;  // bool? |  (optional)  (default to false)
-            var heartbeatLimit = 56;  // int? |  (optional)  (default to 5)
-            var alarms = true;  // bool? |  (optional)  (default to false)
-            var alarmLimit = 56;  // int? |  (optional)  (default to 5)
-            var includeHidden = true;  // bool? |  (optional)  (default to false)
-            var stage = stage_example;  // string |  (optional) 
-            var key = key_example;  // string |  (optional) 
+            var heartbeats = false;  // bool? |  (optional)  (default to false)
+            var heartbeatLimit = 5;  // int? |  (optional)  (default to 5)
+            var alarms = false;  // bool? |  (optional)  (default to false)
+            var alarmLimit = 5;  // int? |  (optional)  (default to 5)
+            var includeHidden = false;  // bool? |  (optional)  (default to false)
+            var stage = "stage_example";  // string |  (optional) 
+            var key = "key_example";  // string |  (optional) 
 
             try
             {
@@ -1102,7 +1102,7 @@ No authorization required
 
 <a name="getserviceswithspecs"></a>
 # **GetServicesWithSpecs**
-> Object GetServicesWithSpecs ()
+> InlineResponse200 GetServicesWithSpecs ()
 
 Getserviceswithspecs
 
@@ -1127,7 +1127,7 @@ namespace Example
             try
             {
                 // Getserviceswithspecs
-                Object result = apiInstance.GetServicesWithSpecs();
+                InlineResponse200 result = apiInstance.GetServicesWithSpecs();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -1146,7 +1146,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Object**
+[**InlineResponse200**](InlineResponse200.md)
 
 ### Authorization
 
@@ -1190,8 +1190,8 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
 
             try
             {
@@ -1263,9 +1263,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
             var bodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost = new BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost(); // BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost | 
 
             try
@@ -1411,13 +1411,13 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var page = 56;  // int? |  (optional)  (default to 1)
-            var pageSize = 56;  // int? |  (optional)  (default to 25)
-            var search = search_example;  // string |  (optional) 
-            var searchOn = searchOn_example;  // string |  (optional) 
-            var sortOn = sortOn_example;  // string |  (optional) 
-            var sortDesc = true;  // bool? |  (optional)  (default to false)
+            var service = "service_example";  // string | 
+            var page = 1;  // int? |  (optional)  (default to 1)
+            var pageSize = 25;  // int? |  (optional)  (default to 25)
+            var search = "search_example";  // string |  (optional) 
+            var searchOn = "searchOn_example";  // string |  (optional) 
+            var sortOn = "sortOn_example";  // string |  (optional) 
+            var sortDesc = false;  // bool? |  (optional)  (default to false)
 
             try
             {
@@ -1494,8 +1494,8 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
 
             try
             {
@@ -1567,9 +1567,9 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
-            var alarmUuid = alarmUuid_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
             var bodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost = new BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost(); // BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost | 
 
             try
@@ -1644,8 +1644,8 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var service = service_example;  // string | 
-            var stage = stage_example;  // string | 
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
             var bodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost = new BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost(); // BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost | 
 
             try
