@@ -4,33 +4,32 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost**](ProjectsApi.md#addmembertoprojectprojectsprojectsprojectuuidmembersentityuuidpost) | **POST** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Add Member To Project
-[**ArchiveProjectProjectsProjectsProjectUuidDelete**](ProjectsApi.md#archiveprojectprojectsprojectsprojectuuiddelete) | **DELETE** /sam/projects/projects/{project_uuid} | Archive Project
-[**CreateProjectKeyProjectsProjectsProjectUuidKeysPost**](ProjectsApi.md#createprojectkeyprojectsprojectsprojectuuidkeyspost) | **POST** /sam/projects/projects/{project_uuid}/keys | Create Project Key
-[**CreateProjectProjectsProjectsPost**](ProjectsApi.md#createprojectprojectsprojectspost) | **POST** /sam/projects/projects | Create Project
-[**CreateUsageTypeProjectsUsageTypesPost**](ProjectsApi.md#createusagetypeprojectsusagetypespost) | **POST** /sam/projects/usage/types | Create Usage Type
-[**DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete**](ProjectsApi.md#deleteusagetypeprojectsusagetypesusagetypekeydelete) | **DELETE** /sam/projects/usage/types/{usage_type_key} | Delete Usage Type
-[**GetAllProjectUsageProjectsProjectsProjectUuidUsageGet**](ProjectsApi.md#getallprojectusageprojectsprojectsprojectuuidusageget) | **GET** /sam/projects/projects/{project_uuid}/usage | Get All Project Usage
-[**GetMemberProjectsProjectsMembersEntityUuidProjectsGet**](ProjectsApi.md#getmemberprojectsprojectsmembersentityuuidprojectsget) | **GET** /sam/projects/members/{entity_uuid}/projects | Get Member Projects
-[**GetProjectKeysProjectsProjectsProjectUuidKeysGet**](ProjectsApi.md#getprojectkeysprojectsprojectsprojectuuidkeysget) | **GET** /sam/projects/projects/{project_uuid}/keys | Get Project Keys
-[**GetProjectMembersProjectsProjectsProjectUuidMembersGet**](ProjectsApi.md#getprojectmembersprojectsprojectsprojectuuidmembersget) | **GET** /sam/projects/projects/{project_uuid}/members | Get Project Members
-[**GetProjectProjectsProjectsProjectUuidGet**](ProjectsApi.md#getprojectprojectsprojectsprojectuuidget) | **GET** /sam/projects/projects/{project_uuid} | Get Project
-[**GetSpecificProjectUsageProjectsProjectsProjectUuidUsageUsageTypeKeyGet**](ProjectsApi.md#getspecificprojectusageprojectsprojectsprojectuuidusageusagetypekeyget) | **GET** /sam/projects/projects/{project_uuid}/usage/{usage_type_key} | Get Specific Project Usage
-[**GetUsageTypeProjectsUsageTypesUsageTypeKeyGet**](ProjectsApi.md#getusagetypeprojectsusagetypesusagetypekeyget) | **GET** /sam/projects/usage/types/{usage_type_key} | Get Usage Type
-[**RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete**](ProjectsApi.md#removememberfromprojectprojectsprojectsprojectuuidmembersentityuuiddelete) | **DELETE** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Remove Member From Project
-[**RemoveProjectKeyProjectsProjectsProjectUuidKeysDelete**](ProjectsApi.md#removeprojectkeyprojectsprojectsprojectuuidkeysdelete) | **DELETE** /sam/projects/projects/{project_uuid}/keys | Remove Project Key
-[**SandboxProjectsSandboxGet**](ProjectsApi.md#sandboxprojectssandboxget) | **GET** /sam/projects/sandbox | Sandbox
-[**SearchProjectsProjectsProjectsGet**](ProjectsApi.md#searchprojectsprojectsprojectsget) | **GET** /sam/projects/projects | Search Projects
-[**SearchUsageTypeProjectsUsageTypesGet**](ProjectsApi.md#searchusagetypeprojectsusagetypesget) | **GET** /sam/projects/usage/types | Search Usage Type
-[**UpdateProjectProjectsProjectsProjectUuidPut**](ProjectsApi.md#updateprojectprojectsprojectsprojectuuidput) | **PUT** /sam/projects/projects/{project_uuid} | Update Project
-[**UpdateUsageTypeProjectsUsageTypesUsageTypeKeyPut**](ProjectsApi.md#updateusagetypeprojectsusagetypesusagetypekeyput) | **PUT** /sam/projects/usage/types/{usage_type_key} | Update Usage Type
+[**AddMemberToProject**](ProjectsApi.md#addmembertoproject) | **POST** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Addmembertoproject
+[**ArchiveProject**](ProjectsApi.md#archiveproject) | **DELETE** /sam/projects/projects/{project_uuid} | Archiveproject
+[**CreateProject**](ProjectsApi.md#createproject) | **POST** /sam/projects/projects | Createproject
+[**CreateProjectKey**](ProjectsApi.md#createprojectkey) | **POST** /sam/projects/projects/{project_uuid}/keys | Createprojectkey
+[**CreateUsageType**](ProjectsApi.md#createusagetype) | **POST** /sam/projects/usage/types | Createusagetype
+[**DeleteProjectKey**](ProjectsApi.md#deleteprojectkey) | **DELETE** /sam/projects/projects/{project_uuid}/keys | Deleteprojectkey
+[**DeleteUsageType**](ProjectsApi.md#deleteusagetype) | **DELETE** /sam/projects/usage/types/{usage_type_key} | Deleteusagetype
+[**GetAllProjectUsage**](ProjectsApi.md#getallprojectusage) | **GET** /sam/projects/projects/{project_uuid}/usage | Getallprojectusage
+[**GetMemberProjects**](ProjectsApi.md#getmemberprojects) | **GET** /sam/projects/members/{entity_uuid}/projects | Getmemberprojects
+[**GetProject**](ProjectsApi.md#getproject) | **GET** /sam/projects/projects/{project_uuid} | Getproject
+[**GetProjectKeys**](ProjectsApi.md#getprojectkeys) | **GET** /sam/projects/projects/{project_uuid}/keys | Getprojectkeys
+[**GetProjectMembers**](ProjectsApi.md#getprojectmembers) | **GET** /sam/projects/projects/{project_uuid}/members | Getprojectmembers
+[**GetSpecificProjectUsage**](ProjectsApi.md#getspecificprojectusage) | **GET** /sam/projects/projects/{project_uuid}/usage/{usage_type_key} | Getspecificprojectusage
+[**GetUsageType**](ProjectsApi.md#getusagetype) | **GET** /sam/projects/usage/types/{usage_type_key} | Getusagetype
+[**RemoveMemberFromProject**](ProjectsApi.md#removememberfromproject) | **DELETE** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Removememberfromproject
+[**SearchProjects**](ProjectsApi.md#searchprojects) | **GET** /sam/projects/projects | Searchprojects
+[**SearchUsageType**](ProjectsApi.md#searchusagetype) | **GET** /sam/projects/usage/types | Searchusagetype
+[**UpdateProject**](ProjectsApi.md#updateproject) | **PUT** /sam/projects/projects/{project_uuid} | Updateproject
+[**UpdateUsageType**](ProjectsApi.md#updateusagetype) | **PUT** /sam/projects/usage/types/{usage_type_key} | Updateusagetype
 
 
-<a name="addmembertoprojectprojectsprojectsprojectuuidmembersentityuuidpost"></a>
-# **AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost**
-> InlineResponse2005 AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="addmembertoproject"></a>
+# **AddMemberToProject**
+> ResponseAddmembertoproject AddMemberToProject (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Add Member To Project
+Addmembertoproject
 
 ### Example
 ```csharp
@@ -42,7 +41,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPostExample
+    public class AddMemberToProjectExample
     {
         public static void Main()
         {
@@ -60,13 +59,13 @@ namespace Example
 
             try
             {
-                // Add Member To Project
-                InlineResponse2005 result = apiInstance.AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Addmembertoproject
+                ResponseAddmembertoproject result = apiInstance.AddMemberToProject(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.AddMemberToProjectProjectsProjectsProjectUuidMembersEntityUuidPost: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.AddMemberToProject: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -90,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**ResponseAddmembertoproject**](ResponseAddmembertoproject.md)
 
 ### Authorization
 
@@ -112,11 +111,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="archiveprojectprojectsprojectsprojectuuiddelete"></a>
-# **ArchiveProjectProjectsProjectsProjectUuidDelete**
-> InlineResponse2003 ArchiveProjectProjectsProjectsProjectUuidDelete (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="archiveproject"></a>
+# **ArchiveProject**
+> ResponseArchiveproject ArchiveProject (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Archive Project
+Archiveproject
 
 ### Example
 ```csharp
@@ -128,7 +127,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ArchiveProjectProjectsProjectsProjectUuidDeleteExample
+    public class ArchiveProjectExample
     {
         public static void Main()
         {
@@ -145,13 +144,13 @@ namespace Example
 
             try
             {
-                // Archive Project
-                InlineResponse2003 result = apiInstance.ArchiveProjectProjectsProjectsProjectUuidDelete(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Archiveproject
+                ResponseArchiveproject result = apiInstance.ArchiveProject(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.ArchiveProjectProjectsProjectsProjectUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.ArchiveProject: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -174,7 +173,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2003**](InlineResponse2003.md)
+[**ResponseArchiveproject**](ResponseArchiveproject.md)
 
 ### Authorization
 
@@ -196,11 +195,13 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="createprojectkeyprojectsprojectsprojectuuidkeyspost"></a>
-# **CreateProjectKeyProjectsProjectsProjectUuidKeysPost**
-> CreateKeyResponse CreateProjectKeyProjectsProjectsProjectUuidKeysPost (string projectUuid, SecurityKeyCreate securityKeyCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createproject"></a>
+# **CreateProject**
+> ProjectDB CreateProject (ProjectsProjectCreate projectsProjectCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Create Project Key
+Createproject
+
+Create a new Project
 
 ### Example
 ```csharp
@@ -212,7 +213,91 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateProjectKeyProjectsProjectsProjectUuidKeysPostExample
+    public class CreateProjectExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectsProjectCreate = new ProjectsProjectCreate(); // ProjectsProjectCreate | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Createproject
+                ProjectDB result = apiInstance.CreateProject(projectsProjectCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.CreateProject: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectsProjectCreate** | [**ProjectsProjectCreate**](ProjectsProjectCreate.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
+
+### Return type
+
+[**ProjectDB**](ProjectDB.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="createprojectkey"></a>
+# **CreateProjectKey**
+> CreateKeyResponse CreateProjectKey (string projectUuid, SecurityKeyCreate securityKeyCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Createprojectkey
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class CreateProjectKeyExample
     {
         public static void Main()
         {
@@ -230,13 +315,13 @@ namespace Example
 
             try
             {
-                // Create Project Key
-                CreateKeyResponse result = apiInstance.CreateProjectKeyProjectsProjectsProjectUuidKeysPost(projectUuid, securityKeyCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Createprojectkey
+                CreateKeyResponse result = apiInstance.CreateProjectKey(projectUuid, securityKeyCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.CreateProjectKeyProjectsProjectsProjectUuidKeysPost: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.CreateProjectKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -282,13 +367,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="createprojectprojectsprojectspost"></a>
-# **CreateProjectProjectsProjectsPost**
-> Object CreateProjectProjectsProjectsPost (ProjectsProjectCreate projectsProjectCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="createusagetype"></a>
+# **CreateUsageType**
+> ProjectsUsageTypeDB CreateUsageType (ProjectsUsageTypeCreate projectsUsageTypeCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Create Project
-
-Create a new Project
+Createusagetype
 
 ### Example
 ```csharp
@@ -300,91 +383,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateProjectProjectsProjectsPostExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new ProjectsApi(config);
-            var projectsProjectCreate = new ProjectsProjectCreate(); // ProjectsProjectCreate | 
-            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
-            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
-            var authorization = "authorization_example";  // string |  (optional) 
-            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
-            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
-            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
-
-            try
-            {
-                // Create Project
-                Object result = apiInstance.CreateProjectProjectsProjectsPost(projectsProjectCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling ProjectsApi.CreateProjectProjectsProjectsPost: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectsProjectCreate** | [**ProjectsProjectCreate**](ProjectsProjectCreate.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **403** | Unauthorized - Denied by eHelply |  -  |
-| **404** | Not found |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="createusagetypeprojectsusagetypespost"></a>
-# **CreateUsageTypeProjectsUsageTypesPost**
-> ProjectsUsageTypeDB CreateUsageTypeProjectsUsageTypesPost (ProjectsUsageTypeCreate projectsUsageTypeCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
-
-Create Usage Type
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class CreateUsageTypeProjectsUsageTypesPostExample
+    public class CreateUsageTypeExample
     {
         public static void Main()
         {
@@ -401,13 +400,13 @@ namespace Example
 
             try
             {
-                // Create Usage Type
-                ProjectsUsageTypeDB result = apiInstance.CreateUsageTypeProjectsUsageTypesPost(projectsUsageTypeCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Createusagetype
+                ProjectsUsageTypeDB result = apiInstance.CreateUsageType(projectsUsageTypeCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.CreateUsageTypeProjectsUsageTypesPost: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.CreateUsageType: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -452,11 +451,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteusagetypeprojectsusagetypesusagetypekeydelete"></a>
-# **DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete**
-> InlineResponse2004 DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete (string usageTypeKey, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deleteprojectkey"></a>
+# **DeleteProjectKey**
+> string DeleteProjectKey (string projectUuid, string accessToken = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Delete Usage Type
+Deleteprojectkey
 
 ### Example
 ```csharp
@@ -468,7 +467,93 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDeleteExample
+    public class DeleteProjectKeyExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var accessToken = "accessToken_example";  // string |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Deleteprojectkey
+                string result = apiInstance.DeleteProjectKey(projectUuid, accessToken, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.DeleteProjectKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
+ **accessToken** | **string**|  | [optional] 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
+
+### Return type
+
+**string**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project, Entity, or Key does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteusagetype"></a>
+# **DeleteUsageType**
+> ResponseDeleteusagetype DeleteUsageType (string usageTypeKey, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Deleteusagetype
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class DeleteUsageTypeExample
     {
         public static void Main()
         {
@@ -485,13 +570,13 @@ namespace Example
 
             try
             {
-                // Delete Usage Type
-                InlineResponse2004 result = apiInstance.DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete(usageTypeKey, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Deleteusagetype
+                ResponseDeleteusagetype result = apiInstance.DeleteUsageType(usageTypeKey, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.DeleteUsageTypeProjectsUsageTypesUsageTypeKeyDelete: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.DeleteUsageType: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -514,7 +599,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2004**](InlineResponse2004.md)
+[**ResponseDeleteusagetype**](ResponseDeleteusagetype.md)
 
 ### Authorization
 
@@ -536,11 +621,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getallprojectusageprojectsprojectsprojectuuidusageget"></a>
-# **GetAllProjectUsageProjectsProjectsProjectUuidUsageGet**
-> List&lt;ProjectsProjectUsageDB&gt; GetAllProjectUsageProjectsProjectsProjectUuidUsageGet (string projectUuid, int? year = null, int? month = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getallprojectusage"></a>
+# **GetAllProjectUsage**
+> List&lt;ProjectsProjectUsageDB&gt; GetAllProjectUsage (string projectUuid, int? year = null, int? month = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get All Project Usage
+Getallprojectusage
 
 ### Example
 ```csharp
@@ -552,7 +637,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetAllProjectUsageProjectsProjectsProjectUuidUsageGetExample
+    public class GetAllProjectUsageExample
     {
         public static void Main()
         {
@@ -571,13 +656,13 @@ namespace Example
 
             try
             {
-                // Get All Project Usage
-                List<ProjectsProjectUsageDB> result = apiInstance.GetAllProjectUsageProjectsProjectsProjectUuidUsageGet(projectUuid, year, month, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getallprojectusage
+                List<ProjectsProjectUsageDB> result = apiInstance.GetAllProjectUsage(projectUuid, year, month, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.GetAllProjectUsageProjectsProjectsProjectUuidUsageGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.GetAllProjectUsage: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -624,11 +709,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getmemberprojectsprojectsmembersentityuuidprojectsget"></a>
-# **GetMemberProjectsProjectsMembersEntityUuidProjectsGet**
-> List&lt;ProjectsProjectGet&gt; GetMemberProjectsProjectsMembersEntityUuidProjectsGet (string entityUuid, string role = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getmemberprojects"></a>
+# **GetMemberProjects**
+> List&lt;ProjectsProjectGet&gt; GetMemberProjects (string entityUuid, string role = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Member Projects
+Getmemberprojects
 
 ### Example
 ```csharp
@@ -640,7 +725,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetMemberProjectsProjectsMembersEntityUuidProjectsGetExample
+    public class GetMemberProjectsExample
     {
         public static void Main()
         {
@@ -658,13 +743,13 @@ namespace Example
 
             try
             {
-                // Get Member Projects
-                List<ProjectsProjectGet> result = apiInstance.GetMemberProjectsProjectsMembersEntityUuidProjectsGet(entityUuid, role, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getmemberprojects
+                List<ProjectsProjectGet> result = apiInstance.GetMemberProjects(entityUuid, role, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.GetMemberProjectsProjectsMembersEntityUuidProjectsGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.GetMemberProjects: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -710,11 +795,13 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getprojectkeysprojectsprojectsprojectuuidkeysget"></a>
-# **GetProjectKeysProjectsProjectsProjectUuidKeysGet**
-> List&lt;ProjectsProjectMemberDB&gt; GetProjectKeysProjectsProjectsProjectUuidKeysGet (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getproject"></a>
+# **GetProject**
+> ProjectDB GetProject (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Project Keys
+Getproject
+
+Get a Project
 
 ### Example
 ```csharp
@@ -726,7 +813,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetProjectKeysProjectsProjectsProjectUuidKeysGetExample
+    public class GetProjectExample
     {
         public static void Main()
         {
@@ -743,13 +830,97 @@ namespace Example
 
             try
             {
-                // Get Project Keys
-                List<ProjectsProjectMemberDB> result = apiInstance.GetProjectKeysProjectsProjectsProjectUuidKeysGet(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getproject
+                ProjectDB result = apiInstance.GetProject(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.GetProjectKeysProjectsProjectsProjectUuidKeysGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.GetProject: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
+
+### Return type
+
+[**ProjectDB**](ProjectDB.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getprojectkeys"></a>
+# **GetProjectKeys**
+> List&lt;ProjectsProjectMemberDB&gt; GetProjectKeys (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Getprojectkeys
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetProjectKeysExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Getprojectkeys
+                List<ProjectsProjectMemberDB> result = apiInstance.GetProjectKeys(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.GetProjectKeys: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -794,11 +965,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getprojectmembersprojectsprojectsprojectuuidmembersget"></a>
-# **GetProjectMembersProjectsProjectsProjectUuidMembersGet**
-> List&lt;ProjectsProjectMemberDB&gt; GetProjectMembersProjectsProjectsProjectUuidMembersGet (string projectUuid, string role = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getprojectmembers"></a>
+# **GetProjectMembers**
+> List&lt;ProjectsProjectMemberDB&gt; GetProjectMembers (string projectUuid, string role = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Project Members
+Getprojectmembers
 
 ### Example
 ```csharp
@@ -810,7 +981,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetProjectMembersProjectsProjectsProjectUuidMembersGetExample
+    public class GetProjectMembersExample
     {
         public static void Main()
         {
@@ -828,13 +999,13 @@ namespace Example
 
             try
             {
-                // Get Project Members
-                List<ProjectsProjectMemberDB> result = apiInstance.GetProjectMembersProjectsProjectsProjectUuidMembersGet(projectUuid, role, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getprojectmembers
+                List<ProjectsProjectMemberDB> result = apiInstance.GetProjectMembers(projectUuid, role, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.GetProjectMembersProjectsProjectsProjectUuidMembersGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.GetProjectMembers: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -880,13 +1051,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getprojectprojectsprojectsprojectuuidget"></a>
-# **GetProjectProjectsProjectsProjectUuidGet**
-> Object GetProjectProjectsProjectsProjectUuidGet (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getspecificprojectusage"></a>
+# **GetSpecificProjectUsage**
+> ProjectsProjectUsageDB GetSpecificProjectUsage (string usageTypeKey, string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Project
-
-Get a Project
+Getspecificprojectusage
 
 ### Example
 ```csharp
@@ -898,91 +1067,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetProjectProjectsProjectsProjectUuidGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new ProjectsApi(config);
-            var projectUuid = "projectUuid_example";  // string | 
-            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
-            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
-            var authorization = "authorization_example";  // string |  (optional) 
-            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
-            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
-            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
-
-            try
-            {
-                // Get Project
-                Object result = apiInstance.GetProjectProjectsProjectsProjectUuidGet(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling ProjectsApi.GetProjectProjectsProjectsProjectUuidGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **403** | Unauthorized - Denied by eHelply |  -  |
-| **404** | Project does not exist |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getspecificprojectusageprojectsprojectsprojectuuidusageusagetypekeyget"></a>
-# **GetSpecificProjectUsageProjectsProjectsProjectUuidUsageUsageTypeKeyGet**
-> ProjectsProjectUsageDB GetSpecificProjectUsageProjectsProjectsProjectUuidUsageUsageTypeKeyGet (string usageTypeKey, string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
-
-Get Specific Project Usage
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class GetSpecificProjectUsageProjectsProjectsProjectUuidUsageUsageTypeKeyGetExample
+    public class GetSpecificProjectUsageExample
     {
         public static void Main()
         {
@@ -1000,13 +1085,13 @@ namespace Example
 
             try
             {
-                // Get Specific Project Usage
-                ProjectsProjectUsageDB result = apiInstance.GetSpecificProjectUsageProjectsProjectsProjectUuidUsageUsageTypeKeyGet(usageTypeKey, projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getspecificprojectusage
+                ProjectsProjectUsageDB result = apiInstance.GetSpecificProjectUsage(usageTypeKey, projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.GetSpecificProjectUsageProjectsProjectsProjectUuidUsageUsageTypeKeyGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.GetSpecificProjectUsage: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1052,11 +1137,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getusagetypeprojectsusagetypesusagetypekeyget"></a>
-# **GetUsageTypeProjectsUsageTypesUsageTypeKeyGet**
-> ProjectsUsageTypeGet GetUsageTypeProjectsUsageTypesUsageTypeKeyGet (string usageTypeKey)
+<a name="getusagetype"></a>
+# **GetUsageType**
+> ProjectsUsageTypeGet GetUsageType (string usageTypeKey)
 
-Get Usage Type
+Getusagetype
 
 Get a UsageType  No auth because we may want to use this on pricing/docs pages
 
@@ -1070,7 +1155,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetUsageTypeProjectsUsageTypesUsageTypeKeyGetExample
+    public class GetUsageTypeExample
     {
         public static void Main()
         {
@@ -1081,13 +1166,13 @@ namespace Example
 
             try
             {
-                // Get Usage Type
-                ProjectsUsageTypeGet result = apiInstance.GetUsageTypeProjectsUsageTypesUsageTypeKeyGet(usageTypeKey);
+                // Getusagetype
+                ProjectsUsageTypeGet result = apiInstance.GetUsageType(usageTypeKey);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.GetUsageTypeProjectsUsageTypesUsageTypeKeyGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.GetUsageType: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1126,11 +1211,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="removememberfromprojectprojectsprojectsprojectuuidmembersentityuuiddelete"></a>
-# **RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete**
-> InlineResponse2005 RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="removememberfromproject"></a>
+# **RemoveMemberFromProject**
+> ResponseRemovememberfromproject RemoveMemberFromProject (string projectUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Remove Member From Project
+Removememberfromproject
 
 ### Example
 ```csharp
@@ -1142,7 +1227,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDeleteExample
+    public class RemoveMemberFromProjectExample
     {
         public static void Main()
         {
@@ -1160,13 +1245,13 @@ namespace Example
 
             try
             {
-                // Remove Member From Project
-                InlineResponse2005 result = apiInstance.RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Removememberfromproject
+                ResponseRemovememberfromproject result = apiInstance.RemoveMemberFromProject(projectUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.RemoveMemberFromProjectProjectsProjectsProjectUuidMembersEntityUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.RemoveMemberFromProject: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1190,7 +1275,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2005**](InlineResponse2005.md)
+[**ResponseRemovememberfromproject**](ResponseRemovememberfromproject.md)
 
 ### Authorization
 
@@ -1212,178 +1297,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="removeprojectkeyprojectsprojectsprojectuuidkeysdelete"></a>
-# **RemoveProjectKeyProjectsProjectsProjectUuidKeysDelete**
-> Object RemoveProjectKeyProjectsProjectsProjectUuidKeysDelete (string projectUuid, string accessToken = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="searchprojects"></a>
+# **SearchProjects**
+> Page SearchProjects (int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Remove Project Key
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class RemoveProjectKeyProjectsProjectsProjectUuidKeysDeleteExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new ProjectsApi(config);
-            var projectUuid = "projectUuid_example";  // string | 
-            var accessToken = "accessToken_example";  // string |  (optional) 
-            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
-            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
-            var authorization = "authorization_example";  // string |  (optional) 
-            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
-            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
-            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
-
-            try
-            {
-                // Remove Project Key
-                Object result = apiInstance.RemoveProjectKeyProjectsProjectsProjectUuidKeysDelete(projectUuid, accessToken, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling ProjectsApi.RemoveProjectKeyProjectsProjectsProjectUuidKeysDelete: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectUuid** | **string**|  | 
- **accessToken** | **string**|  | [optional] 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **403** | Unauthorized - Denied by eHelply |  -  |
-| **404** | Project, Entity, or Key does not exist |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="sandboxprojectssandboxget"></a>
-# **SandboxProjectsSandboxGet**
-> Object SandboxProjectsSandboxGet (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
-
-Sandbox
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class SandboxProjectsSandboxGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new ProjectsApi(config);
-            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
-            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
-            var authorization = "authorization_example";  // string |  (optional) 
-            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
-            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
-            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
-
-            try
-            {
-                // Sandbox
-                Object result = apiInstance.SandboxProjectsSandboxGet(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling ProjectsApi.SandboxProjectsSandboxGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="searchprojectsprojectsprojectsget"></a>
-# **SearchProjectsProjectsProjectsGet**
-> Page SearchProjectsProjectsProjectsGet (int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
-
-Search Projects
+Searchprojects
 
 Search projects
 
@@ -1397,7 +1315,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchProjectsProjectsProjectsGetExample
+    public class SearchProjectsExample
     {
         public static void Main()
         {
@@ -1419,13 +1337,13 @@ namespace Example
 
             try
             {
-                // Search Projects
-                Page result = apiInstance.SearchProjectsProjectsProjectsGet(page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Searchprojects
+                Page result = apiInstance.SearchProjects(page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.SearchProjectsProjectsProjectsGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.SearchProjects: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1475,11 +1393,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchusagetypeprojectsusagetypesget"></a>
-# **SearchUsageTypeProjectsUsageTypesGet**
-> Page SearchUsageTypeProjectsUsageTypesGet (int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null)
+<a name="searchusagetype"></a>
+# **SearchUsageType**
+> Page SearchUsageType (int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null)
 
-Search Usage Type
+Searchusagetype
 
 Get a UsageType  No auth because we may want to use this on pricing/docs pages
 
@@ -1493,7 +1411,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchUsageTypeProjectsUsageTypesGetExample
+    public class SearchUsageTypeExample
     {
         public static void Main()
         {
@@ -1509,13 +1427,13 @@ namespace Example
 
             try
             {
-                // Search Usage Type
-                Page result = apiInstance.SearchUsageTypeProjectsUsageTypesGet(page, pageSize, search, searchOn, sortOn, sortDesc);
+                // Searchusagetype
+                Page result = apiInstance.SearchUsageType(page, pageSize, search, searchOn, sortOn, sortDesc);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.SearchUsageTypeProjectsUsageTypesGet: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.SearchUsageType: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1559,11 +1477,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updateprojectprojectsprojectsprojectuuidput"></a>
-# **UpdateProjectProjectsProjectsProjectUuidPut**
-> Object UpdateProjectProjectsProjectsProjectUuidPut (string projectUuid, ProjectsProjectUpdate projectsProjectUpdate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updateproject"></a>
+# **UpdateProject**
+> Object UpdateProject (string projectUuid, ProjectsProjectUpdate projectsProjectUpdate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Update Project
+Updateproject
 
 ### Example
 ```csharp
@@ -1575,7 +1493,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdateProjectProjectsProjectsProjectUuidPutExample
+    public class UpdateProjectExample
     {
         public static void Main()
         {
@@ -1593,13 +1511,13 @@ namespace Example
 
             try
             {
-                // Update Project
-                Object result = apiInstance.UpdateProjectProjectsProjectsProjectUuidPut(projectUuid, projectsProjectUpdate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Updateproject
+                Object result = apiInstance.UpdateProject(projectUuid, projectsProjectUpdate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.UpdateProjectProjectsProjectsProjectUuidPut: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.UpdateProject: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1645,11 +1563,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updateusagetypeprojectsusagetypesusagetypekeyput"></a>
-# **UpdateUsageTypeProjectsUsageTypesUsageTypeKeyPut**
-> ProjectsUsageTypeDB UpdateUsageTypeProjectsUsageTypesUsageTypeKeyPut (string usageTypeKey, ProjectsUsageTypeUpdate projectsUsageTypeUpdate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="updateusagetype"></a>
+# **UpdateUsageType**
+> ProjectsUsageTypeDB UpdateUsageType (string usageTypeKey, ProjectsUsageTypeUpdate projectsUsageTypeUpdate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Update Usage Type
+Updateusagetype
 
 ### Example
 ```csharp
@@ -1661,7 +1579,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class UpdateUsageTypeProjectsUsageTypesUsageTypeKeyPutExample
+    public class UpdateUsageTypeExample
     {
         public static void Main()
         {
@@ -1679,13 +1597,13 @@ namespace Example
 
             try
             {
-                // Update Usage Type
-                ProjectsUsageTypeDB result = apiInstance.UpdateUsageTypeProjectsUsageTypesUsageTypeKeyPut(usageTypeKey, projectsUsageTypeUpdate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Updateusagetype
+                ProjectsUsageTypeDB result = apiInstance.UpdateUsageType(usageTypeKey, projectsUsageTypeUpdate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProjectsApi.UpdateUsageTypeProjectsUsageTypesUsageTypeKeyPut: " + e.Message );
+                Debug.Print("Exception when calling ProjectsApi.UpdateUsageType: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

@@ -4,21 +4,21 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateEncryptionKeySecurityEncryptionCategoriesCategoryKeysPost**](SecurityApi.md#createencryptionkeysecurityencryptioncategoriescategorykeyspost) | **POST** /sam/security/encryption/categories/{category}/keys | Create Encryption Key
-[**CreateKeySecurityKeysPost**](SecurityApi.md#createkeysecuritykeyspost) | **POST** /sam/security/keys | Create Key
-[**DeleteKeySecurityKeysKeyUuidDelete**](SecurityApi.md#deletekeysecuritykeyskeyuuiddelete) | **DELETE** /sam/security/keys/{key_uuid} | Delete Key
-[**GenerateTokenSecurityTokensPost**](SecurityApi.md#generatetokensecuritytokenspost) | **POST** /sam/security/tokens | Generate Token
-[**GetEncryptionKeySecurityEncryptionCategoriesCategoryKeysGet**](SecurityApi.md#getencryptionkeysecurityencryptioncategoriescategorykeysget) | **GET** /sam/security/encryption/categories/{category}/keys | Get Encryption Key
-[**GetKeySecurityKeysKeyUuidGet**](SecurityApi.md#getkeysecuritykeyskeyuuidget) | **GET** /sam/security/keys/{key_uuid} | Get Key
-[**SearchKeysSecurityKeysGet**](SecurityApi.md#searchkeyssecuritykeysget) | **GET** /sam/security/keys | Search Keys
-[**VerifyKeySecurityKeysVerifyPost**](SecurityApi.md#verifykeysecuritykeysverifypost) | **POST** /sam/security/keys/verify | Verify Key
+[**CreateEncryptionKey**](SecurityApi.md#createencryptionkey) | **POST** /sam/security/encryption/categories/{category}/keys | Createencryptionkey
+[**CreateKey**](SecurityApi.md#createkey) | **POST** /sam/security/keys | Createkey
+[**DeleteKey**](SecurityApi.md#deletekey) | **DELETE** /sam/security/keys/{key_uuid} | Deletekey
+[**GenerateToken**](SecurityApi.md#generatetoken) | **POST** /sam/security/tokens | Generatetoken
+[**GetEncryptionKey**](SecurityApi.md#getencryptionkey) | **GET** /sam/security/encryption/categories/{category}/keys | Getencryptionkey
+[**GetKey**](SecurityApi.md#getkey) | **GET** /sam/security/keys/{key_uuid} | Getkey
+[**SearchKeys**](SecurityApi.md#searchkeys) | **GET** /sam/security/keys | Searchkeys
+[**VerifyKey**](SecurityApi.md#verifykey) | **POST** /sam/security/keys/verify | Verifykey
 
 
-<a name="createencryptionkeysecurityencryptioncategoriescategorykeyspost"></a>
-# **CreateEncryptionKeySecurityEncryptionCategoriesCategoryKeysPost**
-> Object CreateEncryptionKeySecurityEncryptionCategoriesCategoryKeysPost (string category, string ehelplySecuritySecretKey = null)
+<a name="createencryptionkey"></a>
+# **CreateEncryptionKey**
+> SecurityEncryptionKeyResponse CreateEncryptionKey (string category, string ehelplySecuritySecretKey = null)
 
-Create Encryption Key
+Createencryptionkey
 
 ### Example
 ```csharp
@@ -30,7 +30,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateEncryptionKeySecurityEncryptionCategoriesCategoryKeysPostExample
+    public class CreateEncryptionKeyExample
     {
         public static void Main()
         {
@@ -42,13 +42,13 @@ namespace Example
 
             try
             {
-                // Create Encryption Key
-                Object result = apiInstance.CreateEncryptionKeySecurityEncryptionCategoriesCategoryKeysPost(category, ehelplySecuritySecretKey);
+                // Createencryptionkey
+                SecurityEncryptionKeyResponse result = apiInstance.CreateEncryptionKey(category, ehelplySecuritySecretKey);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.CreateEncryptionKeySecurityEncryptionCategoriesCategoryKeysPost: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.CreateEncryptionKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**SecurityEncryptionKeyResponse**](SecurityEncryptionKeyResponse.md)
 
 ### Authorization
 
@@ -87,11 +87,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="createkeysecuritykeyspost"></a>
-# **CreateKeySecurityKeysPost**
-> InlineResponse2007 CreateKeySecurityKeysPost (BodyCreateKeySecurityKeysPost bodyCreateKeySecurityKeysPost, int? accessLength = null, int? secretLength = null)
+<a name="createkey"></a>
+# **CreateKey**
+> ResponseCreatekey CreateKey (SecurityKeyCreate securityKeyCreate, int? accessLength = null, int? secretLength = null)
 
-Create Key
+Createkey
 
 ### Example
 ```csharp
@@ -103,26 +103,26 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class CreateKeySecurityKeysPostExample
+    public class CreateKeyExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var bodyCreateKeySecurityKeysPost = new BodyCreateKeySecurityKeysPost(); // BodyCreateKeySecurityKeysPost | 
+            var securityKeyCreate = new SecurityKeyCreate(); // SecurityKeyCreate | 
             var accessLength = 64;  // int? |  (optional)  (default to 64)
             var secretLength = 64;  // int? |  (optional)  (default to 64)
 
             try
             {
-                // Create Key
-                InlineResponse2007 result = apiInstance.CreateKeySecurityKeysPost(bodyCreateKeySecurityKeysPost, accessLength, secretLength);
+                // Createkey
+                ResponseCreatekey result = apiInstance.CreateKey(securityKeyCreate, accessLength, secretLength);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.CreateKeySecurityKeysPost: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.CreateKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -135,13 +135,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **bodyCreateKeySecurityKeysPost** | [**BodyCreateKeySecurityKeysPost**](BodyCreateKeySecurityKeysPost.md)|  | 
+ **securityKeyCreate** | [**SecurityKeyCreate**](SecurityKeyCreate.md)|  | 
  **accessLength** | **int?**|  | [optional] [default to 64]
  **secretLength** | **int?**|  | [optional] [default to 64]
 
 ### Return type
 
-[**InlineResponse2007**](InlineResponse2007.md)
+[**ResponseCreatekey**](ResponseCreatekey.md)
 
 ### Authorization
 
@@ -164,11 +164,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deletekeysecuritykeyskeyuuiddelete"></a>
-# **DeleteKeySecurityKeysKeyUuidDelete**
-> InlineResponse2008 DeleteKeySecurityKeysKeyUuidDelete (string keyUuid)
+<a name="deletekey"></a>
+# **DeleteKey**
+> ResponseDeletekey DeleteKey (string keyUuid)
 
-Delete Key
+Deletekey
 
 ### Example
 ```csharp
@@ -180,7 +180,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeleteKeySecurityKeysKeyUuidDeleteExample
+    public class DeleteKeyExample
     {
         public static void Main()
         {
@@ -191,13 +191,13 @@ namespace Example
 
             try
             {
-                // Delete Key
-                InlineResponse2008 result = apiInstance.DeleteKeySecurityKeysKeyUuidDelete(keyUuid);
+                // Deletekey
+                ResponseDeletekey result = apiInstance.DeleteKey(keyUuid);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.DeleteKeySecurityKeysKeyUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.DeleteKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2008**](InlineResponse2008.md)
+[**ResponseDeletekey**](ResponseDeletekey.md)
 
 ### Authorization
 
@@ -236,11 +236,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="generatetokensecuritytokenspost"></a>
-# **GenerateTokenSecurityTokensPost**
-> InlineResponse2006 GenerateTokenSecurityTokensPost (BodyGenerateTokenSecurityTokensPost bodyGenerateTokenSecurityTokensPost)
+<a name="generatetoken"></a>
+# **GenerateToken**
+> ResponseGeneratetoken GenerateToken (SecurityCreateToken securityCreateToken)
 
-Generate Token
+Generatetoken
 
 ### Example
 ```csharp
@@ -252,24 +252,24 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GenerateTokenSecurityTokensPostExample
+    public class GenerateTokenExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var bodyGenerateTokenSecurityTokensPost = new BodyGenerateTokenSecurityTokensPost(); // BodyGenerateTokenSecurityTokensPost | 
+            var securityCreateToken = new SecurityCreateToken(); // SecurityCreateToken | 
 
             try
             {
-                // Generate Token
-                InlineResponse2006 result = apiInstance.GenerateTokenSecurityTokensPost(bodyGenerateTokenSecurityTokensPost);
+                // Generatetoken
+                ResponseGeneratetoken result = apiInstance.GenerateToken(securityCreateToken);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.GenerateTokenSecurityTokensPost: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.GenerateToken: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -282,11 +282,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **bodyGenerateTokenSecurityTokensPost** | [**BodyGenerateTokenSecurityTokensPost**](BodyGenerateTokenSecurityTokensPost.md)|  | 
+ **securityCreateToken** | [**SecurityCreateToken**](SecurityCreateToken.md)|  | 
 
 ### Return type
 
-[**InlineResponse2006**](InlineResponse2006.md)
+[**ResponseGeneratetoken**](ResponseGeneratetoken.md)
 
 ### Authorization
 
@@ -308,11 +308,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getencryptionkeysecurityencryptioncategoriescategorykeysget"></a>
-# **GetEncryptionKeySecurityEncryptionCategoriesCategoryKeysGet**
-> List&lt;SecurityEncryptionKeyGet&gt; GetEncryptionKeySecurityEncryptionCategoriesCategoryKeysGet (string category, string ehelplySecuritySecretKey = null)
+<a name="getencryptionkey"></a>
+# **GetEncryptionKey**
+> List&lt;SecurityEncryptionKeyGet&gt; GetEncryptionKey (string category, string ehelplySecuritySecretKey = null)
 
-Get Encryption Key
+Getencryptionkey
 
 ### Example
 ```csharp
@@ -324,7 +324,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetEncryptionKeySecurityEncryptionCategoriesCategoryKeysGetExample
+    public class GetEncryptionKeyExample
     {
         public static void Main()
         {
@@ -336,13 +336,13 @@ namespace Example
 
             try
             {
-                // Get Encryption Key
-                List<SecurityEncryptionKeyGet> result = apiInstance.GetEncryptionKeySecurityEncryptionCategoriesCategoryKeysGet(category, ehelplySecuritySecretKey);
+                // Getencryptionkey
+                List<SecurityEncryptionKeyGet> result = apiInstance.GetEncryptionKey(category, ehelplySecuritySecretKey);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.GetEncryptionKeySecurityEncryptionCategoriesCategoryKeysGet: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.GetEncryptionKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -381,11 +381,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getkeysecuritykeyskeyuuidget"></a>
-# **GetKeySecurityKeysKeyUuidGet**
-> SecurityKeyGet GetKeySecurityKeysKeyUuidGet (string keyUuid)
+<a name="getkey"></a>
+# **GetKey**
+> SecurityKeyGet GetKey (string keyUuid)
 
-Get Key
+Getkey
 
 ### Example
 ```csharp
@@ -397,7 +397,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetKeySecurityKeysKeyUuidGetExample
+    public class GetKeyExample
     {
         public static void Main()
         {
@@ -408,13 +408,13 @@ namespace Example
 
             try
             {
-                // Get Key
-                SecurityKeyGet result = apiInstance.GetKeySecurityKeysKeyUuidGet(keyUuid);
+                // Getkey
+                SecurityKeyGet result = apiInstance.GetKey(keyUuid);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.GetKeySecurityKeysKeyUuidGet: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.GetKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -453,11 +453,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchkeyssecuritykeysget"></a>
-# **SearchKeysSecurityKeysGet**
-> List&lt;SecurityKeyGet&gt; SearchKeysSecurityKeysGet ()
+<a name="searchkeys"></a>
+# **SearchKeys**
+> List&lt;SecurityKeyGet&gt; SearchKeys ()
 
-Search Keys
+Searchkeys
 
 ### Example
 ```csharp
@@ -469,7 +469,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchKeysSecurityKeysGetExample
+    public class SearchKeysExample
     {
         public static void Main()
         {
@@ -479,13 +479,13 @@ namespace Example
 
             try
             {
-                // Search Keys
-                List<SecurityKeyGet> result = apiInstance.SearchKeysSecurityKeysGet();
+                // Searchkeys
+                List<SecurityKeyGet> result = apiInstance.SearchKeys();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.SearchKeysSecurityKeysGet: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.SearchKeys: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -520,11 +520,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="verifykeysecuritykeysverifypost"></a>
-# **VerifyKeySecurityKeysVerifyPost**
-> SecurityKeyGet VerifyKeySecurityKeysVerifyPost (BodyVerifyKeySecurityKeysVerifyPost bodyVerifyKeySecurityKeysVerifyPost)
+<a name="verifykey"></a>
+# **VerifyKey**
+> SecurityKeyGet VerifyKey (SecurityKeyVerify securityKeyVerify)
 
-Verify Key
+Verifykey
 
 ### Example
 ```csharp
@@ -536,24 +536,24 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class VerifyKeySecurityKeysVerifyPostExample
+    public class VerifyKeyExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new SecurityApi(config);
-            var bodyVerifyKeySecurityKeysVerifyPost = new BodyVerifyKeySecurityKeysVerifyPost(); // BodyVerifyKeySecurityKeysVerifyPost | 
+            var securityKeyVerify = new SecurityKeyVerify(); // SecurityKeyVerify | 
 
             try
             {
-                // Verify Key
-                SecurityKeyGet result = apiInstance.VerifyKeySecurityKeysVerifyPost(bodyVerifyKeySecurityKeysVerifyPost);
+                // Verifykey
+                SecurityKeyGet result = apiInstance.VerifyKey(securityKeyVerify);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.VerifyKeySecurityKeysVerifyPost: " + e.Message );
+                Debug.Print("Exception when calling SecurityApi.VerifyKey: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -566,7 +566,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **bodyVerifyKeySecurityKeysVerifyPost** | [**BodyVerifyKeySecurityKeysVerifyPost**](BodyVerifyKeySecurityKeysVerifyPost.md)|  | 
+ **securityKeyVerify** | [**SecurityKeyVerify**](SecurityKeyVerify.md)|  | 
 
 ### Return type
 

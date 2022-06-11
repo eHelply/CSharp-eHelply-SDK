@@ -4,35 +4,35 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost**](MonitorApi.md#ackalarmmonitorservicesservicestagesstagealarmsalarmuuidacknowledgepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/acknowledge | Ack Alarm
-[**AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost**](MonitorApi.md#assignalarmmonitorservicesservicestagesstagealarmsalarmuuidassignpost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/assign | Assign Alarm
-[**AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost**](MonitorApi.md#attachalarmnotemonitorservicesservicestagesstagealarmsalarmuuidnotepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/note | Attach Alarm Note
-[**AttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost**](MonitorApi.md#attachalarmticketmonitorservicesservicestagesstagealarmsalarmuuidticketpost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ticket | Attach Alarm Ticket
-[**ClearAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidClearPost**](MonitorApi.md#clearalarmmonitorservicesservicestagesstagealarmsalarmuuidclearpost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/clear | Clear Alarm
-[**GetServiceAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidGet**](MonitorApi.md#getservicealarmmonitorservicesservicestagesstagealarmsalarmuuidget) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid} | Get Service Alarm
-[**GetServiceAlarmsMonitorServicesServiceStagesStageAlarmsGet**](MonitorApi.md#getservicealarmsmonitorservicesservicestagesstagealarmsget) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms | Get Service Alarms
-[**GetServiceHeartbeatsMonitorServicesServiceStagesStageHeartbeatsGet**](MonitorApi.md#getserviceheartbeatsmonitorservicesservicestagesstageheartbeatsget) | **GET** /sam/monitor/services/{service}/stages/{stage}/heartbeats | Get Service Heartbeats
-[**GetServiceKpisMonitorServicesServiceKpisGet**](MonitorApi.md#getservicekpismonitorservicesservicekpisget) | **GET** /sam/monitor/services/{service}/kpis | Get Service Kpis
-[**GetServiceMonitorServicesServiceGet**](MonitorApi.md#getservicemonitorservicesserviceget) | **GET** /sam/monitor/services/{service} | Get Service
+[**AcknowledgeAlarm**](MonitorApi.md#acknowledgealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/acknowledge | Acknowledgealarm
+[**AssignAlarm**](MonitorApi.md#assignalarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/assign | Assignalarm
+[**AttachAlarmNote**](MonitorApi.md#attachalarmnote) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/note | Attachalarmnote
+[**AttachAlarmTicket**](MonitorApi.md#attachalarmticket) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ticket | Attachalarmticket
+[**ClearAlarm**](MonitorApi.md#clearalarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/clear | Clearalarm
+[**GetService**](MonitorApi.md#getservice) | **GET** /sam/monitor/services/{service} | Getservice
+[**GetServiceAlarm**](MonitorApi.md#getservicealarm) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid} | Getservicealarm
+[**GetServiceAlarms**](MonitorApi.md#getservicealarms) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms | Getservicealarms
+[**GetServiceHeartbeat**](MonitorApi.md#getserviceheartbeat) | **GET** /sam/monitor/services/{service}/stages/{stage}/heartbeats | Getserviceheartbeat
+[**GetServiceKpis**](MonitorApi.md#getservicekpis) | **GET** /sam/monitor/services/{service}/kpis | Getservicekpis
 [**GetServiceSpec**](MonitorApi.md#getservicespec) | **GET** /sam/monitor/services/{service}/specs/{spec} | Getservicespec
 [**GetServiceSpecs**](MonitorApi.md#getservicespecs) | **GET** /sam/monitor/services/{service}/specs | Getservicespecs
-[**GetServiceVitalsMonitorServicesServiceStagesStageVitalsGet**](MonitorApi.md#getservicevitalsmonitorservicesservicestagesstagevitalsget) | **GET** /sam/monitor/services/{service}/stages/{stage}/vitals | Get Service Vitals
-[**GetServicesMonitorServicesGet**](MonitorApi.md#getservicesmonitorservicesget) | **GET** /sam/monitor/services | Get Services
+[**GetServiceVitals**](MonitorApi.md#getservicevitals) | **GET** /sam/monitor/services/{service}/stages/{stage}/vitals | Getservicevitals
+[**GetServices**](MonitorApi.md#getservices) | **GET** /sam/monitor/services | Getservices
 [**GetServicesWithSpecs**](MonitorApi.md#getserviceswithspecs) | **GET** /sam/monitor/specs/services | Getserviceswithspecs
-[**HideServiceMonitorServicesServiceStagesStageHidePost**](MonitorApi.md#hideservicemonitorservicesservicestagesstagehidepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/hide | Hide Service
-[**IgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost**](MonitorApi.md#ignorealarmmonitorservicesservicestagesstagealarmsalarmuuidignorepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ignore | Ignore Alarm
-[**RegisterServiceMonitorServicesPost**](MonitorApi.md#registerservicemonitorservicespost) | **POST** /sam/monitor/services | Register Service
-[**SearchAlarmsMonitorServicesServiceAlarmsGet**](MonitorApi.md#searchalarmsmonitorservicesservicealarmsget) | **GET** /sam/monitor/services/{service}/alarms | Search Alarms
-[**ShowServiceMonitorServicesServiceStagesStageShowPost**](MonitorApi.md#showservicemonitorservicesservicestagesstageshowpost) | **POST** /sam/monitor/services/{service}/stages/{stage}/show | Show Service
-[**TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost**](MonitorApi.md#terminatealarmmonitorservicesservicestagesstagealarmsalarmuuidterminatepost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/terminate | Terminate Alarm
-[**TriggerAlarmMonitorServicesServiceStagesStageAlarmsPost**](MonitorApi.md#triggeralarmmonitorservicesservicestagesstagealarmspost) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms | Trigger Alarm
+[**HideService**](MonitorApi.md#hideservice) | **POST** /sam/monitor/services/{service}/stages/{stage}/hide | Hideservice
+[**IgnoreAlarm**](MonitorApi.md#ignorealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ignore | Ignorealarm
+[**RegisterService**](MonitorApi.md#registerservice) | **POST** /sam/monitor/services | Registerservice
+[**SearchAlarms**](MonitorApi.md#searchalarms) | **GET** /sam/monitor/services/{service}/alarms | Searchalarms
+[**ShowService**](MonitorApi.md#showservice) | **POST** /sam/monitor/services/{service}/stages/{stage}/show | Showservice
+[**TerminateAlarm**](MonitorApi.md#terminatealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/terminate | Terminatealarm
+[**TriggerAlarm**](MonitorApi.md#triggeralarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms | Triggeralarm
 
 
-<a name="ackalarmmonitorservicesservicestagesstagealarmsalarmuuidacknowledgepost"></a>
-# **AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost**
-> Object AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost (string service, string stage, string alarmUuid, BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost bodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost)
+<a name="acknowledgealarm"></a>
+# **AcknowledgeAlarm**
+> AlarmResponse AcknowledgeAlarm (string service, string stage, string alarmUuid, AlarmAcknowledge alarmAcknowledge)
 
-Ack Alarm
+Acknowledgealarm
 
 ### Example
 ```csharp
@@ -44,7 +44,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePostExample
+    public class AcknowledgeAlarmExample
     {
         public static void Main()
         {
@@ -54,17 +54,17 @@ namespace Example
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
             var alarmUuid = "alarmUuid_example";  // string | 
-            var bodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost = new BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost(); // BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost | 
+            var alarmAcknowledge = new AlarmAcknowledge(); // AlarmAcknowledge | 
 
             try
             {
-                // Ack Alarm
-                Object result = apiInstance.AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost(service, stage, alarmUuid, bodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost);
+                // Acknowledgealarm
+                AlarmResponse result = apiInstance.AcknowledgeAlarm(service, stage, alarmUuid, alarmAcknowledge);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.AcknowledgeAlarm: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -80,11 +80,11 @@ Name | Type | Description  | Notes
  **service** | **string**|  | 
  **stage** | **string**|  | 
  **alarmUuid** | **string**|  | 
- **bodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost** | [**BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost**](BodyAckAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAcknowledgePost.md)|  | 
+ **alarmAcknowledge** | [**AlarmAcknowledge**](AlarmAcknowledge.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -105,11 +105,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="assignalarmmonitorservicesservicestagesstagealarmsalarmuuidassignpost"></a>
-# **AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost**
-> Object AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost (string service, string stage, string alarmUuid, BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost bodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost)
+<a name="assignalarm"></a>
+# **AssignAlarm**
+> AlarmResponse AssignAlarm (string service, string stage, string alarmUuid, AlarmAssign alarmAssign)
 
-Assign Alarm
+Assignalarm
 
 ### Example
 ```csharp
@@ -121,7 +121,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPostExample
+    public class AssignAlarmExample
     {
         public static void Main()
         {
@@ -131,17 +131,17 @@ namespace Example
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
             var alarmUuid = "alarmUuid_example";  // string | 
-            var bodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost = new BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost(); // BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost | 
+            var alarmAssign = new AlarmAssign(); // AlarmAssign | 
 
             try
             {
-                // Assign Alarm
-                Object result = apiInstance.AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost(service, stage, alarmUuid, bodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost);
+                // Assignalarm
+                AlarmResponse result = apiInstance.AssignAlarm(service, stage, alarmUuid, alarmAssign);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.AssignAlarm: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -157,11 +157,11 @@ Name | Type | Description  | Notes
  **service** | **string**|  | 
  **stage** | **string**|  | 
  **alarmUuid** | **string**|  | 
- **bodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost** | [**BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost**](BodyAssignAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidAssignPost.md)|  | 
+ **alarmAssign** | [**AlarmAssign**](AlarmAssign.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -182,11 +182,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="attachalarmnotemonitorservicesservicestagesstagealarmsalarmuuidnotepost"></a>
-# **AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost**
-> Object AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost (string service, string stage, string alarmUuid, BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost bodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost)
+<a name="attachalarmnote"></a>
+# **AttachAlarmNote**
+> AlarmResponse AttachAlarmNote (string service, string stage, string alarmUuid, AlarmNote alarmNote)
 
-Attach Alarm Note
+Attachalarmnote
 
 ### Example
 ```csharp
@@ -198,7 +198,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePostExample
+    public class AttachAlarmNoteExample
     {
         public static void Main()
         {
@@ -208,17 +208,17 @@ namespace Example
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
             var alarmUuid = "alarmUuid_example";  // string | 
-            var bodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost = new BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost(); // BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost | 
+            var alarmNote = new AlarmNote(); // AlarmNote | 
 
             try
             {
-                // Attach Alarm Note
-                Object result = apiInstance.AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost(service, stage, alarmUuid, bodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost);
+                // Attachalarmnote
+                AlarmResponse result = apiInstance.AttachAlarmNote(service, stage, alarmUuid, alarmNote);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.AttachAlarmNote: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -234,11 +234,11 @@ Name | Type | Description  | Notes
  **service** | **string**|  | 
  **stage** | **string**|  | 
  **alarmUuid** | **string**|  | 
- **bodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost** | [**BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost**](BodyAttachAlarmNoteMonitorServicesServiceStagesStageAlarmsAlarmUuidNotePost.md)|  | 
+ **alarmNote** | [**AlarmNote**](AlarmNote.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -259,11 +259,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="attachalarmticketmonitorservicesservicestagesstagealarmsalarmuuidticketpost"></a>
-# **AttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost**
-> Object AttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost (string service, string stage, string alarmUuid, BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost bodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost)
+<a name="attachalarmticket"></a>
+# **AttachAlarmTicket**
+> AlarmResponse AttachAlarmTicket (string service, string stage, string alarmUuid, AlarmTicket alarmTicket)
 
-Attach Alarm Ticket
+Attachalarmticket
 
 ### Example
 ```csharp
@@ -275,7 +275,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class AttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPostExample
+    public class AttachAlarmTicketExample
     {
         public static void Main()
         {
@@ -285,17 +285,17 @@ namespace Example
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
             var alarmUuid = "alarmUuid_example";  // string | 
-            var bodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost = new BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost(); // BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost | 
+            var alarmTicket = new AlarmTicket(); // AlarmTicket | 
 
             try
             {
-                // Attach Alarm Ticket
-                Object result = apiInstance.AttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost(service, stage, alarmUuid, bodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost);
+                // Attachalarmticket
+                AlarmResponse result = apiInstance.AttachAlarmTicket(service, stage, alarmUuid, alarmTicket);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.AttachAlarmTicket: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -311,11 +311,11 @@ Name | Type | Description  | Notes
  **service** | **string**|  | 
  **stage** | **string**|  | 
  **alarmUuid** | **string**|  | 
- **bodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost** | [**BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost**](BodyAttachAlarmTicketMonitorServicesServiceStagesStageAlarmsAlarmUuidTicketPost.md)|  | 
+ **alarmTicket** | [**AlarmTicket**](AlarmTicket.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -336,11 +336,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="clearalarmmonitorservicesservicestagesstagealarmsalarmuuidclearpost"></a>
-# **ClearAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidClearPost**
-> Object ClearAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidClearPost (string service, string stage, string alarmUuid)
+<a name="clearalarm"></a>
+# **ClearAlarm**
+> AlarmResponse ClearAlarm (string service, string stage, string alarmUuid)
 
-Clear Alarm
+Clearalarm
 
 ### Example
 ```csharp
@@ -352,7 +352,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ClearAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidClearPostExample
+    public class ClearAlarmExample
     {
         public static void Main()
         {
@@ -365,13 +365,13 @@ namespace Example
 
             try
             {
-                // Clear Alarm
-                Object result = apiInstance.ClearAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidClearPost(service, stage, alarmUuid);
+                // Clearalarm
+                AlarmResponse result = apiInstance.ClearAlarm(service, stage, alarmUuid);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.ClearAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidClearPost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.ClearAlarm: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -390,7 +390,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -411,86 +411,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getservicealarmmonitorservicesservicestagesstagealarmsalarmuuidget"></a>
-# **GetServiceAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidGet**
-> Object GetServiceAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidGet (string service, string stage, string alarmUuid)
+<a name="getservice"></a>
+# **GetService**
+> ServiceResponse GetService (string service, bool? heartbeats = null, int? heartbeatLimit = null, bool? alarms = null, int? alarmLimit = null, string stage = null)
 
-Get Service Alarm
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class GetServiceAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new MonitorApi(config);
-            var service = "service_example";  // string | 
-            var stage = "stage_example";  // string | 
-            var alarmUuid = "alarmUuid_example";  // string | 
-
-            try
-            {
-                // Get Service Alarm
-                Object result = apiInstance.GetServiceAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidGet(service, stage, alarmUuid);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling MonitorApi.GetServiceAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getservicealarmsmonitorservicesservicestagesstagealarmsget"></a>
-# **GetServiceAlarmsMonitorServicesServiceStagesStageAlarmsGet**
-> Object GetServiceAlarmsMonitorServicesServiceStagesStageAlarmsGet (string service, string stage, int? history = null, bool? includeTerminated = null, bool? includeCleared = null)
-
-Get Service Alarms
+Getservice
 
 ### Example
 ```csharp
@@ -502,234 +427,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetServiceAlarmsMonitorServicesServiceStagesStageAlarmsGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new MonitorApi(config);
-            var service = "service_example";  // string | 
-            var stage = "stage_example";  // string | 
-            var history = 5;  // int? |  (optional)  (default to 5)
-            var includeTerminated = false;  // bool? |  (optional)  (default to false)
-            var includeCleared = false;  // bool? |  (optional)  (default to false)
-
-            try
-            {
-                // Get Service Alarms
-                Object result = apiInstance.GetServiceAlarmsMonitorServicesServiceStagesStageAlarmsGet(service, stage, history, includeTerminated, includeCleared);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling MonitorApi.GetServiceAlarmsMonitorServicesServiceStagesStageAlarmsGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
- **includeTerminated** | **bool?**|  | [optional] [default to false]
- **includeCleared** | **bool?**|  | [optional] [default to false]
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getserviceheartbeatsmonitorservicesservicestagesstageheartbeatsget"></a>
-# **GetServiceHeartbeatsMonitorServicesServiceStagesStageHeartbeatsGet**
-> Object GetServiceHeartbeatsMonitorServicesServiceStagesStageHeartbeatsGet (string service, string stage, int? history = null)
-
-Get Service Heartbeats
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class GetServiceHeartbeatsMonitorServicesServiceStagesStageHeartbeatsGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new MonitorApi(config);
-            var service = "service_example";  // string | 
-            var stage = "stage_example";  // string | 
-            var history = 5;  // int? |  (optional)  (default to 5)
-
-            try
-            {
-                // Get Service Heartbeats
-                Object result = apiInstance.GetServiceHeartbeatsMonitorServicesServiceStagesStageHeartbeatsGet(service, stage, history);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling MonitorApi.GetServiceHeartbeatsMonitorServicesServiceStagesStageHeartbeatsGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getservicekpismonitorservicesservicekpisget"></a>
-# **GetServiceKpisMonitorServicesServiceKpisGet**
-> Object GetServiceKpisMonitorServicesServiceKpisGet (string service, int? history = null)
-
-Get Service Kpis
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class GetServiceKpisMonitorServicesServiceKpisGetExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new MonitorApi(config);
-            var service = "service_example";  // string | 
-            var history = 5;  // int? |  (optional)  (default to 5)
-
-            try
-            {
-                // Get Service Kpis
-                Object result = apiInstance.GetServiceKpisMonitorServicesServiceKpisGet(service, history);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling MonitorApi.GetServiceKpisMonitorServicesServiceKpisGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
-
-### Return type
-
-**Object**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
-| **422** | Validation Error |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getservicemonitorservicesserviceget"></a>
-# **GetServiceMonitorServicesServiceGet**
-> Object GetServiceMonitorServicesServiceGet (string service, bool? heartbeats = null, int? heartbeatLimit = null, bool? alarms = null, int? alarmLimit = null, string stage = null)
-
-Get Service
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Ehelply.Sdk.Api;
-using Ehelply.Sdk.Client;
-using Ehelply.Sdk.Model;
-
-namespace Example
-{
-    public class GetServiceMonitorServicesServiceGetExample
+    public class GetServiceExample
     {
         public static void Main()
         {
@@ -745,13 +443,13 @@ namespace Example
 
             try
             {
-                // Get Service
-                Object result = apiInstance.GetServiceMonitorServicesServiceGet(service, heartbeats, heartbeatLimit, alarms, alarmLimit, stage);
+                // Getservice
+                ServiceResponse result = apiInstance.GetService(service, heartbeats, heartbeatLimit, alarms, alarmLimit, stage);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceMonitorServicesServiceGet: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.GetService: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -773,7 +471,309 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**ServiceResponse**](ServiceResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getservicealarm"></a>
+# **GetServiceAlarm**
+> AlarmResponse GetServiceAlarm (string service, string stage, string alarmUuid)
+
+Getservicealarm
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetServiceAlarmExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new MonitorApi(config);
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var alarmUuid = "alarmUuid_example";  // string | 
+
+            try
+            {
+                // Getservicealarm
+                AlarmResponse result = apiInstance.GetServiceAlarm(service, stage, alarmUuid);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling MonitorApi.GetServiceAlarm: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | 
+ **stage** | **string**|  | 
+ **alarmUuid** | **string**|  | 
+
+### Return type
+
+[**AlarmResponse**](AlarmResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getservicealarms"></a>
+# **GetServiceAlarms**
+> List&lt;AlarmResponse&gt; GetServiceAlarms (string service, string stage, int? history = null, bool? includeTerminated = null, bool? includeCleared = null)
+
+Getservicealarms
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetServiceAlarmsExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new MonitorApi(config);
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
+            var includeTerminated = false;  // bool? |  (optional)  (default to false)
+            var includeCleared = false;  // bool? |  (optional)  (default to false)
+
+            try
+            {
+                // Getservicealarms
+                List<AlarmResponse> result = apiInstance.GetServiceAlarms(service, stage, history, includeTerminated, includeCleared);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling MonitorApi.GetServiceAlarms: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | 
+ **stage** | **string**|  | 
+ **history** | **int?**|  | [optional] [default to 5]
+ **includeTerminated** | **bool?**|  | [optional] [default to false]
+ **includeCleared** | **bool?**|  | [optional] [default to false]
+
+### Return type
+
+[**List&lt;AlarmResponse&gt;**](AlarmResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getserviceheartbeat"></a>
+# **GetServiceHeartbeat**
+> List&lt;HeartbeatResponse&gt; GetServiceHeartbeat (string service, string stage, int? history = null)
+
+Getserviceheartbeat
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetServiceHeartbeatExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new MonitorApi(config);
+            var service = "service_example";  // string | 
+            var stage = "stage_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
+
+            try
+            {
+                // Getserviceheartbeat
+                List<HeartbeatResponse> result = apiInstance.GetServiceHeartbeat(service, stage, history);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling MonitorApi.GetServiceHeartbeat: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | 
+ **stage** | **string**|  | 
+ **history** | **int?**|  | [optional] [default to 5]
+
+### Return type
+
+[**List&lt;HeartbeatResponse&gt;**](HeartbeatResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getservicekpis"></a>
+# **GetServiceKpis**
+> List&lt;KpiResponse&gt; GetServiceKpis (string service, int? history = null)
+
+Getservicekpis
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetServiceKpisExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new MonitorApi(config);
+            var service = "service_example";  // string | 
+            var history = 5;  // int? |  (optional)  (default to 5)
+
+            try
+            {
+                // Getservicekpis
+                List<KpiResponse> result = apiInstance.GetServiceKpis(service, history);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling MonitorApi.GetServiceKpis: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | 
+ **history** | **int?**|  | [optional] [default to 5]
+
+### Return type
+
+[**List&lt;KpiResponse&gt;**](KpiResponse.md)
 
 ### Authorization
 
@@ -796,7 +796,7 @@ No authorization required
 
 <a name="getservicespec"></a>
 # **GetServiceSpec**
-> InlineResponse2002 GetServiceSpec (string service, string spec, bool? asJson = null)
+> ResponseGetservicespec GetServiceSpec (string service, string spec, bool? asJson = null)
 
 Getservicespec
 
@@ -824,7 +824,7 @@ namespace Example
             try
             {
                 // Getservicespec
-                InlineResponse2002 result = apiInstance.GetServiceSpec(service, spec, asJson);
+                ResponseGetservicespec result = apiInstance.GetServiceSpec(service, spec, asJson);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -848,7 +848,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2002**](InlineResponse2002.md)
+[**ResponseGetservicespec**](ResponseGetservicespec.md)
 
 ### Authorization
 
@@ -872,7 +872,7 @@ No authorization required
 
 <a name="getservicespecs"></a>
 # **GetServiceSpecs**
-> InlineResponse2001 GetServiceSpecs (string service)
+> ResponseGetservicespecs GetServiceSpecs (string service)
 
 Getservicespecs
 
@@ -898,7 +898,7 @@ namespace Example
             try
             {
                 // Getservicespecs
-                InlineResponse2001 result = apiInstance.GetServiceSpecs(service);
+                ResponseGetservicespecs result = apiInstance.GetServiceSpecs(service);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -920,7 +920,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse2001**](InlineResponse2001.md)
+[**ResponseGetservicespecs**](ResponseGetservicespecs.md)
 
 ### Authorization
 
@@ -942,11 +942,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getservicevitalsmonitorservicesservicestagesstagevitalsget"></a>
-# **GetServiceVitalsMonitorServicesServiceStagesStageVitalsGet**
-> Object GetServiceVitalsMonitorServicesServiceStagesStageVitalsGet (string service, string stage, int? history = null)
+<a name="getservicevitals"></a>
+# **GetServiceVitals**
+> List&lt;StatsVitalsResponse&gt; GetServiceVitals (string service, string stage, int? history = null)
 
-Get Service Vitals
+Getservicevitals
 
 ### Example
 ```csharp
@@ -958,7 +958,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetServiceVitalsMonitorServicesServiceStagesStageVitalsGetExample
+    public class GetServiceVitalsExample
     {
         public static void Main()
         {
@@ -971,13 +971,13 @@ namespace Example
 
             try
             {
-                // Get Service Vitals
-                Object result = apiInstance.GetServiceVitalsMonitorServicesServiceStagesStageVitalsGet(service, stage, history);
+                // Getservicevitals
+                List<StatsVitalsResponse> result = apiInstance.GetServiceVitals(service, stage, history);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceVitalsMonitorServicesServiceStagesStageVitalsGet: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.GetServiceVitals: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -996,7 +996,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**List&lt;StatsVitalsResponse&gt;**](StatsVitalsResponse.md)
 
 ### Authorization
 
@@ -1017,11 +1017,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getservicesmonitorservicesget"></a>
-# **GetServicesMonitorServicesGet**
-> Object GetServicesMonitorServicesGet (bool? heartbeats = null, int? heartbeatLimit = null, bool? alarms = null, int? alarmLimit = null, bool? includeHidden = null, string stage = null, string key = null)
+<a name="getservices"></a>
+# **GetServices**
+> List&lt;ServiceResponse&gt; GetServices (bool? heartbeats = null, int? heartbeatLimit = null, bool? alarms = null, int? alarmLimit = null, bool? includeHidden = null, string stage = null, string key = null)
 
-Get Services
+Getservices
 
 ### Example
 ```csharp
@@ -1033,7 +1033,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetServicesMonitorServicesGetExample
+    public class GetServicesExample
     {
         public static void Main()
         {
@@ -1050,13 +1050,13 @@ namespace Example
 
             try
             {
-                // Get Services
-                Object result = apiInstance.GetServicesMonitorServicesGet(heartbeats, heartbeatLimit, alarms, alarmLimit, includeHidden, stage, key);
+                // Getservices
+                List<ServiceResponse> result = apiInstance.GetServices(heartbeats, heartbeatLimit, alarms, alarmLimit, includeHidden, stage, key);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServicesMonitorServicesGet: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.GetServices: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1079,7 +1079,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**List&lt;ServiceResponse&gt;**](ServiceResponse.md)
 
 ### Authorization
 
@@ -1102,7 +1102,7 @@ No authorization required
 
 <a name="getserviceswithspecs"></a>
 # **GetServicesWithSpecs**
-> InlineResponse200 GetServicesWithSpecs ()
+> ResponseGetserviceswithspecs GetServicesWithSpecs ()
 
 Getserviceswithspecs
 
@@ -1127,7 +1127,7 @@ namespace Example
             try
             {
                 // Getserviceswithspecs
-                InlineResponse200 result = apiInstance.GetServicesWithSpecs();
+                ResponseGetserviceswithspecs result = apiInstance.GetServicesWithSpecs();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -1146,7 +1146,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse200**](InlineResponse200.md)
+[**ResponseGetserviceswithspecs**](ResponseGetserviceswithspecs.md)
 
 ### Authorization
 
@@ -1167,11 +1167,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="hideservicemonitorservicesservicestagesstagehidepost"></a>
-# **HideServiceMonitorServicesServiceStagesStageHidePost**
-> Object HideServiceMonitorServicesServiceStagesStageHidePost (string service, string stage)
+<a name="hideservice"></a>
+# **HideService**
+> ServiceMessageResponse HideService (string service, string stage)
 
-Hide Service
+Hideservice
 
 ### Example
 ```csharp
@@ -1183,7 +1183,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class HideServiceMonitorServicesServiceStagesStageHidePostExample
+    public class HideServiceExample
     {
         public static void Main()
         {
@@ -1195,13 +1195,13 @@ namespace Example
 
             try
             {
-                // Hide Service
-                Object result = apiInstance.HideServiceMonitorServicesServiceStagesStageHidePost(service, stage);
+                // Hideservice
+                ServiceMessageResponse result = apiInstance.HideService(service, stage);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.HideServiceMonitorServicesServiceStagesStageHidePost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.HideService: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1219,7 +1219,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**ServiceMessageResponse**](ServiceMessageResponse.md)
 
 ### Authorization
 
@@ -1240,11 +1240,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="ignorealarmmonitorservicesservicestagesstagealarmsalarmuuidignorepost"></a>
-# **IgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost**
-> Object IgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost (string service, string stage, string alarmUuid, BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost bodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost)
+<a name="ignorealarm"></a>
+# **IgnoreAlarm**
+> AlarmResponse IgnoreAlarm (string service, string stage, string alarmUuid, AlarmIgnore alarmIgnore)
 
-Ignore Alarm
+Ignorealarm
 
 ### Example
 ```csharp
@@ -1256,7 +1256,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class IgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePostExample
+    public class IgnoreAlarmExample
     {
         public static void Main()
         {
@@ -1266,17 +1266,17 @@ namespace Example
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
             var alarmUuid = "alarmUuid_example";  // string | 
-            var bodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost = new BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost(); // BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost | 
+            var alarmIgnore = new AlarmIgnore(); // AlarmIgnore | 
 
             try
             {
-                // Ignore Alarm
-                Object result = apiInstance.IgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost(service, stage, alarmUuid, bodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost);
+                // Ignorealarm
+                AlarmResponse result = apiInstance.IgnoreAlarm(service, stage, alarmUuid, alarmIgnore);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.IgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.IgnoreAlarm: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1292,11 +1292,11 @@ Name | Type | Description  | Notes
  **service** | **string**|  | 
  **stage** | **string**|  | 
  **alarmUuid** | **string**|  | 
- **bodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost** | [**BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost**](BodyIgnoreAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidIgnorePost.md)|  | 
+ **alarmIgnore** | [**AlarmIgnore**](AlarmIgnore.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -1317,11 +1317,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="registerservicemonitorservicespost"></a>
-# **RegisterServiceMonitorServicesPost**
-> Object RegisterServiceMonitorServicesPost (BodyRegisterServiceMonitorServicesPost bodyRegisterServiceMonitorServicesPost)
+<a name="registerservice"></a>
+# **RegisterService**
+> ServiceResponse RegisterService (ServiceCreate serviceCreate)
 
-Register Service
+Registerservice
 
 ### Example
 ```csharp
@@ -1333,24 +1333,24 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class RegisterServiceMonitorServicesPostExample
+    public class RegisterServiceExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new MonitorApi(config);
-            var bodyRegisterServiceMonitorServicesPost = new BodyRegisterServiceMonitorServicesPost(); // BodyRegisterServiceMonitorServicesPost | 
+            var serviceCreate = new ServiceCreate(); // ServiceCreate | 
 
             try
             {
-                // Register Service
-                Object result = apiInstance.RegisterServiceMonitorServicesPost(bodyRegisterServiceMonitorServicesPost);
+                // Registerservice
+                ServiceResponse result = apiInstance.RegisterService(serviceCreate);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.RegisterServiceMonitorServicesPost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.RegisterService: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1363,11 +1363,11 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **bodyRegisterServiceMonitorServicesPost** | [**BodyRegisterServiceMonitorServicesPost**](BodyRegisterServiceMonitorServicesPost.md)|  | 
+ **serviceCreate** | [**ServiceCreate**](ServiceCreate.md)|  | 
 
 ### Return type
 
-**Object**
+[**ServiceResponse**](ServiceResponse.md)
 
 ### Authorization
 
@@ -1388,11 +1388,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="searchalarmsmonitorservicesservicealarmsget"></a>
-# **SearchAlarmsMonitorServicesServiceAlarmsGet**
-> Object SearchAlarmsMonitorServicesServiceAlarmsGet (string service, int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null)
+<a name="searchalarms"></a>
+# **SearchAlarms**
+> Page SearchAlarms (string service, int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null)
 
-Search Alarms
+Searchalarms
 
 ### Example
 ```csharp
@@ -1404,7 +1404,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class SearchAlarmsMonitorServicesServiceAlarmsGetExample
+    public class SearchAlarmsExample
     {
         public static void Main()
         {
@@ -1421,13 +1421,13 @@ namespace Example
 
             try
             {
-                // Search Alarms
-                Object result = apiInstance.SearchAlarmsMonitorServicesServiceAlarmsGet(service, page, pageSize, search, searchOn, sortOn, sortDesc);
+                // Searchalarms
+                Page result = apiInstance.SearchAlarms(service, page, pageSize, search, searchOn, sortOn, sortDesc);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.SearchAlarmsMonitorServicesServiceAlarmsGet: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.SearchAlarms: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1450,7 +1450,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**Page**](Page.md)
 
 ### Authorization
 
@@ -1471,11 +1471,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="showservicemonitorservicesservicestagesstageshowpost"></a>
-# **ShowServiceMonitorServicesServiceStagesStageShowPost**
-> Object ShowServiceMonitorServicesServiceStagesStageShowPost (string service, string stage)
+<a name="showservice"></a>
+# **ShowService**
+> ServiceMessageResponse ShowService (string service, string stage)
 
-Show Service
+Showservice
 
 ### Example
 ```csharp
@@ -1487,7 +1487,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ShowServiceMonitorServicesServiceStagesStageShowPostExample
+    public class ShowServiceExample
     {
         public static void Main()
         {
@@ -1499,13 +1499,13 @@ namespace Example
 
             try
             {
-                // Show Service
-                Object result = apiInstance.ShowServiceMonitorServicesServiceStagesStageShowPost(service, stage);
+                // Showservice
+                ServiceMessageResponse result = apiInstance.ShowService(service, stage);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.ShowServiceMonitorServicesServiceStagesStageShowPost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.ShowService: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1523,7 +1523,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**ServiceMessageResponse**](ServiceMessageResponse.md)
 
 ### Authorization
 
@@ -1544,11 +1544,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="terminatealarmmonitorservicesservicestagesstagealarmsalarmuuidterminatepost"></a>
-# **TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost**
-> Object TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost (string service, string stage, string alarmUuid, BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost bodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost)
+<a name="terminatealarm"></a>
+# **TerminateAlarm**
+> AlarmResponse TerminateAlarm (string service, string stage, string alarmUuid, AlarmTerminate alarmTerminate)
 
-Terminate Alarm
+Terminatealarm
 
 ### Example
 ```csharp
@@ -1560,7 +1560,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePostExample
+    public class TerminateAlarmExample
     {
         public static void Main()
         {
@@ -1570,17 +1570,17 @@ namespace Example
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
             var alarmUuid = "alarmUuid_example";  // string | 
-            var bodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost = new BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost(); // BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost | 
+            var alarmTerminate = new AlarmTerminate(); // AlarmTerminate | 
 
             try
             {
-                // Terminate Alarm
-                Object result = apiInstance.TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost(service, stage, alarmUuid, bodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost);
+                // Terminatealarm
+                AlarmResponse result = apiInstance.TerminateAlarm(service, stage, alarmUuid, alarmTerminate);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.TerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.TerminateAlarm: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1596,11 +1596,11 @@ Name | Type | Description  | Notes
  **service** | **string**|  | 
  **stage** | **string**|  | 
  **alarmUuid** | **string**|  | 
- **bodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost** | [**BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost**](BodyTerminateAlarmMonitorServicesServiceStagesStageAlarmsAlarmUuidTerminatePost.md)|  | 
+ **alarmTerminate** | [**AlarmTerminate**](AlarmTerminate.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
@@ -1621,11 +1621,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="triggeralarmmonitorservicesservicestagesstagealarmspost"></a>
-# **TriggerAlarmMonitorServicesServiceStagesStageAlarmsPost**
-> Object TriggerAlarmMonitorServicesServiceStagesStageAlarmsPost (string service, string stage, BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost bodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost)
+<a name="triggeralarm"></a>
+# **TriggerAlarm**
+> AlarmResponse TriggerAlarm (string service, string stage, AlarmCreate alarmCreate)
 
-Trigger Alarm
+Triggeralarm
 
 ### Example
 ```csharp
@@ -1637,7 +1637,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class TriggerAlarmMonitorServicesServiceStagesStageAlarmsPostExample
+    public class TriggerAlarmExample
     {
         public static void Main()
         {
@@ -1646,17 +1646,17 @@ namespace Example
             var apiInstance = new MonitorApi(config);
             var service = "service_example";  // string | 
             var stage = "stage_example";  // string | 
-            var bodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost = new BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost(); // BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost | 
+            var alarmCreate = new AlarmCreate(); // AlarmCreate | 
 
             try
             {
-                // Trigger Alarm
-                Object result = apiInstance.TriggerAlarmMonitorServicesServiceStagesStageAlarmsPost(service, stage, bodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost);
+                // Triggeralarm
+                AlarmResponse result = apiInstance.TriggerAlarm(service, stage, alarmCreate);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.TriggerAlarmMonitorServicesServiceStagesStageAlarmsPost: " + e.Message );
+                Debug.Print("Exception when calling MonitorApi.TriggerAlarm: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -1671,11 +1671,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service** | **string**|  | 
  **stage** | **string**|  | 
- **bodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost** | [**BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost**](BodyTriggerAlarmMonitorServicesServiceStagesStageAlarmsPost.md)|  | 
+ **alarmCreate** | [**AlarmCreate**](AlarmCreate.md)|  | 
 
 ### Return type
 
-**Object**
+[**AlarmResponse**](AlarmResponse.md)
 
 ### Authorization
 
