@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **ParticipantMeta** | **Object** |  | [optional] 
 **FirstName** | **string** |  | [optional] 
 **LastName** | **string** |  | [optional] 
-**Email** | [**UserEmail**](UserEmail.md) |  | [optional] 
+**Email** | [**Email**](Email.md) |  | [optional] 
 **PhoneNumber** | **string** |  | [optional] 
 **Country** | **string** |  | [optional] 
 **GpsLocation** | **Object** |  | [optional] 

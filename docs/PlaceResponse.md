@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **BlogData** | **Object** |  | [optional] 
 **Tags** | [**List&lt;TagBase&gt;**](TagBase.md) |  | [optional] 
 **Categories** | [**List&lt;CategoryBase&gt;**](CategoryBase.md) |  | [optional] 
-**Company** | [**CompanyBase**](CompanyBase.md) |  | [optional] 
+**Company** | [**Company**](Company.md) |  | [optional] 
 **CreatedAt** | **string** |  | [optional] 
 **UpdatedAt** | **string** |  | [optional] 
 **DeletedAt** | **string** |  | [optional] 
