@@ -4,16 +4,16 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetLogsLoggingLogsGet**](LoggingApi.md#getlogslogginglogsget) | **GET** /sam/logging/logs | Get Logs
-[**GetServiceLogsLoggingLogsServicesServiceGet**](LoggingApi.md#getservicelogslogginglogsservicesserviceget) | **GET** /sam/logging/logs/services/{service} | Get Service Logs
-[**GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGet**](LoggingApi.md#getsubjectlogslogginglogsservicesservicesubjectssubjectget) | **GET** /sam/logging/logs/services/{service}/subjects/{subject} | Get Subject Logs
+[**GetLogs**](LoggingApi.md#getlogs) | **GET** /sam/logging/logs | Getlogs
+[**GetServiceLogs**](LoggingApi.md#getservicelogs) | **GET** /sam/logging/logs/services/{service} | Getservicelogs
+[**GetSubjectLogs**](LoggingApi.md#getsubjectlogs) | **GET** /sam/logging/logs/services/{service}/subjects/{subject} | Getsubjectlogs
 
 
-<a name="getlogslogginglogsget"></a>
-# **GetLogsLoggingLogsGet**
-> Object GetLogsLoggingLogsGet (string service = null, string dateStart = null, string dateEnd = null, bool? desc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getlogs"></a>
+# **GetLogs**
+> List&lt;LoggingDynamo&gt; GetLogs (string service = null, string dateStart = null, string dateEnd = null, bool? desc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Logs
+Getlogs
 
 ### Example
 ```csharp
@@ -25,7 +25,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetLogsLoggingLogsGetExample
+    public class GetLogsExample
     {
         public static void Main()
         {
@@ -45,13 +45,13 @@ namespace Example
 
             try
             {
-                // Get Logs
-                Object result = apiInstance.GetLogsLoggingLogsGet(service, dateStart, dateEnd, desc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getlogs
+                List<LoggingDynamo> result = apiInstance.GetLogs(service, dateStart, dateEnd, desc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LoggingApi.GetLogsLoggingLogsGet: " + e.Message );
+                Debug.Print("Exception when calling LoggingApi.GetLogs: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**List&lt;LoggingDynamo&gt;**](LoggingDynamo.md)
 
 ### Authorization
 
@@ -98,11 +98,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getservicelogslogginglogsservicesserviceget"></a>
-# **GetServiceLogsLoggingLogsServicesServiceGet**
-> Object GetServiceLogsLoggingLogsServicesServiceGet (string service, string dateStart = null, string dateEnd = null, bool? desc = null, int? limit = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getservicelogs"></a>
+# **GetServiceLogs**
+> List&lt;LoggingDynamo&gt; GetServiceLogs (string service, string dateStart = null, string dateEnd = null, bool? desc = null, int? limit = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Service Logs
+Getservicelogs
 
 ### Example
 ```csharp
@@ -114,7 +114,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetServiceLogsLoggingLogsServicesServiceGetExample
+    public class GetServiceLogsExample
     {
         public static void Main()
         {
@@ -135,13 +135,13 @@ namespace Example
 
             try
             {
-                // Get Service Logs
-                Object result = apiInstance.GetServiceLogsLoggingLogsServicesServiceGet(service, dateStart, dateEnd, desc, limit, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getservicelogs
+                List<LoggingDynamo> result = apiInstance.GetServiceLogs(service, dateStart, dateEnd, desc, limit, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LoggingApi.GetServiceLogsLoggingLogsServicesServiceGet: " + e.Message );
+                Debug.Print("Exception when calling LoggingApi.GetServiceLogs: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**List&lt;LoggingDynamo&gt;**](LoggingDynamo.md)
 
 ### Authorization
 
@@ -189,11 +189,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getsubjectlogslogginglogsservicesservicesubjectssubjectget"></a>
-# **GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGet**
-> Object GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGet (string service, string subject, string dateStart = null, string dateEnd = null, bool? desc = null, int? limit = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="getsubjectlogs"></a>
+# **GetSubjectLogs**
+> Object GetSubjectLogs (string service, string subject, string dateStart = null, string dateEnd = null, bool? desc = null, int? limit = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Subject Logs
+Getsubjectlogs
 
 ### Example
 ```csharp
@@ -205,7 +205,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGetExample
+    public class GetSubjectLogsExample
     {
         public static void Main()
         {
@@ -227,13 +227,13 @@ namespace Example
 
             try
             {
-                // Get Subject Logs
-                Object result = apiInstance.GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGet(service, subject, dateStart, dateEnd, desc, limit, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Getsubjectlogs
+                Object result = apiInstance.GetSubjectLogs(service, subject, dateStart, dateEnd, desc, limit, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LoggingApi.GetSubjectLogsLoggingLogsServicesServiceSubjectsSubjectGet: " + e.Message );
+                Debug.Print("Exception when calling LoggingApi.GetSubjectLogs: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

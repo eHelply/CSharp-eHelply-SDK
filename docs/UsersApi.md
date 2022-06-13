@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**Login**](UsersApi.md#login) | **POST** /sam/users/auth/login | Login
 [**RefreshToken**](UsersApi.md#refreshtoken) | **POST** /sam/users/auth/{app_client}/refresh-token | Refreshtoken
 [**ResetPassword**](UsersApi.md#resetpassword) | **POST** /sam/users/auth/password/reset | Resetpassword
-[**ResetPasswordConfirmationUsersAuthPasswordResetConfirmPost**](UsersApi.md#resetpasswordconfirmationusersauthpasswordresetconfirmpost) | **POST** /sam/users/auth/password/reset/confirm | Reset Password Confirmation
+[**ResetPasswordConfirmation**](UsersApi.md#resetpasswordconfirmation) | **POST** /sam/users/auth/password/reset/confirm | Resetpasswordconfirmation
 [**SearchParticipants**](UsersApi.md#searchparticipants) | **GET** /sam/users/participants | Searchparticipants
 [**Signup**](UsersApi.md#signup) | **POST** /sam/users/auth/signup | Signup
 [**UpdateParticipant**](UsersApi.md#updateparticipant) | **PUT** /sam/users/participants/{participant_id} | Updateparticipant
@@ -182,7 +182,7 @@ No authorization required
 
 <a name="createuser"></a>
 # **CreateUser**
-> Object CreateUser (string authorization = null)
+> UserResponse CreateUser (string authorization = null)
 
 Createuser
 
@@ -210,7 +210,7 @@ namespace Example
             try
             {
                 // Createuser
-                Object result = apiInstance.CreateUser(authorization);
+                UserResponse result = apiInstance.CreateUser(authorization);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**UserResponse**](UserResponse.md)
 
 ### Authorization
 
@@ -816,11 +816,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="resetpasswordconfirmationusersauthpasswordresetconfirmpost"></a>
-# **ResetPasswordConfirmationUsersAuthPasswordResetConfirmPost**
-> Object ResetPasswordConfirmationUsersAuthPasswordResetConfirmPost (UserPasswordResetConfirmation userPasswordResetConfirmation)
+<a name="resetpasswordconfirmation"></a>
+# **ResetPasswordConfirmation**
+> Object ResetPasswordConfirmation (UserPasswordResetConfirmation userPasswordResetConfirmation)
 
-Reset Password Confirmation
+Resetpasswordconfirmation
 
 Resets the given user's password to the given password when the proper code is provided
 
@@ -834,7 +834,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class ResetPasswordConfirmationUsersAuthPasswordResetConfirmPostExample
+    public class ResetPasswordConfirmationExample
     {
         public static void Main()
         {
@@ -845,13 +845,13 @@ namespace Example
 
             try
             {
-                // Reset Password Confirmation
-                Object result = apiInstance.ResetPasswordConfirmationUsersAuthPasswordResetConfirmPost(userPasswordResetConfirmation);
+                // Resetpasswordconfirmation
+                Object result = apiInstance.ResetPasswordConfirmation(userPasswordResetConfirmation);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.ResetPasswordConfirmationUsersAuthPasswordResetConfirmPost: " + e.Message );
+                Debug.Print("Exception when calling UsersApi.ResetPasswordConfirmation: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

@@ -5,8 +5,8 @@ A meta from DynamoDB
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Basic** | [**BasicMeta**](BasicMeta.md) |  | [optional] 
-**Detailed** | [**DetailedMeta**](DetailedMeta.md) |  | [optional] 
+**Basic** | [**Basic**](Basic.md) |  | [optional] 
+**Detailed** | [**Detailed**](Detailed.md) |  | [optional] 
 **Custom** | [**MetaCustom**](MetaCustom.md) |  | [optional] 
 **Dates** | [**DatesMeta**](DatesMeta.md) |  | [optional] 
 **Fields** | [**List&lt;Field&gt;**](Field.md) |  | [optional] 
