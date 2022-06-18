@@ -14,11 +14,6 @@ Name | Type | Description | Notes
 **Uuid** | **string** |  | 
 **ProjectUuid** | **string** |  | [optional] 
 **MetaUuid** | **string** |  | [optional] 
-**CatalogData** | **Object** |  | [optional] 
-**ReviewGroupData** | **Object** |  | [optional] 
-**ScheduleData** | **Object** |  | [optional] 
-**CollectionData** | **Object** |  | [optional] 
-**BlogData** | **Object** |  | [optional] 
 **Tags** | [**List&lt;TagBase&gt;**](TagBase.md) |  | [optional] 
 **Categories** | [**List&lt;CategoryBase&gt;**](CategoryBase.md) |  | [optional] 
 **Company** | [**Company**](Company.md) |  | [optional] 
