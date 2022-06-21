@@ -27,48 +27,35 @@ using OpenAPIDateConverter = Ehelply.Sdk.Client.OpenAPIDateConverter;
 namespace Ehelply.Sdk.Model
 {
     /// <summary>
-    /// Used for verify key endpoint
+    /// ContactMethod
     /// </summary>
-    [DataContract(Name = "SecurityKeyVerify")]
-    public partial class SecurityKeyVerify : IEquatable<SecurityKeyVerify>, IValidatableObject
+    [DataContract(Name = "ContactMethod")]
+    public partial class ContactMethod : IEquatable<ContactMethod>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SecurityKeyVerify" /> class.
+        /// Initializes a new instance of the <see cref="ContactMethod" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        protected SecurityKeyVerify() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="SecurityKeyVerify" /> class.
-        /// </summary>
-        /// <param name="access">access (required).</param>
-        /// <param name="secret">secret (required).</param>
-        public SecurityKeyVerify(string access = default(string), string secret = default(string))
+        /// <param name="name">name (default to &quot;&quot;).</param>
+        /// <param name="value">value (default to &quot;&quot;).</param>
+        public ContactMethod(string name = "", string value = "")
         {
-            // to ensure "access" is required (not null)
-            if (access == null)
-            {
-                throw new ArgumentNullException("access is a required property for SecurityKeyVerify and cannot be null");
-            }
-            this.Access = access;
-            // to ensure "secret" is required (not null)
-            if (secret == null)
-            {
-                throw new ArgumentNullException("secret is a required property for SecurityKeyVerify and cannot be null");
-            }
-            this.Secret = secret;
+            // use default value if no "name" provided
+            this.Name = name ?? "";
+            // use default value if no "value" provided
+            this.Value = value ?? "";
         }
 
         /// <summary>
-        /// Gets or Sets Access
+        /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "access", IsRequired = true, EmitDefaultValue = false)]
-        public string Access { get; set; }
+        [DataMember(Name = "name", EmitDefaultValue = false)]
+        public string Name { get; set; }
 
         /// <summary>
-        /// Gets or Sets Secret
+        /// Gets or Sets Value
         /// </summary>
-        [DataMember(Name = "secret", IsRequired = true, EmitDefaultValue = false)]
-        public string Secret { get; set; }
+        [DataMember(Name = "value", EmitDefaultValue = false)]
+        public string Value { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -77,9 +64,9 @@ namespace Ehelply.Sdk.Model
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append("class SecurityKeyVerify {\n");
-            sb.Append("  Access: ").Append(Access).Append("\n");
-            sb.Append("  Secret: ").Append(Secret).Append("\n");
+            sb.Append("class ContactMethod {\n");
+            sb.Append("  Name: ").Append(Name).Append("\n");
+            sb.Append("  Value: ").Append(Value).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -100,15 +87,15 @@ namespace Ehelply.Sdk.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as SecurityKeyVerify);
+            return this.Equals(input as ContactMethod);
         }
 
         /// <summary>
-        /// Returns true if SecurityKeyVerify instances are equal
+        /// Returns true if ContactMethod instances are equal
         /// </summary>
-        /// <param name="input">Instance of SecurityKeyVerify to be compared</param>
+        /// <param name="input">Instance of ContactMethod to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(SecurityKeyVerify input)
+        public bool Equals(ContactMethod input)
         {
             if (input == null)
             {
@@ -116,14 +103,14 @@ namespace Ehelply.Sdk.Model
             }
             return 
                 (
-                    this.Access == input.Access ||
-                    (this.Access != null &&
-                    this.Access.Equals(input.Access))
+                    this.Name == input.Name ||
+                    (this.Name != null &&
+                    this.Name.Equals(input.Name))
                 ) && 
                 (
-                    this.Secret == input.Secret ||
-                    (this.Secret != null &&
-                    this.Secret.Equals(input.Secret))
+                    this.Value == input.Value ||
+                    (this.Value != null &&
+                    this.Value.Equals(input.Value))
                 );
         }
 
@@ -136,13 +123,13 @@ namespace Ehelply.Sdk.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.Access != null)
+                if (this.Name != null)
                 {
-                    hashCode = (hashCode * 59) + this.Access.GetHashCode();
+                    hashCode = (hashCode * 59) + this.Name.GetHashCode();
                 }
-                if (this.Secret != null)
+                if (this.Value != null)
                 {
-                    hashCode = (hashCode * 59) + this.Secret.GetHashCode();
+                    hashCode = (hashCode * 59) + this.Value.GetHashCode();
                 }
                 return hashCode;
             }

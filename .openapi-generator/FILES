@@ -30,6 +30,7 @@ docs/CompanyBase.md
 docs/CompanyResponse.md
 docs/Contact.md
 docs/ContactBase.md
+docs/ContactMethod.md
 docs/ContactResponse.md
 docs/CreateKeyResponse.md
 docs/CreateReview.md
@@ -180,6 +181,7 @@ src/Ehelply.Sdk.Test/Model/CompanyBaseTests.cs
 src/Ehelply.Sdk.Test/Model/CompanyResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CompanyTests.cs
 src/Ehelply.Sdk.Test/Model/ContactBaseTests.cs
+src/Ehelply.Sdk.Test/Model/ContactMethodTests.cs
 src/Ehelply.Sdk.Test/Model/ContactResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
@@ -336,6 +338,7 @@ src/Ehelply.Sdk/Model/CompanyBase.cs
 src/Ehelply.Sdk/Model/CompanyResponse.cs
 src/Ehelply.Sdk/Model/Contact.cs
 src/Ehelply.Sdk/Model/ContactBase.cs
+src/Ehelply.Sdk/Model/ContactMethod.cs
 src/Ehelply.Sdk/Model/ContactResponse.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
 src/Ehelply.Sdk/Model/CreateReview.cs
