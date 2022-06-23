@@ -796,7 +796,7 @@ No authorization required
 
 <a name="getservicespec"></a>
 # **GetServiceSpec**
-> ResponseGetservicespec GetServiceSpec (string service, string spec, bool? asJson = null)
+> GetServiceSpecResponse GetServiceSpec (string service, string spec)
 
 Getservicespec
 
@@ -819,12 +819,11 @@ namespace Example
             var apiInstance = new MonitorApi(config);
             var service = "service_example";  // string | 
             var spec = "spec_example";  // string | 
-            var asJson = false;  // bool? |  (optional)  (default to false)
 
             try
             {
                 // Getservicespec
-                ResponseGetservicespec result = apiInstance.GetServiceSpec(service, spec, asJson);
+                GetServiceSpecResponse result = apiInstance.GetServiceSpec(service, spec);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -844,11 +843,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service** | **string**|  | 
  **spec** | **string**|  | 
- **asJson** | **bool?**|  | [optional] [default to false]
 
 ### Return type
 
-[**ResponseGetservicespec**](ResponseGetservicespec.md)
+[**GetServiceSpecResponse**](GetServiceSpecResponse.md)
 
 ### Authorization
 
@@ -872,7 +870,7 @@ No authorization required
 
 <a name="getservicespecs"></a>
 # **GetServiceSpecs**
-> ResponseGetservicespecs GetServiceSpecs (string service)
+> GetServiceSpecsResponse GetServiceSpecs (string service)
 
 Getservicespecs
 
@@ -898,7 +896,7 @@ namespace Example
             try
             {
                 // Getservicespecs
-                ResponseGetservicespecs result = apiInstance.GetServiceSpecs(service);
+                GetServiceSpecsResponse result = apiInstance.GetServiceSpecs(service);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -920,7 +918,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ResponseGetservicespecs**](ResponseGetservicespecs.md)
+[**GetServiceSpecsResponse**](GetServiceSpecsResponse.md)
 
 ### Authorization
 
@@ -1102,7 +1100,7 @@ No authorization required
 
 <a name="getserviceswithspecs"></a>
 # **GetServicesWithSpecs**
-> ResponseGetserviceswithspecs GetServicesWithSpecs ()
+> GetServiceServiceWithSpecsResponse GetServicesWithSpecs ()
 
 Getserviceswithspecs
 
@@ -1127,7 +1125,7 @@ namespace Example
             try
             {
                 // Getserviceswithspecs
-                ResponseGetserviceswithspecs result = apiInstance.GetServicesWithSpecs();
+                GetServiceServiceWithSpecsResponse result = apiInstance.GetServicesWithSpecs();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -1146,7 +1144,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ResponseGetserviceswithspecs**](ResponseGetserviceswithspecs.md)
+[**GetServiceServiceWithSpecsResponse**](GetServiceServiceWithSpecsResponse.md)
 
 ### Authorization
 
