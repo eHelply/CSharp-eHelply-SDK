@@ -44,6 +44,9 @@ docs/DetailedMetaCreate.md
 docs/Email.md
 docs/Field.md
 docs/FieldDynamo.md
+docs/GetServiceServiceWithSpecsResponse.md
+docs/GetServiceSpecResponse.md
+docs/GetServiceSpecsResponse.md
 docs/GetServicesWithSpecs403Response.md
 docs/HTTPValidationError.md
 docs/HeartbeatResponse.md
@@ -96,9 +99,6 @@ docs/ResponseCreatekey.md
 docs/ResponseDeletekey.md
 docs/ResponseDeleteusagetype.md
 docs/ResponseGeneratetoken.md
-docs/ResponseGetservicespec.md
-docs/ResponseGetservicespecs.md
-docs/ResponseGetserviceswithspecs.md
 docs/ResponseRemovememberfromproject.md
 docs/SecurityApi.md
 docs/SecurityCreateToken.md
@@ -195,6 +195,9 @@ src/Ehelply.Sdk.Test/Model/DetailedTests.cs
 src/Ehelply.Sdk.Test/Model/EmailTests.cs
 src/Ehelply.Sdk.Test/Model/FieldDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/FieldTests.cs
+src/Ehelply.Sdk.Test/Model/GetServiceServiceWithSpecsResponseTests.cs
+src/Ehelply.Sdk.Test/Model/GetServiceSpecResponseTests.cs
+src/Ehelply.Sdk.Test/Model/GetServiceSpecsResponseTests.cs
 src/Ehelply.Sdk.Test/Model/GetServicesWithSpecs403ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/HTTPValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/HeartbeatResponseTests.cs
@@ -241,9 +244,6 @@ src/Ehelply.Sdk.Test/Model/ResponseCreatekeyTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseDeletekeyTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseDeleteusagetypeTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseGeneratetokenTests.cs
-src/Ehelply.Sdk.Test/Model/ResponseGetservicespecTests.cs
-src/Ehelply.Sdk.Test/Model/ResponseGetservicespecsTests.cs
-src/Ehelply.Sdk.Test/Model/ResponseGetserviceswithspecsTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseRemovememberfromprojectTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityCreateTokenTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyGetTests.cs
@@ -351,6 +351,9 @@ src/Ehelply.Sdk/Model/DetailedMetaCreate.cs
 src/Ehelply.Sdk/Model/Email.cs
 src/Ehelply.Sdk/Model/Field.cs
 src/Ehelply.Sdk/Model/FieldDynamo.cs
+src/Ehelply.Sdk/Model/GetServiceServiceWithSpecsResponse.cs
+src/Ehelply.Sdk/Model/GetServiceSpecResponse.cs
+src/Ehelply.Sdk/Model/GetServiceSpecsResponse.cs
 src/Ehelply.Sdk/Model/GetServicesWithSpecs403Response.cs
 src/Ehelply.Sdk/Model/HTTPValidationError.cs
 src/Ehelply.Sdk/Model/HeartbeatResponse.cs
@@ -397,9 +400,6 @@ src/Ehelply.Sdk/Model/ResponseCreatekey.cs
 src/Ehelply.Sdk/Model/ResponseDeletekey.cs
 src/Ehelply.Sdk/Model/ResponseDeleteusagetype.cs
 src/Ehelply.Sdk/Model/ResponseGeneratetoken.cs
-src/Ehelply.Sdk/Model/ResponseGetservicespec.cs
-src/Ehelply.Sdk/Model/ResponseGetservicespecs.cs
-src/Ehelply.Sdk/Model/ResponseGetserviceswithspecs.cs
 src/Ehelply.Sdk/Model/ResponseRemovememberfromproject.cs
 src/Ehelply.Sdk/Model/SecurityCreateToken.cs
 src/Ehelply.Sdk/Model/SecurityEncryptionKeyGet.cs

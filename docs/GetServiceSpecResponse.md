@@ -1,10 +1,10 @@
-# Ehelply.Sdk.Model.ResponseGetserviceswithspecs
+# Ehelply.Sdk.Model.GetServiceSpecResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Message** | **string** |  | [optional] 
+**Content** | **string** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
