@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Content** | **System.IO.Stream** |  | [optional] 
 **Time** | **string** |  | 
 **Meta** | [**NoteMeta**](NoteMeta.md) |  | 
-**History** | [**List&lt;NoteDynamo&gt;**](NoteDynamo.md) |  | [optional] 
+**History** | [**List&lt;NoteDynamoResponse&gt;**](NoteDynamoResponse.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
