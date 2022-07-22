@@ -2,25 +2,24 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**ConfirmSignup**](UsersApi.md#confirmsignup) | **POST** /sam/users/auth/signup/confirm | Confirmsignup
-[**CreateParticipant**](UsersApi.md#createparticipant) | **POST** /sam/users/participants | Createparticipant
-[**CreateUser**](UsersApi.md#createuser) | **POST** /sam/users | Createuser
-[**DeleteParticipant**](UsersApi.md#deleteparticipant) | **DELETE** /sam/users/participants/{participant_id} | Deleteparticipant
-[**DeleteUser**](UsersApi.md#deleteuser) | **DELETE** /sam/users/{user_id} | Deleteuser
-[**GetParticipant**](UsersApi.md#getparticipant) | **GET** /sam/users/participants/{participant_id} | Getparticipant
-[**GetUser**](UsersApi.md#getuser) | **GET** /sam/users/{user_id} | Getuser
-[**Login**](UsersApi.md#login) | **POST** /sam/users/auth/login | Login
-[**RefreshToken**](UsersApi.md#refreshtoken) | **POST** /sam/users/auth/{app_client}/refresh-token | Refreshtoken
-[**ResetPassword**](UsersApi.md#resetpassword) | **POST** /sam/users/auth/password/reset | Resetpassword
-[**ResetPasswordConfirmation**](UsersApi.md#resetpasswordconfirmation) | **POST** /sam/users/auth/password/reset/confirm | Resetpasswordconfirmation
-[**SearchParticipants**](UsersApi.md#searchparticipants) | **GET** /sam/users/participants | Searchparticipants
-[**Signup**](UsersApi.md#signup) | **POST** /sam/users/auth/signup | Signup
-[**UpdateParticipant**](UsersApi.md#updateparticipant) | **PUT** /sam/users/participants/{participant_id} | Updateparticipant
-[**UpdateUser**](UsersApi.md#updateuser) | **PUT** /sam/users/{user_id} | Updateuser
-[**UserValidations**](UsersApi.md#uservalidations) | **POST** /sam/users/validations/{field} | Uservalidations
-
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**ConfirmSignup**](UsersApi.md#confirmsignup) | **POST** /sam/users/auth/signup/confirm | Confirmsignup |
+| [**CreateParticipant**](UsersApi.md#createparticipant) | **POST** /sam/users/participants | Createparticipant |
+| [**CreateUser**](UsersApi.md#createuser) | **POST** /sam/users | Createuser |
+| [**DeleteParticipant**](UsersApi.md#deleteparticipant) | **DELETE** /sam/users/participants/{participant_id} | Deleteparticipant |
+| [**DeleteUser**](UsersApi.md#deleteuser) | **DELETE** /sam/users/{user_id} | Deleteuser |
+| [**GetParticipant**](UsersApi.md#getparticipant) | **GET** /sam/users/participants/{participant_id} | Getparticipant |
+| [**GetUser**](UsersApi.md#getuser) | **GET** /sam/users/{user_id} | Getuser |
+| [**Login**](UsersApi.md#login) | **POST** /sam/users/auth/login | Login |
+| [**RefreshToken**](UsersApi.md#refreshtoken) | **POST** /sam/users/auth/{app_client}/refresh-token | Refreshtoken |
+| [**ResetPassword**](UsersApi.md#resetpassword) | **POST** /sam/users/auth/password/reset | Resetpassword |
+| [**ResetPasswordConfirmation**](UsersApi.md#resetpasswordconfirmation) | **POST** /sam/users/auth/password/reset/confirm | Resetpasswordconfirmation |
+| [**SearchParticipants**](UsersApi.md#searchparticipants) | **GET** /sam/users/participants | Searchparticipants |
+| [**Signup**](UsersApi.md#signup) | **POST** /sam/users/auth/signup | Signup |
+| [**UpdateParticipant**](UsersApi.md#updateparticipant) | **PUT** /sam/users/participants/{participant_id} | Updateparticipant |
+| [**UpdateUser**](UsersApi.md#updateuser) | **PUT** /sam/users/{user_id} | Updateuser |
+| [**UserValidations**](UsersApi.md#uservalidations) | **POST** /sam/users/validations/{field} | Uservalidations |
 
 <a name="confirmsignup"></a>
 # **ConfirmSignup**
@@ -57,8 +56,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.ConfirmSignup: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.ConfirmSignup: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -66,11 +65,31 @@ namespace Example
 }
 ```
 
+#### Using the ConfirmSignupWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Confirmsignup
+    ApiResponse<Object> response = apiInstance.ConfirmSignupWithHttpInfo(userConfirmation);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.ConfirmSignupWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userConfirmation** | [**UserConfirmation**](UserConfirmation.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userConfirmation** | [**UserConfirmation**](UserConfirmation.md) |  |  |
 
 ### Return type
 
@@ -136,8 +155,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.CreateParticipant: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.CreateParticipant: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -145,17 +164,37 @@ namespace Example
 }
 ```
 
+#### Using the CreateParticipantWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Createparticipant
+    ApiResponse<ParticipantUserReturn> response = apiInstance.CreateParticipantWithHttpInfo(participantCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.CreateParticipantWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **participantCreate** | [**ParticipantCreate**](ParticipantCreate.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **participantCreate** | [**ParticipantCreate**](ParticipantCreate.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -215,8 +254,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.CreateUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.CreateUser: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -224,11 +263,31 @@ namespace Example
 }
 ```
 
+#### Using the CreateUserWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Createuser
+    ApiResponse<UserResponse> response = apiInstance.CreateUserWithHttpInfo(authorization);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.CreateUserWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **authorization** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -294,8 +353,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.DeleteParticipant: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.DeleteParticipant: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -303,17 +362,37 @@ namespace Example
 }
 ```
 
+#### Using the DeleteParticipantWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Deleteparticipant
+    ApiResponse<bool> response = apiInstance.DeleteParticipantWithHttpInfo(participantId, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.DeleteParticipantWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **participantId** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **participantId** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -379,8 +458,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.DeleteUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.DeleteUser: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -388,17 +467,37 @@ namespace Example
 }
 ```
 
+#### Using the DeleteUserWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Deleteuser
+    ApiResponse<bool> response = apiInstance.DeleteUserWithHttpInfo(userId, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.DeleteUserWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userId** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userId** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -464,8 +563,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.GetParticipant: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.GetParticipant: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -473,17 +572,37 @@ namespace Example
 }
 ```
 
+#### Using the GetParticipantWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getparticipant
+    ApiResponse<ParticipantUserReturn> response = apiInstance.GetParticipantWithHttpInfo(participantId, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.GetParticipantWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **participantId** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **participantId** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -550,8 +669,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.GetUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.GetUser: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -559,18 +678,38 @@ namespace Example
 }
 ```
 
+#### Using the GetUserWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getuser
+    ApiResponse<UserResponse> response = apiInstance.GetUserWithHttpInfo(userId, idType, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.GetUserWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userId** | **string**|  | 
- **idType** | **string**|  | [optional] 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userId** | **string** |  |  |
+| **idType** | **string** |  | [optional]  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -630,8 +769,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.Login: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.Login: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -639,11 +778,31 @@ namespace Example
 }
 ```
 
+#### Using the LoginWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Login
+    ApiResponse<UserLoginReturn> response = apiInstance.LoginWithHttpInfo(userLogin);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.LoginWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userLogin** | [**UserLogin**](UserLogin.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userLogin** | [**UserLogin**](UserLogin.md) |  |  |
 
 ### Return type
 
@@ -704,8 +863,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.RefreshToken: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.RefreshToken: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -713,12 +872,32 @@ namespace Example
 }
 ```
 
+#### Using the RefreshTokenWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Refreshtoken
+    ApiResponse<UserTokenReturn> response = apiInstance.RefreshTokenWithHttpInfo(appClient, body);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.RefreshTokenWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appClient** | **string**|  | 
- **body** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appClient** | **string** |  |  |
+| **body** | **string** |  |  |
 
 ### Return type
 
@@ -778,8 +957,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.ResetPassword: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.ResetPassword: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -787,11 +966,31 @@ namespace Example
 }
 ```
 
+#### Using the ResetPasswordWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Resetpassword
+    ApiResponse<Object> response = apiInstance.ResetPasswordWithHttpInfo(userPasswordReset);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.ResetPasswordWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userPasswordReset** | [**UserPasswordReset**](UserPasswordReset.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userPasswordReset** | [**UserPasswordReset**](UserPasswordReset.md) |  |  |
 
 ### Return type
 
@@ -851,8 +1050,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.ResetPasswordConfirmation: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.ResetPasswordConfirmation: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -860,11 +1059,31 @@ namespace Example
 }
 ```
 
+#### Using the ResetPasswordConfirmationWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Resetpasswordconfirmation
+    ApiResponse<Object> response = apiInstance.ResetPasswordConfirmationWithHttpInfo(userPasswordResetConfirmation);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.ResetPasswordConfirmationWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userPasswordResetConfirmation** | [**UserPasswordResetConfirmation**](UserPasswordResetConfirmation.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userPasswordResetConfirmation** | [**UserPasswordResetConfirmation**](UserPasswordResetConfirmation.md) |  |  |
 
 ### Return type
 
@@ -935,8 +1154,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.SearchParticipants: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.SearchParticipants: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -944,22 +1163,42 @@ namespace Example
 }
 ```
 
+#### Using the SearchParticipantsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Searchparticipants
+    ApiResponse<Page> response = apiInstance.SearchParticipantsWithHttpInfo(page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.SearchParticipantsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **search** | **string**|  | [optional] 
- **searchOn** | **string**|  | [optional] 
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **search** | **string** |  | [optional]  |
+| **searchOn** | **string** |  | [optional]  |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1019,8 +1258,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.Signup: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.Signup: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1028,11 +1267,31 @@ namespace Example
 }
 ```
 
+#### Using the SignupWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Signup
+    ApiResponse<UserSignupReturn> response = apiInstance.SignupWithHttpInfo(userSignup);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.SignupWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userSignup** | [**UserSignup**](UserSignup.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userSignup** | [**UserSignup**](UserSignup.md) |  |  |
 
 ### Return type
 
@@ -1099,8 +1358,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.UpdateParticipant: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.UpdateParticipant: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1108,18 +1367,38 @@ namespace Example
 }
 ```
 
+#### Using the UpdateParticipantWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Updateparticipant
+    ApiResponse<ParticipantUserReturn> response = apiInstance.UpdateParticipantWithHttpInfo(participantId, participantUpdate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.UpdateParticipantWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **participantId** | **string**|  | 
- **participantUpdate** | [**ParticipantUpdate**](ParticipantUpdate.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **participantId** | **string** |  |  |
+| **participantUpdate** | [**ParticipantUpdate**](ParticipantUpdate.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1186,8 +1465,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.UpdateUser: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.UpdateUser: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1195,18 +1474,38 @@ namespace Example
 }
 ```
 
+#### Using the UpdateUserWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Updateuser
+    ApiResponse<UserResponse> response = apiInstance.UpdateUserWithHttpInfo(userId, user, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.UpdateUserWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userId** | **string**|  | 
- **user** | [**User**](User.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **userId** | **string** |  |  |
+| **user** | [**User**](User.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1273,8 +1572,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling UsersApi.UserValidations: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling UsersApi.UserValidations: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1282,18 +1581,38 @@ namespace Example
 }
 ```
 
+#### Using the UserValidationsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Uservalidations
+    ApiResponse<bool> response = apiInstance.UserValidationsWithHttpInfo(field, userValidations, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling UsersApi.UserValidationsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **field** | **string**|  | 
- **userValidations** | [**UserValidations**](UserValidations.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **field** | **string** |  |  |
+| **userValidations** | [**UserValidations**](UserValidations.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 

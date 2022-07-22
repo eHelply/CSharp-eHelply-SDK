@@ -2,31 +2,30 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**AcknowledgeAlarm**](MonitorApi.md#acknowledgealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/acknowledge | Acknowledgealarm
-[**AssignAlarm**](MonitorApi.md#assignalarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/assign | Assignalarm
-[**AttachAlarmNote**](MonitorApi.md#attachalarmnote) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/note | Attachalarmnote
-[**AttachAlarmTicket**](MonitorApi.md#attachalarmticket) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ticket | Attachalarmticket
-[**ClearAlarm**](MonitorApi.md#clearalarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/clear | Clearalarm
-[**GetService**](MonitorApi.md#getservice) | **GET** /sam/monitor/services/{service} | Getservice
-[**GetServiceAlarm**](MonitorApi.md#getservicealarm) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid} | Getservicealarm
-[**GetServiceAlarms**](MonitorApi.md#getservicealarms) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms | Getservicealarms
-[**GetServiceHeartbeat**](MonitorApi.md#getserviceheartbeat) | **GET** /sam/monitor/services/{service}/stages/{stage}/heartbeats | Getserviceheartbeat
-[**GetServiceKpis**](MonitorApi.md#getservicekpis) | **GET** /sam/monitor/services/{service}/kpis | Getservicekpis
-[**GetServiceSpec**](MonitorApi.md#getservicespec) | **GET** /sam/monitor/services/{service}/specs/{spec} | Getservicespec
-[**GetServiceSpecs**](MonitorApi.md#getservicespecs) | **GET** /sam/monitor/services/{service}/specs | Getservicespecs
-[**GetServiceVitals**](MonitorApi.md#getservicevitals) | **GET** /sam/monitor/services/{service}/stages/{stage}/vitals | Getservicevitals
-[**GetServices**](MonitorApi.md#getservices) | **GET** /sam/monitor/services | Getservices
-[**GetServicesWithSpecs**](MonitorApi.md#getserviceswithspecs) | **GET** /sam/monitor/specs/services | Getserviceswithspecs
-[**HideService**](MonitorApi.md#hideservice) | **POST** /sam/monitor/services/{service}/stages/{stage}/hide | Hideservice
-[**IgnoreAlarm**](MonitorApi.md#ignorealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ignore | Ignorealarm
-[**RegisterService**](MonitorApi.md#registerservice) | **POST** /sam/monitor/services | Registerservice
-[**SearchAlarms**](MonitorApi.md#searchalarms) | **GET** /sam/monitor/services/{service}/alarms | Searchalarms
-[**ShowService**](MonitorApi.md#showservice) | **POST** /sam/monitor/services/{service}/stages/{stage}/show | Showservice
-[**TerminateAlarm**](MonitorApi.md#terminatealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/terminate | Terminatealarm
-[**TriggerAlarm**](MonitorApi.md#triggeralarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms | Triggeralarm
-
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**AcknowledgeAlarm**](MonitorApi.md#acknowledgealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/acknowledge | Acknowledgealarm |
+| [**AssignAlarm**](MonitorApi.md#assignalarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/assign | Assignalarm |
+| [**AttachAlarmNote**](MonitorApi.md#attachalarmnote) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/note | Attachalarmnote |
+| [**AttachAlarmTicket**](MonitorApi.md#attachalarmticket) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ticket | Attachalarmticket |
+| [**ClearAlarm**](MonitorApi.md#clearalarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/clear | Clearalarm |
+| [**GetService**](MonitorApi.md#getservice) | **GET** /sam/monitor/services/{service} | Getservice |
+| [**GetServiceAlarm**](MonitorApi.md#getservicealarm) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid} | Getservicealarm |
+| [**GetServiceAlarms**](MonitorApi.md#getservicealarms) | **GET** /sam/monitor/services/{service}/stages/{stage}/alarms | Getservicealarms |
+| [**GetServiceHeartbeat**](MonitorApi.md#getserviceheartbeat) | **GET** /sam/monitor/services/{service}/stages/{stage}/heartbeats | Getserviceheartbeat |
+| [**GetServiceKpis**](MonitorApi.md#getservicekpis) | **GET** /sam/monitor/services/{service}/kpis | Getservicekpis |
+| [**GetServiceSpec**](MonitorApi.md#getservicespec) | **GET** /sam/monitor/services/{service}/specs/{spec} | Getservicespec |
+| [**GetServiceSpecs**](MonitorApi.md#getservicespecs) | **GET** /sam/monitor/services/{service}/specs | Getservicespecs |
+| [**GetServiceVitals**](MonitorApi.md#getservicevitals) | **GET** /sam/monitor/services/{service}/stages/{stage}/vitals | Getservicevitals |
+| [**GetServices**](MonitorApi.md#getservices) | **GET** /sam/monitor/services | Getservices |
+| [**GetServicesWithSpecs**](MonitorApi.md#getserviceswithspecs) | **GET** /sam/monitor/specs/services | Getserviceswithspecs |
+| [**HideService**](MonitorApi.md#hideservice) | **POST** /sam/monitor/services/{service}/stages/{stage}/hide | Hideservice |
+| [**IgnoreAlarm**](MonitorApi.md#ignorealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/ignore | Ignorealarm |
+| [**RegisterService**](MonitorApi.md#registerservice) | **POST** /sam/monitor/services | Registerservice |
+| [**SearchAlarms**](MonitorApi.md#searchalarms) | **GET** /sam/monitor/services/{service}/alarms | Searchalarms |
+| [**ShowService**](MonitorApi.md#showservice) | **POST** /sam/monitor/services/{service}/stages/{stage}/show | Showservice |
+| [**TerminateAlarm**](MonitorApi.md#terminatealarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms/{alarm_uuid}/terminate | Terminatealarm |
+| [**TriggerAlarm**](MonitorApi.md#triggeralarm) | **POST** /sam/monitor/services/{service}/stages/{stage}/alarms | Triggeralarm |
 
 <a name="acknowledgealarm"></a>
 # **AcknowledgeAlarm**
@@ -64,8 +63,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AcknowledgeAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.AcknowledgeAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -73,14 +72,34 @@ namespace Example
 }
 ```
 
+#### Using the AcknowledgeAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Acknowledgealarm
+    ApiResponse<AlarmResponse> response = apiInstance.AcknowledgeAlarmWithHttpInfo(service, stage, alarmUuid, alarmAcknowledge);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.AcknowledgeAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
- **alarmAcknowledge** | [**AlarmAcknowledge**](AlarmAcknowledge.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
+| **alarmAcknowledge** | [**AlarmAcknowledge**](AlarmAcknowledge.md) |  |  |
 
 ### Return type
 
@@ -141,8 +160,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AssignAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.AssignAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -150,14 +169,34 @@ namespace Example
 }
 ```
 
+#### Using the AssignAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Assignalarm
+    ApiResponse<AlarmResponse> response = apiInstance.AssignAlarmWithHttpInfo(service, stage, alarmUuid, alarmAssign);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.AssignAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
- **alarmAssign** | [**AlarmAssign**](AlarmAssign.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
+| **alarmAssign** | [**AlarmAssign**](AlarmAssign.md) |  |  |
 
 ### Return type
 
@@ -218,8 +257,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AttachAlarmNote: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.AttachAlarmNote: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -227,14 +266,34 @@ namespace Example
 }
 ```
 
+#### Using the AttachAlarmNoteWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Attachalarmnote
+    ApiResponse<AlarmResponse> response = apiInstance.AttachAlarmNoteWithHttpInfo(service, stage, alarmUuid, alarmNote);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.AttachAlarmNoteWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
- **alarmNote** | [**AlarmNote**](AlarmNote.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
+| **alarmNote** | [**AlarmNote**](AlarmNote.md) |  |  |
 
 ### Return type
 
@@ -295,8 +354,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.AttachAlarmTicket: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.AttachAlarmTicket: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -304,14 +363,34 @@ namespace Example
 }
 ```
 
+#### Using the AttachAlarmTicketWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Attachalarmticket
+    ApiResponse<AlarmResponse> response = apiInstance.AttachAlarmTicketWithHttpInfo(service, stage, alarmUuid, alarmTicket);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.AttachAlarmTicketWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
- **alarmTicket** | [**AlarmTicket**](AlarmTicket.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
+| **alarmTicket** | [**AlarmTicket**](AlarmTicket.md) |  |  |
 
 ### Return type
 
@@ -371,8 +450,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.ClearAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.ClearAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -380,13 +459,33 @@ namespace Example
 }
 ```
 
+#### Using the ClearAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Clearalarm
+    ApiResponse<AlarmResponse> response = apiInstance.ClearAlarmWithHttpInfo(service, stage, alarmUuid);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.ClearAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
 
 ### Return type
 
@@ -449,8 +548,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetService: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetService: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -458,16 +557,36 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservice
+    ApiResponse<ServiceResponse> response = apiInstance.GetServiceWithHttpInfo(service, heartbeats, heartbeatLimit, alarms, alarmLimit, stage);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **heartbeats** | **bool?**|  | [optional] [default to false]
- **heartbeatLimit** | **int?**|  | [optional] [default to 5]
- **alarms** | **bool?**|  | [optional] [default to false]
- **alarmLimit** | **int?**|  | [optional] [default to 5]
- **stage** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **heartbeats** | **bool?** |  | [optional] [default to false] |
+| **heartbeatLimit** | **int?** |  | [optional] [default to 5] |
+| **alarms** | **bool?** |  | [optional] [default to false] |
+| **alarmLimit** | **int?** |  | [optional] [default to 5] |
+| **stage** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -527,8 +646,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -536,13 +655,33 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservicealarm
+    ApiResponse<AlarmResponse> response = apiInstance.GetServiceAlarmWithHttpInfo(service, stage, alarmUuid);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
 
 ### Return type
 
@@ -604,8 +743,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceAlarms: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceAlarms: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -613,15 +752,35 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceAlarmsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservicealarms
+    ApiResponse<List<AlarmResponse>> response = apiInstance.GetServiceAlarmsWithHttpInfo(service, stage, history, includeTerminated, includeCleared);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceAlarmsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
- **includeTerminated** | **bool?**|  | [optional] [default to false]
- **includeCleared** | **bool?**|  | [optional] [default to false]
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **history** | **int?** |  | [optional] [default to 5] |
+| **includeTerminated** | **bool?** |  | [optional] [default to false] |
+| **includeCleared** | **bool?** |  | [optional] [default to false] |
 
 ### Return type
 
@@ -681,8 +840,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceHeartbeat: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceHeartbeat: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -690,13 +849,33 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceHeartbeatWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getserviceheartbeat
+    ApiResponse<List<HeartbeatResponse>> response = apiInstance.GetServiceHeartbeatWithHttpInfo(service, stage, history);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceHeartbeatWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **history** | **int?** |  | [optional] [default to 5] |
 
 ### Return type
 
@@ -755,8 +934,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceKpis: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceKpis: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -764,12 +943,32 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceKpisWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservicekpis
+    ApiResponse<List<KpiResponse>> response = apiInstance.GetServiceKpisWithHttpInfo(service, history);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceKpisWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **history** | **int?** |  | [optional] [default to 5] |
 
 ### Return type
 
@@ -828,8 +1027,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceSpec: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceSpec: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -837,12 +1036,32 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceSpecWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservicespec
+    ApiResponse<GetServiceSpecResponse> response = apiInstance.GetServiceSpecWithHttpInfo(service, spec);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceSpecWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **spec** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **spec** | **string** |  |  |
 
 ### Return type
 
@@ -901,8 +1120,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceSpecs: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceSpecs: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -910,11 +1129,31 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceSpecsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservicespecs
+    ApiResponse<GetServiceSpecsResponse> response = apiInstance.GetServiceSpecsWithHttpInfo(service);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceSpecsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
 
 ### Return type
 
@@ -975,8 +1214,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServiceVitals: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServiceVitals: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -984,13 +1223,33 @@ namespace Example
 }
 ```
 
+#### Using the GetServiceVitalsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservicevitals
+    ApiResponse<List<StatsVitalsResponse>> response = apiInstance.GetServiceVitalsWithHttpInfo(service, stage, history);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServiceVitalsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 5]
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **history** | **int?** |  | [optional] [default to 5] |
 
 ### Return type
 
@@ -1054,8 +1313,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServices: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServices: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1063,17 +1322,37 @@ namespace Example
 }
 ```
 
+#### Using the GetServicesWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getservices
+    ApiResponse<List<ServiceResponse>> response = apiInstance.GetServicesWithHttpInfo(heartbeats, heartbeatLimit, alarms, alarmLimit, includeHidden, stage, key);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServicesWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **heartbeats** | **bool?**|  | [optional] [default to false]
- **heartbeatLimit** | **int?**|  | [optional] [default to 5]
- **alarms** | **bool?**|  | [optional] [default to false]
- **alarmLimit** | **int?**|  | [optional] [default to 5]
- **includeHidden** | **bool?**|  | [optional] [default to false]
- **stage** | **string**|  | [optional] 
- **key** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **heartbeats** | **bool?** |  | [optional] [default to false] |
+| **heartbeatLimit** | **int?** |  | [optional] [default to 5] |
+| **alarms** | **bool?** |  | [optional] [default to false] |
+| **alarmLimit** | **int?** |  | [optional] [default to 5] |
+| **includeHidden** | **bool?** |  | [optional] [default to false] |
+| **stage** | **string** |  | [optional]  |
+| **key** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1130,8 +1409,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.GetServicesWithSpecs: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.GetServicesWithSpecs: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1139,9 +1418,28 @@ namespace Example
 }
 ```
 
+#### Using the GetServicesWithSpecsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getserviceswithspecs
+    ApiResponse<GetServiceServiceWithSpecsResponse> response = apiInstance.GetServicesWithSpecsWithHttpInfo();
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.GetServicesWithSpecsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 This endpoint does not need any parameter.
-
 ### Return type
 
 [**GetServiceServiceWithSpecsResponse**](GetServiceServiceWithSpecsResponse.md)
@@ -1199,8 +1497,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.HideService: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.HideService: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1208,12 +1506,32 @@ namespace Example
 }
 ```
 
+#### Using the HideServiceWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Hideservice
+    ApiResponse<ServiceMessageResponse> response = apiInstance.HideServiceWithHttpInfo(service, stage);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.HideServiceWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
 
 ### Return type
 
@@ -1274,8 +1592,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.IgnoreAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.IgnoreAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1283,14 +1601,34 @@ namespace Example
 }
 ```
 
+#### Using the IgnoreAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Ignorealarm
+    ApiResponse<AlarmResponse> response = apiInstance.IgnoreAlarmWithHttpInfo(service, stage, alarmUuid, alarmIgnore);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.IgnoreAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
- **alarmIgnore** | [**AlarmIgnore**](AlarmIgnore.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
+| **alarmIgnore** | [**AlarmIgnore**](AlarmIgnore.md) |  |  |
 
 ### Return type
 
@@ -1348,8 +1686,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.RegisterService: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.RegisterService: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1357,11 +1695,31 @@ namespace Example
 }
 ```
 
+#### Using the RegisterServiceWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Registerservice
+    ApiResponse<ServiceResponse> response = apiInstance.RegisterServiceWithHttpInfo(serviceCreate);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.RegisterServiceWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **serviceCreate** | [**ServiceCreate**](ServiceCreate.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **serviceCreate** | [**ServiceCreate**](ServiceCreate.md) |  |  |
 
 ### Return type
 
@@ -1425,8 +1783,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.SearchAlarms: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.SearchAlarms: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1434,17 +1792,37 @@ namespace Example
 }
 ```
 
+#### Using the SearchAlarmsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Searchalarms
+    ApiResponse<Page> response = apiInstance.SearchAlarmsWithHttpInfo(service, page, pageSize, search, searchOn, sortOn, sortDesc);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.SearchAlarmsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **search** | **string**|  | [optional] 
- **searchOn** | **string**|  | [optional] 
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **search** | **string** |  | [optional]  |
+| **searchOn** | **string** |  | [optional]  |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
 
 ### Return type
 
@@ -1503,8 +1881,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.ShowService: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.ShowService: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1512,12 +1890,32 @@ namespace Example
 }
 ```
 
+#### Using the ShowServiceWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Showservice
+    ApiResponse<ServiceMessageResponse> response = apiInstance.ShowServiceWithHttpInfo(service, stage);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.ShowServiceWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
 
 ### Return type
 
@@ -1578,8 +1976,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.TerminateAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.TerminateAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1587,14 +1985,34 @@ namespace Example
 }
 ```
 
+#### Using the TerminateAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Terminatealarm
+    ApiResponse<AlarmResponse> response = apiInstance.TerminateAlarmWithHttpInfo(service, stage, alarmUuid, alarmTerminate);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.TerminateAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmUuid** | **string**|  | 
- **alarmTerminate** | [**AlarmTerminate**](AlarmTerminate.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmUuid** | **string** |  |  |
+| **alarmTerminate** | [**AlarmTerminate**](AlarmTerminate.md) |  |  |
 
 ### Return type
 
@@ -1654,8 +2072,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling MonitorApi.TriggerAlarm: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling MonitorApi.TriggerAlarm: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1663,13 +2081,33 @@ namespace Example
 }
 ```
 
+#### Using the TriggerAlarmWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Triggeralarm
+    ApiResponse<AlarmResponse> response = apiInstance.TriggerAlarmWithHttpInfo(service, stage, alarmCreate);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling MonitorApi.TriggerAlarmWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **string**|  | 
- **stage** | **string**|  | 
- **alarmCreate** | [**AlarmCreate**](AlarmCreate.md)|  | 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **service** | **string** |  |  |
+| **stage** | **string** |  |  |
+| **alarmCreate** | [**AlarmCreate**](AlarmCreate.md) |  |  |
 
 ### Return type
 

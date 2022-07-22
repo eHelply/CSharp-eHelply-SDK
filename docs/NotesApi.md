@@ -2,17 +2,16 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**CreateNote**](NotesApi.md#createnote) | **POST** /notes/notes | Create Note
-[**DeleteNote**](NotesApi.md#deletenote) | **DELETE** /notes/notes/{note_id} | Delete Note
-[**GetNote**](NotesApi.md#getnote) | **GET** /notes/notes/{note_id} | Get Note
-[**UpdateNote**](NotesApi.md#updatenote) | **PUT** /notes/notes/{note_id} | Update Note
-
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**CreateNote**](NotesApi.md#createnote) | **POST** /notes/notes | Create Note |
+| [**DeleteNote**](NotesApi.md#deletenote) | **DELETE** /notes/notes/{note_id} | Delete Note |
+| [**GetNote**](NotesApi.md#getnote) | **GET** /notes/notes/{note_id} | Get Note |
+| [**UpdateNote**](NotesApi.md#updatenote) | **PUT** /notes/notes/{note_id} | Update Note |
 
 <a name="createnote"></a>
 # **CreateNote**
-> NoteDynamo CreateNote (NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> NoteDynamoResponse CreateNote (NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Note
 
@@ -44,13 +43,13 @@ namespace Example
             try
             {
                 // Create Note
-                NoteDynamo result = apiInstance.CreateNote(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                NoteDynamoResponse result = apiInstance.CreateNote(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling NotesApi.CreateNote: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling NotesApi.CreateNote: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -58,21 +57,41 @@ namespace Example
 }
 ```
 
+#### Using the CreateNoteWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Create Note
+    ApiResponse<NoteDynamoResponse> response = apiInstance.CreateNoteWithHttpInfo(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling NotesApi.CreateNoteWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **noteBase** | [**NoteBase**](NoteBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **noteBase** | [**NoteBase**](NoteBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
-[**NoteDynamo**](NoteDynamo.md)
+[**NoteDynamoResponse**](NoteDynamoResponse.md)
 
 ### Authorization
 
@@ -133,8 +152,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling NotesApi.DeleteNote: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling NotesApi.DeleteNote: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -142,18 +161,38 @@ namespace Example
 }
 ```
 
+#### Using the DeleteNoteWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Delete Note
+    ApiResponse<Object> response = apiInstance.DeleteNoteWithHttpInfo(noteId, method, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling NotesApi.DeleteNoteWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **noteId** | **string**|  | 
- **method** | **string**|  | [optional] [default to &quot;previous&quot;]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **noteId** | **string** |  |  |
+| **method** | **string** |  | [optional] [default to &quot;previous&quot;] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -219,8 +258,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling NotesApi.GetNote: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling NotesApi.GetNote: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -228,19 +267,39 @@ namespace Example
 }
 ```
 
+#### Using the GetNoteWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Note
+    ApiResponse<NoteDynamoHistory> response = apiInstance.GetNoteWithHttpInfo(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling NotesApi.GetNoteWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **noteId** | **string**|  | 
- **history** | **int?**|  | [optional] [default to 0]
- **historyContent** | **bool?**|  | [optional] [default to true]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **noteId** | **string** |  |  |
+| **history** | **int?** |  | [optional] [default to 0] |
+| **historyContent** | **bool?** |  | [optional] [default to true] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -267,7 +326,7 @@ No authorization required
 
 <a name="updatenote"></a>
 # **UpdateNote**
-> NoteDynamo UpdateNote (string noteId, NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> NoteDynamoResponse UpdateNote (string noteId, NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Update Note
 
@@ -300,13 +359,13 @@ namespace Example
             try
             {
                 // Update Note
-                NoteDynamo result = apiInstance.UpdateNote(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                NoteDynamoResponse result = apiInstance.UpdateNote(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling NotesApi.UpdateNote: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling NotesApi.UpdateNote: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -314,22 +373,42 @@ namespace Example
 }
 ```
 
+#### Using the UpdateNoteWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Update Note
+    ApiResponse<NoteDynamoResponse> response = apiInstance.UpdateNoteWithHttpInfo(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling NotesApi.UpdateNoteWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **noteId** | **string**|  | 
- **noteBase** | [**NoteBase**](NoteBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **noteId** | **string** |  |  |
+| **noteBase** | [**NoteBase**](NoteBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
-[**NoteDynamo**](NoteDynamo.md)
+[**NoteDynamoResponse**](NoteDynamoResponse.md)
 
 ### Authorization
 

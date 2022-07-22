@@ -2,37 +2,36 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**AttachEntityToAppointment**](DefaultApi.md#attachentitytoappointment) | **POST** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Attach Entity To Appointment
-[**AttachProductToCatalog**](DefaultApi.md#attachproducttocatalog) | **POST** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Attach Product To Catalog
-[**CreateAppointment**](DefaultApi.md#createappointment) | **POST** /appointments/appointments | Create Appointment
-[**CreateCatalog**](DefaultApi.md#createcatalog) | **POST** /products/catalogs | Create Catalog
-[**CreateProduct**](DefaultApi.md#createproduct) | **POST** /products/products | Create Product
-[**CreateReview**](DefaultApi.md#createreview) | **POST** /products/reviews/types/{entity_type}/entities/{entity_uuid} | Create Review
-[**DeleteAppointment**](DefaultApi.md#deleteappointment) | **DELETE** /appointments/appointments/{appointment_uuid} | Delete Appointment
-[**DeleteCatalog**](DefaultApi.md#deletecatalog) | **DELETE** /products/catalogs/{catalog_uuid} | Delete Catalog
-[**DeleteProduct**](DefaultApi.md#deleteproduct) | **DELETE** /products/products/{product_uuid} | Delete Product
-[**DeleteReview**](DefaultApi.md#deletereview) | **DELETE** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Delete Review
-[**DetachEntityFromAppointment**](DefaultApi.md#detachentityfromappointment) | **DELETE** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Detach Entity From Appointment
-[**DetachProductFromCatalog**](DefaultApi.md#detachproductfromcatalog) | **DELETE** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Detach Product From Catalog
-[**GetAppointment**](DefaultApi.md#getappointment) | **GET** /appointments/appointments/{appointment_uuid} | Get Appointment
-[**GetCatalog**](DefaultApi.md#getcatalog) | **GET** /products/catalogs/{catalog_uuid} | Get Catalog
-[**GetProduct**](DefaultApi.md#getproduct) | **GET** /products/products/{product_uuid} | Get Product
-[**GetReview**](DefaultApi.md#getreview) | **GET** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Get Review
-[**SearchAppointment**](DefaultApi.md#searchappointment) | **GET** /appointments/appointments | Search Appointment
-[**SearchAppointmentEntities**](DefaultApi.md#searchappointmententities) | **GET** /appointments/appointments/{appointment_uuid}/entities | Search Appointment Entities
-[**SearchCatalogProducts**](DefaultApi.md#searchcatalogproducts) | **GET** /products/catalogs/{catalog_uuid}/products | Search Catalog Products
-[**SearchCatalogs**](DefaultApi.md#searchcatalogs) | **GET** /products/catalogs | Search Catalogs
-[**SearchEntityAppointments**](DefaultApi.md#searchentityappointments) | **GET** /appointments/appointments/entities/{entity_uuid}/appointments | Get Entities Appointments
-[**SearchProduct**](DefaultApi.md#searchproduct) | **GET** /products/products | Search Products
-[**SearchProductCatalog**](DefaultApi.md#searchproductcatalog) | **GET** /products/products/{product_uuid}/catalogs | Search Product Catalogs
-[**SearchReviews**](DefaultApi.md#searchreviews) | **GET** /products/reviews/types/{entity_type}/entities/{entity_uuid} | Search Review
-[**UpdateAppointment**](DefaultApi.md#updateappointment) | **PUT** /appointments/appointments/{appointment_uuid} | Update Appointment
-[**UpdateCatalog**](DefaultApi.md#updatecatalog) | **PUT** /products/catalogs/{catalog_uuid} | Update Catalog
-[**UpdateProduct**](DefaultApi.md#updateproduct) | **PUT** /products/products/{product_uuid} | Update Product
-[**UpdateReview**](DefaultApi.md#updatereview) | **PUT** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Update Review
-
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**AttachEntityToAppointment**](DefaultApi.md#attachentitytoappointment) | **POST** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Attach Entity To Appointment |
+| [**AttachProductToCatalog**](DefaultApi.md#attachproducttocatalog) | **POST** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Attach Product To Catalog |
+| [**CreateAppointment**](DefaultApi.md#createappointment) | **POST** /appointments/appointments | Create Appointment |
+| [**CreateCatalog**](DefaultApi.md#createcatalog) | **POST** /products/catalogs | Create Catalog |
+| [**CreateProduct**](DefaultApi.md#createproduct) | **POST** /products/products | Create Product |
+| [**CreateReview**](DefaultApi.md#createreview) | **POST** /products/reviews/types/{entity_type}/entities/{entity_uuid} | Create Review |
+| [**DeleteAppointment**](DefaultApi.md#deleteappointment) | **DELETE** /appointments/appointments/{appointment_uuid} | Delete Appointment |
+| [**DeleteCatalog**](DefaultApi.md#deletecatalog) | **DELETE** /products/catalogs/{catalog_uuid} | Delete Catalog |
+| [**DeleteProduct**](DefaultApi.md#deleteproduct) | **DELETE** /products/products/{product_uuid} | Delete Product |
+| [**DeleteReview**](DefaultApi.md#deletereview) | **DELETE** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Delete Review |
+| [**DetachEntityFromAppointment**](DefaultApi.md#detachentityfromappointment) | **DELETE** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Detach Entity From Appointment |
+| [**DetachProductFromCatalog**](DefaultApi.md#detachproductfromcatalog) | **DELETE** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Detach Product From Catalog |
+| [**GetAppointment**](DefaultApi.md#getappointment) | **GET** /appointments/appointments/{appointment_uuid} | Get Appointment |
+| [**GetCatalog**](DefaultApi.md#getcatalog) | **GET** /products/catalogs/{catalog_uuid} | Get Catalog |
+| [**GetProduct**](DefaultApi.md#getproduct) | **GET** /products/products/{product_uuid} | Get Product |
+| [**GetReview**](DefaultApi.md#getreview) | **GET** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Get Review |
+| [**SearchAppointment**](DefaultApi.md#searchappointment) | **GET** /appointments/appointments | Search Appointment |
+| [**SearchAppointmentEntities**](DefaultApi.md#searchappointmententities) | **GET** /appointments/appointments/{appointment_uuid}/entities | Search Appointment Entities |
+| [**SearchCatalogProducts**](DefaultApi.md#searchcatalogproducts) | **GET** /products/catalogs/{catalog_uuid}/products | Search Catalog Products |
+| [**SearchCatalogs**](DefaultApi.md#searchcatalogs) | **GET** /products/catalogs | Search Catalogs |
+| [**SearchEntityAppointments**](DefaultApi.md#searchentityappointments) | **GET** /appointments/appointments/entities/{entity_uuid}/appointments | Get Entities Appointments |
+| [**SearchProduct**](DefaultApi.md#searchproduct) | **GET** /products/products | Search Products |
+| [**SearchProductCatalog**](DefaultApi.md#searchproductcatalog) | **GET** /products/products/{product_uuid}/catalogs | Search Product Catalogs |
+| [**SearchReviews**](DefaultApi.md#searchreviews) | **GET** /products/reviews/types/{entity_type}/entities/{entity_uuid} | Search Review |
+| [**UpdateAppointment**](DefaultApi.md#updateappointment) | **PUT** /appointments/appointments/{appointment_uuid} | Update Appointment |
+| [**UpdateCatalog**](DefaultApi.md#updatecatalog) | **PUT** /products/catalogs/{catalog_uuid} | Update Catalog |
+| [**UpdateProduct**](DefaultApi.md#updateproduct) | **PUT** /products/products/{product_uuid} | Update Product |
+| [**UpdateReview**](DefaultApi.md#updatereview) | **PUT** /products/reviews/types/{entity_type}/entities/{entity_uuid}/reviews/{review_uuid} | Update Review |
 
 <a name="attachentitytoappointment"></a>
 # **AttachEntityToAppointment**
@@ -74,8 +73,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.AttachEntityToAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.AttachEntityToAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -83,18 +82,38 @@ namespace Example
 }
 ```
 
+#### Using the AttachEntityToAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Attach Entity To Appointment
+    ApiResponse<bool> response = apiInstance.AttachEntityToAppointmentWithHttpInfo(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.AttachEntityToAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentUuid** | **string**|  | 
- **entityUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentUuid** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -159,8 +178,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.AttachProductToCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.AttachProductToCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -168,18 +187,38 @@ namespace Example
 }
 ```
 
+#### Using the AttachProductToCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Attach Product To Catalog
+    ApiResponse<bool> response = apiInstance.AttachProductToCatalogWithHttpInfo(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.AttachProductToCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogUuid** | **string**|  | 
- **productUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogUuid** | **string** |  |  |
+| **productUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -243,8 +282,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.CreateAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.CreateAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -252,17 +291,37 @@ namespace Example
 }
 ```
 
+#### Using the CreateAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Create Appointment
+    ApiResponse<AppointmentResponse> response = apiInstance.CreateAppointmentWithHttpInfo(appointmentBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.CreateAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentBase** | [**AppointmentBase**](AppointmentBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentBase** | [**AppointmentBase**](AppointmentBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -326,8 +385,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.CreateCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.CreateCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -335,17 +394,37 @@ namespace Example
 }
 ```
 
+#### Using the CreateCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Create Catalog
+    ApiResponse<CatalogReturn> response = apiInstance.CreateCatalogWithHttpInfo(catalogBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.CreateCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogBase** | [**CatalogBase**](CatalogBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogBase** | [**CatalogBase**](CatalogBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -409,8 +488,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.CreateProduct: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.CreateProduct: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -418,17 +497,37 @@ namespace Example
 }
 ```
 
+#### Using the CreateProductWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Create Product
+    ApiResponse<ProductReturn> response = apiInstance.CreateProductWithHttpInfo(productBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.CreateProductWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productBase** | [**ProductBase**](ProductBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **productBase** | [**ProductBase**](ProductBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -494,8 +593,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.CreateReview: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.CreateReview: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -503,19 +602,39 @@ namespace Example
 }
 ```
 
+#### Using the CreateReviewWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Create Review
+    ApiResponse<Object> response = apiInstance.CreateReviewWithHttpInfo(entityType, entityUuid, createReview, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.CreateReviewWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entityType** | **string**|  | 
- **entityUuid** | **string**|  | 
- **createReview** | [**CreateReview**](CreateReview.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **entityType** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **createReview** | [**CreateReview**](CreateReview.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -579,8 +698,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DeleteAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.DeleteAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -588,17 +707,37 @@ namespace Example
 }
 ```
 
+#### Using the DeleteAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Delete Appointment
+    ApiResponse<bool> response = apiInstance.DeleteAppointmentWithHttpInfo(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.DeleteAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -662,8 +801,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DeleteCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.DeleteCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -671,17 +810,37 @@ namespace Example
 }
 ```
 
+#### Using the DeleteCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Delete Catalog
+    ApiResponse<bool> response = apiInstance.DeleteCatalogWithHttpInfo(catalogUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.DeleteCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -745,8 +904,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DeleteProduct: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.DeleteProduct: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -754,17 +913,37 @@ namespace Example
 }
 ```
 
+#### Using the DeleteProductWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Delete Product
+    ApiResponse<bool> response = apiInstance.DeleteProductWithHttpInfo(productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.DeleteProductWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **productUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -830,8 +1009,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DeleteReview: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.DeleteReview: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -839,19 +1018,39 @@ namespace Example
 }
 ```
 
+#### Using the DeleteReviewWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Delete Review
+    ApiResponse<Object> response = apiInstance.DeleteReviewWithHttpInfo(entityType, entityUuid, reviewUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.DeleteReviewWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entityType** | **string**|  | 
- **entityUuid** | **string**|  | 
- **reviewUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **entityType** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **reviewUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -916,8 +1115,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DetachEntityFromAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.DetachEntityFromAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -925,18 +1124,38 @@ namespace Example
 }
 ```
 
+#### Using the DetachEntityFromAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Detach Entity From Appointment
+    ApiResponse<bool> response = apiInstance.DetachEntityFromAppointmentWithHttpInfo(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.DetachEntityFromAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentUuid** | **string**|  | 
- **entityUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentUuid** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1001,8 +1220,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DetachProductFromCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.DetachProductFromCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1010,18 +1229,38 @@ namespace Example
 }
 ```
 
+#### Using the DetachProductFromCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Detach Product From Catalog
+    ApiResponse<bool> response = apiInstance.DetachProductFromCatalogWithHttpInfo(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.DetachProductFromCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogUuid** | **string**|  | 
- **productUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogUuid** | **string** |  |  |
+| **productUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1085,8 +1324,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.GetAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1094,17 +1333,37 @@ namespace Example
 }
 ```
 
+#### Using the GetAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Appointment
+    ApiResponse<AppointmentResponse> response = apiInstance.GetAppointmentWithHttpInfo(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.GetAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1170,8 +1429,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.GetCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1179,18 +1438,38 @@ namespace Example
 }
 ```
 
+#### Using the GetCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Catalog
+    ApiResponse<CatalogReturn> response = apiInstance.GetCatalogWithHttpInfo(catalogUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.GetCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogUuid** | **string**|  | 
- **withMeta** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogUuid** | **string** |  |  |
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1256,8 +1535,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetProduct: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.GetProduct: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1265,19 +1544,39 @@ namespace Example
 }
 ```
 
+#### Using the GetProductWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Product
+    ApiResponse<ProductReturn> response = apiInstance.GetProductWithHttpInfo(productUuid, withAddons, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.GetProductWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productUuid** | **string**|  | 
- **withAddons** | **bool?**|  | [optional] [default to false]
- **withMeta** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **productUuid** | **string** |  |  |
+| **withAddons** | **bool?** |  | [optional] [default to false] |
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1343,8 +1642,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetReview: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.GetReview: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1352,19 +1651,39 @@ namespace Example
 }
 ```
 
+#### Using the GetReviewWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Review
+    ApiResponse<Object> response = apiInstance.GetReviewWithHttpInfo(entityType, entityUuid, reviewUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.GetReviewWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entityType** | **string**|  | 
- **entityUuid** | **string**|  | 
- **reviewUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **entityType** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **reviewUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1438,8 +1757,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1447,27 +1766,47 @@ namespace Example
 }
 ```
 
+#### Using the SearchAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Appointment
+    ApiResponse<Object> response = apiInstance.SearchAppointmentWithHttpInfo(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, search, searchOn, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **placeUuid** | **string**|  | [optional] 
- **excludeCancelled** | **bool?**|  | [optional] [default to false]
- **isDeleted** | **bool?**|  | [optional] [default to false]
- **startRange** | **string**|  | [optional] 
- **endRange** | **string**|  | [optional] 
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **search** | **string**|  | [optional] 
- **searchOn** | **string**|  | [optional] 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **placeUuid** | **string** |  | [optional]  |
+| **excludeCancelled** | **bool?** |  | [optional] [default to false] |
+| **isDeleted** | **bool?** |  | [optional] [default to false] |
+| **startRange** | **string** |  | [optional]  |
+| **endRange** | **string** |  | [optional]  |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **search** | **string** |  | [optional]  |
+| **searchOn** | **string** |  | [optional]  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1537,8 +1876,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchAppointmentEntities: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchAppointmentEntities: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1546,23 +1885,43 @@ namespace Example
 }
 ```
 
+#### Using the SearchAppointmentEntitiesWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Appointment Entities
+    ApiResponse<Object> response = apiInstance.SearchAppointmentEntitiesWithHttpInfo(appointmentUuid, page, pageSize, sortOn, sortDesc, search, searchOn, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchAppointmentEntitiesWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentUuid** | **string**|  | 
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **search** | **string**|  | [optional] 
- **searchOn** | **string**|  | [optional] 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentUuid** | **string** |  |  |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **search** | **string** |  | [optional]  |
+| **searchOn** | **string** |  | [optional]  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1631,8 +1990,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchCatalogProducts: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchCatalogProducts: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1640,22 +1999,42 @@ namespace Example
 }
 ```
 
+#### Using the SearchCatalogProductsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Catalog Products
+    ApiResponse<Page> response = apiInstance.SearchCatalogProductsWithHttpInfo(catalogUuid, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchCatalogProductsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogUuid** | **string**|  | 
- **withMeta** | **bool?**|  | [optional] [default to false]
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogUuid** | **string** |  |  |
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1724,8 +2103,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchCatalogs: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchCatalogs: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1733,22 +2112,42 @@ namespace Example
 }
 ```
 
+#### Using the SearchCatalogsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Catalogs
+    ApiResponse<Page> response = apiInstance.SearchCatalogsWithHttpInfo(withMeta, name, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchCatalogsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **withMeta** | **bool?**|  | [optional] [default to false]
- **name** | **string**|  | [optional] 
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **name** | **string** |  | [optional]  |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1815,8 +2214,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchEntityAppointments: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchEntityAppointments: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1824,20 +2223,40 @@ namespace Example
 }
 ```
 
+#### Using the SearchEntityAppointmentsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Entities Appointments
+    ApiResponse<Object> response = apiInstance.SearchEntityAppointmentsWithHttpInfo(entityUuid, startDate, endDate, includeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchEntityAppointmentsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entityUuid** | **string**|  | 
- **startDate** | **string**|  | [optional] 
- **endDate** | **string**|  | [optional] 
- **includeCancelled** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **entityUuid** | **string** |  |  |
+| **startDate** | **string** |  | [optional]  |
+| **endDate** | **string** |  | [optional]  |
+| **includeCancelled** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -1911,8 +2330,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchProduct: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchProduct: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -1920,27 +2339,47 @@ namespace Example
 }
 ```
 
+#### Using the SearchProductWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Products
+    ApiResponse<Page> response = apiInstance.SearchProductWithHttpInfo(withMeta, name, addons, priceMax, priceMin, quantityAvailable, isDeleted, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchProductWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **withMeta** | **bool?**|  | [optional] [default to false]
- **name** | **string**|  | [optional] 
- **addons** | [**List&lt;string&gt;**](string.md)|  | [optional] 
- **priceMax** | **int?**|  | [optional] 
- **priceMin** | **int?**|  | [optional] 
- **quantityAvailable** | **bool?**|  | [optional] [default to false]
- **isDeleted** | **bool?**|  | [optional] [default to false]
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **name** | **string** |  | [optional]  |
+| **addons** | [**List&lt;string&gt;**](string.md) |  | [optional]  |
+| **priceMax** | **int?** |  | [optional]  |
+| **priceMin** | **int?** |  | [optional]  |
+| **quantityAvailable** | **bool?** |  | [optional] [default to false] |
+| **isDeleted** | **bool?** |  | [optional] [default to false] |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -2009,8 +2448,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchProductCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchProductCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -2018,22 +2457,42 @@ namespace Example
 }
 ```
 
+#### Using the SearchProductCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Product Catalogs
+    ApiResponse<Page> response = apiInstance.SearchProductCatalogWithHttpInfo(productUuid, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchProductCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productUuid** | **string**|  | 
- **withMeta** | **bool?**|  | [optional] [default to false]
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **productUuid** | **string** |  |  |
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -2098,8 +2557,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchReviews: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.SearchReviews: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -2107,18 +2566,38 @@ namespace Example
 }
 ```
 
+#### Using the SearchReviewsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Review
+    ApiResponse<Object> response = apiInstance.SearchReviewsWithHttpInfo(entityType, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.SearchReviewsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entityType** | **string**|  | 
- **entityUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **entityType** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -2183,8 +2662,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.UpdateAppointment: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.UpdateAppointment: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -2192,18 +2671,38 @@ namespace Example
 }
 ```
 
+#### Using the UpdateAppointmentWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Update Appointment
+    ApiResponse<AppointmentResponse> response = apiInstance.UpdateAppointmentWithHttpInfo(appointmentUuid, appointmentBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.UpdateAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appointmentUuid** | **string**|  | 
- **appointmentBase** | [**AppointmentBase**](AppointmentBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **appointmentUuid** | **string** |  |  |
+| **appointmentBase** | [**AppointmentBase**](AppointmentBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -2269,8 +2768,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.UpdateCatalog: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.UpdateCatalog: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -2278,18 +2777,38 @@ namespace Example
 }
 ```
 
+#### Using the UpdateCatalogWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Update Catalog
+    ApiResponse<CatalogReturn> response = apiInstance.UpdateCatalogWithHttpInfo(catalogUuid, catalogBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.UpdateCatalogWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **catalogUuid** | **string**|  | 
- **catalogBase** | [**CatalogBase**](CatalogBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **catalogUuid** | **string** |  |  |
+| **catalogBase** | [**CatalogBase**](CatalogBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -2354,8 +2873,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.UpdateProduct: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.UpdateProduct: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -2363,18 +2882,38 @@ namespace Example
 }
 ```
 
+#### Using the UpdateProductWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Update Product
+    ApiResponse<ProductReturn> response = apiInstance.UpdateProductWithHttpInfo(productUuid, productBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.UpdateProductWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **productUuid** | **string**|  | 
- **productBase** | [**ProductBase**](ProductBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **productUuid** | **string** |  |  |
+| **productBase** | [**ProductBase**](ProductBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -2441,8 +2980,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.UpdateReview: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling DefaultApi.UpdateReview: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -2450,20 +2989,40 @@ namespace Example
 }
 ```
 
+#### Using the UpdateReviewWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Update Review
+    ApiResponse<Object> response = apiInstance.UpdateReviewWithHttpInfo(entityType, entityUuid, reviewUuid, updateReview, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling DefaultApi.UpdateReviewWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **entityType** | **string**|  | 
- **entityUuid** | **string**|  | 
- **reviewUuid** | **string**|  | 
- **updateReview** | [**UpdateReview**](UpdateReview.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **entityType** | **string** |  |  |
+| **entityUuid** | **string** |  |  |
+| **reviewUuid** | **string** |  |  |
+| **updateReview** | [**UpdateReview**](UpdateReview.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 

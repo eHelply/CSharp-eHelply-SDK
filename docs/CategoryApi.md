@@ -2,14 +2,13 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**CreateCategoryPlacesCategoriesPost**](CategoryApi.md#createcategoryplacescategoriespost) | **POST** /places/categories | Create Category
-[**DeleteCategoryPlacesCategoriesCategoryUuidDelete**](CategoryApi.md#deletecategoryplacescategoriescategoryuuiddelete) | **DELETE** /places/categories/{category_uuid} | Delete Category
-[**GetCategoryPlacesCategoriesCategoryUuidGet**](CategoryApi.md#getcategoryplacescategoriescategoryuuidget) | **GET** /places/categories/{category_uuid} | Get Category
-[**SearchCategoriesPlacesCategoriesGet**](CategoryApi.md#searchcategoriesplacescategoriesget) | **GET** /places/categories | Search Categories
-[**UpdateCategoryPlacesCategoriesCategoryUuidPut**](CategoryApi.md#updatecategoryplacescategoriescategoryuuidput) | **PUT** /places/categories/{category_uuid} | Update Category
-
+| Method | HTTP request | Description |
+|--------|--------------|-------------|
+| [**CreateCategoryPlacesCategoriesPost**](CategoryApi.md#createcategoryplacescategoriespost) | **POST** /places/categories | Create Category |
+| [**DeleteCategoryPlacesCategoriesCategoryUuidDelete**](CategoryApi.md#deletecategoryplacescategoriescategoryuuiddelete) | **DELETE** /places/categories/{category_uuid} | Delete Category |
+| [**GetCategoryPlacesCategoriesCategoryUuidGet**](CategoryApi.md#getcategoryplacescategoriescategoryuuidget) | **GET** /places/categories/{category_uuid} | Get Category |
+| [**SearchCategoriesPlacesCategoriesGet**](CategoryApi.md#searchcategoriesplacescategoriesget) | **GET** /places/categories | Search Categories |
+| [**UpdateCategoryPlacesCategoriesCategoryUuidPut**](CategoryApi.md#updatecategoryplacescategoriescategoryuuidput) | **PUT** /places/categories/{category_uuid} | Update Category |
 
 <a name="createcategoryplacescategoriespost"></a>
 # **CreateCategoryPlacesCategoriesPost**
@@ -52,8 +51,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.CreateCategoryPlacesCategoriesPost: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling CategoryApi.CreateCategoryPlacesCategoriesPost: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -61,17 +60,37 @@ namespace Example
 }
 ```
 
+#### Using the CreateCategoryPlacesCategoriesPostWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Create Category
+    ApiResponse<CategoryDb> response = apiInstance.CreateCategoryPlacesCategoriesPostWithHttpInfo(categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling CategoryApi.CreateCategoryPlacesCategoriesPostWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **categoryBase** | [**CategoryBase**](CategoryBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **categoryBase** | [**CategoryBase**](CategoryBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -137,8 +156,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.DeleteCategoryPlacesCategoriesCategoryUuidDelete: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling CategoryApi.DeleteCategoryPlacesCategoriesCategoryUuidDelete: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -146,17 +165,37 @@ namespace Example
 }
 ```
 
+#### Using the DeleteCategoryPlacesCategoriesCategoryUuidDeleteWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Delete Category
+    ApiResponse<Object> response = apiInstance.DeleteCategoryPlacesCategoriesCategoryUuidDeleteWithHttpInfo(categoryUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling CategoryApi.DeleteCategoryPlacesCategoriesCategoryUuidDeleteWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **categoryUuid** | **string**|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **categoryUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -223,8 +262,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.GetCategoryPlacesCategoriesCategoryUuidGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling CategoryApi.GetCategoryPlacesCategoriesCategoryUuidGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -232,18 +271,38 @@ namespace Example
 }
 ```
 
+#### Using the GetCategoryPlacesCategoriesCategoryUuidGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Get Category
+    ApiResponse<CategoryBase> response = apiInstance.GetCategoryPlacesCategoriesCategoryUuidGetWithHttpInfo(categoryUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling CategoryApi.GetCategoryPlacesCategoriesCategoryUuidGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **categoryUuid** | **string**|  | 
- **withMeta** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **categoryUuid** | **string** |  |  |
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -315,8 +374,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.SearchCategoriesPlacesCategoriesGet: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling CategoryApi.SearchCategoriesPlacesCategoriesGet: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -324,23 +383,43 @@ namespace Example
 }
 ```
 
+#### Using the SearchCategoriesPlacesCategoriesGetWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Search Categories
+    ApiResponse<Page> response = apiInstance.SearchCategoriesPlacesCategoriesGetWithHttpInfo(projectUuid, name, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling CategoryApi.SearchCategoriesPlacesCategoriesGetWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **projectUuid** | **string**|  | [optional] 
- **name** | **string**|  | [optional] 
- **withMeta** | **bool?**|  | [optional] [default to false]
- **page** | **int?**|  | [optional] [default to 1]
- **pageSize** | **int?**|  | [optional] [default to 25]
- **sortOn** | **string**|  | [optional] 
- **sortDesc** | **bool?**|  | [optional] [default to false]
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  | [optional]  |
+| **name** | **string** |  | [optional]  |
+| **withMeta** | **bool?** |  | [optional] [default to false] |
+| **page** | **int?** |  | [optional] [default to 1] |
+| **pageSize** | **int?** |  | [optional] [default to 25] |
+| **sortOn** | **string** |  | [optional]  |
+| **sortDesc** | **bool?** |  | [optional] [default to false] |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 
@@ -407,8 +486,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CategoryApi.UpdateCategoryPlacesCategoriesCategoryUuidPut: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print("Exception when calling CategoryApi.UpdateCategoryPlacesCategoriesCategoryUuidPut: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -416,18 +495,38 @@ namespace Example
 }
 ```
 
+#### Using the UpdateCategoryPlacesCategoriesCategoryUuidPutWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Update Category
+    ApiResponse<CategoryBase> response = apiInstance.UpdateCategoryPlacesCategoriesCategoryUuidPutWithHttpInfo(categoryUuid, categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling CategoryApi.UpdateCategoryPlacesCategoriesCategoryUuidPutWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **categoryUuid** | **string**|  | 
- **categoryBase** | [**CategoryBase**](CategoryBase.md)|  | 
- **xAccessToken** | **string**|  | [optional] 
- **xSecretToken** | **string**|  | [optional] 
- **authorization** | **string**|  | [optional] 
- **ehelplyActiveParticipant** | **string**|  | [optional] 
- **ehelplyProject** | **string**|  | [optional] 
- **ehelplyData** | **string**|  | [optional] 
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **categoryUuid** | **string** |  |  |
+| **categoryBase** | [**CategoryBase**](CategoryBase.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
 
 ### Return type
 

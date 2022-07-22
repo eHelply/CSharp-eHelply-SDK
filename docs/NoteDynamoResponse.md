@@ -1,12 +1,13 @@
-# Ehelply.Sdk.Model.NotesValidationError
+# Ehelply.Sdk.Model.NoteDynamoResponse
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Loc** | **List&lt;string&gt;** |  | 
-**Msg** | **string** |  | 
-**Type** | **string** |  | 
+**Uuid** | **string** |  | 
+**Content** | **string** |  | 
+**Time** | **string** |  | 
+**Meta** | [**NoteMeta**](NoteMeta.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
