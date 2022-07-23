@@ -219,7 +219,7 @@ No authorization required
 
 <a name="getnote"></a>
 # **GetNote**
-> NoteDynamoHistory GetNote (string noteId, int? history = null, bool? historyContent = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> NoteDynamoHistoryResponse GetNote (string noteId, int? history = null, bool? historyContent = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Note
 
@@ -253,7 +253,7 @@ namespace Example
             try
             {
                 // Get Note
-                NoteDynamoHistory result = apiInstance.GetNote(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                NoteDynamoHistoryResponse result = apiInstance.GetNote(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -274,7 +274,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // Get Note
-    ApiResponse<NoteDynamoHistory> response = apiInstance.GetNoteWithHttpInfo(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    ApiResponse<NoteDynamoHistoryResponse> response = apiInstance.GetNoteWithHttpInfo(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -303,7 +303,7 @@ catch (ApiException e)
 
 ### Return type
 
-[**NoteDynamoHistory**](NoteDynamoHistory.md)
+[**NoteDynamoHistoryResponse**](NoteDynamoHistoryResponse.md)
 
 ### Authorization
 

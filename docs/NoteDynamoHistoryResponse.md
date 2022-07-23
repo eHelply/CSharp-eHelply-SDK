@@ -1,4 +1,4 @@
-# Ehelply.Sdk.Model.NoteDynamoHistory
+# Ehelply.Sdk.Model.NoteDynamoHistoryResponse
 A note from Dynamo DB including n amount of version history of that note
 
 ## Properties
@@ -6,7 +6,7 @@ A note from Dynamo DB including n amount of version history of that note
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Uuid** | **string** |  | 
-**Content** | **System.IO.Stream** |  | [optional] 
+**Content** | **string** |  | 
 **Time** | **string** |  | 
 **Meta** | [**NoteMeta**](NoteMeta.md) |  | 
 **History** | [**List&lt;NoteDynamoResponse&gt;**](NoteDynamoResponse.md) |  | [optional] 
