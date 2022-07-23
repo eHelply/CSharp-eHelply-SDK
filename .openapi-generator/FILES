@@ -61,7 +61,7 @@ docs/MetaDynamo.md
 docs/MetaSlugger.md
 docs/MonitorApi.md
 docs/NoteBase.md
-docs/NoteDynamoHistory.md
+docs/NoteDynamoHistoryResponse.md
 docs/NoteDynamoResponse.md
 docs/NoteMeta.md
 docs/NotesApi.md
@@ -207,7 +207,7 @@ src/Ehelply.Sdk.Test/Model/MetaCustomTests.cs
 src/Ehelply.Sdk.Test/Model/MetaDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/MetaSluggerTests.cs
 src/Ehelply.Sdk.Test/Model/NoteBaseTests.cs
-src/Ehelply.Sdk.Test/Model/NoteDynamoHistoryTests.cs
+src/Ehelply.Sdk.Test/Model/NoteDynamoHistoryResponseTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoResponseTests.cs
 src/Ehelply.Sdk.Test/Model/NoteMetaTests.cs
 src/Ehelply.Sdk.Test/Model/OptionGroupTests.cs
@@ -361,7 +361,7 @@ src/Ehelply.Sdk/Model/MetaCustom.cs
 src/Ehelply.Sdk/Model/MetaDynamo.cs
 src/Ehelply.Sdk/Model/MetaSlugger.cs
 src/Ehelply.Sdk/Model/NoteBase.cs
-src/Ehelply.Sdk/Model/NoteDynamoHistory.cs
+src/Ehelply.Sdk/Model/NoteDynamoHistoryResponse.cs
 src/Ehelply.Sdk/Model/NoteDynamoResponse.cs
 src/Ehelply.Sdk/Model/NoteMeta.cs
 src/Ehelply.Sdk/Model/OptionGroup.cs
