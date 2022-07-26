@@ -21,6 +21,7 @@ docs/BasicMetaCreate.md
 docs/BillingApi.md
 docs/CatalogBase.md
 docs/CatalogReturn.md
+docs/CatalogsApi.md
 docs/CategoryApi.md
 docs/CategoryBase.md
 docs/CategoryDb.md
@@ -85,6 +86,7 @@ docs/PlaceResponse.md
 docs/PlacesApi.md
 docs/ProductBase.md
 docs/ProductReturn.md
+docs/ProductsApi.md
 docs/ProjectDB.md
 docs/ProjectsApi.md
 docs/ProjectsProjectCreate.md
@@ -107,6 +109,7 @@ docs/ResponseDeleteusagetype.md
 docs/ResponseGeneratetoken.md
 docs/ResponseRemovememberfromproject.md
 docs/ResponseUpdateprojectcredential.md
+docs/ReviewsApi.md
 docs/SecurityApi.md
 docs/SecurityCreateToken.md
 docs/SecurityEncryptionKeyGet.md
@@ -151,6 +154,7 @@ docs/ValidationError.md
 docs/Validations.md
 git_push.sh
 src/Ehelply.Sdk.Test/Api/BillingApiTests.cs
+src/Ehelply.Sdk.Test/Api/CatalogsApiTests.cs
 src/Ehelply.Sdk.Test/Api/CategoryApiTests.cs
 src/Ehelply.Sdk.Test/Api/CompaniesApiTests.cs
 src/Ehelply.Sdk.Test/Api/DefaultApiTests.cs
@@ -159,7 +163,9 @@ src/Ehelply.Sdk.Test/Api/MetaApiTests.cs
 src/Ehelply.Sdk.Test/Api/MonitorApiTests.cs
 src/Ehelply.Sdk.Test/Api/NotesApiTests.cs
 src/Ehelply.Sdk.Test/Api/PlacesApiTests.cs
+src/Ehelply.Sdk.Test/Api/ProductsApiTests.cs
 src/Ehelply.Sdk.Test/Api/ProjectsApiTests.cs
+src/Ehelply.Sdk.Test/Api/ReviewsApiTests.cs
 src/Ehelply.Sdk.Test/Api/SecurityApiTests.cs
 src/Ehelply.Sdk.Test/Api/StaffApiTests.cs
 src/Ehelply.Sdk.Test/Api/SupportApiTests.cs
@@ -298,6 +304,7 @@ src/Ehelply.Sdk.Test/Model/UserValidationsTests.cs
 src/Ehelply.Sdk.Test/Model/ValidationErrorTests.cs
 src/Ehelply.Sdk.Test/Model/ValidationsTests.cs
 src/Ehelply.Sdk/Api/BillingApi.cs
+src/Ehelply.Sdk/Api/CatalogsApi.cs
 src/Ehelply.Sdk/Api/CategoryApi.cs
 src/Ehelply.Sdk/Api/CompaniesApi.cs
 src/Ehelply.Sdk/Api/DefaultApi.cs
@@ -306,7 +313,9 @@ src/Ehelply.Sdk/Api/MetaApi.cs
 src/Ehelply.Sdk/Api/MonitorApi.cs
 src/Ehelply.Sdk/Api/NotesApi.cs
 src/Ehelply.Sdk/Api/PlacesApi.cs
+src/Ehelply.Sdk/Api/ProductsApi.cs
 src/Ehelply.Sdk/Api/ProjectsApi.cs
+src/Ehelply.Sdk/Api/ReviewsApi.cs
 src/Ehelply.Sdk/Api/SecurityApi.cs
 src/Ehelply.Sdk/Api/StaffApi.cs
 src/Ehelply.Sdk/Api/SupportApi.cs
