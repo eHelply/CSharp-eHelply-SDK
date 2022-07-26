@@ -1,4 +1,5 @@
 # Ehelply.Sdk.Model.Selection
+Selection Model
 
 ## Properties
 
