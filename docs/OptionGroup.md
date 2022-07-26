@@ -1,4 +1,5 @@
 # Ehelply.Sdk.Model.OptionGroup
+Option Group
 
 ## Properties
 

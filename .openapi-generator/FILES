@@ -41,6 +41,7 @@ docs/DefaultApi.md
 docs/Detailed.md
 docs/DetailedMeta.md
 docs/DetailedMetaCreate.md
+docs/DetailedMetaGet.md
 docs/Email.md
 docs/Field.md
 docs/FieldDynamo.md
@@ -58,6 +59,7 @@ docs/MetaChildren.md
 docs/MetaCreate.md
 docs/MetaCustom.md
 docs/MetaDynamo.md
+docs/MetaGet.md
 docs/MetaSlugger.md
 docs/MonitorApi.md
 docs/NoteBase.md
@@ -188,6 +190,7 @@ src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
 src/Ehelply.Sdk.Test/Model/CustomListTests.cs
 src/Ehelply.Sdk.Test/Model/DatesMetaTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaCreateTests.cs
+src/Ehelply.Sdk.Test/Model/DetailedMetaGetTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedTests.cs
 src/Ehelply.Sdk.Test/Model/EmailTests.cs
@@ -205,6 +208,7 @@ src/Ehelply.Sdk.Test/Model/MetaChildrenTests.cs
 src/Ehelply.Sdk.Test/Model/MetaCreateTests.cs
 src/Ehelply.Sdk.Test/Model/MetaCustomTests.cs
 src/Ehelply.Sdk.Test/Model/MetaDynamoTests.cs
+src/Ehelply.Sdk.Test/Model/MetaGetTests.cs
 src/Ehelply.Sdk.Test/Model/MetaSluggerTests.cs
 src/Ehelply.Sdk.Test/Model/NoteBaseTests.cs
 src/Ehelply.Sdk.Test/Model/NoteDynamoHistoryResponseTests.cs
@@ -344,6 +348,7 @@ src/Ehelply.Sdk/Model/DatesMeta.cs
 src/Ehelply.Sdk/Model/Detailed.cs
 src/Ehelply.Sdk/Model/DetailedMeta.cs
 src/Ehelply.Sdk/Model/DetailedMetaCreate.cs
+src/Ehelply.Sdk/Model/DetailedMetaGet.cs
 src/Ehelply.Sdk/Model/Email.cs
 src/Ehelply.Sdk/Model/Field.cs
 src/Ehelply.Sdk/Model/FieldDynamo.cs
@@ -359,6 +364,7 @@ src/Ehelply.Sdk/Model/MetaChildren.cs
 src/Ehelply.Sdk/Model/MetaCreate.cs
 src/Ehelply.Sdk/Model/MetaCustom.cs
 src/Ehelply.Sdk/Model/MetaDynamo.cs
+src/Ehelply.Sdk/Model/MetaGet.cs
 src/Ehelply.Sdk/Model/MetaSlugger.cs
 src/Ehelply.Sdk/Model/NoteBase.cs
 src/Ehelply.Sdk/Model/NoteDynamoHistoryResponse.cs

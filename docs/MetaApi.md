@@ -650,7 +650,7 @@ No authorization required
 
 <a name="getmeta"></a>
 # **GetMeta**
-> MetaDynamo GetMeta (string service, string typeStr, string entityUuid, bool? detailed = null, bool? custom = null, bool? dates = null, int? history = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> MetaGet GetMeta (string service, string typeStr, string entityUuid, bool? detailed = null, bool? custom = null, bool? dates = null, int? history = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Meta
 
@@ -688,7 +688,7 @@ namespace Example
             try
             {
                 // Get Meta
-                MetaDynamo result = apiInstance.GetMeta(service, typeStr, entityUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                MetaGet result = apiInstance.GetMeta(service, typeStr, entityUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -709,7 +709,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // Get Meta
-    ApiResponse<MetaDynamo> response = apiInstance.GetMetaWithHttpInfo(service, typeStr, entityUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    ApiResponse<MetaGet> response = apiInstance.GetMetaWithHttpInfo(service, typeStr, entityUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -742,7 +742,7 @@ catch (ApiException e)
 
 ### Return type
 
-[**MetaDynamo**](MetaDynamo.md)
+[**MetaGet**](MetaGet.md)
 
 ### Authorization
 
@@ -765,7 +765,7 @@ No authorization required
 
 <a name="getmetafromuuid"></a>
 # **GetMetaFromUuid**
-> MetaDynamo GetMetaFromUuid (string metaUuid, bool? detailed = null, bool? custom = null, bool? dates = null, int? history = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> MetaGet GetMetaFromUuid (string metaUuid, bool? detailed = null, bool? custom = null, bool? dates = null, int? history = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Meta From Uuid
 
@@ -801,7 +801,7 @@ namespace Example
             try
             {
                 // Get Meta From Uuid
-                MetaDynamo result = apiInstance.GetMetaFromUuid(metaUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                MetaGet result = apiInstance.GetMetaFromUuid(metaUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -822,7 +822,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // Get Meta From Uuid
-    ApiResponse<MetaDynamo> response = apiInstance.GetMetaFromUuidWithHttpInfo(metaUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    ApiResponse<MetaGet> response = apiInstance.GetMetaFromUuidWithHttpInfo(metaUuid, detailed, custom, dates, history, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -853,7 +853,7 @@ catch (ApiException e)
 
 ### Return type
 
-[**MetaDynamo**](MetaDynamo.md)
+[**MetaGet**](MetaGet.md)
 
 ### Authorization
 
