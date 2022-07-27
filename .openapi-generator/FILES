@@ -132,6 +132,7 @@ docs/SupportApi.md
 docs/TagApi.md
 docs/TagBase.md
 docs/TagDb.md
+docs/TagsApi.md
 docs/TicketResponse.md
 docs/TicketsResponse.md
 docs/UpdateProjectCredentialRequest.md
@@ -170,6 +171,7 @@ src/Ehelply.Sdk.Test/Api/SecurityApiTests.cs
 src/Ehelply.Sdk.Test/Api/StaffApiTests.cs
 src/Ehelply.Sdk.Test/Api/SupportApiTests.cs
 src/Ehelply.Sdk.Test/Api/TagApiTests.cs
+src/Ehelply.Sdk.Test/Api/TagsApiTests.cs
 src/Ehelply.Sdk.Test/Api/UsersApiTests.cs
 src/Ehelply.Sdk.Test/Ehelply.Sdk.Test.csproj
 src/Ehelply.Sdk.Test/Model/AddressBaseTests.cs
@@ -320,6 +322,7 @@ src/Ehelply.Sdk/Api/SecurityApi.cs
 src/Ehelply.Sdk/Api/StaffApi.cs
 src/Ehelply.Sdk/Api/SupportApi.cs
 src/Ehelply.Sdk/Api/TagApi.cs
+src/Ehelply.Sdk/Api/TagsApi.cs
 src/Ehelply.Sdk/Api/UsersApi.cs
 src/Ehelply.Sdk/Client/ApiClient.cs
 src/Ehelply.Sdk/Client/ApiException.cs
