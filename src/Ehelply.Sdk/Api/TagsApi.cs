@@ -24,32 +24,17 @@ namespace Ehelply.Sdk.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface INotesApiSync : IApiAccessor
+    public interface ITagsApiSync : IApiAccessor
     {
         #region Synchronous Operations
         /// <summary>
-        /// Create Note
-        /// </summary>
-        /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
-        /// <param name="xAccessToken"> (optional)</param>
-        /// <param name="xSecretToken"> (optional)</param>
-        /// <param name="authorization"> (optional)</param>
-        /// <param name="ehelplyActiveParticipant"> (optional)</param>
-        /// <param name="ehelplyProject"> (optional)</param>
-        /// <param name="ehelplyData"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NoteDynamoResponse</returns>
-        NoteDynamoResponse CreateNote(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
-
-        /// <summary>
-        /// Create Note
+        /// Createtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Creates a tag
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -57,33 +42,17 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NoteDynamoResponse</returns>
-        ApiResponse<NoteDynamoResponse> CreateNoteWithHttpInfo(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
-        /// <summary>
-        /// Delete Note
-        /// </summary>
-        /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
-        /// <param name="xAccessToken"> (optional)</param>
-        /// <param name="xSecretToken"> (optional)</param>
-        /// <param name="authorization"> (optional)</param>
-        /// <param name="ehelplyActiveParticipant"> (optional)</param>
-        /// <param name="ehelplyProject"> (optional)</param>
-        /// <param name="ehelplyData"> (optional)</param>
-        /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Object</returns>
-        Object DeleteNote(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <returns>TagDb</returns>
+        TagDb CreateTag(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
 
         /// <summary>
-        /// Delete Note
+        /// Createtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Creates a tag
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -91,15 +60,16 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Object</returns>
-        ApiResponse<Object> DeleteNoteWithHttpInfo(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <returns>ApiResponse of TagDb</returns>
+        ApiResponse<TagDb> CreateTagWithHttpInfo(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
         /// <summary>
-        /// Get Note
+        /// Gettag
         /// </summary>
+        /// <remarks>
+        /// Gets the tag member information given the tag ID
+        /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -107,19 +77,17 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NoteDynamoHistoryResponse</returns>
-        NoteDynamoHistoryResponse GetNote(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <returns>TagBase</returns>
+        TagBase GetTag(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
 
         /// <summary>
-        /// Get Note
+        /// Gettag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Gets the tag member information given the tag ID
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -127,14 +95,21 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NoteDynamoHistoryResponse</returns>
-        ApiResponse<NoteDynamoHistoryResponse> GetNoteWithHttpInfo(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <returns>ApiResponse of TagBase</returns>
+        ApiResponse<TagBase> GetTagWithHttpInfo(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
         /// <summary>
-        /// Update Note
+        /// Searchtag
         /// </summary>
+        /// <remarks>
+        /// TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
+        /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -142,18 +117,22 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NoteDynamoResponse</returns>
-        NoteDynamoResponse UpdateNote(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <returns>Page</returns>
+        Page SearchTag(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
 
         /// <summary>
-        /// Update Note
+        /// Searchtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -161,25 +140,62 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NoteDynamoResponse</returns>
-        ApiResponse<NoteDynamoResponse> UpdateNoteWithHttpInfo(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <returns>ApiResponse of Page</returns>
+        ApiResponse<Page> SearchTagWithHttpInfo(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+        /// <summary>
+        /// Updatetag
+        /// </summary>
+        /// <remarks>
+        /// Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
+        /// </remarks>
+        /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
+        /// <param name="xAccessToken"> (optional)</param>
+        /// <param name="xSecretToken"> (optional)</param>
+        /// <param name="authorization"> (optional)</param>
+        /// <param name="ehelplyActiveParticipant"> (optional)</param>
+        /// <param name="ehelplyProject"> (optional)</param>
+        /// <param name="ehelplyData"> (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>TagBase</returns>
+        TagBase UpdateTag(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
+
+        /// <summary>
+        /// Updatetag
+        /// </summary>
+        /// <remarks>
+        /// Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
+        /// </remarks>
+        /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
+        /// <param name="xAccessToken"> (optional)</param>
+        /// <param name="xSecretToken"> (optional)</param>
+        /// <param name="authorization"> (optional)</param>
+        /// <param name="ehelplyActiveParticipant"> (optional)</param>
+        /// <param name="ehelplyProject"> (optional)</param>
+        /// <param name="ehelplyData"> (optional)</param>
+        /// <param name="operationIndex">Index associated with the operation.</param>
+        /// <returns>ApiResponse of TagBase</returns>
+        ApiResponse<TagBase> UpdateTagWithHttpInfo(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0);
         #endregion Synchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface INotesApiAsync : IApiAccessor
+    public interface ITagsApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
         /// <summary>
-        /// Create Note
+        /// Createtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Creates a tag
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -188,17 +204,17 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NoteDynamoResponse</returns>
-        System.Threading.Tasks.Task<NoteDynamoResponse> CreateNoteAsync(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of TagDb</returns>
+        System.Threading.Tasks.Task<TagDb> CreateTagAsync(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Create Note
+        /// Createtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Creates a tag
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -207,17 +223,16 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NoteDynamoResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<NoteDynamoResponse>> CreateNoteWithHttpInfoAsync(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (TagDb)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TagDb>> CreateTagWithHttpInfoAsync(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
-        /// Delete Note
+        /// Gettag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Gets the tag member information given the tag ID
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -226,18 +241,17 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Object</returns>
-        System.Threading.Tasks.Task<Object> DeleteNoteAsync(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of TagBase</returns>
+        System.Threading.Tasks.Task<TagBase> GetTagAsync(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Delete Note
+        /// Gettag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Gets the tag member information given the tag ID
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -246,18 +260,21 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Object)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteNoteWithHttpInfoAsync(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (TagBase)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TagBase>> GetTagWithHttpInfoAsync(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
-        /// Get Note
+        /// Searchtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -266,19 +283,22 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NoteDynamoHistoryResponse</returns>
-        System.Threading.Tasks.Task<NoteDynamoHistoryResponse> GetNoteAsync(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of Page</returns>
+        System.Threading.Tasks.Task<Page> SearchTagAsync(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Get Note
+        /// Searchtag
         /// </summary>
         /// <remarks>
-        /// 
+        /// TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -287,17 +307,17 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NoteDynamoHistoryResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<NoteDynamoHistoryResponse>> GetNoteWithHttpInfoAsync(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (Page)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Page>> SearchTagWithHttpInfoAsync(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
-        /// Update Note
+        /// Updatetag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -306,18 +326,18 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NoteDynamoResponse</returns>
-        System.Threading.Tasks.Task<NoteDynamoResponse> UpdateNoteAsync(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of TagBase</returns>
+        System.Threading.Tasks.Task<TagBase> UpdateTagAsync(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
-        /// Update Note
+        /// Updatetag
         /// </summary>
         /// <remarks>
-        /// 
+        /// Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
         /// </remarks>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -326,15 +346,15 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NoteDynamoResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<NoteDynamoResponse>> UpdateNoteWithHttpInfoAsync(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (TagBase)</returns>
+        System.Threading.Tasks.Task<ApiResponse<TagBase>> UpdateTagWithHttpInfoAsync(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface INotesApi : INotesApiSync, INotesApiAsync
+    public interface ITagsApi : ITagsApiSync, ITagsApiAsync
     {
 
     }
@@ -342,23 +362,23 @@ namespace Ehelply.Sdk.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public partial class NotesApi : INotesApi
+    public partial class TagsApi : ITagsApi
     {
         private Ehelply.Sdk.Client.ExceptionFactory _exceptionFactory = (name, response) => null;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NotesApi"/> class.
+        /// Initializes a new instance of the <see cref="TagsApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public NotesApi() : this((string)null)
+        public TagsApi() : this((string)null)
         {
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NotesApi"/> class.
+        /// Initializes a new instance of the <see cref="TagsApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public NotesApi(string basePath)
+        public TagsApi(string basePath)
         {
             this.Configuration = Ehelply.Sdk.Client.Configuration.MergeConfigurations(
                 Ehelply.Sdk.Client.GlobalConfiguration.Instance,
@@ -370,12 +390,12 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NotesApi"/> class
+        /// Initializes a new instance of the <see cref="TagsApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public NotesApi(Ehelply.Sdk.Client.Configuration configuration)
+        public TagsApi(Ehelply.Sdk.Client.Configuration configuration)
         {
             if (configuration == null) throw new ArgumentNullException("configuration");
 
@@ -389,13 +409,13 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="NotesApi"/> class
+        /// Initializes a new instance of the <see cref="TagsApi"/> class
         /// using a Configuration object and client instance.
         /// </summary>
         /// <param name="client">The client interface for synchronous API access.</param>
         /// <param name="asyncClient">The client interface for asynchronous API access.</param>
         /// <param name="configuration">The configuration object.</param>
-        public NotesApi(Ehelply.Sdk.Client.ISynchronousClient client, Ehelply.Sdk.Client.IAsynchronousClient asyncClient, Ehelply.Sdk.Client.IReadableConfiguration configuration)
+        public TagsApi(Ehelply.Sdk.Client.ISynchronousClient client, Ehelply.Sdk.Client.IAsynchronousClient asyncClient, Ehelply.Sdk.Client.IReadableConfiguration configuration)
         {
             if (client == null) throw new ArgumentNullException("client");
             if (asyncClient == null) throw new ArgumentNullException("asyncClient");
@@ -449,10 +469,10 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Create Note 
+        /// Createtag Creates a tag
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -460,18 +480,18 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NoteDynamoResponse</returns>
-        public NoteDynamoResponse CreateNote(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>TagDb</returns>
+        public TagDb CreateTag(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse> localVarResponse = CreateNoteWithHttpInfo(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+            Ehelply.Sdk.Client.ApiResponse<TagDb> localVarResponse = CreateTagWithHttpInfo(tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create Note 
+        /// Createtag Creates a tag
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -479,13 +499,13 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NoteDynamoResponse</returns>
-        public Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse> CreateNoteWithHttpInfo(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>ApiResponse of TagDb</returns>
+        public Ehelply.Sdk.Client.ApiResponse<TagDb> CreateTagWithHttpInfo(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            // verify the required parameter 'noteBase' is set
-            if (noteBase == null)
+            // verify the required parameter 'tagBase' is set
+            if (tagBase == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteBase' when calling NotesApi->CreateNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagBase' when calling TagsApi->CreateTag");
             }
 
             Ehelply.Sdk.Client.RequestOptions localVarRequestOptions = new Ehelply.Sdk.Client.RequestOptions();
@@ -535,17 +555,17 @@ namespace Ehelply.Sdk.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
-            localVarRequestOptions.Data = noteBase;
+            localVarRequestOptions.Data = tagBase;
 
-            localVarRequestOptions.Operation = "NotesApi.CreateNote";
+            localVarRequestOptions.Operation = "TagsApi.CreateTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<NoteDynamoResponse>("/notes/notes", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<TagDb>("/places/tags", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("CreateNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("CreateTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -556,10 +576,10 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Create Note 
+        /// Createtag Creates a tag
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -568,18 +588,18 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NoteDynamoResponse</returns>
-        public async System.Threading.Tasks.Task<NoteDynamoResponse> CreateNoteAsync(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of TagDb</returns>
+        public async System.Threading.Tasks.Task<TagDb> CreateTagAsync(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse> localVarResponse = await CreateNoteWithHttpInfoAsync(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
+            Ehelply.Sdk.Client.ApiResponse<TagDb> localVarResponse = await CreateTagWithHttpInfoAsync(tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Create Note 
+        /// Createtag Creates a tag
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteBase"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -588,13 +608,13 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NoteDynamoResponse)</returns>
-        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse>> CreateNoteWithHttpInfoAsync(NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (TagDb)</returns>
+        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<TagDb>> CreateTagWithHttpInfoAsync(TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'noteBase' is set
-            if (noteBase == null)
+            // verify the required parameter 'tagBase' is set
+            if (tagBase == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteBase' when calling NotesApi->CreateNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagBase' when calling TagsApi->CreateTag");
             }
 
 
@@ -645,18 +665,18 @@ namespace Ehelply.Sdk.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
-            localVarRequestOptions.Data = noteBase;
+            localVarRequestOptions.Data = tagBase;
 
-            localVarRequestOptions.Operation = "NotesApi.CreateNote";
+            localVarRequestOptions.Operation = "TagsApi.CreateTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PostAsync<NoteDynamoResponse>("/notes/notes", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<TagDb>("/places/tags", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("CreateNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("CreateTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -667,11 +687,10 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Delete Note 
+        /// Gettag Gets the tag member information given the tag ID
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -679,19 +698,18 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>Object</returns>
-        public Object DeleteNote(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>TagBase</returns>
+        public TagBase GetTag(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            Ehelply.Sdk.Client.ApiResponse<Object> localVarResponse = DeleteNoteWithHttpInfo(noteId, method, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+            Ehelply.Sdk.Client.ApiResponse<TagBase> localVarResponse = GetTagWithHttpInfo(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Delete Note 
+        /// Gettag Gets the tag member information given the tag ID
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -699,13 +717,13 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of Object</returns>
-        public Ehelply.Sdk.Client.ApiResponse<Object> DeleteNoteWithHttpInfo(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>ApiResponse of TagBase</returns>
+        public Ehelply.Sdk.Client.ApiResponse<TagBase> GetTagWithHttpInfo(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            // verify the required parameter 'noteId' is set
-            if (noteId == null)
+            // verify the required parameter 'tagUuid' is set
+            if (tagUuid == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteId' when calling NotesApi->DeleteNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagUuid' when calling TagsApi->GetTag");
             }
 
             Ehelply.Sdk.Client.RequestOptions localVarRequestOptions = new Ehelply.Sdk.Client.RequestOptions();
@@ -730,11 +748,7 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.PathParameters.Add("note_id", Ehelply.Sdk.Client.ClientUtils.ParameterToString(noteId)); // path parameter
-            if (method != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "method", method));
-            }
+            localVarRequestOptions.PathParameters.Add("tag_uuid", Ehelply.Sdk.Client.ClientUtils.ParameterToString(tagUuid)); // path parameter
             if (xAccessToken != null)
             {
                 localVarRequestOptions.HeaderParameters.Add("x-access-token", Ehelply.Sdk.Client.ClientUtils.ParameterToString(xAccessToken)); // header parameter
@@ -760,15 +774,15 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
 
-            localVarRequestOptions.Operation = "NotesApi.DeleteNote";
+            localVarRequestOptions.Operation = "TagsApi.GetTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Delete<Object>("/notes/notes/{note_id}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DeleteNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GetTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -779,11 +793,10 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Delete Note 
+        /// Gettag Gets the tag member information given the tag ID
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -792,19 +805,18 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Object</returns>
-        public async System.Threading.Tasks.Task<Object> DeleteNoteAsync(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of TagBase</returns>
+        public async System.Threading.Tasks.Task<TagBase> GetTagAsync(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Ehelply.Sdk.Client.ApiResponse<Object> localVarResponse = await DeleteNoteWithHttpInfoAsync(noteId, method, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
+            Ehelply.Sdk.Client.ApiResponse<TagBase> localVarResponse = await GetTagWithHttpInfoAsync(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Delete Note 
+        /// Gettag Gets the tag member information given the tag ID
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="method"> (optional, default to &quot;previous&quot;)</param>
+        /// <param name="tagUuid"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -813,13 +825,13 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Object)</returns>
-        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<Object>> DeleteNoteWithHttpInfoAsync(string noteId, string method = default(string), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (TagBase)</returns>
+        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<TagBase>> GetTagWithHttpInfoAsync(string tagUuid, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'noteId' is set
-            if (noteId == null)
+            // verify the required parameter 'tagUuid' is set
+            if (tagUuid == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteId' when calling NotesApi->DeleteNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagUuid' when calling TagsApi->GetTag");
             }
 
 
@@ -845,11 +857,7 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.PathParameters.Add("note_id", Ehelply.Sdk.Client.ClientUtils.ParameterToString(noteId)); // path parameter
-            if (method != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "method", method));
-            }
+            localVarRequestOptions.PathParameters.Add("tag_uuid", Ehelply.Sdk.Client.ClientUtils.ParameterToString(tagUuid)); // path parameter
             if (xAccessToken != null)
             {
                 localVarRequestOptions.HeaderParameters.Add("x-access-token", Ehelply.Sdk.Client.ClientUtils.ParameterToString(xAccessToken)); // header parameter
@@ -875,16 +883,16 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
 
-            localVarRequestOptions.Operation = "NotesApi.DeleteNote";
+            localVarRequestOptions.Operation = "TagsApi.GetTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.DeleteAsync<Object>("/notes/notes/{note_id}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("DeleteNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("GetTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -895,12 +903,15 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Get Note 
+        /// Searchtag TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -908,20 +919,23 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NoteDynamoHistoryResponse</returns>
-        public NoteDynamoHistoryResponse GetNote(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>Page</returns>
+        public Page SearchTag(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            Ehelply.Sdk.Client.ApiResponse<NoteDynamoHistoryResponse> localVarResponse = GetNoteWithHttpInfo(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+            Ehelply.Sdk.Client.ApiResponse<Page> localVarResponse = SearchTagWithHttpInfo(projectUuid, name, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get Note 
+        /// Searchtag TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -929,15 +943,9 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NoteDynamoHistoryResponse</returns>
-        public Ehelply.Sdk.Client.ApiResponse<NoteDynamoHistoryResponse> GetNoteWithHttpInfo(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>ApiResponse of Page</returns>
+        public Ehelply.Sdk.Client.ApiResponse<Page> SearchTagWithHttpInfo(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            // verify the required parameter 'noteId' is set
-            if (noteId == null)
-            {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteId' when calling NotesApi->GetNote");
-            }
-
             Ehelply.Sdk.Client.RequestOptions localVarRequestOptions = new Ehelply.Sdk.Client.RequestOptions();
 
             string[] _contentTypes = new string[] {
@@ -960,14 +968,29 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.PathParameters.Add("note_id", Ehelply.Sdk.Client.ClientUtils.ParameterToString(noteId)); // path parameter
-            if (history != null)
+            if (projectUuid != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "history", history));
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "project_uuid", projectUuid));
             }
-            if (historyContent != null)
+            if (name != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "history_content", historyContent));
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "name", name));
+            }
+            if (page != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "page", page));
+            }
+            if (pageSize != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "page_size", pageSize));
+            }
+            if (sortOn != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "sort_on", sortOn));
+            }
+            if (sortDesc != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "sort_desc", sortDesc));
             }
             if (xAccessToken != null)
             {
@@ -994,15 +1017,15 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
 
-            localVarRequestOptions.Operation = "NotesApi.GetNote";
+            localVarRequestOptions.Operation = "TagsApi.SearchTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<NoteDynamoHistoryResponse>("/notes/notes/{note_id}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Page>("/places/tags", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GetNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SearchTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1013,12 +1036,15 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Get Note 
+        /// Searchtag TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -1027,20 +1053,23 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NoteDynamoHistoryResponse</returns>
-        public async System.Threading.Tasks.Task<NoteDynamoHistoryResponse> GetNoteAsync(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of Page</returns>
+        public async System.Threading.Tasks.Task<Page> SearchTagAsync(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Ehelply.Sdk.Client.ApiResponse<NoteDynamoHistoryResponse> localVarResponse = await GetNoteWithHttpInfoAsync(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
+            Ehelply.Sdk.Client.ApiResponse<Page> localVarResponse = await SearchTagWithHttpInfoAsync(projectUuid, name, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get Note 
+        /// Searchtag TODO Item return format: &#x60;&#x60;&#x60; {     uuid                                **type:** string     project_uuid                        **type:** string or None      name                                **type:** string or None      meta                                **type:** dict or None      created_at                          **type:** string or None      updated_at                          **type:** string or None      deleted_at                          **type:** string or None  } &#x60;&#x60;&#x60;
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="history"> (optional, default to 0)</param>
-        /// <param name="historyContent"> (optional, default to true)</param>
+        /// <param name="projectUuid"> (optional)</param>
+        /// <param name="name"> (optional)</param>
+        /// <param name="page"> (optional, default to 1)</param>
+        /// <param name="pageSize"> (optional, default to 25)</param>
+        /// <param name="sortOn"> (optional)</param>
+        /// <param name="sortDesc"> (optional, default to false)</param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -1049,15 +1078,9 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NoteDynamoHistoryResponse)</returns>
-        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<NoteDynamoHistoryResponse>> GetNoteWithHttpInfoAsync(string noteId, int? history = default(int?), bool? historyContent = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (Page)</returns>
+        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<Page>> SearchTagWithHttpInfoAsync(string projectUuid = default(string), string name = default(string), int? page = default(int?), int? pageSize = default(int?), string sortOn = default(string), bool? sortDesc = default(bool?), string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'noteId' is set
-            if (noteId == null)
-            {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteId' when calling NotesApi->GetNote");
-            }
-
 
             Ehelply.Sdk.Client.RequestOptions localVarRequestOptions = new Ehelply.Sdk.Client.RequestOptions();
 
@@ -1081,14 +1104,29 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.PathParameters.Add("note_id", Ehelply.Sdk.Client.ClientUtils.ParameterToString(noteId)); // path parameter
-            if (history != null)
+            if (projectUuid != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "history", history));
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "project_uuid", projectUuid));
             }
-            if (historyContent != null)
+            if (name != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "history_content", historyContent));
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "name", name));
+            }
+            if (page != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "page", page));
+            }
+            if (pageSize != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "page_size", pageSize));
+            }
+            if (sortOn != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "sort_on", sortOn));
+            }
+            if (sortDesc != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Ehelply.Sdk.Client.ClientUtils.ParameterToMultiMap("", "sort_desc", sortDesc));
             }
             if (xAccessToken != null)
             {
@@ -1115,16 +1153,16 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
 
-            localVarRequestOptions.Operation = "NotesApi.GetNote";
+            localVarRequestOptions.Operation = "TagsApi.SearchTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.GetAsync<NoteDynamoHistoryResponse>("/notes/notes/{note_id}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Page>("/places/tags", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("GetNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("SearchTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1135,11 +1173,11 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Update Note 
+        /// Updatetag Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -1147,19 +1185,19 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>NoteDynamoResponse</returns>
-        public NoteDynamoResponse UpdateNote(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>TagBase</returns>
+        public TagBase UpdateTag(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse> localVarResponse = UpdateNoteWithHttpInfo(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+            Ehelply.Sdk.Client.ApiResponse<TagBase> localVarResponse = UpdateTagWithHttpInfo(tagUuid, tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Update Note 
+        /// Updatetag Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -1167,19 +1205,19 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyProject"> (optional)</param>
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
-        /// <returns>ApiResponse of NoteDynamoResponse</returns>
-        public Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse> UpdateNoteWithHttpInfo(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
+        /// <returns>ApiResponse of TagBase</returns>
+        public Ehelply.Sdk.Client.ApiResponse<TagBase> UpdateTagWithHttpInfo(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0)
         {
-            // verify the required parameter 'noteId' is set
-            if (noteId == null)
+            // verify the required parameter 'tagUuid' is set
+            if (tagUuid == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteId' when calling NotesApi->UpdateNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagUuid' when calling TagsApi->UpdateTag");
             }
 
-            // verify the required parameter 'noteBase' is set
-            if (noteBase == null)
+            // verify the required parameter 'tagBase' is set
+            if (tagBase == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteBase' when calling NotesApi->UpdateNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagBase' when calling TagsApi->UpdateTag");
             }
 
             Ehelply.Sdk.Client.RequestOptions localVarRequestOptions = new Ehelply.Sdk.Client.RequestOptions();
@@ -1205,7 +1243,7 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.PathParameters.Add("note_id", Ehelply.Sdk.Client.ClientUtils.ParameterToString(noteId)); // path parameter
+            localVarRequestOptions.PathParameters.Add("tag_uuid", Ehelply.Sdk.Client.ClientUtils.ParameterToString(tagUuid)); // path parameter
             if (xAccessToken != null)
             {
                 localVarRequestOptions.HeaderParameters.Add("x-access-token", Ehelply.Sdk.Client.ClientUtils.ParameterToString(xAccessToken)); // header parameter
@@ -1230,17 +1268,17 @@ namespace Ehelply.Sdk.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
-            localVarRequestOptions.Data = noteBase;
+            localVarRequestOptions.Data = tagBase;
 
-            localVarRequestOptions.Operation = "NotesApi.UpdateNote";
+            localVarRequestOptions.Operation = "TagsApi.UpdateTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = this.Client.Put<NoteDynamoResponse>("/notes/notes/{note_id}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Put<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration);
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("UpdateNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("UpdateTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
@@ -1251,11 +1289,11 @@ namespace Ehelply.Sdk.Api
         }
 
         /// <summary>
-        /// Update Note 
+        /// Updatetag Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -1264,19 +1302,19 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of NoteDynamoResponse</returns>
-        public async System.Threading.Tasks.Task<NoteDynamoResponse> UpdateNoteAsync(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of TagBase</returns>
+        public async System.Threading.Tasks.Task<TagBase> UpdateTagAsync(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse> localVarResponse = await UpdateNoteWithHttpInfoAsync(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
+            Ehelply.Sdk.Client.ApiResponse<TagBase> localVarResponse = await UpdateTagWithHttpInfoAsync(tagUuid, tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Update Note 
+        /// Updatetag Update tag with given info, only updating the fields supplied. Tag Uuid must be sent however.
         /// </summary>
         /// <exception cref="Ehelply.Sdk.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="noteId"></param>
-        /// <param name="noteBase"></param>
+        /// <param name="tagUuid"></param>
+        /// <param name="tagBase"></param>
         /// <param name="xAccessToken"> (optional)</param>
         /// <param name="xSecretToken"> (optional)</param>
         /// <param name="authorization"> (optional)</param>
@@ -1285,19 +1323,19 @@ namespace Ehelply.Sdk.Api
         /// <param name="ehelplyData"> (optional)</param>
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (NoteDynamoResponse)</returns>
-        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<NoteDynamoResponse>> UpdateNoteWithHttpInfoAsync(string noteId, NoteBase noteBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (TagBase)</returns>
+        public async System.Threading.Tasks.Task<Ehelply.Sdk.Client.ApiResponse<TagBase>> UpdateTagWithHttpInfoAsync(string tagUuid, TagBase tagBase, string xAccessToken = default(string), string xSecretToken = default(string), string authorization = default(string), string ehelplyActiveParticipant = default(string), string ehelplyProject = default(string), string ehelplyData = default(string), int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'noteId' is set
-            if (noteId == null)
+            // verify the required parameter 'tagUuid' is set
+            if (tagUuid == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteId' when calling NotesApi->UpdateNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagUuid' when calling TagsApi->UpdateTag");
             }
 
-            // verify the required parameter 'noteBase' is set
-            if (noteBase == null)
+            // verify the required parameter 'tagBase' is set
+            if (tagBase == null)
             {
-                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'noteBase' when calling NotesApi->UpdateNote");
+                throw new Ehelply.Sdk.Client.ApiException(400, "Missing required parameter 'tagBase' when calling TagsApi->UpdateTag");
             }
 
 
@@ -1324,7 +1362,7 @@ namespace Ehelply.Sdk.Api
                 localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
             }
 
-            localVarRequestOptions.PathParameters.Add("note_id", Ehelply.Sdk.Client.ClientUtils.ParameterToString(noteId)); // path parameter
+            localVarRequestOptions.PathParameters.Add("tag_uuid", Ehelply.Sdk.Client.ClientUtils.ParameterToString(tagUuid)); // path parameter
             if (xAccessToken != null)
             {
                 localVarRequestOptions.HeaderParameters.Add("x-access-token", Ehelply.Sdk.Client.ClientUtils.ParameterToString(xAccessToken)); // header parameter
@@ -1349,18 +1387,18 @@ namespace Ehelply.Sdk.Api
             {
                 localVarRequestOptions.HeaderParameters.Add("ehelply-data", Ehelply.Sdk.Client.ClientUtils.ParameterToString(ehelplyData)); // header parameter
             }
-            localVarRequestOptions.Data = noteBase;
+            localVarRequestOptions.Data = tagBase;
 
-            localVarRequestOptions.Operation = "NotesApi.UpdateNote";
+            localVarRequestOptions.Operation = "TagsApi.UpdateTag";
             localVarRequestOptions.OperationIndex = operationIndex;
 
 
             // make the HTTP request
-            var localVarResponse = await this.AsynchronousClient.PutAsync<NoteDynamoResponse>("/notes/notes/{note_id}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PutAsync<TagBase>("/places/tags/{tag_uuid}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("UpdateNote", localVarResponse);
+                Exception _exception = this.ExceptionFactory("UpdateTag", localVarResponse);
                 if (_exception != null)
                 {
                     throw _exception;
