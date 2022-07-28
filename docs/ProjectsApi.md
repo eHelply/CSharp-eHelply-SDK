@@ -7,21 +7,26 @@ All URIs are relative to *https://api.prod.ehelply.com*
 | [**AddMemberToProject**](ProjectsApi.md#addmembertoproject) | **POST** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Addmembertoproject |
 | [**ArchiveProject**](ProjectsApi.md#archiveproject) | **DELETE** /sam/projects/projects/{project_uuid} | Archiveproject |
 | [**CreateProject**](ProjectsApi.md#createproject) | **POST** /sam/projects/projects | Createproject |
+| [**CreateProjectCredential**](ProjectsApi.md#createprojectcredential) | **POST** /sam/projects/projects/{project_uuid}/credentials | Createprojectcredential |
 | [**CreateProjectKey**](ProjectsApi.md#createprojectkey) | **POST** /sam/projects/projects/{project_uuid}/keys | Createprojectkey |
 | [**CreateUsageType**](ProjectsApi.md#createusagetype) | **POST** /sam/projects/usage/types | Createusagetype |
+| [**DeleteProjectCredential**](ProjectsApi.md#deleteprojectcredential) | **DELETE** /sam/projects/projects/{project_uuid}/credentials/{service_name} | Deleteprojectcredential |
 | [**DeleteProjectKey**](ProjectsApi.md#deleteprojectkey) | **DELETE** /sam/projects/projects/{project_uuid}/keys | Deleteprojectkey |
 | [**DeleteUsageType**](ProjectsApi.md#deleteusagetype) | **DELETE** /sam/projects/usage/types/{usage_type_key} | Deleteusagetype |
+| [**GetAllProjectCredentials**](ProjectsApi.md#getallprojectcredentials) | **GET** /sam/projects/projects/{project_uuid}/credentials | Getallprojectcredentials |
 | [**GetAllProjectUsage**](ProjectsApi.md#getallprojectusage) | **GET** /sam/projects/projects/{project_uuid}/usage | Getallprojectusage |
 | [**GetMemberProjects**](ProjectsApi.md#getmemberprojects) | **GET** /sam/projects/members/{entity_uuid}/projects | Getmemberprojects |
 | [**GetProject**](ProjectsApi.md#getproject) | **GET** /sam/projects/projects/{project_uuid} | Getproject |
 | [**GetProjectKeys**](ProjectsApi.md#getprojectkeys) | **GET** /sam/projects/projects/{project_uuid}/keys | Getprojectkeys |
 | [**GetProjectMembers**](ProjectsApi.md#getprojectmembers) | **GET** /sam/projects/projects/{project_uuid}/members | Getprojectmembers |
+| [**GetSpecificProjectCredential**](ProjectsApi.md#getspecificprojectcredential) | **GET** /sam/projects/projects/{project_uuid}/credentials/{service_name} | Getspecificprojectcredential |
 | [**GetSpecificProjectUsage**](ProjectsApi.md#getspecificprojectusage) | **GET** /sam/projects/projects/{project_uuid}/usage/{usage_type_key} | Getspecificprojectusage |
 | [**GetUsageType**](ProjectsApi.md#getusagetype) | **GET** /sam/projects/usage/types/{usage_type_key} | Getusagetype |
 | [**RemoveMemberFromProject**](ProjectsApi.md#removememberfromproject) | **DELETE** /sam/projects/projects/{project_uuid}/members/{entity_uuid} | Removememberfromproject |
 | [**SearchProjects**](ProjectsApi.md#searchprojects) | **GET** /sam/projects/projects | Searchprojects |
 | [**SearchUsageType**](ProjectsApi.md#searchusagetype) | **GET** /sam/projects/usage/types | Searchusagetype |
 | [**UpdateProject**](ProjectsApi.md#updateproject) | **PUT** /sam/projects/projects/{project_uuid} | Updateproject |
+| [**UpdateProjectCredential**](ProjectsApi.md#updateprojectcredential) | **PUT** /sam/projects/projects/{project_uuid}/credentials/{service_name} | Updateprojectcredential |
 | [**UpdateUsageType**](ProjectsApi.md#updateusagetype) | **PUT** /sam/projects/usage/types/{usage_type_key} | Updateusagetype |
 
 <a name="addmembertoproject"></a>
@@ -340,6 +345,113 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="createprojectcredential"></a>
+# **CreateProjectCredential**
+> ResponseCreateprojectcredential CreateProjectCredential (string projectUuid, CreateProjectCredential createProjectCredential, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Createprojectcredential
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class CreateProjectCredentialExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var createProjectCredential = new CreateProjectCredential(); // CreateProjectCredential | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Createprojectcredential
+                ResponseCreateprojectcredential result = apiInstance.CreateProjectCredential(projectUuid, createProjectCredential, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.CreateProjectCredential: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the CreateProjectCredentialWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Createprojectcredential
+    ApiResponse<ResponseCreateprojectcredential> response = apiInstance.CreateProjectCredentialWithHttpInfo(projectUuid, createProjectCredential, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.CreateProjectCredentialWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **createProjectCredential** | [**CreateProjectCredential**](CreateProjectCredential.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**ResponseCreateprojectcredential**](ResponseCreateprojectcredential.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Not found |  -  |
+| **409** | Project credential already exits already exists |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="createprojectkey"></a>
 # **CreateProjectKey**
 > CreateKeyResponse CreateProjectKey (string projectUuid, SecurityKeyCreate securityKeyCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
@@ -550,6 +662,112 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteprojectcredential"></a>
+# **DeleteProjectCredential**
+> ResponseDeleteprojectcredential DeleteProjectCredential (string projectUuid, string serviceName, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Deleteprojectcredential
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class DeleteProjectCredentialExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var serviceName = "serviceName_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Deleteprojectcredential
+                ResponseDeleteprojectcredential result = apiInstance.DeleteProjectCredential(projectUuid, serviceName, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.DeleteProjectCredential: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the DeleteProjectCredentialWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Deleteprojectcredential
+    ApiResponse<ResponseDeleteprojectcredential> response = apiInstance.DeleteProjectCredentialWithHttpInfo(projectUuid, serviceName, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.DeleteProjectCredentialWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **serviceName** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**ResponseDeleteprojectcredential**](ResponseDeleteprojectcredential.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project credential not found does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteprojectkey"></a>
 # **DeleteProjectKey**
 > string DeleteProjectKey (string projectUuid, string accessToken = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
@@ -756,6 +974,110 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Not found |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getallprojectcredentials"></a>
+# **GetAllProjectCredentials**
+> List&lt;GetProjectCredential&gt; GetAllProjectCredentials (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Getallprojectcredentials
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetAllProjectCredentialsExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Getallprojectcredentials
+                List<GetProjectCredential> result = apiInstance.GetAllProjectCredentials(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.GetAllProjectCredentials: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GetAllProjectCredentialsWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getallprojectcredentials
+    ApiResponse<List<GetProjectCredential>> response = apiInstance.GetAllProjectCredentialsWithHttpInfo(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.GetAllProjectCredentialsWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**List&lt;GetProjectCredential&gt;**](GetProjectCredential.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project credential not found does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1286,6 +1608,112 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Project does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getspecificprojectcredential"></a>
+# **GetSpecificProjectCredential**
+> GetProjectCredential GetSpecificProjectCredential (string projectUuid, string serviceName, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Getspecificprojectcredential
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetSpecificProjectCredentialExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var serviceName = "serviceName_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Getspecificprojectcredential
+                GetProjectCredential result = apiInstance.GetSpecificProjectCredential(projectUuid, serviceName, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.GetSpecificProjectCredential: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GetSpecificProjectCredentialWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getspecificprojectcredential
+    ApiResponse<GetProjectCredential> response = apiInstance.GetSpecificProjectCredentialWithHttpInfo(projectUuid, serviceName, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.GetSpecificProjectCredentialWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **serviceName** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**GetProjectCredential**](GetProjectCredential.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project credential not found does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1918,6 +2346,114 @@ No authorization required
 | **200** | Successful Response |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Project does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="updateprojectcredential"></a>
+# **UpdateProjectCredential**
+> ResponseUpdateprojectcredential UpdateProjectCredential (string projectUuid, string serviceName, UpdateProjectCredentialRequest updateProjectCredentialRequest, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Updateprojectcredential
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class UpdateProjectCredentialExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var serviceName = "serviceName_example";  // string | 
+            var updateProjectCredentialRequest = new UpdateProjectCredentialRequest(); // UpdateProjectCredentialRequest | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Updateprojectcredential
+                ResponseUpdateprojectcredential result = apiInstance.UpdateProjectCredential(projectUuid, serviceName, updateProjectCredentialRequest, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.UpdateProjectCredential: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the UpdateProjectCredentialWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Updateprojectcredential
+    ApiResponse<ResponseUpdateprojectcredential> response = apiInstance.UpdateProjectCredentialWithHttpInfo(projectUuid, serviceName, updateProjectCredentialRequest, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.UpdateProjectCredentialWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **serviceName** | **string** |  |  |
+| **updateProjectCredentialRequest** | [**UpdateProjectCredentialRequest**](UpdateProjectCredentialRequest.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**ResponseUpdateprojectcredential**](ResponseUpdateprojectcredential.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project credential not found does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

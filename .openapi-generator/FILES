@@ -34,8 +34,10 @@ docs/ContactBase.md
 docs/ContactMethod.md
 docs/ContactResponse.md
 docs/CreateKeyResponse.md
+docs/CreateProjectCredential.md
 docs/CreateReview.md
 docs/CreateTicket.md
+docs/Credential.md
 docs/CustomList.md
 docs/DatesMeta.md
 docs/DefaultApi.md
@@ -47,6 +49,8 @@ docs/Email.md
 docs/Field.md
 docs/FieldDynamo.md
 docs/GetAppointment403Response.md
+docs/GetProjectCredential.md
+docs/GetSecret.md
 docs/GetServiceServiceWithSpecsResponse.md
 docs/GetServiceSpecResponse.md
 docs/GetServiceSpecsResponse.md
@@ -98,10 +102,13 @@ docs/ProjectsUsageTypeUpdate.md
 docs/ResponseAddmembertoproject.md
 docs/ResponseArchiveproject.md
 docs/ResponseCreatekey.md
+docs/ResponseCreateprojectcredential.md
 docs/ResponseDeletekey.md
+docs/ResponseDeleteprojectcredential.md
 docs/ResponseDeleteusagetype.md
 docs/ResponseGeneratetoken.md
 docs/ResponseRemovememberfromproject.md
+docs/ResponseUpdateprojectcredential.md
 docs/ReviewsApi.md
 docs/SecurityApi.md
 docs/SecurityCreateToken.md
@@ -128,6 +135,7 @@ docs/TagDb.md
 docs/TagsApi.md
 docs/TicketResponse.md
 docs/TicketsResponse.md
+docs/UpdateProjectCredentialRequest.md
 docs/UpdateReview.md
 docs/User.md
 docs/UserConfirmation.md
@@ -193,8 +201,10 @@ src/Ehelply.Sdk.Test/Model/ContactMethodTests.cs
 src/Ehelply.Sdk.Test/Model/ContactResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
+src/Ehelply.Sdk.Test/Model/CreateProjectCredentialTests.cs
 src/Ehelply.Sdk.Test/Model/CreateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
+src/Ehelply.Sdk.Test/Model/CredentialTests.cs
 src/Ehelply.Sdk.Test/Model/CustomListTests.cs
 src/Ehelply.Sdk.Test/Model/DatesMetaTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaCreateTests.cs
@@ -205,6 +215,8 @@ src/Ehelply.Sdk.Test/Model/EmailTests.cs
 src/Ehelply.Sdk.Test/Model/FieldDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/FieldTests.cs
 src/Ehelply.Sdk.Test/Model/GetAppointment403ResponseTests.cs
+src/Ehelply.Sdk.Test/Model/GetProjectCredentialTests.cs
+src/Ehelply.Sdk.Test/Model/GetSecretTests.cs
 src/Ehelply.Sdk.Test/Model/GetServiceServiceWithSpecsResponseTests.cs
 src/Ehelply.Sdk.Test/Model/GetServiceSpecResponseTests.cs
 src/Ehelply.Sdk.Test/Model/GetServiceSpecsResponseTests.cs
@@ -249,10 +261,13 @@ src/Ehelply.Sdk.Test/Model/ProjectsUsageTypeUpdateTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseAddmembertoprojectTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseArchiveprojectTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseCreatekeyTests.cs
+src/Ehelply.Sdk.Test/Model/ResponseCreateprojectcredentialTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseDeletekeyTests.cs
+src/Ehelply.Sdk.Test/Model/ResponseDeleteprojectcredentialTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseDeleteusagetypeTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseGeneratetokenTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseRemovememberfromprojectTests.cs
+src/Ehelply.Sdk.Test/Model/ResponseUpdateprojectcredentialTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityCreateTokenTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyGetTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyResponseTests.cs
@@ -273,6 +288,7 @@ src/Ehelply.Sdk.Test/Model/TagBaseTests.cs
 src/Ehelply.Sdk.Test/Model/TagDbTests.cs
 src/Ehelply.Sdk.Test/Model/TicketResponseTests.cs
 src/Ehelply.Sdk.Test/Model/TicketsResponseTests.cs
+src/Ehelply.Sdk.Test/Model/UpdateProjectCredentialRequestTests.cs
 src/Ehelply.Sdk.Test/Model/UpdateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/UserConfirmationTests.cs
 src/Ehelply.Sdk.Test/Model/UserEmailTests.cs
@@ -353,8 +369,10 @@ src/Ehelply.Sdk/Model/ContactBase.cs
 src/Ehelply.Sdk/Model/ContactMethod.cs
 src/Ehelply.Sdk/Model/ContactResponse.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
+src/Ehelply.Sdk/Model/CreateProjectCredential.cs
 src/Ehelply.Sdk/Model/CreateReview.cs
 src/Ehelply.Sdk/Model/CreateTicket.cs
+src/Ehelply.Sdk/Model/Credential.cs
 src/Ehelply.Sdk/Model/CustomList.cs
 src/Ehelply.Sdk/Model/DatesMeta.cs
 src/Ehelply.Sdk/Model/Detailed.cs
@@ -365,6 +383,8 @@ src/Ehelply.Sdk/Model/Email.cs
 src/Ehelply.Sdk/Model/Field.cs
 src/Ehelply.Sdk/Model/FieldDynamo.cs
 src/Ehelply.Sdk/Model/GetAppointment403Response.cs
+src/Ehelply.Sdk/Model/GetProjectCredential.cs
+src/Ehelply.Sdk/Model/GetSecret.cs
 src/Ehelply.Sdk/Model/GetServiceServiceWithSpecsResponse.cs
 src/Ehelply.Sdk/Model/GetServiceSpecResponse.cs
 src/Ehelply.Sdk/Model/GetServiceSpecsResponse.cs
@@ -409,10 +429,13 @@ src/Ehelply.Sdk/Model/ProjectsUsageTypeUpdate.cs
 src/Ehelply.Sdk/Model/ResponseAddmembertoproject.cs
 src/Ehelply.Sdk/Model/ResponseArchiveproject.cs
 src/Ehelply.Sdk/Model/ResponseCreatekey.cs
+src/Ehelply.Sdk/Model/ResponseCreateprojectcredential.cs
 src/Ehelply.Sdk/Model/ResponseDeletekey.cs
+src/Ehelply.Sdk/Model/ResponseDeleteprojectcredential.cs
 src/Ehelply.Sdk/Model/ResponseDeleteusagetype.cs
 src/Ehelply.Sdk/Model/ResponseGeneratetoken.cs
 src/Ehelply.Sdk/Model/ResponseRemovememberfromproject.cs
+src/Ehelply.Sdk/Model/ResponseUpdateprojectcredential.cs
 src/Ehelply.Sdk/Model/SecurityCreateToken.cs
 src/Ehelply.Sdk/Model/SecurityEncryptionKeyGet.cs
 src/Ehelply.Sdk/Model/SecurityEncryptionKeyResponse.cs
@@ -433,6 +456,7 @@ src/Ehelply.Sdk/Model/TagBase.cs
 src/Ehelply.Sdk/Model/TagDb.cs
 src/Ehelply.Sdk/Model/TicketResponse.cs
 src/Ehelply.Sdk/Model/TicketsResponse.cs
+src/Ehelply.Sdk/Model/UpdateProjectCredentialRequest.cs
 src/Ehelply.Sdk/Model/UpdateReview.cs
 src/Ehelply.Sdk/Model/User.cs
 src/Ehelply.Sdk/Model/UserConfirmation.cs
