@@ -536,7 +536,7 @@ No authorization required
 
 <a name="searchappointment"></a>
 # **SearchAppointment**
-> Object SearchAppointment (string placeUuid = null, bool? excludeCancelled = null, bool? isDeleted = null, string startRange = null, string endRange = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string search = null, string searchOn = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> Object SearchAppointment (string placeUuid = null, bool? excludeCancelled = null, bool? isDeleted = null, string startRange = null, string endRange = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Search Appointment
 
@@ -566,8 +566,6 @@ namespace Example
             var pageSize = 25;  // int? |  (optional)  (default to 25)
             var sortOn = "sortOn_example";  // string |  (optional) 
             var sortDesc = false;  // bool? |  (optional)  (default to false)
-            var search = "search_example";  // string |  (optional) 
-            var searchOn = "searchOn_example";  // string |  (optional) 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -578,7 +576,7 @@ namespace Example
             try
             {
                 // Search Appointment
-                Object result = apiInstance.SearchAppointment(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, search, searchOn, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.SearchAppointment(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -599,7 +597,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // Search Appointment
-    ApiResponse<Object> response = apiInstance.SearchAppointmentWithHttpInfo(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, search, searchOn, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    ApiResponse<Object> response = apiInstance.SearchAppointmentWithHttpInfo(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -625,8 +623,6 @@ catch (ApiException e)
 | **pageSize** | **int?** |  | [optional] [default to 25] |
 | **sortOn** | **string** |  | [optional]  |
 | **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **search** | **string** |  | [optional]  |
-| **searchOn** | **string** |  | [optional]  |
 | **xAccessToken** | **string** |  | [optional]  |
 | **xSecretToken** | **string** |  | [optional]  |
 | **authorization** | **string** |  | [optional]  |
@@ -774,7 +770,7 @@ No authorization required
 
 <a name="searchentityappointments"></a>
 # **SearchEntityAppointments**
-> Object SearchEntityAppointments (string entityUuid, string startDate = null, string endDate = null, bool? includeCancelled = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> Object SearchEntityAppointments (string entityUuid, string startDate = null, string endDate = null, bool? excludeCancelled = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Entities Appointments
 
@@ -798,7 +794,7 @@ namespace Example
             var entityUuid = "entityUuid_example";  // string | 
             var startDate = "startDate_example";  // string |  (optional) 
             var endDate = "endDate_example";  // string |  (optional) 
-            var includeCancelled = false;  // bool? |  (optional)  (default to false)
+            var excludeCancelled = false;  // bool? |  (optional)  (default to false)
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -809,7 +805,7 @@ namespace Example
             try
             {
                 // Get Entities Appointments
-                Object result = apiInstance.SearchEntityAppointments(entityUuid, startDate, endDate, includeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Object result = apiInstance.SearchEntityAppointments(entityUuid, startDate, endDate, excludeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -830,7 +826,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // Get Entities Appointments
-    ApiResponse<Object> response = apiInstance.SearchEntityAppointmentsWithHttpInfo(entityUuid, startDate, endDate, includeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    ApiResponse<Object> response = apiInstance.SearchEntityAppointmentsWithHttpInfo(entityUuid, startDate, endDate, excludeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -850,7 +846,7 @@ catch (ApiException e)
 | **entityUuid** | **string** |  |  |
 | **startDate** | **string** |  | [optional]  |
 | **endDate** | **string** |  | [optional]  |
-| **includeCancelled** | **bool?** |  | [optional] [default to false] |
+| **excludeCancelled** | **bool?** |  | [optional] [default to false] |
 | **xAccessToken** | **string** |  | [optional]  |
 | **xSecretToken** | **string** |  | [optional]  |
 | **authorization** | **string** |  | [optional]  |

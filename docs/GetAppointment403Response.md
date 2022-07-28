@@ -1,4 +1,4 @@
-# Ehelply.Sdk.Model.GetServicesWithSpecs403Response
+# Ehelply.Sdk.Model.GetAppointment403Response
 
 ## Properties
 
