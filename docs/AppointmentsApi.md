@@ -1,24 +1,24 @@
-# Ehelply.Sdk.Api.DefaultApi
+# Ehelply.Sdk.Api.AppointmentsApi
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
 | Method | HTTP request | Description |
 |--------|--------------|-------------|
-| [**AttachEntityToAppointment**](DefaultApi.md#attachentitytoappointment) | **POST** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Attach Entity To Appointment |
-| [**CreateAppointment**](DefaultApi.md#createappointment) | **POST** /appointments/appointments | Create Appointment |
-| [**DeleteAppointment**](DefaultApi.md#deleteappointment) | **DELETE** /appointments/appointments/{appointment_uuid} | Delete Appointment |
-| [**DetachEntityFromAppointment**](DefaultApi.md#detachentityfromappointment) | **DELETE** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Detach Entity From Appointment |
-| [**GetAppointment**](DefaultApi.md#getappointment) | **GET** /appointments/appointments/{appointment_uuid} | Get Appointment |
-| [**SearchAppointment**](DefaultApi.md#searchappointment) | **GET** /appointments/appointments | Search Appointment |
-| [**SearchAppointmentEntities**](DefaultApi.md#searchappointmententities) | **GET** /appointments/appointments/{appointment_uuid}/entities | Search Appointment Entities |
-| [**SearchEntityAppointments**](DefaultApi.md#searchentityappointments) | **GET** /appointments/appointments/entities/{entity_uuid}/appointments | Get Entities Appointments |
-| [**UpdateAppointment**](DefaultApi.md#updateappointment) | **PUT** /appointments/appointments/{appointment_uuid} | Update Appointment |
+| [**AddEntityToAppointment**](AppointmentsApi.md#addentitytoappointment) | **POST** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Addentitytoappointment |
+| [**CreateAppointment**](AppointmentsApi.md#createappointment) | **POST** /appointments/appointments | Createappointment |
+| [**DeleteAppointment**](AppointmentsApi.md#deleteappointment) | **DELETE** /appointments/appointments/{appointment_uuid} | Deleteappointment |
+| [**DetachEntityFromAppointment**](AppointmentsApi.md#detachentityfromappointment) | **DELETE** /appointments/appointments/{appointment_uuid}/entities/{entity_uuid} | Removeentityfromappointment |
+| [**GetAppointment**](AppointmentsApi.md#getappointment) | **GET** /appointments/appointments/{appointment_uuid} | Getappointment |
+| [**SearchAppointment**](AppointmentsApi.md#searchappointment) | **GET** /appointments/appointments | Searchappointments |
+| [**SearchAppointmentEntities**](AppointmentsApi.md#searchappointmententities) | **GET** /appointments/appointments/{appointment_uuid}/entities | Searchappointmententities |
+| [**SearchEntityAppointments**](AppointmentsApi.md#searchentityappointments) | **GET** /appointments/appointments/entities/{entity_uuid}/appointments | Getentityappointments |
+| [**UpdateAppointment**](AppointmentsApi.md#updateappointment) | **PUT** /appointments/appointments/{appointment_uuid} | Updateappointment |
 
-<a name="attachentitytoappointment"></a>
-# **AttachEntityToAppointment**
-> bool AttachEntityToAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="addentitytoappointment"></a>
+# **AddEntityToAppointment**
+> bool AddEntityToAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Attach Entity To Appointment
+Addentitytoappointment
 
 ### Example
 ```csharp
@@ -30,13 +30,13 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class AttachEntityToAppointmentExample
+    public class AddEntityToAppointmentExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentUuid = "appointmentUuid_example";  // string | 
             var entityUuid = "entityUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
@@ -48,13 +48,13 @@ namespace Example
 
             try
             {
-                // Attach Entity To Appointment
-                bool result = apiInstance.AttachEntityToAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Addentitytoappointment
+                bool result = apiInstance.AddEntityToAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.AttachEntityToAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.AddEntityToAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -63,21 +63,21 @@ namespace Example
 }
 ```
 
-#### Using the AttachEntityToAppointmentWithHttpInfo variant
+#### Using the AddEntityToAppointmentWithHttpInfo variant
 This returns an ApiResponse object which contains the response data, status code and headers.
 
 ```csharp
 try
 {
-    // Attach Entity To Appointment
-    ApiResponse<bool> response = apiInstance.AttachEntityToAppointmentWithHttpInfo(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    // Addentitytoappointment
+    ApiResponse<bool> response = apiInstance.AddEntityToAppointmentWithHttpInfo(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.AttachEntityToAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.AddEntityToAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -123,7 +123,7 @@ No authorization required
 # **CreateAppointment**
 > AppointmentResponse CreateAppointment (AppointmentBase appointmentBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Create Appointment
+Createappointment
 
 ### Example
 ```csharp
@@ -141,7 +141,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentBase = new AppointmentBase(); // AppointmentBase | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -152,13 +152,13 @@ namespace Example
 
             try
             {
-                // Create Appointment
+                // Createappointment
                 AppointmentResponse result = apiInstance.CreateAppointment(appointmentBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.CreateAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.CreateAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -173,7 +173,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Create Appointment
+    // Createappointment
     ApiResponse<AppointmentResponse> response = apiInstance.CreateAppointmentWithHttpInfo(appointmentBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -181,7 +181,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.CreateAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.CreateAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -226,7 +226,7 @@ No authorization required
 # **DeleteAppointment**
 > bool DeleteAppointment (string appointmentUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Delete Appointment
+Deleteappointment
 
 ### Example
 ```csharp
@@ -244,7 +244,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentUuid = "appointmentUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -255,13 +255,13 @@ namespace Example
 
             try
             {
-                // Delete Appointment
+                // Deleteappointment
                 bool result = apiInstance.DeleteAppointment(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DeleteAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.DeleteAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -276,7 +276,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Delete Appointment
+    // Deleteappointment
     ApiResponse<bool> response = apiInstance.DeleteAppointmentWithHttpInfo(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -284,7 +284,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.DeleteAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.DeleteAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -329,7 +329,7 @@ No authorization required
 # **DetachEntityFromAppointment**
 > bool DetachEntityFromAppointment (string appointmentUuid, string entityUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Detach Entity From Appointment
+Removeentityfromappointment
 
 ### Example
 ```csharp
@@ -347,7 +347,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentUuid = "appointmentUuid_example";  // string | 
             var entityUuid = "entityUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
@@ -359,13 +359,13 @@ namespace Example
 
             try
             {
-                // Detach Entity From Appointment
+                // Removeentityfromappointment
                 bool result = apiInstance.DetachEntityFromAppointment(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DetachEntityFromAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.DetachEntityFromAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -380,7 +380,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Detach Entity From Appointment
+    // Removeentityfromappointment
     ApiResponse<bool> response = apiInstance.DetachEntityFromAppointmentWithHttpInfo(appointmentUuid, entityUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -388,7 +388,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.DetachEntityFromAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.DetachEntityFromAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -434,7 +434,7 @@ No authorization required
 # **GetAppointment**
 > AppointmentResponse GetAppointment (string appointmentUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Appointment
+Getappointment
 
 ### Example
 ```csharp
@@ -452,7 +452,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentUuid = "appointmentUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -463,13 +463,13 @@ namespace Example
 
             try
             {
-                // Get Appointment
+                // Getappointment
                 AppointmentResponse result = apiInstance.GetAppointment(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.GetAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -484,7 +484,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Get Appointment
+    // Getappointment
     ApiResponse<AppointmentResponse> response = apiInstance.GetAppointmentWithHttpInfo(appointmentUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -492,7 +492,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.GetAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.GetAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -538,7 +538,7 @@ No authorization required
 # **SearchAppointment**
 > Object SearchAppointment (string placeUuid = null, bool? excludeCancelled = null, bool? isDeleted = null, string startRange = null, string endRange = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Search Appointment
+Searchappointments
 
 ### Example
 ```csharp
@@ -556,7 +556,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var placeUuid = "placeUuid_example";  // string |  (optional) 
             var excludeCancelled = false;  // bool? |  (optional)  (default to false)
             var isDeleted = false;  // bool? |  (optional)  (default to false)
@@ -575,13 +575,13 @@ namespace Example
 
             try
             {
-                // Search Appointment
+                // Searchappointments
                 Object result = apiInstance.SearchAppointment(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.SearchAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -596,7 +596,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Search Appointment
+    // Searchappointments
     ApiResponse<Object> response = apiInstance.SearchAppointmentWithHttpInfo(placeUuid, excludeCancelled, isDeleted, startRange, endRange, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -604,7 +604,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.SearchAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.SearchAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -657,7 +657,7 @@ No authorization required
 # **SearchAppointmentEntities**
 > Object SearchAppointmentEntities (string appointmentUuid, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string search = null, string searchOn = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Search Appointment Entities
+Searchappointmententities
 
 ### Example
 ```csharp
@@ -675,7 +675,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentUuid = "appointmentUuid_example";  // string | 
             var page = 1;  // int? |  (optional)  (default to 1)
             var pageSize = 25;  // int? |  (optional)  (default to 25)
@@ -692,13 +692,13 @@ namespace Example
 
             try
             {
-                // Search Appointment Entities
+                // Searchappointmententities
                 Object result = apiInstance.SearchAppointmentEntities(appointmentUuid, page, pageSize, sortOn, sortDesc, search, searchOn, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchAppointmentEntities: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.SearchAppointmentEntities: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -713,7 +713,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Search Appointment Entities
+    // Searchappointmententities
     ApiResponse<Object> response = apiInstance.SearchAppointmentEntitiesWithHttpInfo(appointmentUuid, page, pageSize, sortOn, sortDesc, search, searchOn, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -721,7 +721,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.SearchAppointmentEntitiesWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.SearchAppointmentEntitiesWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -772,7 +772,7 @@ No authorization required
 # **SearchEntityAppointments**
 > Object SearchEntityAppointments (string entityUuid, string startDate = null, string endDate = null, bool? excludeCancelled = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Entities Appointments
+Getentityappointments
 
 ### Example
 ```csharp
@@ -790,7 +790,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var entityUuid = "entityUuid_example";  // string | 
             var startDate = "startDate_example";  // string |  (optional) 
             var endDate = "endDate_example";  // string |  (optional) 
@@ -804,13 +804,13 @@ namespace Example
 
             try
             {
-                // Get Entities Appointments
+                // Getentityappointments
                 Object result = apiInstance.SearchEntityAppointments(entityUuid, startDate, endDate, excludeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.SearchEntityAppointments: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.SearchEntityAppointments: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -825,7 +825,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Get Entities Appointments
+    // Getentityappointments
     ApiResponse<Object> response = apiInstance.SearchEntityAppointmentsWithHttpInfo(entityUuid, startDate, endDate, excludeCancelled, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -833,7 +833,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.SearchEntityAppointmentsWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.SearchEntityAppointmentsWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
@@ -881,7 +881,7 @@ No authorization required
 # **UpdateAppointment**
 > AppointmentResponse UpdateAppointment (string appointmentUuid, AppointmentBase appointmentBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Update Appointment
+Updateappointment
 
 ### Example
 ```csharp
@@ -899,7 +899,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new AppointmentsApi(config);
             var appointmentUuid = "appointmentUuid_example";  // string | 
             var appointmentBase = new AppointmentBase(); // AppointmentBase | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
@@ -911,13 +911,13 @@ namespace Example
 
             try
             {
-                // Update Appointment
+                // Updateappointment
                 AppointmentResponse result = apiInstance.UpdateAppointment(appointmentUuid, appointmentBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.UpdateAppointment: " + e.Message);
+                Debug.Print("Exception when calling AppointmentsApi.UpdateAppointment: " + e.Message);
                 Debug.Print("Status Code: " + e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -932,7 +932,7 @@ This returns an ApiResponse object which contains the response data, status code
 ```csharp
 try
 {
-    // Update Appointment
+    // Updateappointment
     ApiResponse<AppointmentResponse> response = apiInstance.UpdateAppointmentWithHttpInfo(appointmentUuid, appointmentBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
@@ -940,7 +940,7 @@ try
 }
 catch (ApiException e)
 {
-    Debug.Print("Exception when calling DefaultApi.UpdateAppointmentWithHttpInfo: " + e.Message);
+    Debug.Print("Exception when calling AppointmentsApi.UpdateAppointmentWithHttpInfo: " + e.Message);
     Debug.Print("Status Code: " + e.ErrorCode);
     Debug.Print(e.StackTrace);
 }
