@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Meta** | **Object** |  | [optional] 
 **Addresses** | [**List&lt;AddressBase&gt;**](AddressBase.md) |  | [optional] 
 **Contact** | [**ContactBase**](ContactBase.md) |  | [optional] 
+**Picture** | **string** |  | [optional] 
 **Uuid** | **string** |  | 
 **ProjectUuid** | **string** |  | [optional] 
 **MetaUuid** | **string** |  | [optional] 

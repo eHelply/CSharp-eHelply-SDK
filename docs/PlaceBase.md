@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Meta** | **Object** |  | [optional] 
 **Addresses** | [**List&lt;AddressBase&gt;**](AddressBase.md) |  | [optional] 
 **Contact** | [**ContactBase**](ContactBase.md) |  | [optional] 
+**Picture** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
