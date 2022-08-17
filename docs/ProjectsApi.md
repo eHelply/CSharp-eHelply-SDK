@@ -8,6 +8,7 @@ All URIs are relative to *https://api.prod.ehelply.com*
 | [**ArchiveProject**](ProjectsApi.md#archiveproject) | **DELETE** /sam/projects/projects/{project_uuid} | Archiveproject |
 | [**CreateProject**](ProjectsApi.md#createproject) | **POST** /sam/projects/projects | Createproject |
 | [**CreateProjectCredential**](ProjectsApi.md#createprojectcredential) | **POST** /sam/projects/projects/{project_uuid}/credentials | Createprojectcredential |
+| [**CreateProjectInvoice**](ProjectsApi.md#createprojectinvoice) | **POST** /sam/projects/projects/{project_uuid}/invoices | Createprojectinvoice |
 | [**CreateProjectKey**](ProjectsApi.md#createprojectkey) | **POST** /sam/projects/projects/{project_uuid}/keys | Createprojectkey |
 | [**CreateUsageType**](ProjectsApi.md#createusagetype) | **POST** /sam/projects/usage/types | Createusagetype |
 | [**DeleteProjectCredential**](ProjectsApi.md#deleteprojectcredential) | **DELETE** /sam/projects/projects/{project_uuid}/credentials/{service_name} | Deleteprojectcredential |
@@ -17,6 +18,8 @@ All URIs are relative to *https://api.prod.ehelply.com*
 | [**GetAllProjectUsage**](ProjectsApi.md#getallprojectusage) | **GET** /sam/projects/projects/{project_uuid}/usage | Getallprojectusage |
 | [**GetMemberProjects**](ProjectsApi.md#getmemberprojects) | **GET** /sam/projects/members/{entity_uuid}/projects | Getmemberprojects |
 | [**GetProject**](ProjectsApi.md#getproject) | **GET** /sam/projects/projects/{project_uuid} | Getproject |
+| [**GetProjectInvoice**](ProjectsApi.md#getprojectinvoice) | **GET** /sam/projects/projects/{project_uuid}/invoices | Getprojectinvoice |
+| [**GetProjectInvoiceHistory**](ProjectsApi.md#getprojectinvoicehistory) | **GET** /sam/projects/projects/{project_uuid}/invoices/history | Getprojectinvoicehistory |
 | [**GetProjectKeys**](ProjectsApi.md#getprojectkeys) | **GET** /sam/projects/projects/{project_uuid}/keys | Getprojectkeys |
 | [**GetProjectMembers**](ProjectsApi.md#getprojectmembers) | **GET** /sam/projects/projects/{project_uuid}/members | Getprojectmembers |
 | [**GetSpecificProjectCredential**](ProjectsApi.md#getspecificprojectcredential) | **GET** /sam/projects/projects/{project_uuid}/credentials/{service_name} | Getspecificprojectcredential |
@@ -445,9 +448,116 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
+| **400** | Failed to create project credential |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Not found |  -  |
-| **409** | Project credential already exits already exists |  -  |
+| **409** | Project credential already exists |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="createprojectinvoice"></a>
+# **CreateProjectInvoice**
+> ResponseCreateprojectinvoice CreateProjectInvoice (string projectUuid, CreateProjectInvoice createProjectInvoice, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Createprojectinvoice
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class CreateProjectInvoiceExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var createProjectInvoice = new CreateProjectInvoice(); // CreateProjectInvoice | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Createprojectinvoice
+                ResponseCreateprojectinvoice result = apiInstance.CreateProjectInvoice(projectUuid, createProjectInvoice, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.CreateProjectInvoice: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the CreateProjectInvoiceWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Createprojectinvoice
+    ApiResponse<ResponseCreateprojectinvoice> response = apiInstance.CreateProjectInvoiceWithHttpInfo(projectUuid, createProjectInvoice, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.CreateProjectInvoiceWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **createProjectInvoice** | [**CreateProjectInvoice**](CreateProjectInvoice.md) |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**ResponseCreateprojectinvoice**](ResponseCreateprojectinvoice.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project credential not found does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -868,8 +978,9 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
+| **400** | Access token is a required query parameter |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
-| **404** | Project, Entity, or Key does not exist |  -  |
+| **404** | Not found |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1077,7 +1188,7 @@ No authorization required
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
-| **404** | Project credential not found does not exist |  -  |
+| **404** | Project credential does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1402,6 +1513,221 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getprojectinvoice"></a>
+# **GetProjectInvoice**
+> GetProjectInvoiceResponse GetProjectInvoice (string projectUuid, bool? withInvoice = null, int? year = null, int? month = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Getprojectinvoice
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetProjectInvoiceExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var withInvoice = false;  // bool? |  (optional)  (default to false)
+            var year = 56;  // int? |  (optional) 
+            var month = 56;  // int? |  (optional) 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Getprojectinvoice
+                GetProjectInvoiceResponse result = apiInstance.GetProjectInvoice(projectUuid, withInvoice, year, month, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.GetProjectInvoice: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GetProjectInvoiceWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getprojectinvoice
+    ApiResponse<GetProjectInvoiceResponse> response = apiInstance.GetProjectInvoiceWithHttpInfo(projectUuid, withInvoice, year, month, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.GetProjectInvoiceWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **withInvoice** | **bool?** |  | [optional] [default to false] |
+| **year** | **int?** |  | [optional]  |
+| **month** | **int?** |  | [optional]  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**GetProjectInvoiceResponse**](GetProjectInvoiceResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **400** | The query parameters year and month are required |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | Project credential not found does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getprojectinvoicehistory"></a>
+# **GetProjectInvoiceHistory**
+> GetProjectInvoiceHistory GetProjectInvoiceHistory (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+
+Getprojectinvoicehistory
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Ehelply.Sdk.Api;
+using Ehelply.Sdk.Client;
+using Ehelply.Sdk.Model;
+
+namespace Example
+{
+    public class GetProjectInvoiceHistoryExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "https://api.prod.ehelply.com";
+            var apiInstance = new ProjectsApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
+            var xAccessToken = "xAccessToken_example";  // string |  (optional) 
+            var xSecretToken = "xSecretToken_example";  // string |  (optional) 
+            var authorization = "authorization_example";  // string |  (optional) 
+            var ehelplyActiveParticipant = "ehelplyActiveParticipant_example";  // string |  (optional) 
+            var ehelplyProject = "ehelplyProject_example";  // string |  (optional) 
+            var ehelplyData = "ehelplyData_example";  // string |  (optional) 
+
+            try
+            {
+                // Getprojectinvoicehistory
+                GetProjectInvoiceHistory result = apiInstance.GetProjectInvoiceHistory(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ProjectsApi.GetProjectInvoiceHistory: " + e.Message);
+                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+#### Using the GetProjectInvoiceHistoryWithHttpInfo variant
+This returns an ApiResponse object which contains the response data, status code and headers.
+
+```csharp
+try
+{
+    // Getprojectinvoicehistory
+    ApiResponse<GetProjectInvoiceHistory> response = apiInstance.GetProjectInvoiceHistoryWithHttpInfo(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    Debug.Write("Status Code: " + response.StatusCode);
+    Debug.Write("Response Headers: " + response.Headers);
+    Debug.Write("Response Body: " + response.Data);
+}
+catch (ApiException e)
+{
+    Debug.Print("Exception when calling ProjectsApi.GetProjectInvoiceHistoryWithHttpInfo: " + e.Message);
+    Debug.Print("Status Code: " + e.ErrorCode);
+    Debug.Print(e.StackTrace);
+}
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+|------|------|-------------|-------|
+| **projectUuid** | **string** |  |  |
+| **xAccessToken** | **string** |  | [optional]  |
+| **xSecretToken** | **string** |  | [optional]  |
+| **authorization** | **string** |  | [optional]  |
+| **ehelplyActiveParticipant** | **string** |  | [optional]  |
+| **ehelplyProject** | **string** |  | [optional]  |
+| **ehelplyData** | **string** |  | [optional]  |
+
+### Return type
+
+[**GetProjectInvoiceHistory**](GetProjectInvoiceHistory.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Successful Response |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | project invoice history does not exist |  -  |
+| **422** | Validation Error |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getprojectkeys"></a>
 # **GetProjectKeys**
 > List&lt;ProjectsProjectMemberDB&gt; GetProjectKeys (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
@@ -1713,7 +2039,7 @@ No authorization required
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
 | **403** | Unauthorized - Denied by eHelply |  -  |
-| **404** | Project credential not found does not exist |  -  |
+| **404** | Project credential does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -2026,7 +2352,7 @@ No authorization required
 
 <a name="searchprojects"></a>
 # **SearchProjects**
-> Page SearchProjects (int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> Page SearchProjects (bool? isActive = null, int? page = null, int? pageSize = null, string search = null, string searchOn = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Searchprojects
 
@@ -2049,6 +2375,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new ProjectsApi(config);
+            var isActive = false;  // bool? |  (optional)  (default to false)
             var page = 1;  // int? |  (optional)  (default to 1)
             var pageSize = 25;  // int? |  (optional)  (default to 25)
             var search = "search_example";  // string |  (optional) 
@@ -2065,7 +2392,7 @@ namespace Example
             try
             {
                 // Searchprojects
-                Page result = apiInstance.SearchProjects(page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchProjects(isActive, page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -2086,7 +2413,7 @@ This returns an ApiResponse object which contains the response data, status code
 try
 {
     // Searchprojects
-    ApiResponse<Page> response = apiInstance.SearchProjectsWithHttpInfo(page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+    ApiResponse<Page> response = apiInstance.SearchProjectsWithHttpInfo(isActive, page, pageSize, search, searchOn, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
     Debug.Write("Status Code: " + response.StatusCode);
     Debug.Write("Response Headers: " + response.Headers);
     Debug.Write("Response Body: " + response.Data);
@@ -2103,6 +2430,7 @@ catch (ApiException e)
 
 | Name | Type | Description | Notes |
 |------|------|-------------|-------|
+| **isActive** | **bool?** |  | [optional] [default to false] |
 | **page** | **int?** |  | [optional] [default to 1] |
 | **pageSize** | **int?** |  | [optional] [default to 25] |
 | **search** | **string** |  | [optional]  |
