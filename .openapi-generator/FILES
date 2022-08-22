@@ -35,6 +35,7 @@ docs/ContactMethod.md
 docs/ContactResponse.md
 docs/CreateKeyResponse.md
 docs/CreateProjectCredential.md
+docs/CreateProjectCredit.md
 docs/CreateProjectInvoice.md
 docs/CreateReview.md
 docs/CreateTicket.md
@@ -96,6 +97,7 @@ docs/PlacesApi.md
 docs/ProductBase.md
 docs/ProductReturn.md
 docs/ProductsApi.md
+docs/ProjectCreditResponse.md
 docs/ProjectDB.md
 docs/ProjectsApi.md
 docs/ProjectsProjectCreate.md
@@ -213,6 +215,7 @@ src/Ehelply.Sdk.Test/Model/ContactResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectCredentialTests.cs
+src/Ehelply.Sdk.Test/Model/CreateProjectCreditTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectInvoiceTests.cs
 src/Ehelply.Sdk.Test/Model/CreateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
@@ -267,6 +270,7 @@ src/Ehelply.Sdk.Test/Model/PlaceBaseTests.cs
 src/Ehelply.Sdk.Test/Model/PlaceResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ProductBaseTests.cs
 src/Ehelply.Sdk.Test/Model/ProductReturnTests.cs
+src/Ehelply.Sdk.Test/Model/ProjectCreditResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectDBTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectsProjectCreateTests.cs
 src/Ehelply.Sdk.Test/Model/ProjectsProjectGetTests.cs
@@ -392,6 +396,7 @@ src/Ehelply.Sdk/Model/ContactMethod.cs
 src/Ehelply.Sdk/Model/ContactResponse.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
 src/Ehelply.Sdk/Model/CreateProjectCredential.cs
+src/Ehelply.Sdk/Model/CreateProjectCredit.cs
 src/Ehelply.Sdk/Model/CreateProjectInvoice.cs
 src/Ehelply.Sdk/Model/CreateReview.cs
 src/Ehelply.Sdk/Model/CreateTicket.cs
@@ -446,6 +451,7 @@ src/Ehelply.Sdk/Model/PlaceBase.cs
 src/Ehelply.Sdk/Model/PlaceResponse.cs
 src/Ehelply.Sdk/Model/ProductBase.cs
 src/Ehelply.Sdk/Model/ProductReturn.cs
+src/Ehelply.Sdk/Model/ProjectCreditResponse.cs
 src/Ehelply.Sdk/Model/ProjectDB.cs
 src/Ehelply.Sdk/Model/ProjectsProjectCreate.cs
 src/Ehelply.Sdk/Model/ProjectsProjectGet.cs
