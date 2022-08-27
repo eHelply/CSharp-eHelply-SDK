@@ -2,15 +2,16 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateBillingAccount**](BillingApi.md#createbillingaccount) | **POST** /sam/billing/create_billing_account | Createbillingaccount |
-| [**GetClientSecret**](BillingApi.md#getclientsecret) | **GET** /sam/billing/retrieve_secret | Getclientsecret |
-| [**HasPayment**](BillingApi.md#haspayment) | **GET** /sam/billing/has_payment | Haspayment |
-| [**ListPaymentMethods**](BillingApi.md#listpaymentmethods) | **GET** /sam/billing/view_payment_method | Listpaymentmethods |
-| [**ProcessPayment**](BillingApi.md#processpayment) | **POST** /sam/billing/process_payment | Processpayment |
-| [**ReconcilePaymentMethod**](BillingApi.md#reconcilepaymentmethod) | **GET** /sam/billing/reconcile_payment | Reconcilepaymentmethod |
-| [**RemovePaymentMethod**](BillingApi.md#removepaymentmethod) | **DELETE** /sam/billing/remove_payment_method | Removepaymentmethod |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**CreateBillingAccount**](BillingApi.md#createbillingaccount) | **POST** /sam/billing/create_billing_account | Createbillingaccount
+[**GetClientSecret**](BillingApi.md#getclientsecret) | **GET** /sam/billing/retrieve_secret | Getclientsecret
+[**HasPayment**](BillingApi.md#haspayment) | **GET** /sam/billing/has_payment | Haspayment
+[**ListPaymentMethods**](BillingApi.md#listpaymentmethods) | **GET** /sam/billing/view_payment_method | Listpaymentmethods
+[**ProcessPayment**](BillingApi.md#processpayment) | **POST** /sam/billing/process_payment | Processpayment
+[**ReconcilePaymentMethod**](BillingApi.md#reconcilepaymentmethod) | **GET** /sam/billing/reconcile_payment | Reconcilepaymentmethod
+[**RemovePaymentMethod**](BillingApi.md#removepaymentmethod) | **DELETE** /sam/billing/remove_payment_method | Removepaymentmethod
+
 
 <a name="createbillingaccount"></a>
 # **CreateBillingAccount**
@@ -50,8 +51,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.CreateBillingAccount: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.CreateBillingAccount: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -59,36 +60,16 @@ namespace Example
 }
 ```
 
-#### Using the CreateBillingAccountWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createbillingaccount
-    ApiResponse<StripeAccountResponse> response = apiInstance.CreateBillingAccountWithHttpInfo(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.CreateBillingAccountWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -151,8 +132,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.GetClientSecret: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.GetClientSecret: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -160,36 +141,16 @@ namespace Example
 }
 ```
 
-#### Using the GetClientSecretWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getclientsecret
-    ApiResponse<StripeCustomerSecretResponse> response = apiInstance.GetClientSecretWithHttpInfo(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.GetClientSecretWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -252,8 +213,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.HasPayment: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.HasPayment: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -261,36 +222,16 @@ namespace Example
 }
 ```
 
-#### Using the HasPaymentWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Haspayment
-    ApiResponse<bool> response = apiInstance.HasPaymentWithHttpInfo(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.HasPaymentWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -353,8 +294,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.ListPaymentMethods: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.ListPaymentMethods: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -362,36 +303,16 @@ namespace Example
 }
 ```
 
-#### Using the ListPaymentMethodsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Listpaymentmethods
-    ApiResponse<List<PaymentMethodResponse>> response = apiInstance.ListPaymentMethodsWithHttpInfo(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.ListPaymentMethodsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -455,8 +376,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.ProcessPayment: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.ProcessPayment: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -464,37 +385,17 @@ namespace Example
 }
 ```
 
-#### Using the ProcessPaymentWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Processpayment
-    ApiResponse<string> response = apiInstance.ProcessPaymentWithHttpInfo(payment, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.ProcessPaymentWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **payment** | [**Payment**](Payment.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **payment** | [**Payment**](Payment.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -557,8 +458,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.ReconcilePaymentMethod: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.ReconcilePaymentMethod: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -566,36 +467,16 @@ namespace Example
 }
 ```
 
-#### Using the ReconcilePaymentMethodWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Reconcilepaymentmethod
-    ApiResponse<bool> response = apiInstance.ReconcilePaymentMethodWithHttpInfo(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.ReconcilePaymentMethodWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -658,8 +539,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BillingApi.RemovePaymentMethod: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling BillingApi.RemovePaymentMethod: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -667,36 +548,16 @@ namespace Example
 }
 ```
 
-#### Using the RemovePaymentMethodWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Removepaymentmethod
-    ApiResponse<string> response = apiInstance.RemovePaymentMethodWithHttpInfo(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling BillingApi.RemovePaymentMethodWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 

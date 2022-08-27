@@ -2,13 +2,14 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateContact**](SupportApi.md#createcontact) | **POST** /sam/support/contact | Createcontact |
-| [**CreateTicket**](SupportApi.md#createticket) | **POST** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets | Createticket |
-| [**ListTickets**](SupportApi.md#listtickets) | **GET** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets | Listtickets |
-| [**UpdateTicket**](SupportApi.md#updateticket) | **PUT** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets/{ticket_id} | Updateticket |
-| [**ViewTicket**](SupportApi.md#viewticket) | **GET** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets/{ticket_id} | Viewticket |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**CreateContact**](SupportApi.md#createcontact) | **POST** /sam/support/contact | Createcontact
+[**CreateTicket**](SupportApi.md#createticket) | **POST** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets | Createticket
+[**ListTickets**](SupportApi.md#listtickets) | **GET** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets | Listtickets
+[**UpdateTicket**](SupportApi.md#updateticket) | **PUT** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets/{ticket_id} | Updateticket
+[**ViewTicket**](SupportApi.md#viewticket) | **GET** /sam/support/projects/{project_uuid}/members/{member_uuid}/tickets/{ticket_id} | Viewticket
+
 
 <a name="createcontact"></a>
 # **CreateContact**
@@ -49,8 +50,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SupportApi.CreateContact: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SupportApi.CreateContact: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -58,37 +59,17 @@ namespace Example
 }
 ```
 
-#### Using the CreateContactWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createcontact
-    ApiResponse<ContactResponse> response = apiInstance.CreateContactWithHttpInfo(contact, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SupportApi.CreateContactWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **contact** | [**Contact**](Contact.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **contact** | [**Contact**](Contact.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -155,8 +136,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SupportApi.CreateTicket: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SupportApi.CreateTicket: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -164,39 +145,19 @@ namespace Example
 }
 ```
 
-#### Using the CreateTicketWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createticket
-    ApiResponse<TicketResponse> response = apiInstance.CreateTicketWithHttpInfo(projectUuid, memberUuid, createTicket, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SupportApi.CreateTicketWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  |  |
-| **memberUuid** | **string** |  |  |
-| **createTicket** | [**CreateTicket**](CreateTicket.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
+ **memberUuid** | **string**|  | 
+ **createTicket** | [**CreateTicket**](CreateTicket.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -262,8 +223,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SupportApi.ListTickets: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SupportApi.ListTickets: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -271,38 +232,18 @@ namespace Example
 }
 ```
 
-#### Using the ListTicketsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Listtickets
-    ApiResponse<List<TicketsResponse>> response = apiInstance.ListTicketsWithHttpInfo(projectUuid, memberUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SupportApi.ListTicketsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  |  |
-| **memberUuid** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
+ **memberUuid** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -370,8 +311,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SupportApi.UpdateTicket: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SupportApi.UpdateTicket: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -379,40 +320,20 @@ namespace Example
 }
 ```
 
-#### Using the UpdateTicketWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Updateticket
-    ApiResponse<TicketResponse> response = apiInstance.UpdateTicketWithHttpInfo(projectUuid, memberUuid, ticketId, createTicket, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SupportApi.UpdateTicketWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  |  |
-| **memberUuid** | **string** |  |  |
-| **ticketId** | **string** |  |  |
-| **createTicket** | [**CreateTicket**](CreateTicket.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
+ **memberUuid** | **string**|  | 
+ **ticketId** | **string**|  | 
+ **createTicket** | [**CreateTicket**](CreateTicket.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -479,8 +400,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SupportApi.ViewTicket: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SupportApi.ViewTicket: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -488,39 +409,19 @@ namespace Example
 }
 ```
 
-#### Using the ViewTicketWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Viewticket
-    ApiResponse<TicketResponse> response = apiInstance.ViewTicketWithHttpInfo(projectUuid, memberUuid, ticketId, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SupportApi.ViewTicketWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  |  |
-| **memberUuid** | **string** |  |  |
-| **ticketId** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
+ **memberUuid** | **string**|  | 
+ **ticketId** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 

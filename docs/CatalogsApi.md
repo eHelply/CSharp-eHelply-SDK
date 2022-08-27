@@ -2,16 +2,17 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**AttachProductToCatalog**](CatalogsApi.md#attachproducttocatalog) | **POST** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Addproducttocatalog |
-| [**CreateCatalog**](CatalogsApi.md#createcatalog) | **POST** /products/catalogs | Createcatalog |
-| [**DeleteCatalog**](CatalogsApi.md#deletecatalog) | **DELETE** /products/catalogs/{catalog_uuid} | Deletecatalog |
-| [**DetachProductFromCatalog**](CatalogsApi.md#detachproductfromcatalog) | **DELETE** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Removeproductfromcatalog |
-| [**GetCatalog**](CatalogsApi.md#getcatalog) | **GET** /products/catalogs/{catalog_uuid} | Getcatalog |
-| [**SearchCatalogProducts**](CatalogsApi.md#searchcatalogproducts) | **GET** /products/catalogs/{catalog_uuid}/products | Searchcatalogproducts |
-| [**SearchCatalogs**](CatalogsApi.md#searchcatalogs) | **GET** /products/catalogs | Searchcatalogs |
-| [**UpdateCatalog**](CatalogsApi.md#updatecatalog) | **PUT** /products/catalogs/{catalog_uuid} | Updatecatalog |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**AttachProductToCatalog**](CatalogsApi.md#attachproducttocatalog) | **POST** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Addproducttocatalog
+[**CreateCatalog**](CatalogsApi.md#createcatalog) | **POST** /products/catalogs | Createcatalog
+[**DeleteCatalog**](CatalogsApi.md#deletecatalog) | **DELETE** /products/catalogs/{catalog_uuid} | Deletecatalog
+[**DetachProductFromCatalog**](CatalogsApi.md#detachproductfromcatalog) | **DELETE** /products/catalogs/{catalog_uuid}/products/{product_uuid} | Removeproductfromcatalog
+[**GetCatalog**](CatalogsApi.md#getcatalog) | **GET** /products/catalogs/{catalog_uuid} | Getcatalog
+[**SearchCatalogProducts**](CatalogsApi.md#searchcatalogproducts) | **GET** /products/catalogs/{catalog_uuid}/products | Searchcatalogproducts
+[**SearchCatalogs**](CatalogsApi.md#searchcatalogs) | **GET** /products/catalogs | Searchcatalogs
+[**UpdateCatalog**](CatalogsApi.md#updatecatalog) | **PUT** /products/catalogs/{catalog_uuid} | Updatecatalog
+
 
 <a name="attachproducttocatalog"></a>
 # **AttachProductToCatalog**
@@ -53,8 +54,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.AttachProductToCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.AttachProductToCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -62,38 +63,18 @@ namespace Example
 }
 ```
 
-#### Using the AttachProductToCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Addproducttocatalog
-    ApiResponse<bool> response = apiInstance.AttachProductToCatalogWithHttpInfo(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.AttachProductToCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogUuid** | **string** |  |  |
-| **productUuid** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogUuid** | **string**|  | 
+ **productUuid** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -157,8 +138,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.CreateCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.CreateCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -166,37 +147,17 @@ namespace Example
 }
 ```
 
-#### Using the CreateCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createcatalog
-    ApiResponse<CatalogReturn> response = apiInstance.CreateCatalogWithHttpInfo(catalogBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.CreateCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogBase** | [**CatalogBase**](CatalogBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogBase** | [**CatalogBase**](CatalogBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -260,8 +221,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.DeleteCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.DeleteCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -269,37 +230,17 @@ namespace Example
 }
 ```
 
-#### Using the DeleteCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Deletecatalog
-    ApiResponse<bool> response = apiInstance.DeleteCatalogWithHttpInfo(catalogUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.DeleteCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogUuid** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogUuid** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -364,8 +305,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.DetachProductFromCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.DetachProductFromCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -373,38 +314,18 @@ namespace Example
 }
 ```
 
-#### Using the DetachProductFromCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Removeproductfromcatalog
-    ApiResponse<bool> response = apiInstance.DetachProductFromCatalogWithHttpInfo(catalogUuid, productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.DetachProductFromCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogUuid** | **string** |  |  |
-| **productUuid** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogUuid** | **string**|  | 
+ **productUuid** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -469,8 +390,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.GetCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.GetCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -478,38 +399,18 @@ namespace Example
 }
 ```
 
-#### Using the GetCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getcatalog
-    ApiResponse<CatalogReturn> response = apiInstance.GetCatalogWithHttpInfo(catalogUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.GetCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogUuid** | **string** |  |  |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogUuid** | **string**|  | 
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -578,8 +479,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.SearchCatalogProducts: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.SearchCatalogProducts: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -587,42 +488,22 @@ namespace Example
 }
 ```
 
-#### Using the SearchCatalogProductsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchcatalogproducts
-    ApiResponse<Page> response = apiInstance.SearchCatalogProductsWithHttpInfo(catalogUuid, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.SearchCatalogProductsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogUuid** | **string** |  |  |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogUuid** | **string**|  | 
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -691,8 +572,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.SearchCatalogs: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.SearchCatalogs: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -700,42 +581,22 @@ namespace Example
 }
 ```
 
-#### Using the SearchCatalogsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchcatalogs
-    ApiResponse<Page> response = apiInstance.SearchCatalogsWithHttpInfo(withMeta, name, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.SearchCatalogsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **name** | **string** |  | [optional]  |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **name** | **string**|  | [optional] 
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -800,8 +661,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CatalogsApi.UpdateCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CatalogsApi.UpdateCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -809,38 +670,18 @@ namespace Example
 }
 ```
 
-#### Using the UpdateCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Updatecatalog
-    ApiResponse<CatalogReturn> response = apiInstance.UpdateCatalogWithHttpInfo(catalogUuid, catalogBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CatalogsApi.UpdateCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **catalogUuid** | **string** |  |  |
-| **catalogBase** | [**CatalogBase**](CatalogBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **catalogUuid** | **string**|  | 
+ **catalogBase** | [**CatalogBase**](CatalogBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 

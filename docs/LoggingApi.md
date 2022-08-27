@@ -2,11 +2,12 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**GetLogs**](LoggingApi.md#getlogs) | **GET** /sam/logging/logs | Getlogs |
-| [**GetServiceLogs**](LoggingApi.md#getservicelogs) | **GET** /sam/logging/logs/services/{service} | Getservicelogs |
-| [**GetSubjectLogs**](LoggingApi.md#getsubjectlogs) | **GET** /sam/logging/logs/services/{service}/subjects/{subject} | Getsubjectlogs |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**GetLogs**](LoggingApi.md#getlogs) | **GET** /sam/logging/logs | Getlogs
+[**GetServiceLogs**](LoggingApi.md#getservicelogs) | **GET** /sam/logging/logs/services/{service} | Getservicelogs
+[**GetSubjectLogs**](LoggingApi.md#getsubjectlogs) | **GET** /sam/logging/logs/services/{service}/subjects/{subject} | Getsubjectlogs
+
 
 <a name="getlogs"></a>
 # **GetLogs**
@@ -50,8 +51,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LoggingApi.GetLogs: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling LoggingApi.GetLogs: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -59,40 +60,20 @@ namespace Example
 }
 ```
 
-#### Using the GetLogsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getlogs
-    ApiResponse<List<LoggingDynamo>> response = apiInstance.GetLogsWithHttpInfo(service, dateStart, dateEnd, desc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling LoggingApi.GetLogsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **service** | **string** |  | [optional]  |
-| **dateStart** | **string** |  | [optional]  |
-| **dateEnd** | **string** |  | [optional]  |
-| **desc** | **bool?** |  | [optional] [default to true] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | [optional] 
+ **dateStart** | **string**|  | [optional] 
+ **dateEnd** | **string**|  | [optional] 
+ **desc** | **bool?**|  | [optional] [default to true]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -160,8 +141,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LoggingApi.GetServiceLogs: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling LoggingApi.GetServiceLogs: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -169,41 +150,21 @@ namespace Example
 }
 ```
 
-#### Using the GetServiceLogsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getservicelogs
-    ApiResponse<List<LoggingDynamo>> response = apiInstance.GetServiceLogsWithHttpInfo(service, dateStart, dateEnd, desc, limit, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling LoggingApi.GetServiceLogsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **service** | **string** |  |  |
-| **dateStart** | **string** |  | [optional]  |
-| **dateEnd** | **string** |  | [optional]  |
-| **desc** | **bool?** |  | [optional] [default to true] |
-| **limit** | **int?** |  | [optional] [default to 50] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | 
+ **dateStart** | **string**|  | [optional] 
+ **dateEnd** | **string**|  | [optional] 
+ **desc** | **bool?**|  | [optional] [default to true]
+ **limit** | **int?**|  | [optional] [default to 50]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -272,8 +233,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LoggingApi.GetSubjectLogs: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling LoggingApi.GetSubjectLogs: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -281,42 +242,22 @@ namespace Example
 }
 ```
 
-#### Using the GetSubjectLogsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getsubjectlogs
-    ApiResponse<Object> response = apiInstance.GetSubjectLogsWithHttpInfo(service, subject, dateStart, dateEnd, desc, limit, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling LoggingApi.GetSubjectLogsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **service** | **string** |  |  |
-| **subject** | **string** |  |  |
-| **dateStart** | **string** |  | [optional]  |
-| **dateEnd** | **string** |  | [optional]  |
-| **desc** | **bool?** |  | [optional] [default to true] |
-| **limit** | **int?** |  | [optional] [default to 50] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **service** | **string**|  | 
+ **subject** | **string**|  | 
+ **dateStart** | **string**|  | [optional] 
+ **dateEnd** | **string**|  | [optional] 
+ **desc** | **bool?**|  | [optional] [default to true]
+ **limit** | **int?**|  | [optional] [default to 50]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 

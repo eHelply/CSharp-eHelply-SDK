@@ -2,14 +2,15 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateProduct**](ProductsApi.md#createproduct) | **POST** /products/products | Createproduct |
-| [**DeleteProduct**](ProductsApi.md#deleteproduct) | **DELETE** /products/products/{product_uuid} | Deleteproduct |
-| [**GetProduct**](ProductsApi.md#getproduct) | **GET** /products/products/{product_uuid} | Getproduct |
-| [**SearchProductCatalog**](ProductsApi.md#searchproductcatalog) | **GET** /products/products/{product_uuid}/catalogs | Searchproductcatalog |
-| [**SearchProducts**](ProductsApi.md#searchproducts) | **GET** /products/products | Searchproducts |
-| [**UpdateProduct**](ProductsApi.md#updateproduct) | **PUT** /products/products/{product_uuid} | Updateproduct |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**CreateProduct**](ProductsApi.md#createproduct) | **POST** /products/products | Createproduct
+[**DeleteProduct**](ProductsApi.md#deleteproduct) | **DELETE** /products/products/{product_uuid} | Deleteproduct
+[**GetProduct**](ProductsApi.md#getproduct) | **GET** /products/products/{product_uuid} | Getproduct
+[**SearchProductCatalog**](ProductsApi.md#searchproductcatalog) | **GET** /products/products/{product_uuid}/catalogs | Searchproductcatalog
+[**SearchProducts**](ProductsApi.md#searchproducts) | **GET** /products/products | Searchproducts
+[**UpdateProduct**](ProductsApi.md#updateproduct) | **PUT** /products/products/{product_uuid} | Updateproduct
+
 
 <a name="createproduct"></a>
 # **CreateProduct**
@@ -50,8 +51,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProductsApi.CreateProduct: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling ProductsApi.CreateProduct: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -59,37 +60,17 @@ namespace Example
 }
 ```
 
-#### Using the CreateProductWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createproduct
-    ApiResponse<ProductReturn> response = apiInstance.CreateProductWithHttpInfo(productBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling ProductsApi.CreateProductWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **productBase** | [**ProductBase**](ProductBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productBase** | [**ProductBase**](ProductBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -153,8 +134,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProductsApi.DeleteProduct: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling ProductsApi.DeleteProduct: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -162,37 +143,17 @@ namespace Example
 }
 ```
 
-#### Using the DeleteProductWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Deleteproduct
-    ApiResponse<bool> response = apiInstance.DeleteProductWithHttpInfo(productUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling ProductsApi.DeleteProductWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **productUuid** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productUuid** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -258,8 +219,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProductsApi.GetProduct: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling ProductsApi.GetProduct: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -267,39 +228,19 @@ namespace Example
 }
 ```
 
-#### Using the GetProductWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getproduct
-    ApiResponse<ProductReturn> response = apiInstance.GetProductWithHttpInfo(productUuid, withAddons, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling ProductsApi.GetProductWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **productUuid** | **string** |  |  |
-| **withAddons** | **bool?** |  | [optional] [default to false] |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productUuid** | **string**|  | 
+ **withAddons** | **bool?**|  | [optional] [default to false]
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -368,8 +309,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProductsApi.SearchProductCatalog: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling ProductsApi.SearchProductCatalog: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -377,42 +318,22 @@ namespace Example
 }
 ```
 
-#### Using the SearchProductCatalogWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchproductcatalog
-    ApiResponse<Page> response = apiInstance.SearchProductCatalogWithHttpInfo(productUuid, withMeta, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling ProductsApi.SearchProductCatalogWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **productUuid** | **string** |  |  |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productUuid** | **string**|  | 
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -486,8 +407,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProductsApi.SearchProducts: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling ProductsApi.SearchProducts: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -495,47 +416,27 @@ namespace Example
 }
 ```
 
-#### Using the SearchProductsWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchproducts
-    ApiResponse<Page> response = apiInstance.SearchProductsWithHttpInfo(withMeta, name, addons, priceMax, priceMin, quantityAvailable, isDeleted, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling ProductsApi.SearchProductsWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **name** | **string** |  | [optional]  |
-| **addons** | [**List&lt;string&gt;**](string.md) |  | [optional]  |
-| **priceMax** | **int?** |  | [optional]  |
-| **priceMin** | **int?** |  | [optional]  |
-| **quantityAvailable** | **bool?** |  | [optional] [default to false] |
-| **isDeleted** | **bool?** |  | [optional] [default to false] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **name** | **string**|  | [optional] 
+ **addons** | [**List&lt;string&gt;**](string.md)|  | [optional] 
+ **priceMax** | **int?**|  | [optional] 
+ **priceMin** | **int?**|  | [optional] 
+ **quantityAvailable** | **bool?**|  | [optional] [default to false]
+ **isDeleted** | **bool?**|  | [optional] [default to false]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -600,8 +501,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling ProductsApi.UpdateProduct: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling ProductsApi.UpdateProduct: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -609,38 +510,18 @@ namespace Example
 }
 ```
 
-#### Using the UpdateProductWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Updateproduct
-    ApiResponse<ProductReturn> response = apiInstance.UpdateProductWithHttpInfo(productUuid, productBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling ProductsApi.UpdateProductWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **productUuid** | **string** |  |  |
-| **productBase** | [**ProductBase**](ProductBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **productUuid** | **string**|  | 
+ **productBase** | [**ProductBase**](ProductBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 

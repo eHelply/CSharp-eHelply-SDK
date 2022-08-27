@@ -2,13 +2,14 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateCompanyPlacesCompaniesPost**](CompaniesApi.md#createcompanyplacescompaniespost) | **POST** /places/companies | Create Company |
-| [**DeletePlacePlacesCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplaceplacescompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Place |
-| [**GetCompanyPlacesCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanyplacescompaniescompanyuuidget) | **GET** /places/companies/{company_uuid} | Get Company |
-| [**SearchCompaniesPlacesCompaniesGet**](CompaniesApi.md#searchcompaniesplacescompaniesget) | **GET** /places/companies | Search Companies |
-| [**UpdateCompanyPlacesCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanyplacescompaniescompanyuuidput) | **PUT** /places/companies/{company_uuid} | Update Company |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**CreateCompanyPlacesCompaniesPost**](CompaniesApi.md#createcompanyplacescompaniespost) | **POST** /places/companies | Create Company
+[**DeletePlacePlacesCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplaceplacescompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Place
+[**GetCompanyPlacesCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanyplacescompaniescompanyuuidget) | **GET** /places/companies/{company_uuid} | Get Company
+[**SearchCompaniesPlacesCompaniesGet**](CompaniesApi.md#searchcompaniesplacescompaniesget) | **GET** /places/companies | Search Companies
+[**UpdateCompanyPlacesCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanyplacescompaniescompanyuuidput) | **PUT** /places/companies/{company_uuid} | Update Company
+
 
 <a name="createcompanyplacescompaniespost"></a>
 # **CreateCompanyPlacesCompaniesPost**
@@ -51,8 +52,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.CreateCompanyPlacesCompaniesPost: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CompaniesApi.CreateCompanyPlacesCompaniesPost: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -60,37 +61,17 @@ namespace Example
 }
 ```
 
-#### Using the CreateCompanyPlacesCompaniesPostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Create Company
-    ApiResponse<CompanyResponse> response = apiInstance.CreateCompanyPlacesCompaniesPostWithHttpInfo(companyBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CompaniesApi.CreateCompanyPlacesCompaniesPostWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **companyBase** | [**CompanyBase**](CompanyBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **companyBase** | [**CompanyBase**](CompanyBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -157,8 +138,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.DeletePlacePlacesCompaniesCompanyUuidDelete: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CompaniesApi.DeletePlacePlacesCompaniesCompanyUuidDelete: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -166,38 +147,18 @@ namespace Example
 }
 ```
 
-#### Using the DeletePlacePlacesCompaniesCompanyUuidDeleteWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Delete Place
-    ApiResponse<Object> response = apiInstance.DeletePlacePlacesCompaniesCompanyUuidDeleteWithHttpInfo(companyUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CompaniesApi.DeletePlacePlacesCompaniesCompanyUuidDeleteWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **companyUuid** | **string** |  |  |
-| **softDelete** | **bool?** |  | [optional] [default to true] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **companyUuid** | **string**|  | 
+ **softDelete** | **bool?**|  | [optional] [default to true]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -271,8 +232,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.GetCompanyPlacesCompaniesCompanyUuidGet: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CompaniesApi.GetCompanyPlacesCompaniesCompanyUuidGet: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -280,45 +241,25 @@ namespace Example
 }
 ```
 
-#### Using the GetCompanyPlacesCompaniesCompanyUuidGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Get Company
-    ApiResponse<CompanyResponse> response = apiInstance.GetCompanyPlacesCompaniesCompanyUuidGetWithHttpInfo(companyUuid, withMeta, withCatalog, withReviews, withSchedule, withBlog, withTags, withCategories, withPlaces, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CompaniesApi.GetCompanyPlacesCompaniesCompanyUuidGetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **companyUuid** | **string** |  |  |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **withCatalog** | **bool?** |  | [optional] [default to false] |
-| **withReviews** | **bool?** |  | [optional] [default to false] |
-| **withSchedule** | **bool?** |  | [optional] [default to false] |
-| **withBlog** | **bool?** |  | [optional] [default to false] |
-| **withTags** | **bool?** |  | [optional] [default to false] |
-| **withCategories** | **bool?** |  | [optional] [default to false] |
-| **withPlaces** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **companyUuid** | **string**|  | 
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **withCatalog** | **bool?**|  | [optional] [default to false]
+ **withReviews** | **bool?**|  | [optional] [default to false]
+ **withSchedule** | **bool?**|  | [optional] [default to false]
+ **withBlog** | **bool?**|  | [optional] [default to false]
+ **withTags** | **bool?**|  | [optional] [default to false]
+ **withCategories** | **bool?**|  | [optional] [default to false]
+ **withPlaces** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -400,8 +341,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.SearchCompaniesPlacesCompaniesGet: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CompaniesApi.SearchCompaniesPlacesCompaniesGet: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -409,53 +350,33 @@ namespace Example
 }
 ```
 
-#### Using the SearchCompaniesPlacesCompaniesGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Search Companies
-    ApiResponse<Page> response = apiInstance.SearchCompaniesPlacesCompaniesGetWithHttpInfo(projectUuid, name, email, isPublic, isDeleted, withPlaces, withMeta, withCatalog, withReviews, withSchedule, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CompaniesApi.SearchCompaniesPlacesCompaniesGetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  | [optional]  |
-| **name** | **string** |  | [optional]  |
-| **email** | **string** |  | [optional]  |
-| **isPublic** | **bool?** |  | [optional] [default to true] |
-| **isDeleted** | **bool?** |  | [optional] [default to false] |
-| **withPlaces** | **bool?** |  | [optional] [default to false] |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **withCatalog** | **bool?** |  | [optional] [default to false] |
-| **withReviews** | **bool?** |  | [optional] [default to false] |
-| **withSchedule** | **bool?** |  | [optional] [default to false] |
-| **withBlog** | **bool?** |  | [optional] [default to false] |
-| **withTags** | **bool?** |  | [optional] [default to false] |
-| **withCategories** | **bool?** |  | [optional] [default to false] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | [optional] 
+ **name** | **string**|  | [optional] 
+ **email** | **string**|  | [optional] 
+ **isPublic** | **bool?**|  | [optional] [default to true]
+ **isDeleted** | **bool?**|  | [optional] [default to false]
+ **withPlaces** | **bool?**|  | [optional] [default to false]
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **withCatalog** | **bool?**|  | [optional] [default to false]
+ **withReviews** | **bool?**|  | [optional] [default to false]
+ **withSchedule** | **bool?**|  | [optional] [default to false]
+ **withBlog** | **bool?**|  | [optional] [default to false]
+ **withTags** | **bool?**|  | [optional] [default to false]
+ **withCategories** | **bool?**|  | [optional] [default to false]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -522,8 +443,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.UpdateCompanyPlacesCompaniesCompanyUuidPut: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling CompaniesApi.UpdateCompanyPlacesCompaniesCompanyUuidPut: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -531,38 +452,18 @@ namespace Example
 }
 ```
 
-#### Using the UpdateCompanyPlacesCompaniesCompanyUuidPutWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Update Company
-    ApiResponse<CompanyResponse> response = apiInstance.UpdateCompanyPlacesCompaniesCompanyUuidPutWithHttpInfo(companyUuid, companyBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling CompaniesApi.UpdateCompanyPlacesCompaniesCompanyUuidPutWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **companyUuid** | **string** |  |  |
-| **companyBase** | [**CompanyBase**](CompanyBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **companyUuid** | **string**|  | 
+ **companyBase** | [**CompanyBase**](CompanyBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
