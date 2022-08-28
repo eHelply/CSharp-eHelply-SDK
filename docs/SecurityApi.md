@@ -2,16 +2,17 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateEncryptionKey**](SecurityApi.md#createencryptionkey) | **POST** /sam/security/encryption/categories/{category}/keys | Createencryptionkey |
-| [**CreateKey**](SecurityApi.md#createkey) | **POST** /sam/security/keys | Createkey |
-| [**DeleteKey**](SecurityApi.md#deletekey) | **DELETE** /sam/security/keys/{key_uuid} | Deletekey |
-| [**GenerateToken**](SecurityApi.md#generatetoken) | **POST** /sam/security/tokens | Generatetoken |
-| [**GetEncryptionKey**](SecurityApi.md#getencryptionkey) | **GET** /sam/security/encryption/categories/{category}/keys | Getencryptionkey |
-| [**GetKey**](SecurityApi.md#getkey) | **GET** /sam/security/keys/{key_uuid} | Getkey |
-| [**SearchKeys**](SecurityApi.md#searchkeys) | **GET** /sam/security/keys | Searchkeys |
-| [**VerifyKey**](SecurityApi.md#verifykey) | **POST** /sam/security/keys/verify | Verifykey |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**CreateEncryptionKey**](SecurityApi.md#createencryptionkey) | **POST** /sam/security/encryption/categories/{category}/keys | Createencryptionkey
+[**CreateKey**](SecurityApi.md#createkey) | **POST** /sam/security/keys | Createkey
+[**DeleteKey**](SecurityApi.md#deletekey) | **DELETE** /sam/security/keys/{key_uuid} | Deletekey
+[**GenerateToken**](SecurityApi.md#generatetoken) | **POST** /sam/security/tokens | Generatetoken
+[**GetEncryptionKey**](SecurityApi.md#getencryptionkey) | **GET** /sam/security/encryption/categories/{category}/keys | Getencryptionkey
+[**GetKey**](SecurityApi.md#getkey) | **GET** /sam/security/keys/{key_uuid} | Getkey
+[**SearchKeys**](SecurityApi.md#searchkeys) | **GET** /sam/security/keys | Searchkeys
+[**VerifyKey**](SecurityApi.md#verifykey) | **POST** /sam/security/keys/verify | Verifykey
+
 
 <a name="createencryptionkey"></a>
 # **CreateEncryptionKey**
@@ -47,8 +48,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.CreateEncryptionKey: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.CreateEncryptionKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -56,32 +57,12 @@ namespace Example
 }
 ```
 
-#### Using the CreateEncryptionKeyWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createencryptionkey
-    ApiResponse<SecurityEncryptionKeyResponse> response = apiInstance.CreateEncryptionKeyWithHttpInfo(category, ehelplySecuritySecretKey);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.CreateEncryptionKeyWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **category** | **string** |  |  |
-| **ehelplySecuritySecretKey** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **category** | **string**|  | 
+ **ehelplySecuritySecretKey** | **string**|  | [optional] 
 
 ### Return type
 
@@ -141,8 +122,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.CreateKey: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.CreateKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -150,33 +131,13 @@ namespace Example
 }
 ```
 
-#### Using the CreateKeyWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createkey
-    ApiResponse<ResponseCreatekey> response = apiInstance.CreateKeyWithHttpInfo(securityKeyCreate, accessLength, secretLength);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.CreateKeyWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **securityKeyCreate** | [**SecurityKeyCreate**](SecurityKeyCreate.md) |  |  |
-| **accessLength** | **int?** |  | [optional] [default to 64] |
-| **secretLength** | **int?** |  | [optional] [default to 64] |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **securityKeyCreate** | [**SecurityKeyCreate**](SecurityKeyCreate.md)|  | 
+ **accessLength** | **int?**|  | [optional] [default to 64]
+ **secretLength** | **int?**|  | [optional] [default to 64]
 
 ### Return type
 
@@ -236,8 +197,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.DeleteKey: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.DeleteKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -245,31 +206,11 @@ namespace Example
 }
 ```
 
-#### Using the DeleteKeyWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Deletekey
-    ApiResponse<ResponseDeletekey> response = apiInstance.DeleteKeyWithHttpInfo(keyUuid);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.DeleteKeyWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **keyUuid** | **string** |  |  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **keyUuid** | **string**|  | 
 
 ### Return type
 
@@ -328,8 +269,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.GenerateToken: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.GenerateToken: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -337,31 +278,11 @@ namespace Example
 }
 ```
 
-#### Using the GenerateTokenWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Generatetoken
-    ApiResponse<ResponseGeneratetoken> response = apiInstance.GenerateTokenWithHttpInfo(securityCreateToken);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.GenerateTokenWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **securityCreateToken** | [**SecurityCreateToken**](SecurityCreateToken.md) |  |  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **securityCreateToken** | [**SecurityCreateToken**](SecurityCreateToken.md)|  | 
 
 ### Return type
 
@@ -421,8 +342,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.GetEncryptionKey: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.GetEncryptionKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -430,32 +351,12 @@ namespace Example
 }
 ```
 
-#### Using the GetEncryptionKeyWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getencryptionkey
-    ApiResponse<List<SecurityEncryptionKeyGet>> response = apiInstance.GetEncryptionKeyWithHttpInfo(category, ehelplySecuritySecretKey);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.GetEncryptionKeyWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **category** | **string** |  |  |
-| **ehelplySecuritySecretKey** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **category** | **string**|  | 
+ **ehelplySecuritySecretKey** | **string**|  | [optional] 
 
 ### Return type
 
@@ -513,8 +414,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.GetKey: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.GetKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -522,31 +423,11 @@ namespace Example
 }
 ```
 
-#### Using the GetKeyWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getkey
-    ApiResponse<SecurityKeyGet> response = apiInstance.GetKeyWithHttpInfo(keyUuid);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.GetKeyWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **keyUuid** | **string** |  |  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **keyUuid** | **string**|  | 
 
 ### Return type
 
@@ -604,8 +485,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.SearchKeys: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.SearchKeys: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -613,28 +494,9 @@ namespace Example
 }
 ```
 
-#### Using the SearchKeysWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchkeys
-    ApiResponse<List<SecurityKeyGet>> response = apiInstance.SearchKeysWithHttpInfo();
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.SearchKeysWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 This endpoint does not need any parameter.
+
 ### Return type
 
 [**List&lt;SecurityKeyGet&gt;**](SecurityKeyGet.md)
@@ -691,8 +553,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling SecurityApi.VerifyKey: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling SecurityApi.VerifyKey: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -700,31 +562,11 @@ namespace Example
 }
 ```
 
-#### Using the VerifyKeyWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Verifykey
-    ApiResponse<SecurityKeyGet> response = apiInstance.VerifyKeyWithHttpInfo(securityKeyVerify);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling SecurityApi.VerifyKeyWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **securityKeyVerify** | [**SecurityKeyVerify**](SecurityKeyVerify.md) |  |  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **securityKeyVerify** | [**SecurityKeyVerify**](SecurityKeyVerify.md)|  | 
 
 ### Return type
 

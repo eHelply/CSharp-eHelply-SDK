@@ -2,16 +2,17 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**AdvancedSearchPlaces**](PlacesApi.md#advancedsearchplaces) | **GET** /places/search/places/string | Advancedsearchplaces |
-| [**CreatePlacePlacesPlacesPost**](PlacesApi.md#createplaceplacesplacespost) | **POST** /places/places | Create Place |
-| [**DeletePlace**](PlacesApi.md#deleteplace) | **DELETE** /places/places/{place_uuid} | Deleteplace |
-| [**ForwardGeocodingPlacesGeocodingForwardGet**](PlacesApi.md#forwardgeocodingplacesgeocodingforwardget) | **GET** /places/geocoding/forward | Forward Geocoding |
-| [**GetPlace**](PlacesApi.md#getplace) | **GET** /places/places/{place_uuid} | Getplace |
-| [**ReverseGeocodingPlacesGeocodingReverseGet**](PlacesApi.md#reversegeocodingplacesgeocodingreverseget) | **GET** /places/geocoding/reverse | Reverse Geocoding |
-| [**SearchPlaces**](PlacesApi.md#searchplaces) | **GET** /places/places | Searchplaces |
-| [**UpdatePlace**](PlacesApi.md#updateplace) | **PUT** /places/places/{place_uuid} | Updateplace |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**AdvancedSearchPlaces**](PlacesApi.md#advancedsearchplaces) | **GET** /places/search/places/string | Advancedsearchplaces
+[**CreatePlacePlacesPlacesPost**](PlacesApi.md#createplaceplacesplacespost) | **POST** /places/places | Create Place
+[**DeletePlace**](PlacesApi.md#deleteplace) | **DELETE** /places/places/{place_uuid} | Deleteplace
+[**ForwardGeocodingPlacesGeocodingForwardGet**](PlacesApi.md#forwardgeocodingplacesgeocodingforwardget) | **GET** /places/geocoding/forward | Forward Geocoding
+[**GetPlace**](PlacesApi.md#getplace) | **GET** /places/places/{place_uuid} | Getplace
+[**ReverseGeocodingPlacesGeocodingReverseGet**](PlacesApi.md#reversegeocodingplacesgeocodingreverseget) | **GET** /places/geocoding/reverse | Reverse Geocoding
+[**SearchPlaces**](PlacesApi.md#searchplaces) | **GET** /places/places | Searchplaces
+[**UpdatePlace**](PlacesApi.md#updateplace) | **PUT** /places/places/{place_uuid} | Updateplace
+
 
 <a name="advancedsearchplaces"></a>
 # **AdvancedSearchPlaces**
@@ -58,8 +59,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.AdvancedSearchPlaces: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.AdvancedSearchPlaces: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -67,41 +68,21 @@ namespace Example
 }
 ```
 
-#### Using the AdvancedSearchPlacesWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Advancedsearchplaces
-    ApiResponse<Page> response = apiInstance.AdvancedSearchPlacesWithHttpInfo(searchString, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.AdvancedSearchPlacesWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **searchString** | **string** |  | [optional] [default to &quot;&quot;] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **searchString** | **string**|  | [optional] [default to &quot;&quot;]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -167,8 +148,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.CreatePlacePlacesPlacesPost: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.CreatePlacePlacesPlacesPost: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -176,37 +157,17 @@ namespace Example
 }
 ```
 
-#### Using the CreatePlacePlacesPlacesPostWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Create Place
-    ApiResponse<PlaceResponse> response = apiInstance.CreatePlacePlacesPlacesPostWithHttpInfo(placeBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.CreatePlacePlacesPlacesPostWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **placeBase** | [**PlaceBase**](PlaceBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **placeBase** | [**PlaceBase**](PlaceBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -273,8 +234,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.DeletePlace: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.DeletePlace: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -282,38 +243,18 @@ namespace Example
 }
 ```
 
-#### Using the DeletePlaceWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Deleteplace
-    ApiResponse<Object> response = apiInstance.DeletePlaceWithHttpInfo(placeUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.DeletePlaceWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **placeUuid** | **string** |  |  |
-| **softDelete** | **bool?** |  | [optional] [default to true] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **placeUuid** | **string**|  | 
+ **softDelete** | **bool?**|  | [optional] [default to true]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -377,8 +318,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesGeocodingForwardGet: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesGeocodingForwardGet: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -386,37 +327,17 @@ namespace Example
 }
 ```
 
-#### Using the ForwardGeocodingPlacesGeocodingForwardGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Forward Geocoding
-    ApiResponse<Object> response = apiInstance.ForwardGeocodingPlacesGeocodingForwardGetWithHttpInfo(searchingPlace, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.ForwardGeocodingPlacesGeocodingForwardGetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **searchingPlace** | **string** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **searchingPlace** | **string**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -491,8 +412,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.GetPlace: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.GetPlace: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -500,46 +421,26 @@ namespace Example
 }
 ```
 
-#### Using the GetPlaceWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getplace
-    ApiResponse<PlaceResponse> response = apiInstance.GetPlaceWithHttpInfo(placeUuid, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, withCompany, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.GetPlaceWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **placeUuid** | **string** |  |  |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **withCatalog** | **bool?** |  | [optional] [default to false] |
-| **withReviews** | **bool?** |  | [optional] [default to false] |
-| **withSchedule** | **bool?** |  | [optional] [default to false] |
-| **withCollection** | **bool?** |  | [optional] [default to false] |
-| **withBlog** | **bool?** |  | [optional] [default to false] |
-| **withTags** | **bool?** |  | [optional] [default to false] |
-| **withCategories** | **bool?** |  | [optional] [default to false] |
-| **withCompany** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **placeUuid** | **string**|  | 
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **withCatalog** | **bool?**|  | [optional] [default to false]
+ **withReviews** | **bool?**|  | [optional] [default to false]
+ **withSchedule** | **bool?**|  | [optional] [default to false]
+ **withCollection** | **bool?**|  | [optional] [default to false]
+ **withBlog** | **bool?**|  | [optional] [default to false]
+ **withTags** | **bool?**|  | [optional] [default to false]
+ **withCategories** | **bool?**|  | [optional] [default to false]
+ **withCompany** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -604,8 +505,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesGeocodingReverseGet: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesGeocodingReverseGet: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -613,38 +514,18 @@ namespace Example
 }
 ```
 
-#### Using the ReverseGeocodingPlacesGeocodingReverseGetWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Reverse Geocoding
-    ApiResponse<Object> response = apiInstance.ReverseGeocodingPlacesGeocodingReverseGetWithHttpInfo(_long, lat, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.ReverseGeocodingPlacesGeocodingReverseGetWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **_long** | **decimal** |  |  |
-| **lat** | **decimal** |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **_long** | **decimal**|  | 
+ **lat** | **decimal**|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -735,8 +616,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.SearchPlaces: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.SearchPlaces: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -744,62 +625,42 @@ namespace Example
 }
 ```
 
-#### Using the SearchPlacesWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchplaces
-    ApiResponse<Page> response = apiInstance.SearchPlacesWithHttpInfo(projectUuid, name, addressLine1, addressLine2, city, provinceState, country, postalZipCode, lat, lng, email, isPublic, isDeleted, withCompany, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.SearchPlacesWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  | [optional]  |
-| **name** | **string** |  | [optional]  |
-| **addressLine1** | **string** |  | [optional]  |
-| **addressLine2** | **string** |  | [optional]  |
-| **city** | **string** |  | [optional]  |
-| **provinceState** | **string** |  | [optional]  |
-| **country** | **string** |  | [optional]  |
-| **postalZipCode** | **string** |  | [optional]  |
-| **lat** | **string** |  | [optional]  |
-| **lng** | **string** |  | [optional]  |
-| **email** | **string** |  | [optional]  |
-| **isPublic** | **bool?** |  | [optional] [default to true] |
-| **isDeleted** | **bool?** |  | [optional] [default to false] |
-| **withCompany** | **bool?** |  | [optional] [default to false] |
-| **withMeta** | **bool?** |  | [optional] [default to false] |
-| **withCatalog** | **bool?** |  | [optional] [default to false] |
-| **withReviews** | **bool?** |  | [optional] [default to false] |
-| **withSchedule** | **bool?** |  | [optional] [default to false] |
-| **withCollection** | **bool?** |  | [optional] [default to false] |
-| **withBlog** | **bool?** |  | [optional] [default to false] |
-| **withTags** | **bool?** |  | [optional] [default to false] |
-| **withCategories** | **bool?** |  | [optional] [default to false] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | [optional] 
+ **name** | **string**|  | [optional] 
+ **addressLine1** | **string**|  | [optional] 
+ **addressLine2** | **string**|  | [optional] 
+ **city** | **string**|  | [optional] 
+ **provinceState** | **string**|  | [optional] 
+ **country** | **string**|  | [optional] 
+ **postalZipCode** | **string**|  | [optional] 
+ **lat** | **string**|  | [optional] 
+ **lng** | **string**|  | [optional] 
+ **email** | **string**|  | [optional] 
+ **isPublic** | **bool?**|  | [optional] [default to true]
+ **isDeleted** | **bool?**|  | [optional] [default to false]
+ **withCompany** | **bool?**|  | [optional] [default to false]
+ **withMeta** | **bool?**|  | [optional] [default to false]
+ **withCatalog** | **bool?**|  | [optional] [default to false]
+ **withReviews** | **bool?**|  | [optional] [default to false]
+ **withSchedule** | **bool?**|  | [optional] [default to false]
+ **withCollection** | **bool?**|  | [optional] [default to false]
+ **withBlog** | **bool?**|  | [optional] [default to false]
+ **withTags** | **bool?**|  | [optional] [default to false]
+ **withCategories** | **bool?**|  | [optional] [default to false]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -866,8 +727,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling PlacesApi.UpdatePlace: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling PlacesApi.UpdatePlace: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -875,38 +736,18 @@ namespace Example
 }
 ```
 
-#### Using the UpdatePlaceWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Updateplace
-    ApiResponse<PlaceResponse> response = apiInstance.UpdatePlaceWithHttpInfo(placeUuid, placeBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling PlacesApi.UpdatePlaceWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **placeUuid** | **string** |  |  |
-| **placeBase** | [**PlaceBase**](PlaceBase.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **placeUuid** | **string**|  | 
+ **placeBase** | [**PlaceBase**](PlaceBase.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 

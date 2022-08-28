@@ -2,13 +2,14 @@
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
-| Method | HTTP request | Description |
-|--------|--------------|-------------|
-| [**CreateStaff**](StaffApi.md#createstaff) | **POST** /places/staff | Createstaff |
-| [**DeleteStaff**](StaffApi.md#deletestaff) | **DELETE** /places/staff/{staff_uuid} | Deletestaff |
-| [**GetStaff**](StaffApi.md#getstaff) | **GET** /places/staff/{staff_uuid} | Getstaff |
-| [**SearchStaff**](StaffApi.md#searchstaff) | **GET** /places/staff | Searchstaff |
-| [**UpdateStaff**](StaffApi.md#updatestaff) | **PUT** /places/staff/{staff_uuid} | Updatestaff |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**CreateStaff**](StaffApi.md#createstaff) | **POST** /places/staff | Createstaff
+[**DeleteStaff**](StaffApi.md#deletestaff) | **DELETE** /places/staff/{staff_uuid} | Deletestaff
+[**GetStaff**](StaffApi.md#getstaff) | **GET** /places/staff/{staff_uuid} | Getstaff
+[**SearchStaff**](StaffApi.md#searchstaff) | **GET** /places/staff | Searchstaff
+[**UpdateStaff**](StaffApi.md#updatestaff) | **PUT** /places/staff/{staff_uuid} | Updatestaff
+
 
 <a name="createstaff"></a>
 # **CreateStaff**
@@ -51,8 +52,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.CreateStaff: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling StaffApi.CreateStaff: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -60,37 +61,17 @@ namespace Example
 }
 ```
 
-#### Using the CreateStaffWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Createstaff
-    ApiResponse<StaffDb> response = apiInstance.CreateStaffWithHttpInfo(staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling StaffApi.CreateStaffWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **staffCreate** | [**StaffCreate**](StaffCreate.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **staffCreate** | [**StaffCreate**](StaffCreate.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -157,8 +138,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.DeleteStaff: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling StaffApi.DeleteStaff: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -166,38 +147,18 @@ namespace Example
 }
 ```
 
-#### Using the DeleteStaffWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Deletestaff
-    ApiResponse<Object> response = apiInstance.DeleteStaffWithHttpInfo(staffUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling StaffApi.DeleteStaffWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **staffUuid** | **string** |  |  |
-| **softDelete** | **bool?** |  | [optional] [default to true] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **staffUuid** | **string**|  | 
+ **softDelete** | **bool?**|  | [optional] [default to true]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -268,8 +229,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.GetStaff: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling StaffApi.GetStaff: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -277,42 +238,22 @@ namespace Example
 }
 ```
 
-#### Using the GetStaffWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Getstaff
-    ApiResponse<StaffResponse> response = apiInstance.GetStaffWithHttpInfo(staffUuid, withPlaces, withCompanies, withCatalog, withSchedule, withRoles, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling StaffApi.GetStaffWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **staffUuid** | **string** |  |  |
-| **withPlaces** | **bool?** |  | [optional] [default to false] |
-| **withCompanies** | **bool?** |  | [optional] [default to false] |
-| **withCatalog** | **bool?** |  | [optional] [default to false] |
-| **withSchedule** | **bool?** |  | [optional] [default to false] |
-| **withRoles** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **staffUuid** | **string**|  | 
+ **withPlaces** | **bool?**|  | [optional] [default to false]
+ **withCompanies** | **bool?**|  | [optional] [default to false]
+ **withCatalog** | **bool?**|  | [optional] [default to false]
+ **withSchedule** | **bool?**|  | [optional] [default to false]
+ **withRoles** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -391,8 +332,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.SearchStaff: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling StaffApi.SearchStaff: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -400,50 +341,30 @@ namespace Example
 }
 ```
 
-#### Using the SearchStaffWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Searchstaff
-    ApiResponse<Page> response = apiInstance.SearchStaffWithHttpInfo(projectUuid, firstName, lastName, isDeleted, withCompanies, withPlaces, withSchedule, withCatalog, withReviews, withRoles, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling StaffApi.SearchStaffWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **projectUuid** | **string** |  | [optional]  |
-| **firstName** | **string** |  | [optional]  |
-| **lastName** | **string** |  | [optional]  |
-| **isDeleted** | **bool?** |  | [optional] [default to false] |
-| **withCompanies** | **bool?** |  | [optional] [default to false] |
-| **withPlaces** | **bool?** |  | [optional] [default to false] |
-| **withSchedule** | **bool?** |  | [optional] [default to false] |
-| **withCatalog** | **bool?** |  | [optional] [default to false] |
-| **withReviews** | **bool?** |  | [optional] [default to false] |
-| **withRoles** | **bool?** |  | [optional] [default to false] |
-| **page** | **int?** |  | [optional] [default to 1] |
-| **pageSize** | **int?** |  | [optional] [default to 25] |
-| **sortOn** | **string** |  | [optional]  |
-| **sortDesc** | **bool?** |  | [optional] [default to false] |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | [optional] 
+ **firstName** | **string**|  | [optional] 
+ **lastName** | **string**|  | [optional] 
+ **isDeleted** | **bool?**|  | [optional] [default to false]
+ **withCompanies** | **bool?**|  | [optional] [default to false]
+ **withPlaces** | **bool?**|  | [optional] [default to false]
+ **withSchedule** | **bool?**|  | [optional] [default to false]
+ **withCatalog** | **bool?**|  | [optional] [default to false]
+ **withReviews** | **bool?**|  | [optional] [default to false]
+ **withRoles** | **bool?**|  | [optional] [default to false]
+ **page** | **int?**|  | [optional] [default to 1]
+ **pageSize** | **int?**|  | [optional] [default to 25]
+ **sortOn** | **string**|  | [optional] 
+ **sortDesc** | **bool?**|  | [optional] [default to false]
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
@@ -510,8 +431,8 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaffApi.UpdateStaff: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
+                Debug.Print("Exception when calling StaffApi.UpdateStaff: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
         }
@@ -519,38 +440,18 @@ namespace Example
 }
 ```
 
-#### Using the UpdateStaffWithHttpInfo variant
-This returns an ApiResponse object which contains the response data, status code and headers.
-
-```csharp
-try
-{
-    // Updatestaff
-    ApiResponse<StaffResponse> response = apiInstance.UpdateStaffWithHttpInfo(staffUuid, staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
-    Debug.Write("Status Code: " + response.StatusCode);
-    Debug.Write("Response Headers: " + response.Headers);
-    Debug.Write("Response Body: " + response.Data);
-}
-catch (ApiException e)
-{
-    Debug.Print("Exception when calling StaffApi.UpdateStaffWithHttpInfo: " + e.Message);
-    Debug.Print("Status Code: " + e.ErrorCode);
-    Debug.Print(e.StackTrace);
-}
-```
-
 ### Parameters
 
-| Name | Type | Description | Notes |
-|------|------|-------------|-------|
-| **staffUuid** | **string** |  |  |
-| **staffCreate** | [**StaffCreate**](StaffCreate.md) |  |  |
-| **xAccessToken** | **string** |  | [optional]  |
-| **xSecretToken** | **string** |  | [optional]  |
-| **authorization** | **string** |  | [optional]  |
-| **ehelplyActiveParticipant** | **string** |  | [optional]  |
-| **ehelplyProject** | **string** |  | [optional]  |
-| **ehelplyData** | **string** |  | [optional]  |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **staffUuid** | **string**|  | 
+ **staffCreate** | [**StaffCreate**](StaffCreate.md)|  | 
+ **xAccessToken** | **string**|  | [optional] 
+ **xSecretToken** | **string**|  | [optional] 
+ **authorization** | **string**|  | [optional] 
+ **ehelplyActiveParticipant** | **string**|  | [optional] 
+ **ehelplyProject** | **string**|  | [optional] 
+ **ehelplyData** | **string**|  | [optional] 
 
 ### Return type
 
