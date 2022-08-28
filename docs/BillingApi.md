@@ -336,6 +336,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
+| **400** | No billing account exists for this project yet. A billing account will need to be created before payment methods can be viewed. || Unable to view payment method. |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Not found |  -  |
 | **422** | Validation Error |  -  |
 
