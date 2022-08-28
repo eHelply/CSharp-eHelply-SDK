@@ -120,6 +120,7 @@ docs/ResponseDeleteprojectcredential.md
 docs/ResponseDeleteusagetype.md
 docs/ResponseGeneratetoken.md
 docs/ResponseRemovememberfromproject.md
+docs/ResponseRevokeprojectcredit.md
 docs/ResponseUpdateprojectcredential.md
 docs/ReviewsApi.md
 docs/SecurityApi.md
@@ -292,6 +293,7 @@ src/Ehelply.Sdk.Test/Model/ResponseDeleteprojectcredentialTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseDeleteusagetypeTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseGeneratetokenTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseRemovememberfromprojectTests.cs
+src/Ehelply.Sdk.Test/Model/ResponseRevokeprojectcreditTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseUpdateprojectcredentialTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityCreateTokenTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyGetTests.cs
@@ -473,6 +475,7 @@ src/Ehelply.Sdk/Model/ResponseDeleteprojectcredential.cs
 src/Ehelply.Sdk/Model/ResponseDeleteusagetype.cs
 src/Ehelply.Sdk/Model/ResponseGeneratetoken.cs
 src/Ehelply.Sdk/Model/ResponseRemovememberfromproject.cs
+src/Ehelply.Sdk/Model/ResponseRevokeprojectcredit.cs
 src/Ehelply.Sdk/Model/ResponseUpdateprojectcredential.cs
 src/Ehelply.Sdk/Model/SecurityCreateToken.cs
 src/Ehelply.Sdk/Model/SecurityEncryptionKeyGet.cs

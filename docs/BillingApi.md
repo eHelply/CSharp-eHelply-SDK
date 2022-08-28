@@ -177,7 +177,7 @@ No authorization required
 
 <a name="haspayment"></a>
 # **HasPayment**
-> bool HasPayment (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool HasPayment (Object projectUuid = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Haspayment
 
@@ -198,6 +198,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = new Object(); // Object |  (optional) 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -208,7 +209,7 @@ namespace Example
             try
             {
                 // Haspayment
-                bool result = apiInstance.HasPayment(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.HasPayment(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -226,6 +227,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | [**Object**](Object.md)|  | [optional] 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -258,7 +260,7 @@ No authorization required
 
 <a name="listpaymentmethods"></a>
 # **ListPaymentMethods**
-> List&lt;PaymentMethodResponse&gt; ListPaymentMethods (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> List&lt;PaymentMethodResponse&gt; ListPaymentMethods (Object projectUuid = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Listpaymentmethods
 
@@ -279,6 +281,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = new Object(); // Object |  (optional) 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -289,7 +292,7 @@ namespace Example
             try
             {
                 // Listpaymentmethods
-                List<PaymentMethodResponse> result = apiInstance.ListPaymentMethods(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                List<PaymentMethodResponse> result = apiInstance.ListPaymentMethods(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -307,6 +310,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | [**Object**](Object.md)|  | [optional] 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -503,7 +507,7 @@ No authorization required
 
 <a name="removepaymentmethod"></a>
 # **RemovePaymentMethod**
-> string RemovePaymentMethod (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> string RemovePaymentMethod (Object projectUuid = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Removepaymentmethod
 
@@ -524,6 +528,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = new Object(); // Object |  (optional) 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -534,7 +539,7 @@ namespace Example
             try
             {
                 // Removepaymentmethod
-                string result = apiInstance.RemovePaymentMethod(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                string result = apiInstance.RemovePaymentMethod(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -552,6 +557,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | [**Object**](Object.md)|  | [optional] 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
