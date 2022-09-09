@@ -1,13 +1,16 @@
 # Ehelply.Sdk.Model.StaffResponse
-**:param** uuid                                **type:** string **:param** project_uuid                        **type:** string or None  **:param** entity                              **type:** string or None  **:param** place                               **type:** string or None  **:param** company                             **type:** string or None  **:param** schedule                            **type:** string or None  **:param** catalog                             **type:** string or None  **:param** reviews                             **type:** string or None  **:param** created_at                          **type:** string or None  **:param** updated_at                          **type:** string or None  **:param** deleted_at                          **type:** string or None
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uuid** | **string** |  | 
+**EntityUuid** | **string** |  | 
 **ProjectUuid** | **string** |  | [optional] 
-**Entity** | **Object** |  | [optional] 
+**ScheduleUuid** | **string** |  | [optional] 
+**CatalogUuid** | **string** |  | [optional] 
+**ReviewGroupUuid** | **string** |  | [optional] 
+**Uuid** | **string** |  | 
+**Entity** | **string** |  | [optional] 
 **Place** | **Object** |  | [optional] 
 **PlaceRoles** | **List&lt;string&gt;** |  | [optional] 
 **Company** | **Object** |  | [optional] 

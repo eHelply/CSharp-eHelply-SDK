@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="createstaff"></a>
 # **CreateStaff**
-> StaffDb CreateStaff (StaffCreate staffCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> StaffResponse CreateStaff (StaffBase staffBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Createstaff
 
@@ -36,7 +36,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new StaffApi(config);
-            var staffCreate = new StaffCreate(); // StaffCreate | 
+            var staffBase = new StaffBase(); // StaffBase | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -47,7 +47,7 @@ namespace Example
             try
             {
                 // Createstaff
-                StaffDb result = apiInstance.CreateStaff(staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StaffResponse result = apiInstance.CreateStaff(staffBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -65,7 +65,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **staffCreate** | [**StaffCreate**](StaffCreate.md)|  | 
+ **staffBase** | [**StaffBase**](StaffBase.md)|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**StaffDb**](StaffDb.md)
+[**StaffResponse**](StaffResponse.md)
 
 ### Authorization
 
@@ -391,7 +391,7 @@ No authorization required
 
 <a name="updatestaff"></a>
 # **UpdateStaff**
-> StaffResponse UpdateStaff (string staffUuid, StaffCreate staffCreate, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> StaffResponse UpdateStaff (string staffUuid, StaffBase staffBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Updatestaff
 
@@ -415,7 +415,7 @@ namespace Example
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new StaffApi(config);
             var staffUuid = "staffUuid_example";  // string | 
-            var staffCreate = new StaffCreate(); // StaffCreate | 
+            var staffBase = new StaffBase(); // StaffBase | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -426,7 +426,7 @@ namespace Example
             try
             {
                 // Updatestaff
-                StaffResponse result = apiInstance.UpdateStaff(staffUuid, staffCreate, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StaffResponse result = apiInstance.UpdateStaff(staffUuid, staffBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -445,7 +445,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **staffUuid** | **string**|  | 
- **staffCreate** | [**StaffCreate**](StaffCreate.md)|  | 
+ **staffBase** | [**StaffBase**](StaffBase.md)|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 

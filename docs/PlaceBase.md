@@ -5,6 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ProjectUuid** | **string** |  | [optional] 
 **Name** | **string** |  | 
 **Summary** | **string** |  | [optional] 
 **Public** | **bool** |  | [optional] [default to true]

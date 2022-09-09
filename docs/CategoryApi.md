@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="createcategoryplacescategoriespost"></a>
 # **CreateCategoryPlacesCategoriesPost**
-> CategoryDb CreateCategoryPlacesCategoriesPost (CategoryBase categoryBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> CategoryResponse CreateCategoryPlacesCategoriesPost (CategoryBase categoryBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Create Category
 
@@ -47,7 +47,7 @@ namespace Example
             try
             {
                 // Create Category
-                CategoryDb result = apiInstance.CreateCategoryPlacesCategoriesPost(categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CategoryResponse result = apiInstance.CreateCategoryPlacesCategoriesPost(categoryBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CategoryDb**](CategoryDb.md)
+[**CategoryResponse**](CategoryResponse.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 
 <a name="getcategoryplacescategoriescategoryuuidget"></a>
 # **GetCategoryPlacesCategoriesCategoryUuidGet**
-> CategoryBase GetCategoryPlacesCategoriesCategoryUuidGet (string categoryUuid, bool? withMeta = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> CategoryResponse GetCategoryPlacesCategoriesCategoryUuidGet (string categoryUuid, bool? withMeta = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Get Category
 
@@ -218,7 +218,7 @@ namespace Example
             try
             {
                 // Get Category
-                CategoryBase result = apiInstance.GetCategoryPlacesCategoriesCategoryUuidGet(categoryUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CategoryResponse result = apiInstance.GetCategoryPlacesCategoriesCategoryUuidGet(categoryUuid, withMeta, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CategoryBase**](CategoryBase.md)
+[**CategoryResponse**](CategoryResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@ All URIs are relative to *https://api.prod.ehelply.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**CreateCompanyPlacesCompaniesPost**](CompaniesApi.md#createcompanyplacescompaniespost) | **POST** /places/companies | Create Company
-[**DeletePlacePlacesCompaniesCompanyUuidDelete**](CompaniesApi.md#deleteplaceplacescompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Place
+[**DeleteCompanyPlacesCompaniesCompanyUuidDelete**](CompaniesApi.md#deletecompanyplacescompaniescompanyuuiddelete) | **DELETE** /places/companies/{company_uuid} | Delete Company
 [**GetCompanyPlacesCompaniesCompanyUuidGet**](CompaniesApi.md#getcompanyplacescompaniescompanyuuidget) | **GET** /places/companies/{company_uuid} | Get Company
 [**SearchCompaniesPlacesCompaniesGet**](CompaniesApi.md#searchcompaniesplacescompaniesget) | **GET** /places/companies | Search Companies
 [**UpdateCompanyPlacesCompaniesCompanyUuidPut**](CompaniesApi.md#updatecompanyplacescompaniescompanyuuidput) | **PUT** /places/companies/{company_uuid} | Update Company
@@ -96,11 +96,11 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteplaceplacescompaniescompanyuuiddelete"></a>
-# **DeletePlacePlacesCompaniesCompanyUuidDelete**
-> Object DeletePlacePlacesCompaniesCompanyUuidDelete (string companyUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+<a name="deletecompanyplacescompaniescompanyuuiddelete"></a>
+# **DeleteCompanyPlacesCompaniesCompanyUuidDelete**
+> Object DeleteCompanyPlacesCompaniesCompanyUuidDelete (string companyUuid, bool? softDelete = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Delete Place
+Delete Company
 
 Deletes the company with the given ID and returns True if successful
 
@@ -114,7 +114,7 @@ using Ehelply.Sdk.Model;
 
 namespace Example
 {
-    public class DeletePlacePlacesCompaniesCompanyUuidDeleteExample
+    public class DeleteCompanyPlacesCompaniesCompanyUuidDeleteExample
     {
         public static void Main()
         {
@@ -132,13 +132,13 @@ namespace Example
 
             try
             {
-                // Delete Place
-                Object result = apiInstance.DeletePlacePlacesCompaniesCompanyUuidDelete(companyUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Delete Company
+                Object result = apiInstance.DeleteCompanyPlacesCompaniesCompanyUuidDelete(companyUuid, softDelete, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling CompaniesApi.DeletePlacePlacesCompaniesCompanyUuidDelete: " + e.Message );
+                Debug.Print("Exception when calling CompaniesApi.DeleteCompanyPlacesCompaniesCompanyUuidDelete: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

@@ -5,6 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**ProjectUuid** | **string** |  | [optional] 
 **Name** | **string** |  | 
 **Summary** | **string** |  | [optional] 
 **Public** | **bool** |  | [optional] [default to true]
@@ -13,7 +14,6 @@ Name | Type | Description | Notes
 **Contact** | [**ContactBase**](ContactBase.md) |  | [optional] 
 **Picture** | **string** |  | [optional] 
 **Uuid** | **string** |  | 
-**ProjectUuid** | **string** |  | [optional] 
 **MetaUuid** | **string** |  | [optional] 
 **Tags** | [**List&lt;TagBase&gt;**](TagBase.md) |  | [optional] 
 **Categories** | [**List&lt;CategoryBase&gt;**](CategoryBase.md) |  | [optional] 

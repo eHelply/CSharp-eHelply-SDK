@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="createtag"></a>
 # **CreateTag**
-> TagDb CreateTag (TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> TagResponse CreateTag (TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Createtag
 
@@ -46,7 +46,7 @@ namespace Example
             try
             {
                 // Createtag
-                TagDb result = apiInstance.CreateTag(tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                TagResponse result = apiInstance.CreateTag(tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TagDb**](TagDb.md)
+[**TagResponse**](TagResponse.md)
 
 ### Authorization
 
@@ -97,7 +97,7 @@ No authorization required
 
 <a name="gettag"></a>
 # **GetTag**
-> TagBase GetTag (string tagUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> TagResponse GetTag (string tagUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Gettag
 
@@ -131,7 +131,7 @@ namespace Example
             try
             {
                 // Gettag
-                TagBase result = apiInstance.GetTag(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                TagResponse result = apiInstance.GetTag(tagUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TagBase**](TagBase.md)
+[**TagResponse**](TagResponse.md)
 
 ### Authorization
 
@@ -277,7 +277,7 @@ No authorization required
 
 <a name="updatetag"></a>
 # **UpdateTag**
-> TagBase UpdateTag (string tagUuid, TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> TagResponse UpdateTag (string tagUuid, TagBase tagBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Updatetag
 
@@ -312,7 +312,7 @@ namespace Example
             try
             {
                 // Updatetag
-                TagBase result = apiInstance.UpdateTag(tagUuid, tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                TagResponse result = apiInstance.UpdateTag(tagUuid, tagBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**TagBase**](TagBase.md)
+[**TagResponse**](TagResponse.md)
 
 ### Authorization
 

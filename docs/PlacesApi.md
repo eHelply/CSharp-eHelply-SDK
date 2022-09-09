@@ -552,7 +552,7 @@ No authorization required
 
 <a name="searchplaces"></a>
 # **SearchPlaces**
-> Page SearchPlaces (string projectUuid = null, string name = null, string addressLine1 = null, string addressLine2 = null, string city = null, string provinceState = null, string country = null, string postalZipCode = null, string lat = null, string lng = null, string email = null, bool? isPublic = null, bool? isDeleted = null, bool? withCompany = null, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withCollection = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> Page SearchPlaces (string name = null, string addressLine1 = null, string addressLine2 = null, string city = null, string provinceState = null, string country = null, string postalZipCode = null, string lat = null, string lng = null, string email = null, bool? isPublic = null, bool? isDeleted = null, bool? withCompany = null, bool? withMeta = null, bool? withCatalog = null, bool? withReviews = null, bool? withSchedule = null, bool? withCollection = null, bool? withBlog = null, bool? withTags = null, bool? withCategories = null, int? page = null, int? pageSize = null, string sortOn = null, bool? sortDesc = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Searchplaces
 
@@ -575,7 +575,6 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new PlacesApi(config);
-            var projectUuid = "projectUuid_example";  // string |  (optional) 
             var name = "name_example";  // string |  (optional) 
             var addressLine1 = "addressLine1_example";  // string |  (optional) 
             var addressLine2 = "addressLine2_example";  // string |  (optional) 
@@ -611,7 +610,7 @@ namespace Example
             try
             {
                 // Searchplaces
-                Page result = apiInstance.SearchPlaces(projectUuid, name, addressLine1, addressLine2, city, provinceState, country, postalZipCode, lat, lng, email, isPublic, isDeleted, withCompany, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                Page result = apiInstance.SearchPlaces(name, addressLine1, addressLine2, city, provinceState, country, postalZipCode, lat, lng, email, isPublic, isDeleted, withCompany, withMeta, withCatalog, withReviews, withSchedule, withCollection, withBlog, withTags, withCategories, page, pageSize, sortOn, sortDesc, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -629,7 +628,6 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **projectUuid** | **string**|  | [optional] 
  **name** | **string**|  | [optional] 
  **addressLine1** | **string**|  | [optional] 
  **addressLine2** | **string**|  | [optional] 
