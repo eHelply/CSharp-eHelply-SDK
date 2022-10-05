@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ehelply.Sdk", "src\Ehelply.Sdk\Ehelply.Sdk.csproj", "{AF1B2BD1-A34E-4D17-ACEC-FDFD6BDFCBBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ehelply.Sdk", "src\Ehelply.Sdk\Ehelply.Sdk.csproj", "{215CA900-7FD4-4E6D-B384-71C24C82FCBD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ehelply.Sdk.Test", "src\Ehelply.Sdk.Test\Ehelply.Sdk.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF1B2BD1-A34E-4D17-ACEC-FDFD6BDFCBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF1B2BD1-A34E-4D17-ACEC-FDFD6BDFCBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF1B2BD1-A34E-4D17-ACEC-FDFD6BDFCBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF1B2BD1-A34E-4D17-ACEC-FDFD6BDFCBBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215CA900-7FD4-4E6D-B384-71C24C82FCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215CA900-7FD4-4E6D-B384-71C24C82FCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215CA900-7FD4-4E6D-B384-71C24C82FCBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215CA900-7FD4-4E6D-B384-71C24C82FCBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU
