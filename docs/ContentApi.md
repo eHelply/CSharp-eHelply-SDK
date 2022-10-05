@@ -1,13 +1,13 @@
-# Ehelply.Sdk.Api.DefaultApi
+# Ehelply.Sdk.Api.ContentApi
 
 All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateFile**](DefaultApi.md#createfile) | **POST** /files/files | Createfile
-[**DeleteFile**](DefaultApi.md#deletefile) | **DELETE** /files/files/{file_uuid} | Deletefile
-[**GetFile**](DefaultApi.md#getfile) | **GET** /files/files/{file_uuid} | Getfile
-[**UpdateFile**](DefaultApi.md#updatefile) | **PUT** /files/files/{file_uuid} | Updatefile
+[**CreateFile**](ContentApi.md#createfile) | **POST** /files/files | Createfile
+[**DeleteFile**](ContentApi.md#deletefile) | **DELETE** /files/files/{file_uuid} | Deletefile
+[**GetFile**](ContentApi.md#getfile) | **GET** /files/files/{file_uuid} | Getfile
+[**UpdateFile**](ContentApi.md#updatefile) | **PUT** /files/files/{file_uuid} | Updatefile
 
 
 <a name="createfile"></a>
@@ -32,7 +32,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new ContentApi(config);
             var file = new System.IO.MemoryStream(System.IO.File.ReadAllBytes("/path/to/file.txt"));  // System.IO.Stream | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -49,7 +49,7 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.CreateFile: " + e.Message );
+                Debug.Print("Exception when calling ContentApi.CreateFile: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -117,7 +117,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new ContentApi(config);
             var fileUuid = "fileUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -134,7 +134,7 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.DeleteFile: " + e.Message );
+                Debug.Print("Exception when calling ContentApi.DeleteFile: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -202,7 +202,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new ContentApi(config);
             var fileUuid = "fileUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -219,7 +219,7 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.GetFile: " + e.Message );
+                Debug.Print("Exception when calling ContentApi.GetFile: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -287,7 +287,7 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
-            var apiInstance = new DefaultApi(config);
+            var apiInstance = new ContentApi(config);
             var fileUuid = "fileUuid_example";  // string | 
             var file = new System.IO.MemoryStream(System.IO.File.ReadAllBytes("/path/to/file.txt"));  // System.IO.Stream | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
@@ -305,7 +305,7 @@ namespace Example
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling DefaultApi.UpdateFile: " + e.Message );
+                Debug.Print("Exception when calling ContentApi.UpdateFile: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

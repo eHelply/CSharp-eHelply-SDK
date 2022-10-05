@@ -34,6 +34,7 @@ docs/Contact.md
 docs/ContactBase.md
 docs/ContactMethod.md
 docs/ContactResponse.md
+docs/ContentApi.md
 docs/CreateFile200Response.md
 docs/CreateKeyResponse.md
 docs/CreateProjectCredential.md
@@ -44,7 +45,6 @@ docs/CreateTicket.md
 docs/Credential.md
 docs/CustomList.md
 docs/DatesMeta.md
-docs/DefaultApi.md
 docs/DeleteFile200Response.md
 docs/Detailed.md
 docs/DetailedMeta.md
@@ -177,7 +177,7 @@ src/Ehelply.Sdk.Test/Api/BillingApiTests.cs
 src/Ehelply.Sdk.Test/Api/CatalogsApiTests.cs
 src/Ehelply.Sdk.Test/Api/CategoryApiTests.cs
 src/Ehelply.Sdk.Test/Api/CompaniesApiTests.cs
-src/Ehelply.Sdk.Test/Api/DefaultApiTests.cs
+src/Ehelply.Sdk.Test/Api/ContentApiTests.cs
 src/Ehelply.Sdk.Test/Api/LoggingApiTests.cs
 src/Ehelply.Sdk.Test/Api/MetaApiTests.cs
 src/Ehelply.Sdk.Test/Api/MonitorApiTests.cs
@@ -346,7 +346,7 @@ src/Ehelply.Sdk/Api/BillingApi.cs
 src/Ehelply.Sdk/Api/CatalogsApi.cs
 src/Ehelply.Sdk/Api/CategoryApi.cs
 src/Ehelply.Sdk/Api/CompaniesApi.cs
-src/Ehelply.Sdk/Api/DefaultApi.cs
+src/Ehelply.Sdk/Api/ContentApi.cs
 src/Ehelply.Sdk/Api/LoggingApi.cs
 src/Ehelply.Sdk/Api/MetaApi.cs
 src/Ehelply.Sdk/Api/MonitorApi.cs
