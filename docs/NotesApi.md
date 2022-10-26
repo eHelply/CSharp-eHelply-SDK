@@ -4,17 +4,17 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateNote**](NotesApi.md#createnote) | **POST** /notes/notes | Create Note
-[**DeleteNote**](NotesApi.md#deletenote) | **DELETE** /notes/notes/{note_id} | Delete Note
-[**GetNote**](NotesApi.md#getnote) | **GET** /notes/notes/{note_id} | Get Note
-[**UpdateNote**](NotesApi.md#updatenote) | **PUT** /notes/notes/{note_id} | Update Note
+[**CreateNote**](NotesApi.md#createnote) | **POST** /notes/notes | Createnote
+[**DeleteNote**](NotesApi.md#deletenote) | **DELETE** /notes/notes/{note_id} | Deletenote
+[**GetNote**](NotesApi.md#getnote) | **GET** /notes/notes/{note_id} | Getnote
+[**UpdateNote**](NotesApi.md#updatenote) | **PUT** /notes/notes/{note_id} | Updatenote
 
 
 <a name="createnote"></a>
 # **CreateNote**
-> NoteDynamoResponse CreateNote (NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> CreateNote200Response CreateNote (NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Create Note
+Createnote
 
 ### Example
 ```csharp
@@ -43,8 +43,8 @@ namespace Example
 
             try
             {
-                // Create Note
-                NoteDynamoResponse result = apiInstance.CreateNote(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Createnote
+                CreateNote200Response result = apiInstance.CreateNote(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**NoteDynamoResponse**](NoteDynamoResponse.md)
+[**CreateNote200Response**](CreateNote200Response.md)
 
 ### Authorization
 
@@ -88,6 +88,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
+| **400** | Something went wrong while trying to create a note |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Not found |  -  |
 | **422** | Validation Error |  -  |
 
@@ -95,9 +97,9 @@ No authorization required
 
 <a name="deletenote"></a>
 # **DeleteNote**
-> Object DeleteNote (string noteId, string method = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> DeleteNote200Response DeleteNote (string noteId, string method = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Delete Note
+Deletenote
 
 ### Example
 ```csharp
@@ -127,8 +129,8 @@ namespace Example
 
             try
             {
-                // Delete Note
-                Object result = apiInstance.DeleteNote(noteId, method, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Deletenote
+                DeleteNote200Response result = apiInstance.DeleteNote(noteId, method, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -157,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**DeleteNote200Response**](DeleteNote200Response.md)
 
 ### Authorization
 
@@ -173,6 +175,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
+| **400** | Unable to delete note(s) |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
 | **404** | Not found |  -  |
 | **422** | Validation Error |  -  |
 
@@ -182,7 +186,7 @@ No authorization required
 # **GetNote**
 > NoteDynamoHistoryResponse GetNote (string noteId, int? history = null, bool? historyContent = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Get Note
+Getnote
 
 ### Example
 ```csharp
@@ -213,7 +217,7 @@ namespace Example
 
             try
             {
-                // Get Note
+                // Getnote
                 NoteDynamoHistoryResponse result = apiInstance.GetNote(noteId, history, historyContent, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
@@ -260,16 +264,17 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | note does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="updatenote"></a>
 # **UpdateNote**
-> NoteDynamoResponse UpdateNote (string noteId, NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> UpdateNote200Response UpdateNote (string noteId, NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
-Update Note
+Updatenote
 
 ### Example
 ```csharp
@@ -299,8 +304,8 @@ namespace Example
 
             try
             {
-                // Update Note
-                NoteDynamoResponse result = apiInstance.UpdateNote(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                // Updatenote
+                UpdateNote200Response result = apiInstance.UpdateNote(noteId, noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -329,7 +334,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**NoteDynamoResponse**](NoteDynamoResponse.md)
+[**UpdateNote200Response**](UpdateNote200Response.md)
 
 ### Authorization
 
@@ -345,7 +350,9 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | Successful Response |  -  |
-| **404** | Not found |  -  |
+| **400** | Something went wrong while updating note |  -  |
+| **403** | Unauthorized - Denied by eHelply |  -  |
+| **404** | note does not exist |  -  |
 | **422** | Validation Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

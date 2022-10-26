@@ -5,14 +5,13 @@ Field
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Uuid** | **string** |  | [optional] 
-**Type** | **int** |  | [optional] 
+**Type** | **Object** |  | [optional] 
 **Placeholder** | **string** |  | [optional] 
-**Validations** | [**Validations**](Validations.md) |  | [optional] 
+**Validations** | **Object** |  | [optional] 
 **Hint** | **string** |  | [optional] 
 **Icon** | **string** |  | [optional] 
 **Label** | **string** |  | [optional] 
-**Options** | [**Options**](Options.md) |  | [optional] 
+**Options** | **Object** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
