@@ -34,6 +34,8 @@ docs/Contact.md
 docs/ContactBase.md
 docs/ContactMethod.md
 docs/ContactResponse.md
+docs/ContentApi.md
+docs/CreateFile200Response.md
 docs/CreateKeyResponse.md
 docs/CreateProjectCredential.md
 docs/CreateProjectCredit.md
@@ -43,6 +45,7 @@ docs/CreateTicket.md
 docs/Credential.md
 docs/CustomList.md
 docs/DatesMeta.md
+docs/DeleteFile200Response.md
 docs/Detailed.md
 docs/DetailedMeta.md
 docs/DetailedMetaCreate.md
@@ -148,6 +151,7 @@ docs/TagsApi.md
 docs/Tax.md
 docs/TicketResponse.md
 docs/TicketsResponse.md
+docs/UpdateFile200Response.md
 docs/UpdateProjectCredentialRequest.md
 docs/UpdateReview.md
 docs/User.md
@@ -172,6 +176,7 @@ src/Ehelply.Sdk.Test/Api/BillingApiTests.cs
 src/Ehelply.Sdk.Test/Api/CatalogsApiTests.cs
 src/Ehelply.Sdk.Test/Api/CategoryApiTests.cs
 src/Ehelply.Sdk.Test/Api/CompaniesApiTests.cs
+src/Ehelply.Sdk.Test/Api/ContentApiTests.cs
 src/Ehelply.Sdk.Test/Api/LoggingApiTests.cs
 src/Ehelply.Sdk.Test/Api/MetaApiTests.cs
 src/Ehelply.Sdk.Test/Api/MonitorApiTests.cs
@@ -213,6 +218,7 @@ src/Ehelply.Sdk.Test/Model/ContactBaseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactMethodTests.cs
 src/Ehelply.Sdk.Test/Model/ContactResponseTests.cs
 src/Ehelply.Sdk.Test/Model/ContactTests.cs
+src/Ehelply.Sdk.Test/Model/CreateFile200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectCredentialTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectCreditTests.cs
@@ -222,6 +228,7 @@ src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
 src/Ehelply.Sdk.Test/Model/CredentialTests.cs
 src/Ehelply.Sdk.Test/Model/CustomListTests.cs
 src/Ehelply.Sdk.Test/Model/DatesMetaTests.cs
+src/Ehelply.Sdk.Test/Model/DeleteFile200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaCreateTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaGetTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedMetaTests.cs
@@ -314,6 +321,7 @@ src/Ehelply.Sdk.Test/Model/TagResponseTests.cs
 src/Ehelply.Sdk.Test/Model/TaxTests.cs
 src/Ehelply.Sdk.Test/Model/TicketResponseTests.cs
 src/Ehelply.Sdk.Test/Model/TicketsResponseTests.cs
+src/Ehelply.Sdk.Test/Model/UpdateFile200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/UpdateProjectCredentialRequestTests.cs
 src/Ehelply.Sdk.Test/Model/UpdateReviewTests.cs
 src/Ehelply.Sdk.Test/Model/UserConfirmationTests.cs
@@ -336,6 +344,7 @@ src/Ehelply.Sdk/Api/BillingApi.cs
 src/Ehelply.Sdk/Api/CatalogsApi.cs
 src/Ehelply.Sdk/Api/CategoryApi.cs
 src/Ehelply.Sdk/Api/CompaniesApi.cs
+src/Ehelply.Sdk/Api/ContentApi.cs
 src/Ehelply.Sdk/Api/LoggingApi.cs
 src/Ehelply.Sdk/Api/MetaApi.cs
 src/Ehelply.Sdk/Api/MonitorApi.cs
@@ -394,6 +403,7 @@ src/Ehelply.Sdk/Model/Contact.cs
 src/Ehelply.Sdk/Model/ContactBase.cs
 src/Ehelply.Sdk/Model/ContactMethod.cs
 src/Ehelply.Sdk/Model/ContactResponse.cs
+src/Ehelply.Sdk/Model/CreateFile200Response.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
 src/Ehelply.Sdk/Model/CreateProjectCredential.cs
 src/Ehelply.Sdk/Model/CreateProjectCredit.cs
@@ -403,6 +413,7 @@ src/Ehelply.Sdk/Model/CreateTicket.cs
 src/Ehelply.Sdk/Model/Credential.cs
 src/Ehelply.Sdk/Model/CustomList.cs
 src/Ehelply.Sdk/Model/DatesMeta.cs
+src/Ehelply.Sdk/Model/DeleteFile200Response.cs
 src/Ehelply.Sdk/Model/Detailed.cs
 src/Ehelply.Sdk/Model/DetailedMeta.cs
 src/Ehelply.Sdk/Model/DetailedMetaCreate.cs
@@ -495,6 +506,7 @@ src/Ehelply.Sdk/Model/TagResponse.cs
 src/Ehelply.Sdk/Model/Tax.cs
 src/Ehelply.Sdk/Model/TicketResponse.cs
 src/Ehelply.Sdk/Model/TicketsResponse.cs
+src/Ehelply.Sdk/Model/UpdateFile200Response.cs
 src/Ehelply.Sdk/Model/UpdateProjectCredentialRequest.cs
 src/Ehelply.Sdk/Model/UpdateReview.cs
 src/Ehelply.Sdk/Model/User.cs
