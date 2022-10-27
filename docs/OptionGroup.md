@@ -1,11 +1,13 @@
-# Ehelply.Sdk.Model.Dates
+# Ehelply.Sdk.Model.OptionGroup
+Option Group
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**CreatedAt** | **string** |  | [optional] [default to "2022-10-26T19:13:31.399861"]
-**UpdatedAt** | **string** |  | [optional] [default to "2022-10-26T19:13:31.399861"]
+**Name** | **string** |  | [optional] 
+**Type** | **string** |  | [optional] 
+**Selections** | [**List&lt;Selection&gt;**](Selection.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -7,10 +7,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Basic** | [**Basic**](Basic.md) |  | [optional] 
 **Detailed** | [**Detailed**](Detailed.md) |  | [optional] 
-**Custom** | **Object** |  | [optional] 
-**Dates** | [**Dates**](Dates.md) |  | [optional] 
+**Custom** | [**MetaCustom**](MetaCustom.md) |  | [optional] 
+**Dates** | [**DatesMeta**](DatesMeta.md) |  | [optional] 
 **Fields** | [**List&lt;Field&gt;**](Field.md) |  | [optional] 
-**Children** | **List&lt;Object&gt;** |  | [optional] 
+**Children** | [**List&lt;MetaChildren&gt;**](MetaChildren.md) |  | [optional] 
 **ParentUuid** | **string** |  | [optional] 
 **Uuid** | **string** |  | 
 
