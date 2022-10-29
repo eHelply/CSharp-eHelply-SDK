@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **HiddenStages** | **List&lt;string&gt;** |  | [optional] 
 **CreatedAt** | **string** |  | [optional] 
 **UpdatedAt** | **string** |  | [optional] 
+**SuperstackMeta** | [**ServiceSuperStackMeta**](ServiceSuperStackMeta.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
