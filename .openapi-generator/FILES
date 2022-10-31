@@ -49,6 +49,7 @@ docs/CreateTicket.md
 docs/Credential.md
 docs/CustomList.md
 docs/DatesMeta.md
+docs/DeleteFact200Response.md
 docs/DeleteField200Response.md
 docs/DeleteFile200Response.md
 docs/DeleteMeta200Response.md
@@ -58,6 +59,9 @@ docs/DetailedMeta.md
 docs/DetailedMetaCreate.md
 docs/Discount.md
 docs/Email.md
+docs/Fact.md
+docs/FactCreate.md
+docs/FactsApi.md
 docs/Field.md
 docs/FieldDynamo.md
 docs/FieldsApi.md
@@ -131,6 +135,7 @@ docs/ResponseRemovememberfromproject.md
 docs/ResponseRevokeprojectcredit.md
 docs/ResponseUpdateprojectcredential.md
 docs/ReviewsApi.md
+docs/SaveFact200Response.md
 docs/SecurityApi.md
 docs/SecurityCreateToken.md
 docs/SecurityEncryptionKeyGet.md
@@ -194,6 +199,7 @@ src/Ehelply.Sdk.Test/Api/CatalogsApiTests.cs
 src/Ehelply.Sdk.Test/Api/CategoryApiTests.cs
 src/Ehelply.Sdk.Test/Api/CompaniesApiTests.cs
 src/Ehelply.Sdk.Test/Api/ContentApiTests.cs
+src/Ehelply.Sdk.Test/Api/FactsApiTests.cs
 src/Ehelply.Sdk.Test/Api/FieldsApiTests.cs
 src/Ehelply.Sdk.Test/Api/LoggingApiTests.cs
 src/Ehelply.Sdk.Test/Api/MetaApiTests.cs
@@ -250,6 +256,7 @@ src/Ehelply.Sdk.Test/Model/CreateTicketTests.cs
 src/Ehelply.Sdk.Test/Model/CredentialTests.cs
 src/Ehelply.Sdk.Test/Model/CustomListTests.cs
 src/Ehelply.Sdk.Test/Model/DatesMetaTests.cs
+src/Ehelply.Sdk.Test/Model/DeleteFact200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/DeleteField200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/DeleteFile200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/DeleteMeta200ResponseTests.cs
@@ -259,6 +266,8 @@ src/Ehelply.Sdk.Test/Model/DetailedMetaTests.cs
 src/Ehelply.Sdk.Test/Model/DetailedTests.cs
 src/Ehelply.Sdk.Test/Model/DiscountTests.cs
 src/Ehelply.Sdk.Test/Model/EmailTests.cs
+src/Ehelply.Sdk.Test/Model/FactCreateTests.cs
+src/Ehelply.Sdk.Test/Model/FactTests.cs
 src/Ehelply.Sdk.Test/Model/FieldDynamoTests.cs
 src/Ehelply.Sdk.Test/Model/FieldTests.cs
 src/Ehelply.Sdk.Test/Model/GetAppointment403ResponseTests.cs
@@ -323,6 +332,7 @@ src/Ehelply.Sdk.Test/Model/ResponseGeneratetokenTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseRemovememberfromprojectTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseRevokeprojectcreditTests.cs
 src/Ehelply.Sdk.Test/Model/ResponseUpdateprojectcredentialTests.cs
+src/Ehelply.Sdk.Test/Model/SaveFact200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityCreateTokenTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyGetTests.cs
 src/Ehelply.Sdk.Test/Model/SecurityEncryptionKeyResponseTests.cs
@@ -379,6 +389,7 @@ src/Ehelply.Sdk/Api/CatalogsApi.cs
 src/Ehelply.Sdk/Api/CategoryApi.cs
 src/Ehelply.Sdk/Api/CompaniesApi.cs
 src/Ehelply.Sdk/Api/ContentApi.cs
+src/Ehelply.Sdk/Api/FactsApi.cs
 src/Ehelply.Sdk/Api/FieldsApi.cs
 src/Ehelply.Sdk/Api/LoggingApi.cs
 src/Ehelply.Sdk/Api/MetaApi.cs
@@ -452,6 +463,7 @@ src/Ehelply.Sdk/Model/CreateTicket.cs
 src/Ehelply.Sdk/Model/Credential.cs
 src/Ehelply.Sdk/Model/CustomList.cs
 src/Ehelply.Sdk/Model/DatesMeta.cs
+src/Ehelply.Sdk/Model/DeleteFact200Response.cs
 src/Ehelply.Sdk/Model/DeleteField200Response.cs
 src/Ehelply.Sdk/Model/DeleteFile200Response.cs
 src/Ehelply.Sdk/Model/DeleteMeta200Response.cs
@@ -461,6 +473,8 @@ src/Ehelply.Sdk/Model/DetailedMeta.cs
 src/Ehelply.Sdk/Model/DetailedMetaCreate.cs
 src/Ehelply.Sdk/Model/Discount.cs
 src/Ehelply.Sdk/Model/Email.cs
+src/Ehelply.Sdk/Model/Fact.cs
+src/Ehelply.Sdk/Model/FactCreate.cs
 src/Ehelply.Sdk/Model/Field.cs
 src/Ehelply.Sdk/Model/FieldDynamo.cs
 src/Ehelply.Sdk/Model/GetAppointment403Response.cs
@@ -525,6 +539,7 @@ src/Ehelply.Sdk/Model/ResponseGeneratetoken.cs
 src/Ehelply.Sdk/Model/ResponseRemovememberfromproject.cs
 src/Ehelply.Sdk/Model/ResponseRevokeprojectcredit.cs
 src/Ehelply.Sdk/Model/ResponseUpdateprojectcredential.cs
+src/Ehelply.Sdk/Model/SaveFact200Response.cs
 src/Ehelply.Sdk/Model/SecurityCreateToken.cs
 src/Ehelply.Sdk/Model/SecurityEncryptionKeyGet.cs
 src/Ehelply.Sdk/Model/SecurityEncryptionKeyResponse.cs
