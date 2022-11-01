@@ -4,18 +4,18 @@ All URIs are relative to *https://api.prod.ehelply.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateBillingAccount**](BillingApi.md#createbillingaccount) | **POST** /sam/billing/create_billing_account | Createbillingaccount
-[**GetClientSecret**](BillingApi.md#getclientsecret) | **GET** /sam/billing/retrieve_secret | Getclientsecret
-[**HasPayment**](BillingApi.md#haspayment) | **GET** /sam/billing/has_payment | Haspayment
-[**ListPaymentMethods**](BillingApi.md#listpaymentmethods) | **GET** /sam/billing/view_payment_method | Listpaymentmethods
-[**ProcessPayment**](BillingApi.md#processpayment) | **POST** /sam/billing/process_payment | Processpayment
-[**ReconcilePaymentMethod**](BillingApi.md#reconcilepaymentmethod) | **GET** /sam/billing/reconcile_payment | Reconcilepaymentmethod
-[**RemovePaymentMethod**](BillingApi.md#removepaymentmethod) | **DELETE** /sam/billing/remove_payment_method | Removepaymentmethod
+[**CreateBillingAccount**](BillingApi.md#createbillingaccount) | **POST** /sam/billing/projects/{project_uuid}/accounts | Createbillingaccount
+[**GetClientSecret**](BillingApi.md#getclientsecret) | **GET** /sam/billing/projects/{project_uuid}/secrets | Getclientsecret
+[**HasPayment**](BillingApi.md#haspayment) | **GET** /sam/billing/projects/{project_uuid}/payment-methods-exist | Haspayment
+[**ListPaymentMethods**](BillingApi.md#listpaymentmethods) | **GET** /sam/billing/projects/{project_uuid}/payment-methods | Listpaymentmethods
+[**ProcessPayment**](BillingApi.md#processpayment) | **POST** /sam/billing/projects/{project_uuid}/payments | Processpayment
+[**ReconcilePaymentMethod**](BillingApi.md#reconcilepaymentmethod) | **GET** /sam/billing/projects/{project_uuid}/payment-methods-reconciliation | Reconcilepaymentmethod
+[**RemovePaymentMethod**](BillingApi.md#removepaymentmethod) | **DELETE** /sam/billing/projects/{project_uuid}/payment-methods | Removepaymentmethod
 
 
 <a name="createbillingaccount"></a>
 # **CreateBillingAccount**
-> StripeAccountResponse CreateBillingAccount (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> StripeAccountResponse CreateBillingAccount (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Createbillingaccount
 
@@ -36,6 +36,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -46,7 +47,7 @@ namespace Example
             try
             {
                 // Createbillingaccount
-                StripeAccountResponse result = apiInstance.CreateBillingAccount(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StripeAccountResponse result = apiInstance.CreateBillingAccount(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -64,6 +65,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -96,7 +98,7 @@ No authorization required
 
 <a name="getclientsecret"></a>
 # **GetClientSecret**
-> StripeCustomerSecretResponse GetClientSecret (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> StripeCustomerSecretResponse GetClientSecret (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Getclientsecret
 
@@ -117,6 +119,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -127,7 +130,7 @@ namespace Example
             try
             {
                 // Getclientsecret
-                StripeCustomerSecretResponse result = apiInstance.GetClientSecret(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                StripeCustomerSecretResponse result = apiInstance.GetClientSecret(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -145,6 +148,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -177,7 +181,7 @@ No authorization required
 
 <a name="haspayment"></a>
 # **HasPayment**
-> bool HasPayment (Object projectUuid = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool HasPayment (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Haspayment
 
@@ -198,7 +202,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
-            var projectUuid = new Object(); // Object |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -227,7 +231,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **projectUuid** | [**Object**](Object.md)|  | [optional] 
+ **projectUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -260,7 +264,7 @@ No authorization required
 
 <a name="listpaymentmethods"></a>
 # **ListPaymentMethods**
-> List&lt;PaymentMethodResponse&gt; ListPaymentMethods (Object projectUuid = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> List&lt;PaymentMethodResponse&gt; ListPaymentMethods (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Listpaymentmethods
 
@@ -281,7 +285,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
-            var projectUuid = new Object(); // Object |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -310,7 +314,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **projectUuid** | [**Object**](Object.md)|  | [optional] 
+ **projectUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -345,7 +349,7 @@ No authorization required
 
 <a name="processpayment"></a>
 # **ProcessPayment**
-> string ProcessPayment (Payment payment, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> string ProcessPayment (string projectUuid, Payment payment, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Processpayment
 
@@ -366,6 +370,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
             var payment = new Payment(); // Payment | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
@@ -377,7 +382,7 @@ namespace Example
             try
             {
                 // Processpayment
-                string result = apiInstance.ProcessPayment(payment, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                string result = apiInstance.ProcessPayment(projectUuid, payment, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -395,6 +400,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
  **payment** | [**Payment**](Payment.md)|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
@@ -428,7 +434,7 @@ No authorization required
 
 <a name="reconcilepaymentmethod"></a>
 # **ReconcilePaymentMethod**
-> bool ReconcilePaymentMethod (string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> bool ReconcilePaymentMethod (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Reconcilepaymentmethod
 
@@ -449,6 +455,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
+            var projectUuid = "projectUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -459,7 +466,7 @@ namespace Example
             try
             {
                 // Reconcilepaymentmethod
-                bool result = apiInstance.ReconcilePaymentMethod(xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                bool result = apiInstance.ReconcilePaymentMethod(projectUuid, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -477,6 +484,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **projectUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
@@ -509,7 +517,7 @@ No authorization required
 
 <a name="removepaymentmethod"></a>
 # **RemovePaymentMethod**
-> string RemovePaymentMethod (Object projectUuid = null, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> string RemovePaymentMethod (string projectUuid, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Removepaymentmethod
 
@@ -530,7 +538,7 @@ namespace Example
             Configuration config = new Configuration();
             config.BasePath = "https://api.prod.ehelply.com";
             var apiInstance = new BillingApi(config);
-            var projectUuid = new Object(); // Object |  (optional) 
+            var projectUuid = "projectUuid_example";  // string | 
             var xAccessToken = "xAccessToken_example";  // string |  (optional) 
             var xSecretToken = "xSecretToken_example";  // string |  (optional) 
             var authorization = "authorization_example";  // string |  (optional) 
@@ -559,7 +567,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **projectUuid** | [**Object**](Object.md)|  | [optional] 
+ **projectUuid** | **string**|  | 
  **xAccessToken** | **string**|  | [optional] 
  **xSecretToken** | **string**|  | [optional] 
  **authorization** | **string**|  | [optional] 
