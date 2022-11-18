@@ -39,7 +39,7 @@ docs/CreateField200Response.md
 docs/CreateFile200Response.md
 docs/CreateKeyResponse.md
 docs/CreateMeta200Response.md
-docs/CreateNote200Response.md
+docs/CreateNoteResponse.md
 docs/CreateProjectCredential.md
 docs/CreateProjectCredit.md
 docs/CreateProjectInvoice.md
@@ -245,7 +245,7 @@ src/Ehelply.Sdk.Test/Model/CreateField200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateFile200ResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateKeyResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateMeta200ResponseTests.cs
-src/Ehelply.Sdk.Test/Model/CreateNote200ResponseTests.cs
+src/Ehelply.Sdk.Test/Model/CreateNoteResponseTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectCredentialTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectCreditTests.cs
 src/Ehelply.Sdk.Test/Model/CreateProjectInvoiceTests.cs
@@ -451,7 +451,7 @@ src/Ehelply.Sdk/Model/CreateField200Response.cs
 src/Ehelply.Sdk/Model/CreateFile200Response.cs
 src/Ehelply.Sdk/Model/CreateKeyResponse.cs
 src/Ehelply.Sdk/Model/CreateMeta200Response.cs
-src/Ehelply.Sdk/Model/CreateNote200Response.cs
+src/Ehelply.Sdk/Model/CreateNoteResponse.cs
 src/Ehelply.Sdk/Model/CreateProjectCredential.cs
 src/Ehelply.Sdk/Model/CreateProjectCredit.cs
 src/Ehelply.Sdk/Model/CreateProjectInvoice.cs
