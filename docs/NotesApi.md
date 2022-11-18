@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="createnote"></a>
 # **CreateNote**
-> CreateNote200Response CreateNote (NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
+> CreateNoteResponse CreateNote (NoteBase noteBase, string xAccessToken = null, string xSecretToken = null, string authorization = null, string ehelplyActiveParticipant = null, string ehelplyProject = null, string ehelplyData = null)
 
 Createnote
 
@@ -44,7 +44,7 @@ namespace Example
             try
             {
                 // Createnote
-                CreateNote200Response result = apiInstance.CreateNote(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
+                CreateNoteResponse result = apiInstance.CreateNote(noteBase, xAccessToken, xSecretToken, authorization, ehelplyActiveParticipant, ehelplyProject, ehelplyData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CreateNote200Response**](CreateNote200Response.md)
+[**CreateNoteResponse**](CreateNoteResponse.md)
 
 ### Authorization
 
